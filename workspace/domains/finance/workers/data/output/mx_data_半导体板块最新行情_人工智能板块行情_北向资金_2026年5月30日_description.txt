@@ -1,0 +1,8 @@
+金融数据查询结果说明
+========================================
+查询内容: 半导体板块最新行情 人工智能板块行情 北向资金 2026年5月30日
+数据文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/output/mx_data_半导体板块最新行情_人工智能板块行情_北向资金_2026年5月30日.xlsx
+描述文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/output/mx_data_半导体板块最新行情_人工智能板块行情_北向资金_2026年5月30日_description.txt
+数据行数: 37
+表数量: 6
+Sheet 列表: 半导体等的成份区间涨跌幅(总市值加权平均)、成份区间成交量(合计)等, 半导体等的上周涨跌幅、本周涨跌幅, 半导体等的区间成交额、区间日均换手率(整体法), 人工智能的BOLL布林线LOW、BOLL布林线等, 半导体(90.BK1036)沪深港通_北向资金成交额, 人工智能(90.BK0800)沪深港通_北向资金成交额

@@ -1,0 +1,8 @@
+金融数据查询结果说明
+========================================
+查询内容: 科创50指数最新点位涨跌幅成交额
+数据文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/mx_data_科创50指数最新点位涨跌幅成交额.xlsx
+描述文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/mx_data_科创50指数最新点位涨跌幅成交额_description.txt
+数据行数: 6
+表数量: 1
+Sheet 列表: 科创50(000688.SH)的成交额、收盘价等

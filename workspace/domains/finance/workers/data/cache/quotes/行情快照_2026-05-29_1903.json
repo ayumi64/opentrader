@@ -1,0 +1,55 @@
+{
+  "snapshot_time": "2026-05-29 19:03 (Asia/Shanghai)",
+  "date": "2026-05-29",
+  "market_status": "closed (post-market)",
+  "index_quotes": {
+    "上证指数_000001.SH": {
+      "change_pct": -0.73,
+      "turnover": "1.532万亿元"
+    },
+    "深证成指_399001.SZ": {
+      "change_pct": -1.81,
+      "turnover": "1.787万亿元"
+    },
+    "创业板指_399006.SZ": {
+      "change_pct": -2.11,
+      "turnover": "8557亿元"
+    },
+    "科创50_000688.SH": {
+      "change_pct": -5.04,
+      "turnover": "1821亿元"
+    },
+    "沪深300_000300.SH": {
+      "change_pct": -0.45,
+      "turnover": "9422亿元"
+    }
+  },
+  "sector_quotes": {
+    "半导体": {
+      "change_pct": -6.4
+    }
+  },
+  "market_aggregates": {
+    "all_a_total_turnover": "3.341万亿元",
+    "day_over_day_change": "较昨日放量约3420亿",
+    "northbound_flow_notes": "北向成交额3835亿元，科创硬科技为主要方向",
+    "margin_balance_notes": "两融余额升至约2.93万亿"
+  },
+  "volume_breadth_notes": {
+    "total_turnover_yesterday": "2.99万亿",
+    "total_turnover_today": "3.34万亿",
+    "breadth": "放量下跌态势，近4000只个股下跌"
+  },
+  "key_themes_today": {
+    "strong_sectors": ["电力", "大消费", "零售", "白酒", "医美"],
+    "weak_sectors": ["半导体(-6.4%)", "商业航天", "6G概念", "新材料", "CPO", "量子科技"],
+    "notes": "科技板块全面雪崩，半导体遭大基金减持利空引爆踩踏；消费防御板块走强反映避险情绪"
+  },
+  "data_source": "东方财富mx-data",
+  "mx_data_query_ids": [
+    "560fe6a3-d60d-4f58-9e89-768c11af7137",
+    "91d61630-bee4-416c-8037-008defed38b1",
+    "0ad4186d-65d9-443d-9c4c-ebea42b12a56",
+    "5b2756a7-286f-4a6e-bfa9-834efe5b48d0"
+  ]
+}

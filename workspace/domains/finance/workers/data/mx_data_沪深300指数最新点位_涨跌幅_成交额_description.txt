@@ -1,0 +1,8 @@
+金融数据查询结果说明
+========================================
+查询内容: 沪深300指数最新点位 涨跌幅 成交额
+数据文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/mx_data_沪深300指数最新点位_涨跌幅_成交额.xlsx
+描述文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/mx_data_沪深300指数最新点位_涨跌幅_成交额_description.txt
+数据行数: 6
+表数量: 1
+Sheet 列表: 沪深300(399300.SZ)的成交额、收盘价等

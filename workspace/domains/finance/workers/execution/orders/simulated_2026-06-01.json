@@ -1,0 +1,65 @@
+{
+  "date": "2026-06-01",
+  "generated_at": "2026-06-01T09:26:48+08:00",
+  "cron": "f1n4nc3-exec-open-0001-000000000001",
+  "gate_check": {
+    "allow_open_new": false,
+    "allow_add_position": false,
+    "force_reduce": false,
+    "reason": "R3_cash_buffer fail: 1.57% < 5% minimum (¥21,291 available vs ¥67,679 required)"
+  },
+  "orders": [],
+  "rejections": [
+    {
+      "signal_id": "SIG-20260601-001",
+      "type": "强制撤单",
+      "action": "rejected",
+      "reason": "allow_open_new=false: 5笔强制撤单需人工处理(大族激光+52.1%/芯源微+33.1%/天孚通信+28.0%/德明利+23.8%/海光信息+16.2%)"
+    },
+    {
+      "signal_id": "SIG-20260601-002",
+      "type": "被动成交预警",
+      "action": "rejected",
+      "reason": "allow_open_new=false: 2笔(英维克-14.3%/微芯生物-14.2%)挂单偏高需人工调整"
+    },
+    {
+      "signal_id": "SIG-20260601-003",
+      "type": "政策风险事件",
+      "action": "logged_only",
+      "reason": "allow_open_new=false: 美商务部堵芯片出口漏洞, 半导体板块需评估影响, 需finance-risk更新gate"
+    },
+    {
+      "signal_id": "SIG-20260601-004",
+      "type": "合规风险事件",
+      "action": "logged_only",
+      "reason": "allow_open_new=false: OFAC制裁9家中国实体, 需检查持仓扩散影响"
+    },
+    {
+      "signal_id": "SIG-20260601-005",
+      "type": "宏观风险事件",
+      "action": "logged_only",
+      "reason": "allow_open_new=false: 美联储鹰派+地缘冲突持续, 成长板块承压, 不适合介入"
+    },
+    {
+      "signal_id": "SIG-20260601-006",
+      "type": "事件催化关注",
+      "action": "logged_only",
+      "reason": "allow_open_new=false: COMPUTEX+黄仁勋演讲(11:00)+宇树IPO上会, 观察但不操作"
+    },
+    {
+      "signal_id": "SIG-20260601-007",
+      "type": "资金面信号",
+      "action": "logged_only",
+      "reason": "allow_open_new=false: 北向逆势净买入56.69亿为积极信号, 但现金不足无法追入"
+    }
+  ],
+  "summary": {
+    "signals_received": 7,
+    "orders_placed": 0,
+    "orders_rejected": 2,
+    "events_logged_only": 5,
+    "gate_closed": true,
+    "slippage_model": "not_applied",
+    "note": "allow_open_new=false, R3_cash_buffer fail. 所有新开委托均被拒. 建议优先处理pending stale 11笔撤单回笼资金后再重新评估."
+  }
+}

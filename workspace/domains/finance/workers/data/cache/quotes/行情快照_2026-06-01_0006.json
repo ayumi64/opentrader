@@ -1,0 +1,47 @@
+{
+  "snapshot_time": "2026-06-01T00:06:00+08:00",
+  "market_status": "closed",
+  "last_trade_date": "2026-05-29",
+  "indices": {
+    "上证指数": {"code": "000001", "close": 4068.57, "change_pct": -0.73, "volume": null, "note": "5/29收盘"},
+    "沪深300": {"code": "399300", "close": 4892.12, "change_pct": -0.45, "volume_billion_shares": 33.25, "note": "5/29收盘"},
+    "科创50": {"code": "000688", "close": null, "change_pct": null, "note": "数据待确认日收盘"},
+    "深证成指": {"code": "399001", "close": 15575.13, "change_pct": -1.81, "note": "5/29收盘"}
+  },
+  "tech_sector": {
+    "半导体板块(BK1036)": {
+      "latest_trade_date": "2026-05-29",
+      "volume_shares": "60.43亿股",
+      "main_force_net_flow": "-379.3亿元",
+      "net_flow_shares": "-4.827亿股",
+      "main_force_inflow": "2360亿元",
+      "main_force_outflow": "2739亿元",
+      "big_order_inflow": "1417亿元",
+      "big_order_outflow": "1500亿元"
+    },
+    "note": "5/29半导体主力净流出379亿创历史新高"
+  },
+  "northbound": {
+    "latest_trade_date": "2026-05-29",
+    "northbound_total_turnover_billion": 4734.05,
+    "沪股通_turnover_billion": 2216.94,
+    "深股通_turnover_billion": 2517.11,
+    "note": "北向资金成交额4734亿(5/29), 深市占主导"
+  },
+  "market_volume": {
+    "沪深300_5/29_volume": "332.5亿股",
+    "note": "全市场量能收缩，情绪偏谨慎"
+  },
+  "key_events_snapshot": [
+    "COMPUTEX 2026台北电脑展6/1揭幕, AI主题",
+    "宇树科技科创板IPO 6/1上会(人形机器人第一股)",
+    "MiniMax启动A股科创板IPO(与中信证券签辅导协议)",
+    "美伊备忘录框架接近达成: 或30天内恢复霍尔木兹航运(华盛顿邮报)",
+    "5月官方制造业PMI 50.0% 临界点(较上月-0.3pct)",
+    "戴尔科技盘后暴涨39%创历史新高(AI服务器营收暴增757%)",
+    "美联储鹰声四起: PCE 3.8%, 市场预计年内加息概率超50%",
+    "扎波罗热核电站6号机组电机房遭无人机攻击",
+    "丁向群任国家金融监管总局党委书记",
+    "5/29半导体板块主力净流出379亿创历史新高"
+  ]
+}

@@ -1,0 +1,8 @@
+金融数据查询结果说明
+========================================
+查询内容: 上证指数 科创50 沪深300 创业板指最新收盘价 涨跌幅 成交额
+数据文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/output/miaoxiang/mx_data_上证指数_科创50_沪深300_创业板指最新收盘价_涨跌幅_成交额.xlsx
+描述文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/output/miaoxiang/mx_data_上证指数_科创50_沪深300_创业板指最新收盘价_涨跌幅_成交额_description.txt
+数据行数: 20
+表数量: 4
+Sheet 列表: 上证指数(000001.SH)的成交额、收盘价等, 科创50(000688.SH)的成交额、涨跌幅等, 沪深300(000300.SH)的成交额、收盘价等, 创业板指(399006.SZ)的成交额、收盘价等

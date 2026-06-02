@@ -1,0 +1,8 @@
+金融数据查询结果说明
+========================================
+查询内容: 沪深两市今日成交额 两市总成交
+数据文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/cache/mx_data_沪深两市今日成交额_两市总成交.xlsx
+描述文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/cache/mx_data_沪深两市今日成交额_两市总成交_description.txt
+数据行数: 1
+表数量: 1
+Sheet 列表: 沪深A股的成交额(合计)

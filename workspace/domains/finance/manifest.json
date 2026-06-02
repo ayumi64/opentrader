@@ -1,0 +1,85 @@
+{
+  "domain": "finance",
+  "version": 3,
+  "architecture": "orchestrator-data-strategy-risk-execution",
+  "market": "A-share",
+  "playbook": "shared/A-SHARE-PLAYBOOK.md",
+  "orchestrator": {
+    "agentId": "trader",
+    "workspace": "/Users/sonic/.openclaw/workspace/trader",
+    "role": "7x24 schedule, health, exception log",
+    "healthCronJobId": "f1n4nc3-orch-health-0001-000000000001",
+    "weeklyDigestJobId": "f1n4nc3-d1g3st-0001-000000000001",
+    "scheduleDoc": "workspace/trader/SCHEDULE.md",
+    "scheduleCronJobIds": [
+      "tr4d3r-sch-0830-0001-000000000001",
+      "tr4d3r-sch-1100-0001-000000000001",
+      "tr4d3r-sch-1600-0001-000000000001",
+      "tr4d3r-sch-1800-0001-000000000001",
+      "tr4d3r-sch-week-earn-0001-000000000001",
+      "tr4d3r-sch-month-trend-0001-000000000001"
+    ]
+  },
+  "workers": [
+    {
+      "agentId": "finance-data",
+      "workspace": "/Users/sonic/.openclaw/workspace/domains/finance/workers/data",
+      "run": "7x24",
+      "responsibility": "quotes, fundamentals, sentiment, emergency tracker",
+      "cronJobIds": [
+        "f1n4nc3-data-hourly-0001-000000000001",
+        "6fb7f43f-fbeb-4db1-b739-5179296d9d11"
+      ]
+    },
+    {
+      "agentId": "finance-strategy",
+      "workspace": "/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy",
+      "run": "trading_days",
+      "responsibility": "strong pullback 2nd wave, pool, signals, research reports",
+      "cronJobIds": [
+        "32d25a46-3f7f-4b99-b1e9-6a4aa4bfc25b",
+        "9a1b2c3d-4e5f-6789-a012-3456789abc01",
+        "f1n4nc3-strat-pool-0001-000000000001",
+        "f1n4nc3-strat-intra-0001-000000000001"
+      ]
+    },
+    {
+      "agentId": "finance-risk",
+      "workspace": "/Users/sonic/.openclaw/workspace/domains/finance/workers/risk",
+      "run": "7x24",
+      "responsibility": "gate, position, compliance, hard rules",
+      "cronJobIds": [
+        "f1n4nc3-risk-gate-0001-000000000001",
+        "f1n4nc3-risk-pre-0001-000000000001",
+        "f1n4nc3-risk-plan-0001-000000000001",
+        "f1n4nc3-risk-post-0001-000000000001"
+      ]
+    },
+    {
+      "agentId": "finance-execution",
+      "workspace": "/Users/sonic/.openclaw/workspace/domains/finance/workers/execution",
+      "run": "trading_days",
+      "responsibility": "simulated orders only, slippage 0.3%, audit log",
+      "cronJobIds": [
+        "f1n4nc3-exec-open-0001-000000000001",
+        "f1n4nc3-exec-close-0001-000000000001"
+      ]
+    },
+    {
+      "agentId": "finance-content",
+      "workspace": "/Users/sonic/.openclaw/workspace/domains/finance/workers/content",
+      "run": "cron",
+      "responsibility": "wechat",
+      "cronJobIds": [
+        "993aa9aa-cfee-4ad7-b947-1cad141fe503",
+        "8b366651-2ca4-4a89-b7f4-3a01e0bdabf0",
+        "91807345-6295-4106-8658-1820bd43a6ac"
+      ]
+    }
+  ],
+  "deprecated": {
+    "finance-news": "finance-data",
+    "finance-research": "finance-strategy"
+  },
+  "legacyWorkspace": "/Users/sonic/.openclaw/workspace/trader"
+}

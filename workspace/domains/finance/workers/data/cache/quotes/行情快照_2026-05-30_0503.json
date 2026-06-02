@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-05-30T05:03:00+08:00",
+  "market_status": "closed_weekend",
+  "last_trade_date": "2026-05-29",
+  "indexes": {
+    "上证指数": {"point": 4068.57, "change_pct": -0.73, "volume_billions": 1532},
+    "深证成指": {"point": 15575.13, "change_pct": -1.81, "volume_billions": 1787},
+    "创业板指": {"available": false},
+    "科创50": {"available": false}
+  },
+  "total_market_volume": 3319,
+  "northbound_flow": {
+    "总成交额_百万": 473405.49,
+    "沪股通_成交额_百万": 221694.07,
+    "深股通_成交额_百万": 251711.42,
+    "date": "2026-05-29"
+  },
+  "sectors": {
+    "半导体": {
+      "change_pct_mean": -6.398,
+      "change_pct_mcap_weighted": -5.622,
+      "volume_shares": 604.3,
+      "amount_billions": 4830,
+      "up_count": 11,
+      "down_count": 164,
+      "flat_count": 2,
+      "date": "2026-05-29"
+    },
+    "人工智能": {
+      "change_pct": -1.464,
+      "date": "2026-05-29"
+    },
+    "消费电子": {
+      "change_pct": -2.908,
+      "volume_shares": 119.82,
+      "amount_billions": 921,
+      "up_count": 13,
+      "down_count": 96,
+      "flat_count": 1,
+      "date": "2026-05-29"
+    }
+  }
+}

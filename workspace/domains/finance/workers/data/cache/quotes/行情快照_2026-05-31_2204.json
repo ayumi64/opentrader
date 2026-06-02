@@ -1,0 +1,114 @@
+{
+  "timestamp": "2026-05-31 22:03:00",
+  "timezone": "Asia/Shanghai",
+  "data_note": "周日非交易时段，数据为5月29日(周五)收盘数据。明日6/1(周一)开市。",
+  "indices": {
+    "上证指数": {
+      "close": 4068.57,
+      "change_pct": -0.73,
+      "peak": "4152.57(5/25)",
+      "trough": "4068.57(5/29)",
+      "weekly_change": -1.08,
+      "volume_shares": "731.6亿股"
+    },
+    "深证成指": {
+      "close": 15575.13,
+      "change_pct": -1.81,
+      "weekly_change": -0.14
+    },
+    "创业板指": {
+      "close": 4037.95,
+      "change_pct": -2.11,
+      "weekly_change": 2.53
+    },
+    "科创50": {
+      "close": 1751.32,
+      "change_pct": -5.04,
+      "weekly_change": -1.08
+    }
+  },
+  "tech_sectors": {
+    "半导体": {
+      "data_date": "2026-05-29",
+      "change_pct": -6.40,
+      "total_market_cap_weighted_change_pct": -5.62,
+      "close": 104.5,
+      "volume": "60.43亿股",
+      "amount": "4830亿",
+      "up_stocks": 11,
+      "down_stocks": 164,
+      "flat": 2,
+      "weekly_note": "连续下跌，5/29当日24只芯片股跌停；临近5日均成交量约5045亿"
+    },
+    "人工智能": {
+      "data_date": "2026-05-29",
+      "change_pct": -3.05,
+      "total_market_cap_weighted_change_pct": -2.99,
+      "index_close": 1223.47,
+      "index_change_pct": -3.25,
+      "amount": "5398亿",
+      "up_stocks": 113,
+      "down_stocks": 582
+    },
+    "计算机": {
+      "data_date": "2026-05-29",
+      "change_pct": -3.72,
+      "total_market_cap_weighted_change_pct": -2.72,
+      "volume": "71.38亿股",
+      "amount": "1604亿",
+      "up_stocks": 26,
+      "down_stocks": 331
+    },
+    "通信设备": {
+      "data_date": "2026-05-29",
+      "change_pct": -4.87,
+      "amount": "886亿",
+      "down_stocks": 149
+    },
+    "消费电子": {
+      "data_date": "2026-05-29",
+      "change_pct": -3.49",
+      "amount": "1016亿",
+      "down_stocks": 153
+    }
+  },
+  "tech_sectors_weekly_trend": {
+    "半导体": {
+      "5/25": 4.69,
+      "5/26": -2.64,
+      "5/27": -1.22,
+      "5/28": 2.49,
+      "5/29": -6.40,
+      "weekly": -3.22
+    },
+    "人工智能": {
+      "5/25": 2.31,
+      "5/26": -0.61,
+      "5/27": -2.14,
+      "5/28": 0.98,
+      "5/29": -3.25,
+      "weekly": -2.70
+    },
+    "计算机": {
+      "5/25": 0.05,
+      "5/26": -2.18,
+      "5/27": -3.28,
+      "5/28": 0.59,
+      "5/29": -3.72,
+      "weekly": -8.41
+    }
+  },
+  "market_memory": {
+    "last_close_day": "2026-05-29 周五",
+    "weekly_avg_daily_volume": "3.2159万亿",
+    "previous_week_volume": "3.047万亿",
+    "north_bound_weekly_est": "净流出约15亿(灵活型净流入8亿)",
+    "two_rong_balance": "29424亿(截至5/28)",
+    "weekly_new_funds": "53只/498.68亿份",
+    "pmi_may": "50.0%(较上月-0.3pct)",
+    "us_friday_close": "道指51032.46(+0.72%); 标普7580.06(+0.22%); 纳指26972.62(+0.20%)",
+    "dell_surge": "戴尔盘后+32.99%, AI营收暴增757%",
+    "june1_events": "宇树科技IPO上会; COMPUTEX2026开幕; 美团财报"
+  },
+  "data_source": "mx-data API via 东方财富"
+}

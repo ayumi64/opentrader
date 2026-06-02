@@ -1,0 +1,92 @@
+[
+  {
+    "code": "688256",
+    "name": "寒武纪",
+    "side": "cancel",
+    "reason": "6/1收盘1238.00(-5.50%), 委托价1307偏高5.6%; 半导体连续5日大跌, 成交希望极低",
+    "confidence": 0.85,
+    "ref_price": 1238.00,
+    "strategy_tag": "撤单·pending偏差确认"
+  },
+  {
+    "code": "688041",
+    "name": "海光信息",
+    "side": "cancel",
+    "reason": "6/1收盘275.36(-6.31%), 较委托价253偏离+8.8%(原评估16%缩窄但仍无法成交)",
+    "confidence": 0.80,
+    "ref_price": 275.36,
+    "strategy_tag": "撤单·pending偏差确认"
+  },
+  {
+    "code": "300394",
+    "name": "天孚通信",
+    "side": "cancel",
+    "reason": "6/1收盘428.88(-5.78%), 委托价355.57偏离+20.6%, CPO板块持续走弱",
+    "confidence": 0.85,
+    "ref_price": 428.88,
+    "strategy_tag": "撤单·pending强制"
+  },
+  {
+    "code": "688037",
+    "name": "芯源微",
+    "side": "cancel",
+    "reason": "6/1收盘237.32(-3.25%), 委托价184.23偏离+22.4%",
+    "confidence": 0.85,
+    "ref_price": 237.32,
+    "strategy_tag": "撤单·pending强制"
+  },
+  {
+    "code": "002008",
+    "name": "大族激光",
+    "side": "cancel",
+    "reason": "6/1收盘124.91(-5.26%), 委托价86.67偏离+44.1%, 第13天无法成交",
+    "confidence": 0.90,
+    "ref_price": 124.91,
+    "strategy_tag": "撤单·pending强制(紧急)"
+  },
+  {
+    "code": "001309",
+    "name": "德明利",
+    "side": "cancel",
+    "reason": "6/1收盘597.41(-6.65%), 委托价516.80偏离+13.5%",
+    "confidence": 0.80,
+    "ref_price": 597.41,
+    "strategy_tag": "撤单·pending强制"
+  },
+  {
+    "code": "002837",
+    "name": "英维克",
+    "side": "cancel",
+    "reason": "6/1收盘66.06(-5.45%), 委托价106.18偏离+60.8%, 极端偏差, 紧急撤单",
+    "confidence": 0.95,
+    "ref_price": 66.06,
+    "strategy_tag": "撤单·pending强制(紧急)"
+  },
+  {
+    "code": "688321",
+    "name": "微芯生物",
+    "side": "cancel",
+    "reason": "6/1收盘27.19(+0.15%), 委托价31.63偏高14.0%; 若继续上涨有被动成交风险",
+    "confidence": 0.65,
+    "ref_price": 27.19,
+    "strategy_tag": "撤单·偏高保护"
+  },
+  {
+    "code": "300751",
+    "name": "迈为股份",
+    "side": "hold",
+    "reason": "6/1收盘242.48(-2.88%), 委托价231.89偏差-4.4%缩窄至合理范围, 可保留",
+    "confidence": 0.60,
+    "ref_price": 242.48,
+    "strategy_tag": "观察保留"
+  },
+  {
+    "code": "600580",
+    "name": "卧龙电驱",
+    "side": "hold",
+    "reason": "6/1收盘40.19(+1.85%), 委托价38.35偏差-4.6%合理, 可保留观察",
+    "confidence": 0.60,
+    "ref_price": 40.19,
+    "strategy_tag": "观察保留"
+  }
+]

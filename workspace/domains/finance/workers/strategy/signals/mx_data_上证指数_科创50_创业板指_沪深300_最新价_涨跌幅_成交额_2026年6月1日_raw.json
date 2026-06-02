@@ -1,0 +1,451 @@
+{
+  "success": true,
+  "status": 0,
+  "code": 0,
+  "message": "ok",
+  "data": {
+    "requestId": null,
+    "message": "OK",
+    "status": 0,
+    "code": 0,
+    "data": {
+      "protocolType": "SEARCH_DATA",
+      "id": "72b22e5c-c3a1-4455-a726-98a5fe8340b0",
+      "refSeq": null,
+      "keyEntityList": null,
+      "searchDataResultDTO": {
+        "questionId": "be5f2df4-d7a1-45a3-aa3a-220296f27242",
+        "dataTableDTOList": [
+          {
+            "code": "000001.SH",
+            "entityName": "2026-06-01 14:02",
+            "table": {
+              "f2": [
+                "4067.14",
+                "1688.04",
+                "3991.33",
+                "4862.47"
+              ],
+              "f3": [
+                "-0.04%",
+                "-3.62%",
+                "-1.15%",
+                "-0.61%"
+              ],
+              "f6": [
+                "1.085万亿元",
+                "1199亿元",
+                "6037亿元",
+                "6796亿元"
+              ],
+              "f5": [
+                "555.4亿",
+                "13.5亿",
+                "180.7亿",
+                "243亿"
+              ],
+              "headName": [
+                "上证指数(000001.SH)",
+                "科创50(000688.SH)",
+                "创业板指(399006.SZ)",
+                "沪深300(000300.SH)"
+              ]
+            },
+            "rawTable": {
+              "f2": [
+                "4067.14",
+                "1688.04",
+                "3991.33",
+                "4862.47"
+              ],
+              "f3": [
+                "-0.04",
+                "-3.62",
+                "-1.15",
+                "-0.61"
+              ],
+              "f6": [
+                "1084827519460.60",
+                "119926582086.00",
+                "603669153437.87",
+                "679629749277.00"
+              ],
+              "f5": [
+                "55544533600",
+                "1350175400",
+                "18065535666",
+                "24297619500"
+              ],
+              "headName": [
+                "上证指数(000001.SH)",
+                "科创50(000688.SH)",
+                "创业板指(399006.SZ)",
+                "沪深300(000300.SH)"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "f2": "最新价",
+              "headNameSub": "数据来源",
+              "f3": "涨跌幅",
+              "f6": "成交额",
+              "f5": "成交量",
+              "securityName": "股票名称"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "ZXJ_f2_3",
+              "returnName": "最新价",
+              "classCode": "007001",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-06-01 00:00:00",
+              "endDate": "2026-06-01 00:00:00",
+              "fuzzy": false,
+              "dateGranularity": "DAY",
+              "defineType": -1,
+              "isLoopN": false,
+              "apiCode": "3",
+              "isGroup": false,
+              "returnSourceCode": "f2",
+              "returnSourceName": "最新价",
+              "graph": "2",
+              "unit": "0",
+              "tableType": "2"
+            },
+            "entityCodes": [
+              "000001.SH",
+              "000688.SH",
+              "399006.SZ",
+              "000300.SH"
+            ],
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "CJL_f5_3",
+                "returnName": "成交量",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": false,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "volt=1",
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f5",
+                "returnSourceName": "成交量",
+                "graph": "1",
+                "unit": "1",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "CJE_f6_3",
+                "returnName": "成交额",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": false,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f6",
+                "returnSourceName": "成交额",
+                "graph": "1",
+                "unit": "1",
+                "tableType": "2",
+                "unitName": "元",
+                "unitDesc": "101:元:元"
+              },
+              {
+                "returnCode": "ZDF_f3_3",
+                "returnName": "涨跌幅",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": false,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f3",
+                "returnSourceName": "涨跌幅",
+                "graph": "2",
+                "unit": "1",
+                "tableType": "2",
+                "unitName": "%",
+                "unitDesc": "901:%:%"
+              },
+              {
+                "returnCode": "ZXJ_f2_3",
+                "returnName": "最新价",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": false,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f2",
+                "returnSourceName": "最新价",
+                "graph": "2",
+                "unit": "0",
+                "tableType": "2"
+              }
+            ],
+            "dataTableType": "NORM_TABLE",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "f2",
+              "f3",
+              "f6",
+              "f5"
+            ],
+            "tipFlags": [
+              "0"
+            ],
+            "dataType": "行情数据",
+            "title": "上证指数(000001.SH)等当前的最新价、涨跌幅等",
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftEntityTop",
+            "orderCol": {},
+            "jumpUrlList": [],
+            "dataTypeEnum": "HQ",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "1000158679",
+              "entityType": "INDEX",
+              "entityTypeCode": "INDEX",
+              "entityTypeName": "INDEX",
+              "classCode": "006001",
+              "className": "沪深京指数",
+              "publishCode": "905001024",
+              "fullName": "上证综合指数",
+              "shortName": "上证指数",
+              "matchWord": "上证指数",
+              "secuCode": "000001",
+              "market": "1",
+              "marketChar": ".SH",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "1000158679",
+                "entityType": "INDEX",
+                "entityTypeCode": "INDEX",
+                "entityTypeName": "INDEX",
+                "classCode": "006001",
+                "className": "沪深京指数",
+                "publishCode": "905001024",
+                "fullName": "上证综合指数",
+                "shortName": "上证指数",
+                "matchWord": "上证指数",
+                "secuCode": "000001",
+                "market": "1",
+                "marketChar": ".SH",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              },
+              {
+                "entityId": "1002280999",
+                "entityType": "INDEX",
+                "entityTypeCode": "INDEX",
+                "entityTypeName": "INDEX",
+                "classCode": "006001",
+                "className": "沪深京指数",
+                "publishCode": "905009001",
+                "fullName": "上证科创板50成份指数",
+                "shortName": "科创50",
+                "matchWord": "科创50",
+                "secuCode": "000688",
+                "market": "1",
+                "marketChar": ".SH",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              },
+              {
+                "entityId": "1000159296",
+                "entityType": "INDEX",
+                "entityTypeCode": "HSJ_INDEX",
+                "entityTypeName": "A股市场核心基准指数",
+                "classCode": "006001",
+                "className": "HSJ_INDEX",
+                "publishCode": "905001024",
+                "fullName": "创业板指",
+                "shortName": "",
+                "matchWord": "创业板指",
+                "secuCode": "399006",
+                "market": "0",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              },
+              {
+                "entityId": "1000157500",
+                "entityType": "INDEX",
+                "entityTypeCode": "HSJ_INDEX",
+                "entityTypeName": "A股市场核心基准指数",
+                "classCode": "006001",
+                "className": "HSJ_INDEX",
+                "publishCode": "905001024",
+                "fullName": "沪深300",
+                "shortName": "",
+                "matchWord": "沪深300",
+                "secuCode": "000300",
+                "market": "1",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {
+              "2026-06-01 14:02": false
+            },
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "",
+            "frontendEntityCode": "",
+            "frontendTitle": "",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "NORMAL"
+          }
+        ],
+        "condition": {
+          "search_data_task_3": [
+            "上证综合指数",
+            "最新价涨跌幅成交额成交量",
+            "2026-06-01至2026-06-01"
+          ],
+          "search_data_task_1": [
+            "上证科创板50成份指数",
+            "最新价涨跌幅成交额成交量",
+            "2026-06-01至2026-06-01"
+          ],
+          "search_data_task_0": [
+            "创业板指",
+            "最新价涨跌幅成交额成交量",
+            "2026-06-01至2026-06-01"
+          ],
+          "search_data_task_2": [
+            "沪深300",
+            "最新价涨跌幅成交额成交量",
+            "2026-06-01至2026-06-01"
+          ]
+        },
+        "entityTagDTOList": [
+          {
+            "entityId": "1000158679",
+            "entityType": "INDEX",
+            "entityTypeCode": "INDEX",
+            "entityTypeName": "INDEX",
+            "classCode": "006001",
+            "className": "沪深京指数",
+            "publishCode": "905001024",
+            "fullName": "上证综合指数",
+            "shortName": "上证指数",
+            "matchWord": "上证指数",
+            "secuCode": "000001",
+            "market": "1",
+            "marketChar": ".SH",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "1002280999",
+            "entityType": "INDEX",
+            "entityTypeCode": "INDEX",
+            "entityTypeName": "INDEX",
+            "classCode": "006001",
+            "className": "沪深京指数",
+            "publishCode": "905009001",
+            "fullName": "上证科创板50成份指数",
+            "shortName": "科创50",
+            "matchWord": "科创50",
+            "secuCode": "000688",
+            "market": "1",
+            "marketChar": ".SH",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "1000159296",
+            "entityType": "INDEX",
+            "entityTypeCode": "HSJ_INDEX",
+            "entityTypeName": "A股市场核心基准指数",
+            "classCode": "006001",
+            "className": "HSJ_INDEX",
+            "publishCode": "905001024",
+            "fullName": "创业板指",
+            "shortName": "",
+            "matchWord": "创业板指",
+            "secuCode": "399006",
+            "market": "0",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "1000157500",
+            "entityType": "INDEX",
+            "entityTypeCode": "HSJ_INDEX",
+            "entityTypeName": "A股市场核心基准指数",
+            "classCode": "006001",
+            "className": "HSJ_INDEX",
+            "publishCode": "905001024",
+            "fullName": "沪深300",
+            "shortName": "",
+            "matchWord": "沪深300",
+            "secuCode": "000300",
+            "market": "1",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          }
+        ]
+      },
+      "entityName": null,
+      "message": null,
+      "tableTruncated": false
+    },
+    "stack": null
+  },
+  "requestId": "32e94e29f2b54c2d956409dd1c92545b"
+}

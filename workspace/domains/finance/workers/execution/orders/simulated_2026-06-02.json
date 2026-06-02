@@ -1,0 +1,92 @@
+{
+  "simulation_date": "2026-06-02",
+  "simulation_time": "2026-06-02T09:26:00+08:00",
+  "cron_cycle": "cron=f1n4nc3-exec-open-0001-000000000001",
+  "status": "REJECTED_ALL",
+  "reason": "trading_gate.json: allow_open_new = false — 现金不足(R3 fail)等多项合规违规未解决, 禁止新开/撮合",
+  "gate_summary": {
+    "allow_open_new": false,
+    "violations": [
+      "R3: 现金占比1.57%低于最低缓冲5%(需¥67,679)，禁止新开",
+      "11笔待成交自5/20已挂单14天(跨16自然日)",
+      "5笔强制撤单(大族激光+52.1%、芯源微+33.1%、天孚通信+28.0%、德明利+23.8%、海光信息+16.2%)",
+      "portfolio_snapshot.json持仓为空, pending与可用现金不匹配",
+      "地缘冲突severe+美国制裁(5/30)+美联储加息风险+半导体5/29再崩"
+    ]
+  },
+  "signals_input": {
+    "file": "inbox/信号_2026-06-02_0908.json",
+    "signal_count": 13,
+    "trade_signals": 11,
+    "monitor_only": 2
+  },
+  "orders": [],
+  "rejected_signals": [
+    {
+      "id": "SIG-20260601-001",
+      "type": "强制撤单",
+      "codes": ["002008.SZ","688380.SH","300394.SZ","001309.SZ","688041.SH"],
+      "names": ["大族激光","芯源微","天孚通信","德明利","海光信息"],
+      "rejection": "R3_cash_buffer fail (1.57%<5%); allow_open_new=false; 需人工撤单后重定价"
+    },
+    {
+      "id": "SIG-20260601-002",
+      "type": "被动成交预警",
+      "codes": ["002837.SZ","688321.SH"],
+      "names": ["英维克","微芯生物"],
+      "rejection": "挂单偏高风险; 建议下调委托价; allow_open_new=false"
+    },
+    {
+      "id": "SIG-20260601-003",
+      "type": "政策风险事件",
+      "rejection": "评估期; 不触发新开"
+    },
+    {
+      "id": "SIG-20260601-004",
+      "type": "合规风险事件",
+      "rejection": "评估期; 不触发新开"
+    },
+    {
+      "id": "SIG-20260601-005",
+      "type": "宏观风险事件",
+      "rejection": "评估期; 不触发新开"
+    },
+    {
+      "id": "SIG-20260601-006",
+      "type": "事件催化关注",
+      "rejection": "评估期; allow_open_new=false"
+    },
+    {
+      "id": "SIG-20260601-007",
+      "type": "资金面信号",
+      "rejection": "积极信号但R3限制: 现金不足无法追入"
+    }
+  ],
+  "pending_order_review": [
+    {"code":"002008","name":"大族激光","side":"cancel","action":"REJECTED_需要人工撤单"},
+    {"code":"688037","name":"芯源微","side":"cancel","action":"REJECTED_需要人工撤单"},
+    {"code":"300394","name":"天孚通信","side":"cancel","action":"REJECTED_需要人工撤单"},
+    {"code":"001309","name":"德明利","side":"cancel","action":"REJECTED_需要人工撤单"},
+    {"code":"688041","name":"海光信息","side":"cancel","action":"REJECTED_需要人工撤单"},
+    {"code":"002837","name":"英维克","side":"cancel_or_adjust","action":"REJECTED_需要调整委托价或撤单"},
+    {"code":"688321","name":"微芯生物","side":"cancel_or_adjust","action":"REJECTED_需要调整委托价或撤单"},
+    {"code":"688256","name":"寒武纪","side":"hold_and_reevaluate","action":"HOLD_偏差极小(+0.2%)"},
+    {"code":"688380","name":"中微半导","side":"hold_and_reevaluate","action":"HOLD_偏差小(-1.8%)"},
+    {"code":"600580","name":"卧龙电驱","side":"hold_and_reevaluate","action":"HOLD_偏差尚可(+2.9%)"},
+    {"code":"300751","name":"迈为股份","side":"adjust_or_cancel","action":"REJECTED_建议撤单或重定价(+7.66%)"}
+  ],
+  "slippage_simulation": "not_applied — gate closed",
+  "simulated_fill_total_cny": 0,
+  "reject_log": [
+    "2026-06-02T09:26:00+08:00 | [开盘执行] trading_gate.json: allow_open_new=false → 拒绝全部撮合",
+    "2026-06-02T09:26:00+08:00 | [R3违规] 现金占比1.57%(¥21,291) < 5%缓冲(需¥67,679), 缺口¥46,388 — 禁止新开",
+    "2026-06-02T09:26:00+08:00 | [pending逾期] 11笔委托自5/20已挂单14天(跨16自然日) — 需人工撤单处理",
+    "2026-06-02T09:26:00+08:00 | [强制撤单·第14次] 5笔偏离>15%: 大族激光+52.1%, 芯源微+33.1%, 天孚通信+28.0%, 德明利+23.8%, 海光信息+16.2%",
+    "2026-06-02T09:26:00+08:00 | [被动成交风险] 英维克(-16.7%)·微芯生物(-14.2%) — 建议调整",
+    "2026-06-02T09:26:00+08:00 | [R6地缘/severe] 美伊冲突+以黎冲突+美国制裁9家中国实体(5/30) — 开盘需评估",
+    "2026-06-02T09:26:00+08:00 | [R6宏观] 美联储加息概率50%+ — 压制成长板块估值",
+    "2026-06-02T09:26:00+08:00 | [R6半导体] 5/27-5/29连续大跌; 5/29科创50-5.04%/主力净流出379亿历史纪录",
+    "2026-06-02T09:26:00+08:00 | [积极信号·北向] 5/29北向逆势净买入56.69亿; 但force_reduce下无法追入",
+    "2026-06-02T09:26:00+08:00 | [综述] 总计拒绝撮合11笔信号, 0笔成交; 仅允许保留3笔偏差<5%观察单(寒武纪/中微半导/卧龙电驱)"
+  ]
+}

@@ -1,0 +1,25 @@
+# Trader 业务配置（复制为 trader.yaml）
+
+gateway:
+  port: 18789
+  bind: "0.0.0.0"
+
+model:
+  primary: deepseek/deepseek-chat
+  provider: deepseek
+  api_key_env: DEEPSEEK_API_KEY
+
+cron:
+  timezone: Asia/Shanghai
+  # 是否在非交易日跳过 Trader 市场类任务（依赖 is_trading_day.sh）
+  respect_trading_calendar: true
+
+simulation:
+  token_env: SIM_TRADING_TOKEN
+  slippage_bps: 30
+
+paths:
+  # 容器内 / 安装目录下相对 OPENCLAW_HOME
+  watchlist: workspace/trader/data/watchlist.json
+  trading_calendar: workspace/trader/data/trading_calendar.txt
+  reports: workspace/trader/reports

@@ -1,0 +1,7 @@
+{
+  "provider": "simulation",
+  "token_env": "SIM_TRADING_TOKEN",
+  "account_type": "simulation",
+  "enabled": true,
+  "note": "安装后由 install.sh 从环境变量写入 token 字段；Execution Worker 读取此文件，禁止实盘下单"
+}

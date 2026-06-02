@@ -1,0 +1,83 @@
+{
+  "snapshot_time": "2026-05-31 06:04 (Asia/Shanghai)",
+  "last_trading_date": "2026-05-29",
+  "indices": {
+    "上证指数": {"close": 4068.57, "change": -0.73, "volume": "731.6亿股", "turnover": "1.532万亿"},
+    "深证成指": {"close": 15575.13, "change": -1.81, "volume": "848.9亿股", "turnover": "1.787万亿"},
+    "创业板指": {"close": 4037.95, "change": -2.11, "volume": "242.1亿股"},
+    "科创50": {"close": 1751.32, "change": -5.04, "volume": "23.43亿股"}
+  },
+  "tech_sectors": {
+    "半导体": {
+      "avg_change": -6.40,
+      "cap_weighted_change": -5.62,
+      "volume": "60.43亿",
+      "turnover": "4830亿",
+      "up": 11, "down": 164, "flat": 2,
+      "weekly_change": -0.68,
+      "rel_market_change": -4.89
+    },
+    "人工智能": {
+      "avg_change": -3.05,
+      "cap_weighted_change": -2.99,
+      "volume": "238.7亿",
+      "turnover": "5398亿",
+      "up": 113, "down": 582, "flat": 7,
+      "weekly_change": 0.91,
+      "rel_market_change": -2.26
+    },
+    "通信": {
+      "avg_change": -3.34,
+      "cap_weighted_change": -0.28,
+      "volume": "44.4亿",
+      "turnover": "2818亿",
+      "up": 17, "down": 112, "flat": 2
+    },
+    "计算机": {
+      "avg_change": -3.72,
+      "cap_weighted_change": -2.72,
+      "volume": "71.38亿",
+      "turnover": "1604亿",
+      "up": 26, "down": 331, "flat": 1
+    }
+  },
+  "north_bound": {
+    "2026-05-29": {
+      "total_turnover": "4734.05亿",
+      "sh_turnover": "2216.94亿", "sz_turnover": "2517.11亿",
+      "pct_of_total": 14.26,
+      "net_buy_est": "+56.69亿"
+    },
+    "2026-05-28": {
+      "total_turnover": "3835.01亿",
+      "sh_turnover": "1752.79亿", "sz_turnover": "2082.22亿",
+      "net_flow_est": "+249亿"
+    },
+    "2026-05-27": {
+      "total_turnover": "4074.73亿",
+      "sh_turnover": "1855.32亿", "sz_turnover": "2219.41亿"
+    },
+    "2026-05-26": {
+      "total_turnover": "3946.65亿",
+      "sh_turnover": "1776.96亿", "sz_turnover": "2169.69亿"
+    }
+  },
+  "market_total": {
+    "total_turnover_0529": "3.319万亿（沪深合计）",
+    "main_force_net_outflow_0529": "-1164.84亿",
+    "semiconductor_main_net_outflow": "-340.2亿",
+    "semiconductor_main_net_outflow_record": true
+  },
+  "weekend_events": [
+    "美军阿曼湾向试图驶往伊朗船只发射地狱火导弹（已打击5艘商船/改道116艘）",
+    "软银750亿欧元(5900亿人民币)在法国建欧洲最大算力集群（首期3.1GW）",
+    "扎波罗热核电站6号机组遭无人机攻击电机房（俄方称无泄漏）",
+    "乌克兰称俄军袭击扎波罗热地区铁路机车致1死2伤",
+    "以色列北部多城镇遭黎巴嫩真主党火箭弹袭击（无伤亡）",
+    "我国成功发射卫星互联网技术试验卫星（长征二号丁/西昌）",
+    "三花智控董事长套现4.2亿（称用于子女教育），股价年内跌16%",
+    "节能铁汉重大资产重组（不停牌）",
+    "ST汇洲子公司补税6073万，今年净利润预减5551万",
+    "宇树科技IPO在即：一季度利润腰斩，人形机器人降价超40万"
+  ]
+}

@@ -1,0 +1,22 @@
+# RISK LIMITS — A股风控限额配置
+# 更新时间: 2026-06-01
+
+## 持仓限额
+max_total_assets_cny: 2000000
+max_single_stock_pct: 15.0        # 单只个股不超过总资产15%
+max_sector_pct: 40.0              # 单板块不超过总资产40%
+min_cash_buffer_pct: 5.0          # 最低现金缓冲比例
+max_pending_orders: 15            # 最大待成交委托数量
+
+## 价格偏离容忍
+max_price_deviation_pct: 5.0      # 委托价与市价偏离容忍度(超过即预警)
+force_cancel_deviation_pct: 15.0  # 偏离超过此值强制建议撤单
+
+## 舆情/事件风控
+sentiment_max_stale_days: 3       # 舆情摘要超过X天未更新即标记陈旧
+min_sentiment_events_before_severe: 5  # severe事件数下限报警
+
+## 风控闸门状态转换
+gate_open_cash_ratio: 10.0        # 现金占比>=此值 gate allow_open_new=true
+gate_open_pending_count: 5        # pending委托数<=此值 gate allow_open_new=true
+gate_reduce_cash_ratio: 3.0       # 现金占比<此值 force_reduce=true强制减仓

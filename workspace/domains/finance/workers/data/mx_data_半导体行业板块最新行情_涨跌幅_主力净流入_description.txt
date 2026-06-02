@@ -1,0 +1,8 @@
+金融数据查询结果说明
+========================================
+查询内容: 半导体行业板块最新行情 涨跌幅 主力净流入
+数据文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/mx_data_半导体行业板块最新行情_涨跌幅_主力净流入.xlsx
+描述文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/mx_data_半导体行业板块最新行情_涨跌幅_主力净流入_description.txt
+数据行数: 14
+表数量: 4
+Sheet 列表: 半导体的涨跌幅(算数平均)、收盘价(流通股本加权平均)等, 半导体的成份区间涨跌幅(总市值加权平均)、成份区间成交量(合计)等, 半导体的上周涨跌幅、本周涨跌幅, 半导体的区间成交额、区间日均换手率(整体法)

@@ -1,0 +1,119 @@
+[
+  {
+    "code": "002008",
+    "name": "大族激光",
+    "side": "cancel",
+    "reason": "委托价86.67 vs 实时价126.64(+1.38%), 偏离+46.1%; 第14次强制撤单; COMPUTEX开幕+1.38%但偏离无法缩小",
+    "confidence": 0.95,
+    "ref_price": 126.64,
+    "strategy_tag": "pending_强制撤单"
+  },
+  {
+    "code": "688037",
+    "name": "芯源微",
+    "side": "cancel",
+    "reason": "委托价184.23 vs 实时价241.15(+1.61%), 偏离+30.9%; 第14次强制撤单; 科创50+0.8%反弹但偏离仍过大",
+    "confidence": 0.95,
+    "ref_price": 241.15,
+    "strategy_tag": "pending_强制撤单"
+  },
+  {
+    "code": "300394",
+    "name": "天孚通信",
+    "side": "cancel",
+    "reason": "委托价355.57 vs 实时价439.18(+2.40%), 偏离+23.5%; 第14次强制撤单; 通信板块COMPUTEX光互联催化但无法覆盖偏离",
+    "confidence": 0.95,
+    "ref_price": 439.18,
+    "strategy_tag": "pending_强制撤单"
+  },
+  {
+    "code": "001309",
+    "name": "德明利",
+    "side": "cancel",
+    "reason": "委托价516.80 vs 实时价597.49(+0.01%), 偏离+15.6%; 第14次强制撤单",
+    "confidence": 0.95,
+    "ref_price": 597.49,
+    "strategy_tag": "pending_强制撤单"
+  },
+  {
+    "code": "688041",
+    "name": "海光信息",
+    "side": "cancel",
+    "reason": "委托价253.00 vs 实时价282.39(+2.55%), 偏离+11.6%; 第14次强制撤单; 今日+2.55%反弹但仍偏离",
+    "confidence": 0.90,
+    "ref_price": 282.39,
+    "strategy_tag": "pending_强制撤单"
+  },
+  {
+    "code": "688321",
+    "name": "微芯生物",
+    "side": "cancel_or_adjust",
+    "reason": "委托价31.63 vs 实时价27.03(-0.59%), 偏离-14.5%; 偏离持续> -10%, 被动成交风险仍在; 建议撤单或大幅下调",
+    "confidence": 0.80,
+    "ref_price": 27.03,
+    "strategy_tag": "pending_撤单调整"
+  },
+  {
+    "code": "002837",
+    "name": "英维克",
+    "side": "no_action_needed",
+    "reason": "委托价106.18 vs 实时价65.89(-0.26%), 偏离-37.9%; 开盘暴跌后横盘低位, 委托价远高于市价不可能触发买盘; 被动成交风险完全解除, 无需操作",
+    "confidence": 0.95,
+    "ref_price": 65.89,
+    "strategy_tag": "pending_自动失效"
+  },
+  {
+    "code": "300751",
+    "name": "迈为股份",
+    "side": "cancel",
+    "reason": "委托价231.89 vs 实时价228.58(-5.73%), 偏离-1.43%(方向逆转); 今日续跌-5.73%连续大跌, 市价已低于委托价, 方向性错误; 从保留观察改为建议撤单",
+    "confidence": 0.85,
+    "ref_price": 228.58,
+    "strategy_tag": "pending_方向错误_建议撤单"
+  },
+  {
+    "code": "688256",
+    "name": "寒武纪",
+    "side": "hold",
+    "reason": "委托价1307.00 vs 实时价1291.60(+4.33%), 偏离-1.18%; AI芯片龙头英伟达RTX Spark直接受益; 从开盘1246回踩至1246→拉起1291.6持续修复; COMPUTEX催化持续; 科创50+0.80%; 建议保留",
+    "confidence": 0.75,
+    "ref_price": 1291.60,
+    "strategy_tag": "pending_持有观察"
+  },
+  {
+    "code": "600580",
+    "name": "卧龙电驱",
+    "side": "hold_and_reevaluate",
+    "reason": "委托价38.35 vs 实时价40.87(+1.69%), 偏离+6.6%; 上涨趋势中, 偏离稳定可控; 可保留待策略刷新重新定价",
+    "confidence": 0.65,
+    "ref_price": 40.87,
+    "strategy_tag": "pending_持有观察"
+  },
+  {
+    "code": "AI_PC_MAINLINE",
+    "name": "AI PC板块确认最强主线·强度扩散",
+    "side": "monitor_only",
+    "reason": "COMPUTEX开幕+英伟达RTX Spark催化: 春秋电子3连板/雷神科技30%涨停/英力+13%/软通动力涨停; 通信ETF+3%光互联催化; force_reduce=true禁止操作; 仅供策略池刷新参考",
+    "confidence": 0.75,
+    "ref_price": 0,
+    "strategy_tag": "观察_无操作·主线确认(强度↑)"
+  },
+  {
+    "code": "000688.SH",
+    "name": "科创50情绪修复确认·反弹力度加强",
+    "side": "monitor_only",
+    "reason": "从10:04 -1.07%反弹至+0.80%(修复+1.87%); 寒武纪+4.33%/海光+2.55%核心股持续修复; 创业板+1.52%领涨; 但半导体板块资金净流出未完全逆转, force_reduce禁止操作; 观察持续性",
+    "confidence": 0.60,
+    "ref_price": 1676.92,
+    "strategy_tag": "观察_无操作·修复力度↑"
+  },
+  {
+    "code": "COMMUNICATION_CPO",
+    "name": "通信/光互联板块COMPUTEX催化确认",
+    "side": "monitor_only",
+    "reason": "通信ETF(515880)大涨超3%/近20日吸金60亿; 光模块含量超50%; COMPUTEX光互联/CPO/NPO主题发酵; force_reduce禁止操作; 策略池候选方向",
+    "confidence": 0.65,
+    "ref_price": 0,
+    "strategy_tag": "观察_无操作·板块催化"
+  }
+]

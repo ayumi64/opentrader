@@ -1,0 +1,12 @@
+bundle/
+install/
+*.bak
+
+# 运行时（不同步到 Git）
+**/mx-output/**
+**/reports/*.md
+**/logs/*.md
+**/inbox/**
+**/.pytest_cache/
+**/allure-report/
+**/repos/

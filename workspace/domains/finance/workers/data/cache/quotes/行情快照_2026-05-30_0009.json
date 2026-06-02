@@ -1,0 +1,93 @@
+{
+  "timestamp": "2026-05-30T00:09:00+08:00",
+  "data_date": "2026-05-29",
+  "market": {
+    "shanghai_composite": {
+      "close": 4068.57,
+      "change_pct": -0.73,
+      "name": "上证指数"
+    },
+    "shenzhen_component": {
+      "close": 15575.13,
+      "change_pct": -1.81,
+      "name": "深证成指"
+    },
+    "chi_next": {
+      "close": 4037.95,
+      "change_pct": -2.11,
+      "name": "创业板指"
+    },
+    "star50": {
+      "close": 1751.32,
+      "change_pct": -5.04,
+      "name": "科创50"
+    },
+    "bei50": {
+      "change_pct": -3.24,
+      "name": "北证50"
+    }
+  },
+  "volume": {
+    "total_turnover_yuan": "33409亿",
+    "total_turnover_yuan_prev": "29874亿",
+    "change_pct": "+11.8%",
+    "margin_balance": "2.94万亿（截至5月28日）"
+  },
+  "northbound": {
+    "north_total_turnover_million": 473405.49,
+    "sh_connect_turnover_million": 221694.07,
+    "sz_connect_turnover_million": 251711.42,
+    "sh_connect_balance": "额度充足",
+    "sz_connect_balance": "额度充足"
+  },
+  "tech_sector": {
+    "semiconductor_block": {
+      "volume_shares_20260529": "60.43亿股",
+      "main_net_outflow_billion": -379.3,
+      "change_pct": -6.22,
+      "status": "大幅回调，主力净流出379亿"
+    },
+    "chip_index": {
+      "change_pct": -5.4,
+      "description": "中证芯片产业指数"
+    },
+    "star_chip_index": {
+      "change_pct": -5.5,
+      "description": "上证科创板芯片指数"
+    }
+  },
+  "breadth": {
+    "advancing": 1542,
+    "declining": 3884,
+    "limit_up": 67,
+    "limit_down": 59,
+    "description": "近3900只个股下跌"
+  },
+  "highlight_sectors": {
+    "gainers": ["白酒（酒鬼酒涨停）", "电力", "煤炭", "一般零售", "食品饮料", "医疗美容"],
+    "laggards": ["半导体(-6.22%)", "电子化学品", "金属新材料", "航天装备", "光学光电子", "军工电子", "稀土"]
+  },
+  "northbound_dragon": {
+    "top_buy": "华天科技(+8.52亿), 四方达, 京东方A",
+    "top_sell": "水晶光电(-1.63亿)"
+  },
+  "news_summary": {
+    "domestic": [
+      "MSCI调整5月29日收盘后生效，新纳入19只A股、剔除16只",
+      "大基金减持沪硅产业、德邦科技；中芯国际H股持仓降至8%以下",
+      "高盛28只科技重仓股集体跌停/跌幅超7%",
+      "半导体主力净流出超340亿创A股历史单日流出新高"
+    ],
+    "us_overnight": [
+      "美股半导体全线爆发：戴尔盘初飙升35%，超威电脑+13%，高通+5.3%，美光+3.5%续创新高",
+      "费城半导体指数涨5.53%创新高",
+      "纳指/标普500连创历史新高"
+    ],
+    "macro_risk": [
+      "美联储4月PCE升至3.8%（2023年以来新高），核心PCE 3.3%，多位官员放鹰",
+      "美伊谅解备忘录初步披露：美方将撤军/解除海上封锁/60天全面停火",
+      "以色列扩大加沙控制至70%，与联合国秘书长切断联系"
+    ]
+  },
+  "updated_at": "2026-05-30T00:09:00+08:00"
+}

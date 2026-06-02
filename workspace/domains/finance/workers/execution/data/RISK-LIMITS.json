@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "market": "A-share",
+  "currency": "CNY",
+  "limits": {
+    "max_single_stock_pct": 15,
+    "max_sector_pct": 40,
+    "max_daily_new_buy_count": 5,
+    "min_cash_buffer_pct": 5,
+    "max_pending_orders": 15,
+    "warn_near_limit_up_pct": 9.5,
+    "warn_near_limit_down_pct": -9.5
+  },
+  "sectors": {
+    "半导体算力": ["688256", "688041", "300394", "688037"],
+    "备注": "板块映射可随持仓维护，供集中度检查"
+  },
+  "disclaimer": "本配置仅作个人纪律参考，不构成投资建议。"
+}

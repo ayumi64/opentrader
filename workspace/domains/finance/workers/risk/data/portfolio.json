@@ -1,0 +1,10 @@
+{
+  "updated_at": "2026-06-01T04:00:00+08:00",
+  "session": "2026-06-01 周一 04:00 第17轮评估",
+  "note": "portfolio_snapshot.json 持仓为空(0 positions)——pending委托与现金不匹配需确认",
+  "positions": [],
+  "total_assets_cny": 1353589,
+  "cash_available_cny": 21291,
+  "cash_ratio_pct": 1.57,
+  "note_cash_shortfall": "现金占比1.57% < 5%(¥67,679), 缺口¥46,388"
+}

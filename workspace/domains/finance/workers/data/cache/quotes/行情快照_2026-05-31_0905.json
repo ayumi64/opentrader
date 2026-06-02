@@ -1,0 +1,81 @@
+{
+  "snapshot_time": "2026-05-31 09:05",
+  "source": "东方财富API实时行情 + 上海证券报/中国证券网",
+  "market_status": "closed (Sunday non-trading hours)",
+  "last_trading_day": "2026-05-29 (Friday)",
+  "indices": {
+    "shanghai_composite": {
+      "code": "000001.SH",
+      "close": 4068.57,
+      "change_pct": -0.73,
+      "change_pts": -30.07
+    },
+    "szse_component": {
+      "code": "399001.SZ",
+      "close": 15575.13,
+      "change_pct": -1.81,
+      "change_pts": -286.76
+    },
+    "cyb_index": {
+      "code": "399006.SZ",
+      "close": 4037.95,
+      "change_pct": -2.11,
+      "change_pts": -87.12
+    },
+    "hs300": {
+      "code": "399300.SZ",
+      "close": 4892.12,
+      "change_pct": -0.45,
+      "change_pts": -22.09
+    },
+    "star50": {
+      "code": "000688.SH",
+      "close": 1751.32,
+      "change_pct": -5.04,
+      "change_pts": -92.93
+    },
+    "shanghai50": {
+      "code": "000016.SH",
+      "close": 2921.08,
+      "change_pct": 0.24,
+      "change_pts": 6.89
+    }
+  },
+  "volume_summary": {
+    "total_amount": "3.319万亿",
+    "margin_balance": "1.399万亿 ⚠️（较前日2.8万亿骤降，疑数据口径异常）",
+    "total_amount_previous_days": {
+      "2026-05-28": "2.968万亿",
+      "2026-05-27": "3.238万亿",
+      "2026-05-26": "3.243万亿"
+    }
+  },
+  "northbound_flow": {
+    "total_turnover_may29": "473.4亿",
+    "shanghai_turnover": "221.7亿",
+    "shenzhen_turnover": "251.7亿"
+  },
+  "southbound_flow": {
+    "net_buy_may29": "+18.84亿"
+  },
+  "weekend_highlights": {
+    "news_from_shanghai_securities_news": [
+      "丁向群任国家金融监督管理总局党委书记（原人保董事长）",
+      "港交所CEO陈翊庭：优化拓展互联互通 助力国际投资者投资中国",
+      "高温提前叠加算力负荷高增，电力板块或迎来业绩与估值双重提升",
+      "\"海陆空\"机器人天团集结2026智博会，多个产品应用于消费级场景"
+    ],
+    "geopolitical_risks": [
+      "伊朗宣布霍尔木兹海峡全面管理：所有船舶须获革命卫队许可",
+      "扎波罗热核电站6号机组遭无人机袭击",
+      "伊朗弹道导弹袭击科威特美军基地",
+      "美伊冲突持续，布伦特原油维持高位",
+      "以色列越过停火线攻入黎南部，加沙控制扩大至70%"
+    ],
+    "market_risks": [
+      "大基金减持中芯国际/沪硅产业/德邦科技，科技股持续承压",
+      "美联储鹰声四起：PCE 3.8%，加息概率升至50%+",
+      "美国制裁9家中国公司涉伊朗石油贸易（SDN清单）"
+    ]
+  }
+}

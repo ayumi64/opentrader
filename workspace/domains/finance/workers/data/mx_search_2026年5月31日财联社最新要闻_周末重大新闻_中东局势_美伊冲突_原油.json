@@ -1,0 +1,112 @@
+{
+  "success": true,
+  "status": 0,
+  "code": 0,
+  "message": "ok",
+  "data": {
+    "requestId": null,
+    "message": "OK",
+    "status": 0,
+    "code": 0,
+    "data": {
+      "protocolType": "SEARCH_NEWS",
+      "id": "fed4a23e-0466-460d-9b3d-9eb6832dc367",
+      "refSeq": null,
+      "llmSearchRequest": {
+        "query": "2026年5月31日财联社最新要闻 周末重大新闻 中东局势 美伊冲突 原油",
+        "size": 12,
+        "childSearchType": null,
+        "inputStartDate": null,
+        "inputEndDate": null,
+        "traceId": "8cf7cedc7f416271a1f6f04fcb14d1c4-e04bf672-95ec-4a75-8f3d-88c6a91ee81e",
+        "timeSupSize": 3,
+        "decomposedSize": 3,
+        "decomposedFlag": true
+      },
+      "llmSearchResponse": {
+        "data": [
+          {
+            "code": "TTYQIN2026053104392260167521_1",
+            "title": "豪掷5900亿！软银据报将在法国建设欧洲最大算力集群",
+            "content": "【豪掷5900亿！软银据报将在法国建设欧洲最大算力集群】财联社5月31日电，北京时间周日凌晨的最新消息显示，软银集团掌门孙正义的“AI豪赌”又有了新的方向——在法国投资高达750亿欧元（约合人民币5918亿元）建设大规模算力集群。该项目首期规划容量达3.1吉瓦，后续还将扩建2吉瓦。软银还将与施耐德电气合作，打造一个集AI基础设施和机器人制造于一体的产业中心。",
+            "date": "2026-05-31 04:12:54",
+            "informationType": "HOT_NEWS",
+            "source": "财联社",
+            "jumpUrl": "https://toutiao.com/group/7645780347338129970/",
+            "rankScore": "Infinity",
+            "indexAttention": false,
+            "recallIndex": "vector-5;news_BaseRecall_meta-2;",
+            "logoUrl": "https://www.toutiao.com/favicon.ico",
+            "authorityLevel": "L1-2",
+            "communityFlag": false
+          },
+          {
+            "code": "NW202605313755110328_1",
+            "title": "美军称向一艘试图驶向伊朗船只发射“地狱火”导弹",
+            "content": "当地时间5月30日，美军中央司令部发表声明称，5月29日，美军在阿曼湾执行封锁措施时，打击一艘试图驶向伊朗港口的冈比亚籍船只。 声明称，美军在国际水域监测到“Lian Star”号货船正驶向阿曼湾沿岸的一处伊朗港口，美军随即向该船发出20多次警告，并告知其此举已违反美国的封锁令。在船员未遵守指令后，一架美军飞机向该船发动机舱发射“地狱火”导弹，使该船停止驶向伊朗。 美军中央司令部称，在与伊朗停火仍然有效的情况下，美军已打击5艘商业船只，并改道116艘船只，以全面执行封锁措施。（文章来源：财联社）",
+            "date": "2026-05-31 02:37:33",
+            "informationType": "NEWS",
+            "source": "财联社",
+            "rankScore": 0.9999996044474658,
+            "indexAttention": false,
+            "recallIndex": "vector-0;news_BaseRecall_meta-3;",
+            "authorityLevel": "L1-2",
+            "communityFlag": false
+          },
+          {
+            "code": "20260531043919937628530_1",
+            "title": "扎波罗热核电站：乌方无人机攻击6号机组电机房",
+            "content": "【扎波罗热核电站：乌方无人机攻击6号机组电机房】财联社5月31日电，当地时间5月30日，扎波罗热核电站主管部门通过社交媒体发布消息说，乌克兰一架无人机当天攻击了该核电站6号发电机组的一座电机房，所幸未造成人员伤亡和严重破坏。 消息说，目前这座核电站所有系统运行正常，站内各操作规程未被扰乱，电站区域及其监测区的辐射水平正常。电站专业人员正对遇袭位置进行勘察，局势已被完全控制。 消息强调，此类袭击核电设施的行为极其不负责，对核安全构成威胁。“任何对核电站设施的攻击都可能导致难以预料的后果，并给相关地区带来危险”。",
+            "date": "2026-05-31 01:57:42",
+            "informationType": "CFH",
+            "source": "财联社",
+            "rankScore": 0.99999955586668,
+            "indexAttention": false,
+            "gubaId": "1717691786",
+            "accountId": "224125",
+            "recallIndex": "vector-3;news_BaseRecall_meta-0;",
+            "authorityLevel": "L1-2",
+            "communityFlag": true
+          },
+          {
+            "code": "NW202605313755110768_1",
+            "title": "乌克兰称俄军袭击铁路机车致人员伤亡",
+            "content": "当地时间5月30日，乌克兰社区、领土和基础设施发展部在社交媒体发布消息称，俄军无人机当天袭击扎波罗热地区一列柴油机车，造成一名司机死亡。随后发生的第二次袭击导致当地一列电力机车受损。 乌克兰铁路公司当天也发布消息说，俄军袭击扎波罗热地区的铁路基础设施及车辆，一列电力机车和一列柴油机车受损，造成一名机车司机死亡、两名工作人员受伤。 俄罗斯方面对此暂无回应。（文章来源：财联社）",
+            "date": "2026-05-31 01:57:38",
+            "informationType": "NEWS",
+            "source": "财联社",
+            "rankScore": 0.9999994506324414,
+            "indexAttention": false,
+            "recallIndex": "vector-2;news_BaseRecall_meta-5;",
+            "authorityLevel": "L1-2",
+            "communityFlag": false
+          },
+          {
+            "code": "NW202605313755106259_1",
+            "title": "以色列北部多个城镇遭黎巴嫩真主党火箭弹袭击",
+            "content": "以色列国防军当地时间5月30日发表声明称，黎巴嫩真主党当日向以色列北部多个城镇发动火箭弹袭击。这些火箭弹有些被拦截，有些落入空旷地带，未造成人员伤亡。 以色列方面称，当日凌晨，黎真主党向以北部发射“大量”火箭弹。一枚火箭弹在以色列北部城镇谢莫纳坠落后发生爆炸，造成建筑物损坏，但无人员受伤。其余火箭弹均被以防空系统拦截。 （文章来源：财联社）",
+            "date": "2026-05-31 00:40:26",
+            "informationType": "NEWS",
+            "source": "财联社",
+            "rankScore": 0.9999993420489738,
+            "indexAttention": false,
+            "recallIndex": "vector-1;news_BaseRecall_meta-4;",
+            "authorityLevel": "L1-2",
+            "communityFlag": false
+          }
+        ],
+        "traceId": "8cf7cedc7f416271a1f6f04fcb14d1c4-e04bf672-95ec-4a75-8f3d-88c6a91ee81e",
+        "code": 0,
+        "status": 0,
+        "message": "OK",
+        "extraInfos": {
+          "decomposedQueries": [
+            "2026年5月31日财联社最新要闻 周末重大新闻 中东局势 美伊冲突 原油"
+          ]
+        }
+      }
+    },
+    "stack": null
+  },
+  "requestId": "8019820802c348e79fc286c9de91b16c"
+}

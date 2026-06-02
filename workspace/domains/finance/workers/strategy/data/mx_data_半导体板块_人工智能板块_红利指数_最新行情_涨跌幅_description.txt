@@ -1,0 +1,8 @@
+金融数据查询结果说明
+========================================
+查询内容: 半导体板块 人工智能板块 红利指数 最新行情 涨跌幅
+数据文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/data/mx_data_半导体板块_人工智能板块_红利指数_最新行情_涨跌幅.xlsx
+描述文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/data/mx_data_半导体板块_人工智能板块_红利指数_最新行情_涨跌幅_description.txt
+数据行数: 28
+表数量: 9
+Sheet 列表: 半导体的涨跌幅(算数平均)、上涨家数等, 人工智能的涨跌幅(算数平均)、上涨家数等, 中证红利(000922.SH)的成交量、开盘价等, 半导体等当前的支撑位、压力位, 半导体等的上周涨跌幅, 半导体等的区间成交额、区间日均换手率(整体法), 半导体等的日均成交额, 半导体等当前的涨跌幅、5日涨跌幅等, 人工智能当前的最新价、涨跌幅等

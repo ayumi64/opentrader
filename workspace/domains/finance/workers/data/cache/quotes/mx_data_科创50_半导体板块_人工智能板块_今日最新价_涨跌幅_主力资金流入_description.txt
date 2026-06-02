@@ -1,0 +1,8 @@
+金融数据查询结果说明
+========================================
+查询内容: 科创50 半导体板块 人工智能板块 今日最新价 涨跌幅 主力资金流入
+数据文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/cache/quotes/mx_data_科创50_半导体板块_人工智能板块_今日最新价_涨跌幅_主力资金流入.xlsx
+描述文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/cache/quotes/mx_data_科创50_半导体板块_人工智能板块_今日最新价_涨跌幅_主力资金流入_description.txt
+数据行数: 6
+表数量: 1
+Sheet 列表: 上证科创板50成份指数(000688.SH)成分行业(2026-06-01)

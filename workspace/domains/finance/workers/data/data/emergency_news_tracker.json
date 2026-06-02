@@ -1,0 +1,291 @@
+{
+  "last_checked": "2026-06-02T10:05:00+08:00",
+  "events": [
+    {
+      "id": "us_iran_military_crisis_may23",
+      "title": "美伊军事冲突持续升级至领土级互袭: 6/1伊朗革命卫队确认美军打击霍尔木兹省锡里克岛通信塔，革命卫队打击美军空军基地摧毁目标；科威特遭攻击；核谈判退场特朗普提重大修改(海峡+高浓缩铀); 美油90+; 118艘船改道5艘失能",
+      "source": "新华社/央视新闻/财联社/伊朗塔斯尼姆通讯社/纽约时报/新浪财经",
+      "url": "多个新闻源",
+      "risk_type": "geopolitical_military_conflict",
+      "severity": "severe",
+      "detected_at": "2026-05-23T00:30:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "us_iran_military_clash_mq9_shootdown_may27",
+      "title": "美伊军事冲突再升级：伊朗击落美军MQ-9死神无人机和MQ-1无人机(5/31)，向F-35及RQ-4开火；伊朗外交部谴责美国'公然违反停火协议'；伊朗最高领袖放狠话；美称自卫打击；布伦特重回100美元",
+      "source": "央视新闻/新华社/财联社/伊朗塔斯尼姆通讯社/伊朗伊斯兰共和国通讯社",
+      "url": "多个新闻源",
+      "risk_type": "geopolitical_military_conflict",
+      "severity": "high",
+      "detected_at": "2026-05-27T12:30:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "us_iran_mou_preliminary_disclosure_may27",
+      "title": "美伊协议过山车：伊朗宣布暂停谈判/计划封锁霍尔木兹及曼德海峡/称以撤军为前提；特朗普称一周内可达成协议/否认收到暂停消息/6/2乐观表态预计未来一周与伊达成协议延长停火重开海峡；称已与真主党通话获停火同意；WTI结算92.16(+5.49%盘中最高94.30/+7.94%)；布伦特结算94.98(+4.24%盘中最高97.45/+6.94%)；美SPR降至2024年1月来最低3.571亿桶",
+      "source": "新华社/央视新闻/财联社/伊朗塔斯尼姆通讯社/人民网/新华网/每经/格隆汇",
+      "url": "多个新闻源",
+      "risk_type": "geopolitical_diplomacy",
+      "severity": "severe",
+      "detected_at": "2026-05-27T20:31:25+08:00",
+      "updated_at": "2026-06-02T09:09:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "israel_lebanon_ceasefire_trump_mediation_june2",
+      "title": "黎以传停火：特朗普6/2凌晨称与内塔尼亚胡及真主党通话，双方同意停火（以色列不攻贝鲁特、真主党停袭以城镇）；但6/1晚黎巴嫩南部交火仍在持续，真主党全面停火意愿待验证；内塔尼亚胡称若真主党不停火将打击贝鲁特；伊朗则以黎以停火为美伊谈判前提",
+      "source": "财联社/央视新闻/新华社/东方财富/路透",
+      "url": "多个新闻源",
+      "risk_type": "geopolitical_diplomacy",
+      "severity": "high",
+      "detected_at": "2026-06-02T08:07:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "iran_hormuz_blockade_bab_mandeb_june2",
+      "title": "伊朗+抵抗阵线计划彻底封锁霍尔木兹海峡+曼德海峡：伊朗革命卫队圣城旅指挥官卡尼暗示曼德海峡通航也将受管控；伊朗外交部声明将动用一切能力捍卫利益；革命卫队海军用巡航导弹击中美以船只'萨里斯卡'号；美军在霍尔木兹附近拦截4架伊朗无人机；证券时报证实导弹打击",
+      "source": "央视新闻/新华社/财联社/伊朗塔斯尼姆通讯社/人民网/证券时报",
+      "url": "多个新闻源",
+      "risk_type": "geopolitical_military_conflict",
+      "severity": "severe",
+      "detected_at": "2026-06-02T08:07:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "a_share_june1_kcb50_5pct_semi_slump",
+      "title": "A股6月1日收盘：沪指跌0.27%报4057.74，科创50暴跌5%/半导体-5.47%/人工智能-0.40%；主力资金净流出483.74亿连续6日净流出；日成交2.90万亿；煤炭+5.53%领涨电子-4.17%领跌",
+      "source": "东方财富/证券时报/财联社",
+      "url": "多个新闻源",
+      "risk_type": "market_systemic",
+      "severity": "medium",
+      "detected_at": "2026-06-01T11:30:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "us_fed_pce_hawkish_may29",
+      "title": "美联储鹰声四起：PCE 3.8%核心PCE 3.3%; 穆萨莱姆/库克/杰斐逊/卡什卡利/沃勒密集放风加息; 市场预计年内加息概率升至51.8%; 高盛警告通胀为最大风险; 本周五(6/5)非农数据成关键",
+      "source": "财联社/网易/美联储官网",
+      "url": "多个新闻源",
+      "risk_type": "market_policy_macro",
+      "severity": "medium",
+      "detected_at": "2026-05-29T19:03:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "nvidia_gtc_taipei_rtx_spark_pc_may31",
+      "title": "英伟达GTC Taipei+COMPUTEX 2026(6/2开幕)：黄仁勋发布Vera CPU(88核176线程)/RTX Spark PC芯片正式进军PC市场/世界物理AI模型/Isaac GR00T人形机器人参考设计；与微软合作AI PC与富士康合作自动驾驶出租车；Token成新利润单位；美股英伟达+6%/ARM+15%/戴尔+11%/美光突破1000美元；纳指首次收于27000点",
+      "source": "财联社/每经/钛媒体/证券时报/东方财富/央视",
+      "url": "多个新闻源",
+      "risk_type": "technology_semiconductor_breakthrough",
+      "severity": "medium",
+      "detected_at": "2026-06-02T08:07:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "semiconductor_baiyi_capital_exit_june1",
+      "title": "半导体板块5月减持超127亿：中微公司(60亿)/澜起科技(33亿)/翱捷科技(14亿)等7家同晚公告减持；国家大基金减持沪硅产业/德邦科技/中芯国际；专家称'符合资本逐利本性并非行情结束'",
+      "source": "东方财富/财联社/证券时报",
+      "url": "多个新闻源",
+      "risk_type": "market_systemic",
+      "severity": "medium",
+      "detected_at": "2026-06-02T08:07:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "china_may_pmi_50pct_may31",
+      "title": "国家统计局：5月官方制造业PMI为50.0% - 比上月下降0.3个百分点，位于临界点；综合PMI产出指数仍保持扩张；经济扩张动能边际放缓",
+      "source": "国家统计局/新浪财经/证券时报/财联社",
+      "url": "多个新闻源",
+      "risk_type": "market_policy_macro",
+      "severity": "low",
+      "detected_at": "2026-05-31T10:04:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "yushu_tech_ipo_approved_june1",
+      "title": "宇树科技科创板IPO过会：'人形机器人第一股'拟募资42亿，受理至上会仅73天创A股纪录",
+      "source": "财联社/科创板日报/东方财富",
+      "url": "多个新闻源",
+      "risk_type": "technology_robotics",
+      "severity": "low",
+      "detected_at": "2026-06-01T11:30:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "minimax_ipo_cn_may31",
+      "title": "AI独角兽MiniMax启动A股IPO：与中信证券签辅导协议，科创板上市加速；新旗舰模型M3发布",
+      "source": "财联社/科创板日报",
+      "url": "多个新闻源",
+      "risk_type": "technology_corporate_earnings",
+      "severity": "low",
+      "detected_at": "2026-05-31T12:03:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "state_council_overseas_invest_regulation_june1",
+      "title": "《国务院关于对外投资的规定》公布：7月1日起施行，明确投资者依法享有对外投资自主权、自担风险；新一轮国企改革方案(2026-2029)已下发",
+      "source": "财联社/证券时报/新华社/东方财富",
+      "url": "多个新闻源",
+      "risk_type": "market_policy_macro",
+      "severity": "low",
+      "detected_at": "2026-06-01T08:00:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "ding_xiangqun_nfra_secretary_may29",
+      "title": "丁向群任国家金融监督管理总局党委书记：原中国人保董事长接替李云泽成金融监管第二任掌门人",
+      "source": "国家金融监管总局/财联社/中国证券报",
+      "url": "多个新闻源",
+      "risk_type": "market_policy_macro",
+      "severity": "low",
+      "detected_at": "2026-05-30T08:32:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "us_sanction_9_china_entities_iran_may29",
+      "title": "美国制裁9家中国公司涉伊朗石油贸易：OFAC及国务院将9家中国相关实体列入SDN清单，影响中伊能源贸易通道",
+      "source": "新浪财经/美财政部OFAC",
+      "url": "多个新闻源",
+      "risk_type": "geopolitical_sanctions",
+      "severity": "medium",
+      "detected_at": "2026-05-30T08:32:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "zaporizhzhia_unit6_drone_attack_may30",
+      "title": "扎波罗热核电站持续遭袭：5/30 6号机组电机房遭无人机攻击（距反应堆大厅仅数米）",
+      "source": "央视新闻/俄国家原子能公司",
+      "url": "多个新闻源",
+      "risk_type": "geopolitical_military_conflict",
+      "severity": "high",
+      "detected_at": "2026-05-31T04:30:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "spacex_ipo_june12_june1",
+      "title": "SpaceX IPO倒计时：6月4日启动路演，最早6月12日纳斯达克上市；估值1.75-2万亿美元",
+      "source": "财联社/凤凰网/彭博社/每经",
+      "url": "多个新闻源",
+      "risk_type": "technology_corporate_earnings",
+      "severity": "low",
+      "detected_at": "2026-06-01T07:00:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "cz6b_first_launch_june1",
+      "title": "长征十二号乙运载火箭首飞成功：商业航天里程碑，近地轨道运力20吨级可重复使用",
+      "source": "东方财富/央视",
+      "url": "多个新闻源",
+      "risk_type": "technology_breakthrough",
+      "severity": "low",
+      "detected_at": "2026-06-01T20:30:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "quantinuum_ipo_increase_june1",
+      "title": "量子计算公司Quantinuum提高IPO规模，市值剑指143亿美元",
+      "source": "财联社",
+      "url": "多个新闻源",
+      "risk_type": "technology_corporate_earnings",
+      "severity": "low",
+      "detected_at": "2026-06-02T08:07:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "ist_semiconductor_price_hike_june1",
+      "title": "意法半导体再度宣布涨价(6/28生效)，年内两次涨价；英飞凌/德州仪器/安森美等已先涨；功率半导体景气攀升，AI数据中心驱动供需紧张",
+      "source": "东方财富/财联社",
+      "url": "多个新闻源",
+      "risk_type": "technology_semiconductor_breakthrough",
+      "severity": "low",
+      "detected_at": "2026-06-02T08:07:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "zhipu_a_share_ipo_150b_june1",
+      "title": "智谱港股公告拟回A科创板上市：募资150亿元，120亿投入AI大模型研发，20亿用于MaaS平台；与中信证券签署辅导协议",
+      "source": "财联社/港交所/科创板日报",
+      "url": "多个新闻源",
+      "risk_type": "technology_corporate_earnings",
+      "severity": "low",
+      "detected_at": "2026-06-02T08:37:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "openai_robotics_entrance_june1",
+      "title": "OpenAI官宣进军机器人赛道：短期内专注研发协助型机器人；AI巨头加速具身智能布局",
+      "source": "财联社/金融界",
+      "url": "多个新闻源",
+      "risk_type": "technology_robotics",
+      "severity": "low",
+      "detected_at": "2026-06-02T08:37:00+08:00",
+      "updated_at": "2026-06-02T08:37:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "alphabet_80b_equity_raise_ai_infra_june1",
+      "title": "谷歌母公司Alphabet拟进行800亿美元股权融资，用于扩建AI基础设施和算力；其中伯克希尔哈撒韦私募100亿美元",
+      "source": "金融界/财联社",
+      "url": "多个新闻源",
+      "risk_type": "technology_corporate_earnings",
+      "severity": "low",
+      "detected_at": "2026-06-02T08:37:00+08:00",
+      "updated_at": "2026-06-02T09:09:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "anthropic_secret_ipo_filing_june1",
+      "title": "Anthropic向美国SEC秘密递交IPO招股书，估值9650亿美元，或秋天上市；有望成为AI领域迄今最大IPO",
+      "source": "财联社/东方财富/金融界",
+      "url": "多个新闻源",
+      "risk_type": "technology_corporate_earnings",
+      "severity": "medium",
+      "detected_at": "2026-06-02T09:09:00+08:00",
+      "updated_at": "2026-06-02T09:09:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "zhongji_innolight_marketcap_1.2trillion_june1",
+      "title": "中际旭创总市值跃升至1.2万亿元以上，位列A股前十，年内累计增长5800亿增量居全市场第一；登顶沪深300第一大权重股(占比4.83%)",
+      "source": "财联社/东方财富",
+      "url": "多个新闻源",
+      "risk_type": "technology_corporate_earnings",
+      "severity": "low",
+      "detected_at": "2026-06-02T09:09:00+08:00",
+      "updated_at": "2026-06-02T09:09:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "doubao_paid_content_june_june1",
+      "title": "豆包6月下旬上线付费内容，三季度结合电商完善付费场景，字节AI变现加速",
+      "source": "财联社/每经",
+      "url": "多个新闻源",
+      "risk_type": "technology_corporate_earnings",
+      "severity": "low",
+      "detected_at": "2026-06-02T09:09:00+08:00",
+      "updated_at": "2026-06-02T09:09:00+08:00",
+      "status": "active"
+    }
+  ]
+}

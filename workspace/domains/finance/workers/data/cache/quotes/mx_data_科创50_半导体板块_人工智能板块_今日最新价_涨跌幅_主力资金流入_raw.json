@@ -1,0 +1,559 @@
+{
+  "success": true,
+  "status": 0,
+  "code": 0,
+  "message": "ok",
+  "data": {
+    "requestId": null,
+    "message": "OK",
+    "status": 0,
+    "code": 0,
+    "data": {
+      "protocolType": "SEARCH_DATA",
+      "id": "0474c77f-3a47-4e91-92f3-e7c1e4b0d399",
+      "refSeq": null,
+      "keyEntityList": null,
+      "searchDataResultDTO": {
+        "questionId": "da9b7d2e-06b9-47dd-8a9d-ca7818a1ae6f",
+        "dataTableDTOList": [
+          {
+            "code": "000688.SH",
+            "entityName": "行业代码",
+            "table": {
+              "headName": [
+                "行业名称",
+                "成分个数",
+                "总市值（亿元）",
+                "自由流动市值（亿元）",
+                "权重",
+                "近1年涨跌幅"
+              ],
+              "0": [
+                "半导体(申万)",
+                "23",
+                "4.732万",
+                "2.275万",
+                "76.98%",
+                "123.85%"
+              ],
+              "1": [
+                "医疗器械(申万)",
+                "3",
+                "1493",
+                "895",
+                "3.25%",
+                "-0.77%"
+              ],
+              "2": [
+                "光伏设备(申万)",
+                "4",
+                "1863",
+                "772",
+                "2.80%",
+                "70.66%"
+              ],
+              "3": [
+                "软件开发(申万)",
+                "1",
+                "1105",
+                "552.3",
+                "2.00%",
+                "0.22%"
+              ],
+              "4": [
+                "自动化设备(申万)",
+                "1",
+                "678.8",
+                "543.1",
+                "1.97%",
+                "86.22%"
+              ],
+              "5": [
+                "化学制药(申万)",
+                "2",
+                "1389",
+                "439.2",
+                "1.59%",
+                "-5.04%"
+              ],
+              "6": [
+                "航空装备Ⅱ(申万)",
+                "2",
+                "738.6",
+                "427.1",
+                "1.55%",
+                "9.17%"
+              ],
+              "7": [
+                "消费电子(申万)",
+                "1",
+                "693",
+                "346.5",
+                "1.26%",
+                "105.20%"
+              ],
+              "8": [
+                "通信设备(申万)",
+                "1",
+                "575.9",
+                "345.5",
+                "1.25%",
+                "316.58%"
+              ],
+              "9": [
+                "元件(申万)",
+                "1",
+                "1148",
+                "344.5",
+                "1.25%",
+                "282.99%"
+              ],
+              "10": [
+                "轨交设备Ⅱ(申万)",
+                "2",
+                "1330",
+                "283.2",
+                "1.03%",
+                "-1.98%"
+              ],
+              "11": [
+                "其他",
+                "1",
+                "277.6",
+                "220.6",
+                "0.80%",
+                "-"
+              ],
+              "12": [
+                "小家电(申万)",
+                "1",
+                "265.8",
+                "212.6",
+                "0.77%",
+                "-14.88%"
+              ],
+              "13": [
+                "IT服务Ⅱ(申万)",
+                "1",
+                "393.3",
+                "196.6",
+                "0.71%",
+                "5.75%"
+              ],
+              "14": [
+                "计算机设备(申万)",
+                "1",
+                "471.7",
+                "188.1",
+                "0.68%",
+                "17.71%"
+              ],
+              "15": [
+                "军工电子Ⅱ(申万)",
+                "1",
+                "542.4",
+                "162.7",
+                "0.59%",
+                "28.48%"
+              ],
+              "16": [
+                "化学制品(申万)",
+                "1",
+                "290.1",
+                "145.1",
+                "0.53%",
+                "25.74%"
+              ],
+              "17": [
+                "光学光电子(申万)",
+                "1",
+                "324.5",
+                "129.8",
+                "0.47%",
+                "44.36%"
+              ],
+              "18": [
+                "生物制品(申万)",
+                "1",
+                "230.8",
+                "92.33",
+                "0.34%",
+                "-11.20%"
+              ],
+              "19": [
+                "风电设备(申万)",
+                "1",
+                "256.8",
+                "51.36",
+                "0.19%",
+                "62.18%"
+              ]
+            },
+            "rawTable": {
+              "headName": [
+                "行业名称",
+                "成分个数",
+                "总市值（亿元）",
+                "自由流动市值（亿元）",
+                "权重",
+                "近1年涨跌幅"
+              ],
+              "0": [
+                "半导体(申万)",
+                "23",
+                "47317.3066577109",
+                "22749.281954931997",
+                "76.98400000000001",
+                "123.845651087388"
+              ],
+              "1": [
+                "医疗器械(申万)",
+                "3",
+                "1492.7725219947997",
+                "895.0478367651001",
+                "3.2460000000000004",
+                "-0.768330892759"
+              ],
+              "2": [
+                "光伏设备(申万)",
+                "4",
+                "1863.3990505185998",
+                "772.0332976559",
+                "2.799",
+                "70.659773137943"
+              ],
+              "3": [
+                "软件开发(申万)",
+                "1",
+                "1105.142508585",
+                "552.341308095",
+                "2.003",
+                "0.220278200216"
+              ],
+              "4": [
+                "自动化设备(申万)",
+                "1",
+                "678.840614166",
+                "543.072491676",
+                "1.9689999999999999",
+                "86.224553554449"
+              ],
+              "5": [
+                "化学制药(申万)",
+                "2",
+                "1388.7330652169",
+                "439.2426120891",
+                "1.592",
+                "-5.037028432027"
+              ],
+              "6": [
+                "航空装备Ⅱ(申万)",
+                "2",
+                "738.6133341732001",
+                "427.11933398880007",
+                "1.549",
+                "9.168330728469"
+              ],
+              "7": [
+                "消费电子(申万)",
+                "1",
+                "693.01309609",
+                "346.506548346",
+                "1.256",
+                "105.196049702077"
+              ],
+              "8": [
+                "通信设备(申万)",
+                "1",
+                "575.8981723987999",
+                "345.53890567879995",
+                "1.253",
+                "316.582309423327"
+              ],
+              "9": [
+                "元件(申万)",
+                "1",
+                "1148.3291320875",
+                "344.4987403165",
+                "1.2489999999999999",
+                "282.994994927602"
+              ],
+              "10": [
+                "轨交设备Ⅱ(申万)",
+                "2",
+                "1330.41002732",
+                "283.15273414",
+                "1.027",
+                "-1.975582685905"
+              ],
+              "11": [
+                "其他",
+                "1",
+                "277.6448389942",
+                "220.5604686924",
+                "0.8",
+                "-"
+              ],
+              "12": [
+                "小家电(申万)",
+                "1",
+                "265.8464590896",
+                "212.55013538760002",
+                "0.771",
+                "-14.881496546586"
+              ],
+              "13": [
+                "IT服务Ⅱ(申万)",
+                "1",
+                "393.2920064704",
+                "196.6460032352",
+                "0.713",
+                "5.751398986204"
+              ],
+              "14": [
+                "计算机设备(申万)",
+                "1",
+                "471.7211259744",
+                "188.0671255764",
+                "0.6819999999999999",
+                "17.708042918934"
+              ],
+              "15": [
+                "军工电子Ⅱ(申万)",
+                "1",
+                "542.373559",
+                "162.7120677",
+                "0.59",
+                "28.476536227305"
+              ],
+              "16": [
+                "化学制品(申万)",
+                "1",
+                "290.1027551468",
+                "145.0513775734",
+                "0.526",
+                "25.739285063261"
+              ],
+              "17": [
+                "光学光电子(申万)",
+                "1",
+                "324.5217841875",
+                "129.808713675",
+                "0.471",
+                "44.355194059392"
+              ],
+              "18": [
+                "生物制品(申万)",
+                "1",
+                "230.83115094",
+                "92.332460376",
+                "0.335",
+                "-11.197578126147"
+              ],
+              "19": [
+                "风电设备(申万)",
+                "1",
+                "256.809042621",
+                "51.3618085242",
+                "0.186",
+                "62.180958619315"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "0": "801081.SWI",
+              "1": "801153.SWI",
+              "2": "801735.SWI",
+              "3": "801104.SWI",
+              "4": "801078.SWI",
+              "5": "801151.SWI",
+              "6": "801742.SWI",
+              "7": "801085.SWI",
+              "8": "801102.SWI",
+              "9": "801083.SWI",
+              "10": "801076.SWI",
+              "11": "Others",
+              "12": "801113.SWI",
+              "13": "801103.SWI",
+              "14": "801101.SWI",
+              "15": "801745.SWI",
+              "16": "801034.SWI",
+              "17": "801084.SWI",
+              "18": "801152.SWI",
+              "19": "801736.SWI"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "RPT_INDEX_COMP_INDUSTRY",
+              "returnName": "成分行业",
+              "classCode": "007202",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-06-01 00:00:00",
+              "endDate": "2026-06-01 00:00:00",
+              "fuzzy": true,
+              "defineType": 0,
+              "isLoopN": false,
+              "isGroup": false,
+              "returnSourceCode": "INDUSTRY_CODE,INDUSTRY_NAME,SAMPLE_NUM,TOTAL_MARKET_CAP,FREEMV,WEIGHT,CONTRIBUTE_POINT,PCTCHANGE,PCTCHANGE_YR",
+              "returnSourceName": "行业代码,行业名称,成分个数,总市值（亿元）,自由流动市值（亿元）,权重,贡献点,当日涨跌幅,近1年涨跌幅",
+              "headName": "INDUSTRY_CODE",
+              "tableType": "10"
+            },
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "RPT_INDEX_COMP_INDUSTRY",
+                "returnName": "成分行业",
+                "classCode": "007202",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "defineType": 0,
+                "isLoopN": false,
+                "isGroup": false,
+                "returnSourceCode": "INDUSTRY_CODE,INDUSTRY_NAME,SAMPLE_NUM,TOTAL_MARKET_CAP,FREEMV,WEIGHT,CONTRIBUTE_POINT,PCTCHANGE,PCTCHANGE_YR",
+                "returnSourceName": "行业代码,行业名称,成分个数,总市值（亿元）,自由流动市值（亿元）,权重,贡献点,当日涨跌幅,近1年涨跌幅",
+                "headName": "INDUSTRY_CODE",
+                "tableType": "10"
+              }
+            ],
+            "dataTableType": "F10_TABLE",
+            "inputTitle": "上证科创板50成份指数(000688.SH)成分行业(2026-06-01)",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19"
+            ],
+            "tipFlags": [],
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftTimeTop",
+            "orderCol": {},
+            "jumpUrlList": [
+              {
+                "choiceUrl": "https://choicewh2.eastmoney.com/indexNum/f9/index.html#/compositionIndustry?securitycode=000688.SH",
+                "typeName": "F9深度资料",
+                "securityName": "科创50"
+              }
+            ],
+            "dataTypeEnum": "F9",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "1002280999",
+              "entityType": "INDEX",
+              "entityTypeCode": "INDEX",
+              "entityTypeName": "INDEX",
+              "classCode": "006001",
+              "className": "沪深京指数",
+              "publishCode": "905009001",
+              "fullName": "上证科创板50成份指数",
+              "shortName": "科创50",
+              "matchWord": "科创50",
+              "secuCode": "000688",
+              "market": "1",
+              "marketChar": ".SH",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "1002280999",
+                "entityType": "INDEX",
+                "entityTypeCode": "INDEX",
+                "entityTypeName": "INDEX",
+                "classCode": "006001",
+                "className": "沪深京指数",
+                "publishCode": "905009001",
+                "fullName": "上证科创板50成份指数",
+                "shortName": "科创50",
+                "matchWord": "科创50",
+                "secuCode": "000688",
+                "market": "1",
+                "marketChar": ".SH",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": true,
+            "edbThirdData": false,
+            "dataUpdate": {},
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "上证科创板50成份指数",
+            "frontendEntityCode": "000688.SH",
+            "frontendTitle": "成分行业(2026-06-01)",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "NORMAL"
+          }
+        ],
+        "condition": {
+          "search_data_task_0": [
+            "上证科创板50成份指数",
+            "成分行业",
+            "2026-06-01至2026-06-01"
+          ]
+        },
+        "entityTagDTOList": [
+          {
+            "entityId": "1002280999",
+            "entityType": "INDEX",
+            "entityTypeCode": "INDEX",
+            "entityTypeName": "INDEX",
+            "classCode": "006001",
+            "className": "沪深京指数",
+            "publishCode": "905009001",
+            "fullName": "上证科创板50成份指数",
+            "shortName": "科创50",
+            "matchWord": "科创50",
+            "secuCode": "000688",
+            "market": "1",
+            "marketChar": ".SH",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          }
+        ]
+      },
+      "entityName": null,
+      "message": null,
+      "tableTruncated": false
+    },
+    "stack": null
+  },
+  "requestId": "147ecfa93e4a4d8ca0730b669add5213"
+}

@@ -1,0 +1,183 @@
+{
+  "snapshot_time": "2026-05-31T15:04:00+08:00",
+  "trade_day": "2026-05-29",
+  "is_trading_day": false,
+  "market_status": "closed",
+  "weekend_update": true,
+  "indices": {
+    "shanghai_composite": {
+      "code": "000001.SH",
+      "name": "上证指数",
+      "close": 4068.57,
+      "change_pct": -0.73
+    },
+    "shenzhen_component": {
+      "code": "399001.SZ",
+      "name": "深证成指",
+      "close": 15575.13,
+      "change_pct": -1.81
+    },
+    "cyb_index": {
+      "code": "399006.SZ",
+      "name": "创业板指",
+      "close": 4037.95,
+      "change_pct": -2.11
+    },
+    "hs300": {
+      "code": "000300.SH",
+      "name": "沪深300",
+      "close": 4892.12,
+      "change_pct": -0.45
+    },
+    "star50": {
+      "code": "000688.SH",
+      "name": "科创50",
+      "close": 1751.32,
+      "change_pct": -5.04
+    },
+    "sz50": {
+      "code": "000016.SH",
+      "name": "上证50",
+      "close": 2921.08,
+      "change_pct": 0.24
+    }
+  },
+  "tech_stocks": {
+    "smc_international": {
+      "code": "688981.SH",
+      "name": "中芯国际",
+      "close": 139.91,
+      "change_pct": -8.97
+    },
+    "haiguang_info": {
+      "code": "688041.SH",
+      "name": "海光信息",
+      "close": 293.9,
+      "change_pct": -6.51
+    },
+    "cambricon": {
+      "code": "688256.SH",
+      "name": "寒武纪",
+      "close": 1310.0,
+      "change_pct": -5.86
+    },
+    "montage_tech": {
+      "code": "688008.SH",
+      "name": "澜起科技",
+      "close": 253.0,
+      "change_pct": -3.06
+    },
+    "amec": {
+      "code": "688012.SH",
+      "name": "中微公司",
+      "close": 297.68,
+      "change_pct": -2.04
+    },
+    "kingsfot": {
+      "code": "688111.SH",
+      "name": "金山办公",
+      "close": 238.5,
+      "change_pct": 0.9
+    },
+    "boe_tech": {
+      "code": "000725.SZ",
+      "name": "京东方A",
+      "close": 5.11,
+      "change_pct": -10.04,
+      "note": "跌停"
+    },
+    "naura": {
+      "code": "002371.SZ",
+      "name": "北方华创",
+      "close": 629.87,
+      "change_pct": -4.42
+    },
+    "catl": {
+      "code": "300750.SZ",
+      "name": "宁德时代",
+      "close": 424.0,
+      "change_pct": 2.0,
+      "note": "逆势抗跌"
+    },
+    "zhongji_innolight": {
+      "code": "300308.SZ",
+      "name": "中际旭创",
+      "close": null,
+      "change_pct": null,
+      "note": "周末辟谣虚假董事长演讲稿(5/31)"
+    }
+  },
+  "sectors": {
+    "semiconductor": {
+      "name": "半导体",
+      "change_pct_weekly": -5.62,
+      "main_force_netflow_weekly": -379.3,
+      "main_force_netflow_unit": "亿元"
+    },
+    "ai": {
+      "name": "人工智能",
+      "change_pct_weekly": -2.99,
+      "main_force_netflow_weekly": -302.3,
+      "main_force_netflow_unit": "亿元"
+    },
+    "new_energy": {
+      "name": "新能源",
+      "change_pct_weekly": -0.33,
+      "main_force_netflow_weekly": -39.0,
+      "main_force_netflow_unit": "亿元"
+    }
+  },
+  "market_flow": {
+    "total_volume": 3.319,
+    "total_volume_unit": "万亿元",
+    "weekly_total_volume": 3.34,
+    "weekly_total_volume_unit": "万亿元",
+    "main_force_net_flow": -1233,
+    "main_force_net_flow_unit": "亿元",
+    "north_flow_weekly": {
+      "weekly_cumulative": "超1000亿",
+      "friday_single_day": 249,
+      "friday_unit": "亿元",
+      "note": "五月最高单日, 尾盘半小时突袭58亿"
+    },
+    "margin_balance": 29424.36,
+    "margin_unit": "亿元",
+    "margin_note": "较前周+433亿"
+  },
+  "market_weekly_performance": {
+    "ci_all_shares": -1.72,
+    "cyb_weekly": 2.53,
+    "hs300_weekly": 0.97,
+    "bei50_weekly": -6.27,
+    "note": "大盘风格占优，沪深300周涨0.97%领先"
+  },
+  "overseas_weekly": {
+    "sp500": 1.43,
+    "nasdaq": 2.39,
+    "dow": 0.90,
+    "hsi": -1.65,
+    "hscie": -1.46,
+    "hs_tech": 0.30,
+    "brent": 92.1,
+    "brent_note": "周跌11.1%至92.1美元，地缘缓和预期"
+  },
+  "weekend_news_key_points": [
+    "COMPUTEX 2026(台北电脑展)6月1日揭幕，主题AI Together，史上最大规模",
+    "MiniMax启动A股科创板IPO，已与中信证券签署辅导协议",
+    "宇树科技科创板IPO6月1日上会，人形机器人第一股拟募资42亿",
+    "中际旭创周末辟谣称网络流传虚假董事长演讲稿",
+    "中国银河策略: 科技极致演绎后市场或趋于收敛",
+    "国信证券: 科技板块PE估值60倍处历史90%分位以上",
+    "A股指数调样含科量提升",
+    "软银5900亿法国算力项目",
+    "英特尔200亿美元玻璃基板计划"
+  ],
+  "next_week_highlight": [
+    "美国5月非农数据 (6/5)",
+    "美伊谈判进展与霍尔木兹海峡局势",
+    "COMPUTEX 2026 (6/1-6/5)",
+    "宇树科技IPO上会 (6/1)",
+    "美联储褐皮书",
+    "欧洲央行/英国央行/日本央行行长讲话"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "snapshot_time": "2026-06-01T11:09:00+08:00",
+  "data_sources": ["mx-data(东方财富)", "mx-search(妙想搜索)"],
+  "indices": {
+    "上证指数": {
+      "code": "000001.SH",
+      "latest": 4056.16,
+      "change_pct": -0.31,
+      "real_time": "2026-06-01 11:10",
+      "prev_close": 4068.57,
+      "prev_change_pct": -0.73,
+      "note": "今日盘中震荡拉升，从低开翻红后微跌"
+    },
+    "深证成指": {
+      "prev_close": 15575.13,
+      "prev_change_pct": -1.81,
+      "latest_note": "盘中拉升翻红"
+    },
+    "创业板指": {
+      "prev_change_pct": -2.11,
+      "latest_note": "盘中一度涨超1%后回落翻绿"
+    },
+    "科创50": {
+      "code": "000688.SH",
+      "change_pct": -3.90,
+      "real_time": "2026-06-01 11:10",
+      "prev_change_pct": -5.04,
+      "prev_date": "2026-05-29",
+      "composition": {
+        "半导体权重": "76.98%"
+      },
+      "note": "续跌-3.9%，半导体板块继续承压"
+    }
+  },
+  "market_breadth": {
+    "total_volume_prev": "3.34万亿",
+    "today_hour1_shrink": "缩量1828亿(首小时)",
+    "estimated_today_volume": "不足3万亿(预估)",
+    "up_count_today": "超4200家上涨",
+    "limit_up_today": "超百股涨停(开盘1小时)",
+    "seal_rate": "超80%",
+    "microcap_index": "大涨超3%",
+    "margin_balance_latest": "约29424亿(截至5/28)"
+  },
+  "northbound": {
+    "total_deal_amt_5_29": "4734.05亿",
+    "sh_flow_5_29": "2216.94亿",
+    "sz_flow_5_29": "2517.11亿",
+    "net_inflow_5_29": "249亿元(近1个月新高)",
+    "recent_weekly": "估算净流出15亿(5/26-5/29)，灵活型小幅净流入8亿"
+  },
+  "sector_today": {
+    "hot": ["AI应用(AIPC/软件/互联网)", "电力(多股涨停)", "化工(多股涨停)"],
+    "cold": ["白酒", "建材", "光通信"],
+    "northbound_favorites": ["宁德时代(314亿双向)", "中际旭创(247亿)", "新易盛(184亿)"]
+  },
+  "key_events_20260601": {
+    "nvidia_gtc_taipei": "6/1-4，黄仁勋11:00主题演讲，预告'PC新时代'",
+    "computex_2026": "6/2-5 台北，AI Together主题",
+    "yushu_tech_ipo": "宇树科技科创板IPO今日上会",
+    "huawei_nova16": "华为nova16系列及全场景发布会",
+    "minimax_ipo": "MiniMax与中信证券签辅导协议，启动A股IPO程序",
+    "dell_ai_server": "戴尔AI服务器订单储备超200亿元",
+    "5月PMI": "50.0%(临界点)，环比-0.3pct；非制造业50.1%环比+0.7pct",
+    "国企改革": "2026-2029年深化国企改革方案已下发",
+    "misc": "长鑫科技IPO上会(拟募295亿)；卫星互联网试验卫星成功发射"
+  },
+  "macro_risk": {
+    "us_iran_talks": "特朗普修改备忘录条款更严苛，伊朗拒批，布伦特重回100美元",
+    "us_entities_sanctioned": "美国制裁9家中国公司涉伊朗石油"
+  }
+}

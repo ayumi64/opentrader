@@ -1,0 +1,58 @@
+[
+  {
+    "id": "SIG-20260601-014",
+    "title": "强制撤单偏离全部>10%",
+    "level": "critical",
+    "status": "active",
+    "desc": "5笔强制撤单偏离仍全部>10%，交易执行异常未缓解",
+    "trading_gate_impact": "close"
+  },
+  {
+    "id": "SIG-20260601-015",
+    "title": "科创50崩跌系统风险",
+    "level": "critical",
+    "status": "active",
+    "desc": "科创50今日再跌-2.70%，2日累计跌幅约6.5%，GTC利好出尽连锁反应持续",
+    "trading_gate_impact": "close"
+  },
+  {
+    "id": "SIG-20260601-016",
+    "title": "GTC演讲利好出尽",
+    "level": "high",
+    "status": "active",
+    "desc": "市场对GTC演讲反映为利好出尽抛售，情绪面偏空",
+    "trading_gate_impact": "close"
+  },
+  {
+    "id": "SIG-20260601-019",
+    "title": "现金危机缺口扩大",
+    "level": "critical",
+    "status": "active",
+    "desc": "现金仓位<1.5%，缺口持续扩大，流动性风险最高优先级",
+    "trading_gate_impact": "close"
+  },
+  {
+    "id": "SIG-20260601-020",
+    "title": "主力资金持续巨量净流出",
+    "level": "high",
+    "status": "new",
+    "desc": "5/29监测主力净流出-1,233亿元，散户承接为主，资金分歧严重",
+    "trading_gate_impact": "close"
+  },
+  {
+    "id": "SIG-20260601-021",
+    "title": "科创50继续重挫-2.70%",
+    "level": "high",
+    "status": "new",
+    "desc": "13:00实时数据，科创50报1704.09点跌-2.70%，科技方向持续承压",
+    "trading_gate_impact": "close"
+  },
+  {
+    "id": "SIG-20260601-022",
+    "title": "煤炭/氟化工防御性板块异动",
+    "level": "info",
+    "status": "new",
+    "desc": "资金向防御性+周期板块切换，晋控煤业/巨化股份涨停",
+    "trading_gate_impact": "observe"
+  }
+]

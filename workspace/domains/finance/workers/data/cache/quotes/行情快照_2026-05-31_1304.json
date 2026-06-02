@@ -1,0 +1,118 @@
+{
+  "snapshot_time": "2026-05-31T13:04:00+08:00",
+  "trade_day": "2026-05-29",
+  "is_trading_day": false,
+  "market_status": "closed",
+  "indices": {
+    "shanghai_composite": { "code": "000001.SH", "name": "上证指数", "close": 4068.57, "change_pct": -0.73, "high": 4113, "low": 4055 },
+    "shenzhen_component": { "code": "399001.SZ", "name": "深证成指", "close": 15575.13, "change_pct": -1.81, "high": 15982, "low": 15493 },
+    "cyb_index": { "code": "399006.SZ", "name": "创业板指", "close": 4037.95, "change_pct": -2.11, "high": 4159, "low": 4010 },
+    "hs300": { "code": "000300.SH", "name": "沪深300", "close": 4892.12, "change_pct": -0.45, "high": 4954, "low": 4879 },
+    "star50": { "code": "000688.SH", "name": "科创50", "close": 1751.32, "change_pct": -5.04, "high": 1855, "low": 1728 },
+    "sz50": { "code": "000016.SH", "name": "上证50", "close": 2921.08, "change_pct": 0.24, "high": 2938, "low": 2911 }
+  },
+  "tech_stocks": {
+    "smc_international": { "code": "688981.SH", "name": "中芯国际", "close": 139.91, "change_pct": -8.97 },
+    "haiguang_info": { "code": "688041.SH", "name": "海光信息", "close": 293.90, "change_pct": -6.51 },
+    "cambricon": { "code": "688256.SH", "name": "寒武纪", "close": 1310.00, "change_pct": -5.86 },
+    "montage_tech": { "code": "688008.SH", "name": "澜起科技", "close": 253.00, "change_pct": -3.06 },
+    "amec": { "code": "688012.SH", "name": "中微公司", "close": 297.68, "change_pct": -2.04 },
+    "kingsfot": { "code": "688111.SH", "name": "金山办公", "close": 238.50, "change_pct": 0.90 },
+    "boe_tech": { "code": "000725.SZ", "name": "京东方A", "close": 5.11, "change_pct": -10.04, "note": "跌停" },
+    "naura": { "code": "002371.SZ", "name": "北方华创", "close": 629.87, "change_pct": -4.42 },
+    "catl": { "code": "300750.SZ", "name": "宁德时代", "close": 424.00, "change_pct": 2.00, "note": "逆势抗跌" },
+    "zhongji_innolight": { "code": "300308.SZ", "name": "中际旭创", "close": null, "change_pct": null, "note": "周末声明辟谣虚假信息; 6/12临时股东会" }
+  },
+  "sectors": {
+    "semiconductor": {
+      "name": "半导体",
+      "change_pct_weekly": -5.62,
+      "main_force_netflow_weekly": -379.3,
+      "main_force_netflow_unit": "亿元",
+      "avg_daily_volume": 4830,
+      "avg_daily_volume_unit": "亿元",
+      "note": "5/29单日主力净流出379亿创历史新高"
+    },
+    "ai": {
+      "name": "人工智能",
+      "change_pct_weekly": -2.99,
+      "main_force_netflow_weekly": -302.3,
+      "main_force_netflow_unit": "亿元",
+      "avg_daily_volume": 5398,
+      "avg_daily_volume_unit": "亿元"
+    },
+    "new_energy": {
+      "name": "新能源",
+      "change_pct_weekly": -0.33,
+      "main_force_netflow_weekly": -39.0,
+      "main_force_netflow_unit": "亿元",
+      "avg_daily_volume": 1957,
+      "avg_daily_volume_unit": "亿元"
+    }
+  },
+  "market_flow": {
+    "total_volume": 3.319,
+    "total_volume_unit": "万亿元",
+    "shanghai_volume": 1.532,
+    "shenzhen_volume": 1.787,
+    "volume_unit": "万亿元",
+    "main_force_net_flow": -1233,
+    "main_force_net_flow_unit": "亿元",
+    "large_order_inflow": 8364,
+    "large_order_outflow": 8838,
+    "medium_order_inflow": 10400,
+    "medium_order_outflow": 10020,
+    "small_order_inflow": 8416,
+    "small_order_outflow": 7557,
+    "all_units": "亿元",
+    "north_flow_weekly": {
+      "weekly_cumulative": "超1000亿",
+      "friday_single_day": 249,
+      "friday_unit": "亿元",
+      "note": "五月最高单日，尾盘半小时突袭58亿"
+    }
+  },
+  "etf_performance": {
+    "star_chip_etf": { "code": "588290", "name": "科创芯片ETF", "close": 3.586, "change_pct": -5.58 },
+    "star50_etf": { "code": "588000", "name": "科创50ETF", "close": 1.844, "change_pct": -5.05 }
+  },
+  "weekly_trend": {
+    "shanghai_weekly_change_pct": -2.0,
+    "star50_weekly_change_pct": "超-5",
+    "note": "上证周跌2.0%（4153→4069），科创50连续重挫"
+  },
+  "important_events_weekend": [
+    { "type": "geopolitical", "severity": "high", "title": "美伊冲突持续升级: 伊朗击落美军MQ-1无人机; 特朗普提出更强硬条款施压; 美防长香格里拉讲话保留动武选项; 伊朗全面管理霍尔木兹海峡航运" },
+    { "type": "macro", "severity": "low", "title": "5月官方制造业PMI=50.0%，较上月降0.3pp，大型企业51.1%/中小企业48.5-48.6%" },
+    { "type": "market", "severity": "medium", "title": "A股减持潮: 生益科技/方正证券等6家公司盘后公告减持; 近400家4月以来拟减持超1200亿; 半导体板块仍有百亿减持压力" },
+    { "type": "technology", "severity": "low", "title": "戴尔AI服务器营收暴增757%, 盘后股价涨39%+; AI算力需求持续验证; 美股三大指数续创新高" },
+    { "type": "technology", "severity": "low", "title": "MiniMax启动A股IPO, 与中信证券签辅导协议; 长鑫科技科创板IPO获上市委通过(拟募资295亿)" },
+    { "type": "technology", "severity": "low", "title": "COMPUTEX 2026明日(6/1)揭幕, 主题'AI Together', 英伟达/AMD/英特尔齐聚" },
+    { "type": "technology", "severity": "low", "title": "宇树科技科创板明日(6/1)上会, '人形机器人第一股'拟募资42亿" },
+    { "type": "policy", "severity": "low", "title": "央企科技成果产业化联合体成立; 城市更新'十五五'规划发布" },
+    { "type": "macro", "severity": "medium", "title": "美联储PCE 3.8%/核心PCE 3.3%, 加息概率升至50%+, 高盛警告通胀为最大风险" },
+    { "type": "technology", "severity": "low", "title": "华为何庭波提出韬(τ)定律挑战摩尔定律; 华为女将基于6年381款芯片经验提出时间缩微新路" }
+  ],
+  "global_market": {
+    "dow_jones": 51032.46,
+    "dow_change_pct": 0.72,
+    "sp500": 7580.06,
+    "sp500_change_pct": 0.22,
+    "note": "美股三大指数全线收涨续创新高, 道指月累涨2.78%, 标普月累涨5%+"
+  },
+  "week_ahead_focus": [
+    "宇树科技IPO上会(6/1) — 人形机器人赛道情绪指标",
+    "COMPUTEX 2026(6/1-5) — AI芯片/CPO/液冷/机器人新品催化",
+    "美伊谈判走向 — 特朗普是否进一步升级'战争部'言论",
+    "6月大科技解禁高峰(3237亿, 环比+68%, 科创板占近半)",
+    "美联储FOMC(6/16-17) — 沃什上任后首会, 加息概率50%+关注",
+    "MSCI指数调样生效(6/15) — 被动资金调仓扰动",
+    "端午假期前资金偏谨慎, 月底/季末流动性"
+  ],
+  "data_sources": [
+    "东方财富妙想API / mx-data 实时行情",
+    "妙想搜索 / mx-search 资讯",
+    "财联社/央视/新华社/证券时报各权威信源",
+    "国家统计局"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "updated_at": "2026-05-20T10:30:00+08:00",
+  "account_type": "simulation",
+  "total_assets_cny": 1353589,
+  "cash_available_cny": 21291,
+  "positions": [],
+  "notes": "持仓为空时以 orders_pending 为主；用户成交后更新 positions 数组。字段：code, name, shares, cost, market_value, sector"
+}

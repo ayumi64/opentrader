@@ -1,0 +1,67 @@
+{
+  "snapshot_time": "2026-06-01T12:04:00+08:00",
+  "data_sources": ["mx-data(东方财富)", "mx-search(妙想搜索)"],
+  "indices": {
+    "上证指数": {
+      "code": "000001.SH",
+      "latest": 4063.72,
+      "change_pct": -0.12,
+      "real_time": "2026-06-01 12:05",
+      "prev_close": 4068.57,
+      "prev_change_pct": -0.73,
+      "note": "午盘前窄幅震荡，跌幅收窄"
+    },
+    "深证成指": {
+      "prev_close": 15575.13,
+      "prev_change_pct": -1.81,
+      "latest_note": "盘中翻红后小幅震荡"
+    },
+    "创业板指": {
+      "prev_change_pct": -2.11,
+      "latest_note": "盘中一度涨超1%，后震荡"
+    },
+    "科创50": {
+      "code": "000688.SH",
+      "note": "持续承压，续跌约-3.9%"
+    }
+  },
+  "market_breadth": {
+    "total_volume_prev": "3.34万亿(5/29)",
+    "today_volume_est": "缩量(预估全天不足3万亿)",
+    "up_count_note": "超4200家上涨(早盘)",
+    "prev_volume_5_29": "3.341万亿",
+    "prev_volume_5_28": "2.987万亿",
+    "prev_volume_5_27": "3.26万亿"
+  },
+  "northbound": {
+    "latest_data_date": "2026-05-29",
+    "total_deal_amt": "4734.05亿(5/29)",
+    "sh_deal_amt": "2216.94亿(5/29)",
+    "sz_deal_amt": "2517.11亿(5/29)",
+    "prev_day_amt": "3835.01亿(5/28)",
+    "note": "北向日频数据存在滞后(T+2)，最新为5/29"
+  },
+  "sector_today": {
+    "半导体": {"change_pct": -2.03, "5d_change": -9.61, "volume": "2644亿", "up_cnt": 42, "down_cnt": 135, "ddx": -0.221, "note": "连续承压，主力资金持续流出"},
+    "通信设备": {"change_pct": -1.07, "5d_change": -6.25, "volume": "1447亿", "up_cnt": 44, "down_cnt": 47, "ddx": -0.108},
+    "计算机": {"change_pct": 3.09, "5d_change": -5.61, "volume": "1096亿", "up_cnt": 311, "down_cnt": 46, "ddx": 0.157, "note": "强势翻红，AI应用/AIPC带动"},
+    "人工智能": {"latest": 1226, "change_pct": 0.18, "volume": "3283亿", "up_cnt": 556, "down_cnt": 140, "note": "震荡微涨，AIPC概念爆发"}
+  },
+  "key_events_20260601": {
+    "nvidia_gtc_taipei": "6/1-4，黄仁勋11:00演讲启动，AIPC概念大涨(雷神科技30cm涨停)",
+    "computex_2026": "6/2-5台北AI Together主题，今日预演",
+    "yushu_tech_ipo": "宇树科技科创板IPO今日上会",
+    "huawei_nova16": "华为nova16系列及全场景发布会",
+    "minimax_ipo": "MiniMax签辅导协议启动A股科创板IPO",
+    "dell_ai_server": "戴尔AI服务器订单储备超200亿元",
+    "5月PMI": "50.0%(临界点)，环比-0.3pct",
+    "国企改革": "2026-2029年深化国企改革方案已下发",
+    "公募风格漂移落地": "近4000亿资金被迫合规调仓执行",
+    "求是文章未来产业": "量子科技、生物制造等方向聚焦"
+  },
+  "macro_risk": {
+    "us_iran_talks": "特朗普修订备忘录更严苛，伊朗拒批并提修订意见；油价反弹(布伦特$92.66)、美油$89.20",
+    "us_blockade_iran": "美军迫118艘船改道+5艘失能；阿曼发海峡航行警告",
+    "north_flow_change": "南向资金持续加码港股科技(腾讯/阿里/字节700亿资本开支)"
+  }
+}

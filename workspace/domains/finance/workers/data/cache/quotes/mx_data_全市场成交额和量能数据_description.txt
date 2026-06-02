@@ -1,0 +1,8 @@
+金融数据查询结果说明
+========================================
+查询内容: 全市场成交额和量能数据
+数据文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/cache/quotes/mx_data_全市场成交额和量能数据.xlsx
+描述文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/cache/quotes/mx_data_全市场成交额和量能数据_description.txt
+数据行数: 5
+表数量: 1
+Sheet 列表: 全部A股的成交量(合计)、成交额(合计)

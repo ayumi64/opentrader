@@ -1,0 +1,45 @@
+name: openclaw-trader
+display_name: OpenClaw Trader
+version: "1.0.0"
+description: A股金融域 Orchestrator 私有化部署包（Trader + Finance Workers）
+
+components:
+  - openclaw-gateway
+  - trader-orchestrator
+  - finance-workers
+  - miaoxiang-skills
+  - cron-schedules
+
+agents:
+  - trader
+  - finance-data
+  - finance-strategy
+  - finance-risk
+  - finance-execution
+  - finance-content
+
+install_requires:
+  - docker >= 24.0
+  - docker compose v2
+  - bash 4.0+
+
+user_inputs:
+  - name: API_KEY
+    env: DEEPSEEK_API_KEY
+    description: 大模型 API Key（DeepSeek，用于 Agent 推理）
+  - name: MX_APIKEY
+    env: MX_APIKEY
+    description: 妙想/东方财富行情 API Key（可与 API_KEY 相同厂商不同密钥；安装时可留空则仅填 API_KEY 后手动补）
+  - name: SIM_TRADING_TOKEN
+    env: SIM_TRADING_TOKEN
+    description: 模拟盘对接 Token（写入 execution 配置，供后续券商/模拟柜台 API 使用）
+
+optional_inputs:
+  - FEISHU_SONICTEAM_APP_ID
+  - FEISHU_SONICTEAM_APP_SECRET
+  - OPENCLAW_GATEWAY_TOKEN
+
+platforms:
+  - linux/amd64
+  - linux/arm64
+  - darwin/arm64

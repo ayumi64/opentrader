@@ -1,0 +1,59 @@
+{
+  "snapshot_time": "2026-06-01T10:06:00+08:00",
+  "data_sources": ["mx-data(东方财富)", "mx-search(妙想搜索)"],
+  "indices": {
+    "上证指数": {
+      "code": "000001.SH",
+      "latest_close": 4068.57,
+      "change_pct": -0.73,
+      "date": "2026-05-29"
+    },
+    "科创50": {
+      "code": "000688.SH",
+      "latest_close": null,
+      "change_pct": -5.04,
+      "note": "5/29单日暴跌5.04%，24芯片股跌停",
+      "composition": {
+        "半导体权重": "76.98%",
+        "半导体近1年涨跌幅": "123.85%",
+        "通信设备近1年涨跌幅": "316.58%",
+        "消费电子近1年涨跌幅": "105.20%",
+        "自动化设备近1年涨跌幅": "86.22%"
+      },
+      "date": "2026-05-29"
+    }
+  },
+  "market_breadth": {
+    "total_volume": "3.32万亿",
+    "volume_change": "放量3509亿",
+    "up_count": null,
+    "down_count": "超3800只下跌",
+    "limit_up": 49,
+    "limit_down": 59,
+    "margin_balance": "约29206亿",
+    "financing_buy": "约2977亿"
+  },
+  "northbound": {
+    "net_inflow_5_29": "249亿元",
+    "note": "逆势净流入，近1个月新高"
+  },
+  "sector_flow": {
+    "net_inflow": ["电力", "银行", "白酒(净流入46.68亿)", "通信硬件"],
+    "net_outflow": ["半导体(-379亿流出)", "光学光电子", "消费电子"]
+  },
+  "today_events_20260601": {
+    "nvidia_gtc_taipei": "6/1-4 GTC Taipei 2026，黄仁勋主题演讲",
+    "yushu_tech_ipo": "宇树科技科创板IPO上会，拟募资42亿",
+    "huawei_nova16": "华为nova 16系列及全场景新品发布会",
+    "minimax_ipo": "MiniMax与中信证券签辅导协议，启动A股IPO",
+    "computex_2026": "6/2-5 COMPUTEX台北展'AI Together'",
+    "locksup_expiry": "118.78亿市值限售股今日解禁",
+    "japan_korea_all_time_high": "日韩股市同步创历史收盘新高",
+    "ai_app_strength": "AI应用概念逆势走强，视觉中国等涨停",
+    "us_iran": "美伊协议谈判僵持，特朗普提重大修改涉海峡+高浓缩铀",
+    "us_fed_hawkish": "PCE 3.8%，多名美联储官员放风加息",
+    "us_entities_sanctioned": "美国制裁9家中国公司涉伊朗石油",
+    "dell_ai_server": "戴尔盘后暴涨39%，AI服务器营收暴增757%",
+    "international_oil_price": "布伦特重回100美元，美伊冲突持续"
+  }
+}

@@ -1,0 +1,18 @@
+services:
+  trader-gateway:
+    image: ${TRADER_IMAGE:-openclaw-trader:1.0.0}
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: openclaw-trader
+    restart: unless-stopped
+    env_file:
+      - ${INSTALL_DIR:-.}/.env
+    environment:
+      OPENCLAW_HOME: /data
+      TZ: Asia/Shanghai
+    ports:
+      - "${GATEWAY_PORT:-18789}:18789"
+    volumes:
+      - ${INSTALL_DIR:-.}/data:/data
+      - ${INSTALL_DIR:-.}/config:/config:ro

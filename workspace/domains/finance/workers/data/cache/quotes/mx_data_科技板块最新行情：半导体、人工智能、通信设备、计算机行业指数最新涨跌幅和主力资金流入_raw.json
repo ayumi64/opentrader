@@ -1,0 +1,3823 @@
+{
+  "success": true,
+  "status": 0,
+  "code": 0,
+  "message": "ok",
+  "data": {
+    "requestId": null,
+    "message": "OK",
+    "status": 0,
+    "code": 0,
+    "data": {
+      "protocolType": "SEARCH_DATA",
+      "id": "4554f484-e66a-42c5-8d15-a62f97de283d",
+      "refSeq": null,
+      "keyEntityList": null,
+      "searchDataResultDTO": {
+        "questionId": "9c534f0e-7d24-4a46-9465-8c6f3e9554d1",
+        "dataTableDTOList": [
+          {
+            "code": "90.BK1036",
+            "entityName": "2026-06-01 13:38",
+            "table": {
+              "219": [
+                "2427.3999",
+                "24156.2695",
+                "8297.6699"
+              ],
+              "218": [
+                "3099.0701",
+                "27931.9492",
+                "9540.5898"
+              ],
+              "headName": [
+                "半导体",
+                "通信设备",
+                "计算机"
+              ]
+            },
+            "rawTable": {
+              "219": [
+                "2427.3999",
+                "24156.2695",
+                "8297.6699"
+              ],
+              "218": [
+                "3099.0701",
+                "27931.9492",
+                "9540.5898"
+              ],
+              "headName": [
+                "半导体",
+                "通信设备",
+                "计算机"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "219": "支撑位",
+              "headNameSub": "数据来源",
+              "218": "压力位",
+              "securityName": "股票名称"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "ZCW_219_4",
+              "returnName": "支撑位",
+              "classCode": "007001",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-06-01 00:00:00",
+              "endDate": "2026-06-01 00:00:00",
+              "fuzzy": true,
+              "dateGranularity": "DAY",
+              "defineType": 0,
+              "isLoopN": false,
+              "apiCode": "4",
+              "isGroup": false,
+              "returnSourceCode": "219",
+              "returnSourceName": "支撑位",
+              "graph": "2",
+              "unit": "0",
+              "tableType": "2"
+            },
+            "entityCodes": [
+              "90.BK1036",
+              "90.BK0448",
+              "90.BK1207"
+            ],
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "YLW_218_4",
+                "returnName": "压力位",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "4",
+                "isGroup": false,
+                "returnSourceCode": "218",
+                "returnSourceName": "压力位",
+                "graph": "2",
+                "unit": "0",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "ZCW_219_4",
+                "returnName": "支撑位",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "4",
+                "isGroup": false,
+                "returnSourceCode": "219",
+                "returnSourceName": "支撑位",
+                "graph": "2",
+                "unit": "0",
+                "tableType": "2"
+              }
+            ],
+            "dataTableType": "NORM_TABLE",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "219",
+              "218"
+            ],
+            "tipFlags": [
+              "0"
+            ],
+            "dataType": "行情数据",
+            "title": "半导体等当前的支撑位、压力位",
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftEntityTop",
+            "orderCol": {},
+            "jumpUrlList": [],
+            "dataTypeEnum": "HQ",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "BK1036",
+              "entityType": "BLOCK",
+              "entityTypeCode": "3",
+              "entityTypeName": "财富通行业板块2级",
+              "classCode": "005002",
+              "className": "行业板块",
+              "publishCode": "",
+              "fullName": "半导体",
+              "shortName": "",
+              "matchWord": "半导体",
+              "secuCode": "BK1036",
+              "market": "90",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "BK1036",
+                "entityType": "BLOCK",
+                "entityTypeCode": "3",
+                "entityTypeName": "财富通行业板块2级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "半导体",
+                "shortName": "",
+                "matchWord": "半导体",
+                "secuCode": "BK1036",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              },
+              {
+                "entityId": "BK0448",
+                "entityType": "BLOCK",
+                "entityTypeCode": "3",
+                "entityTypeName": "财富通行业板块2级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "通信设备",
+                "shortName": "",
+                "matchWord": "通信设备",
+                "secuCode": "BK0448",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              },
+              {
+                "entityId": "BK1207",
+                "entityType": "BLOCK",
+                "entityTypeCode": "2",
+                "entityTypeName": "财富通行业板块1级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "计算机",
+                "shortName": "",
+                "matchWord": "计算机",
+                "secuCode": "BK1207",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {
+              "2026-06-01 13:38": false
+            },
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "",
+            "frontendEntityCode": "",
+            "frontendTitle": "",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "NORMAL"
+          },
+          {
+            "code": "90.BK1036",
+            "entityName": "上周涨跌幅",
+            "table": {
+              "半导体": [
+                "-0.6774%"
+              ],
+              "人工智能": [
+                "-2.217%"
+              ],
+              "通信设备": [
+                "12.05%"
+              ],
+              "计算机": [
+                "-6.902%"
+              ],
+              "headName": [
+                " "
+              ]
+            },
+            "rawTable": {
+              "半导体": [
+                "-0.677362"
+              ],
+              "人工智能": [
+                "-2.217197"
+              ],
+              "通信设备": [
+                "12.052739"
+              ],
+              "计算机": [
+                "-6.901712"
+              ],
+              "headName": [
+                " "
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "100000000016980": "上周涨跌幅",
+              "headNameSub": "数据来源"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "100000000016980",
+              "returnName": "上周涨跌幅",
+              "classCode": "007109",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-06-01 00:00:00",
+              "endDate": "2026-06-01 00:00:00",
+              "fuzzy": true,
+              "dateGranularity": "UNKNOWN",
+              "defineType": 0,
+              "isLoopN": false,
+              "fixedParamValue": "IsHistory=0",
+              "quantType": "9",
+              "isGroup": false,
+              "returnSourceCode": "LZCHG",
+              "returnSourceName": "上周涨跌幅",
+              "graph": "2",
+              "unit": "1",
+              "tableType": "1",
+              "unitName": "%",
+              "unitDesc": "108:%:%"
+            },
+            "entityCodes": [
+              "90.BK1036",
+              "90.BK0800",
+              "90.BK0448",
+              "90.BK1207"
+            ],
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "100000000016980",
+                "returnName": "上周涨跌幅",
+                "classCode": "007109",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "UNKNOWN",
+                "defineType": 0,
+                "isLoopN": false,
+                "fixedParamValue": "IsHistory=0",
+                "quantType": "9",
+                "isGroup": false,
+                "returnSourceCode": "LZCHG",
+                "returnSourceName": "上周涨跌幅",
+                "graph": "2",
+                "unit": "1",
+                "tableType": "1",
+                "unitName": "%",
+                "unitDesc": "108:%:%"
+              }
+            ],
+            "dataTableType": "NORM_TABLE",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "半导体",
+              "人工智能",
+              "通信设备",
+              "计算机"
+            ],
+            "tipFlags": [],
+            "dataType": "数据浏览器",
+            "title": "半导体等的上周涨跌幅",
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "EntityLeftTimeTop",
+            "orderCol": {},
+            "jumpUrlList": [
+              {
+                "choiceUrl": "EM://stockdatacenter?type=browser&modType=BLOCK&code=90.BK1036,007195,90.BK0448,90.BK1207&indId=100000000016980",
+                "typeName": "板块数据浏览器"
+              }
+            ],
+            "dataTypeEnum": "DATA_BROWSER",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "BK1036",
+              "entityType": "BLOCK",
+              "entityTypeCode": "3",
+              "entityTypeName": "财富通行业板块2级",
+              "classCode": "005002",
+              "className": "行业板块",
+              "publishCode": "",
+              "fullName": "半导体",
+              "shortName": "",
+              "matchWord": "半导体",
+              "secuCode": "BK1036",
+              "market": "90",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "BK1036",
+                "entityType": "BLOCK",
+                "entityTypeCode": "3",
+                "entityTypeName": "财富通行业板块2级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "半导体",
+                "shortName": "",
+                "matchWord": "半导体",
+                "secuCode": "BK1036",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              },
+              {
+                "entityId": "BK0800",
+                "entityType": "BLOCK",
+                "entityTypeCode": "BLOCK",
+                "entityTypeName": "概念板块",
+                "classCode": "005003",
+                "className": "概念板块",
+                "publishCode": "",
+                "fullName": "人工智能",
+                "shortName": "",
+                "matchWord": "人工智能",
+                "secuCode": "BK0800",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              },
+              {
+                "entityId": "BK0448",
+                "entityType": "BLOCK",
+                "entityTypeCode": "3",
+                "entityTypeName": "财富通行业板块2级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "通信设备",
+                "shortName": "",
+                "matchWord": "通信设备",
+                "secuCode": "BK0448",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              },
+              {
+                "entityId": "BK1207",
+                "entityType": "BLOCK",
+                "entityTypeCode": "2",
+                "entityTypeName": "财富通行业板块1级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "计算机",
+                "shortName": "",
+                "matchWord": "计算机",
+                "secuCode": "BK1207",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {
+              " ": false
+            },
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "",
+            "frontendEntityCode": "",
+            "frontendTitle": "",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "TDAY"
+          },
+          {
+            "code": "90.BK1036",
+            "entityName": "2026-03-03至2026-06-01",
+            "table": {
+              "100000000046093": [
+                "15.89万亿元",
+                "24.11万亿元",
+                "10.35万亿元",
+                "9.443万亿元"
+              ],
+              "100000000046096": [
+                "0.03994%",
+                "0.02719%",
+                "0.05408%",
+                "0.03537%"
+              ],
+              "headName": [
+                "半导体",
+                "人工智能",
+                "通信设备",
+                "计算机"
+              ]
+            },
+            "rawTable": {
+              "100000000046093": [
+                "15888440644183.13",
+                "24110138295465.44",
+                "10354890126552.07",
+                "9442633443369.2"
+              ],
+              "100000000046096": [
+                "0.039941592429",
+                "0.027186948297",
+                "0.0540765785",
+                "0.035373009343"
+              ],
+              "headName": [
+                "半导体",
+                "人工智能",
+                "通信设备",
+                "计算机"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "100000000046093": "区间成交额",
+              "headNameSub": "数据来源",
+              "100000000046096": "区间日均换手率(整体法)",
+              "securityName": "股票名称"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "100000000046093",
+              "returnName": "区间成交额",
+              "classCode": "007109",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-06-01 00:00:00",
+              "endDate": "2026-06-01 00:00:00",
+              "fuzzy": true,
+              "dateGranularity": "DAY",
+              "defineType": 0,
+              "isLoopN": false,
+              "fixedParamValue": "CurType=2,IsHistory=0",
+              "quantType": "9",
+              "isGroup": false,
+              "returnSourceCode": "QJCJE",
+              "returnSourceName": "区间成交额",
+              "graph": "0",
+              "unit": "1",
+              "tableType": "1",
+              "unitName": "元",
+              "unitDesc": "101:元:元"
+            },
+            "entityCodes": [
+              "90.BK1036",
+              "90.BK0800",
+              "90.BK0448",
+              "90.BK1207"
+            ],
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "100000000046093",
+                "returnName": "区间成交额",
+                "classCode": "007109",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "fixedParamValue": "CurType=2,IsHistory=0",
+                "quantType": "9",
+                "isGroup": false,
+                "returnSourceCode": "QJCJE",
+                "returnSourceName": "区间成交额",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "1",
+                "unitName": "元",
+                "unitDesc": "101:元:元"
+              },
+              {
+                "returnCode": "100000000046096",
+                "returnName": "区间日均换手率(整体法)",
+                "classCode": "007109",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "fixedParamValue": "IsHistory=0",
+                "quantType": "9",
+                "isGroup": false,
+                "returnSourceCode": "QJRJHSL",
+                "returnSourceName": "区间日均换手率(整体法)",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "1",
+                "unitName": "%",
+                "unitDesc": "108:%:%"
+              }
+            ],
+            "dataTableType": "NORM_TABLE",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "100000000046093",
+              "100000000046096"
+            ],
+            "tipFlags": [],
+            "dataType": "数据浏览器",
+            "title": "半导体等的区间成交额、区间日均换手率(整体法)",
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftEntityTop",
+            "orderCol": {},
+            "jumpUrlList": [
+              {
+                "choiceUrl": "EM://stockdatacenter?type=browser&modType=BLOCK&code=90.BK1036,007195,90.BK0448,90.BK1207&indId=100000000046093|102:2026-06-01|453:2|283:2026-03-03,100000000046096|102:2026-06-01|283:2026-03-03",
+                "typeName": "板块数据浏览器"
+              }
+            ],
+            "dataTypeEnum": "DATA_BROWSER",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "BK1036",
+              "entityType": "BLOCK",
+              "entityTypeCode": "3",
+              "entityTypeName": "财富通行业板块2级",
+              "classCode": "005002",
+              "className": "行业板块",
+              "publishCode": "",
+              "fullName": "半导体",
+              "shortName": "",
+              "matchWord": "半导体",
+              "secuCode": "BK1036",
+              "market": "90",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "BK1036",
+                "entityType": "BLOCK",
+                "entityTypeCode": "3",
+                "entityTypeName": "财富通行业板块2级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "半导体",
+                "shortName": "",
+                "matchWord": "半导体",
+                "secuCode": "BK1036",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              },
+              {
+                "entityId": "BK0800",
+                "entityType": "BLOCK",
+                "entityTypeCode": "BLOCK",
+                "entityTypeName": "概念板块",
+                "classCode": "005003",
+                "className": "概念板块",
+                "publishCode": "",
+                "fullName": "人工智能",
+                "shortName": "",
+                "matchWord": "人工智能",
+                "secuCode": "BK0800",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              },
+              {
+                "entityId": "BK0448",
+                "entityType": "BLOCK",
+                "entityTypeCode": "3",
+                "entityTypeName": "财富通行业板块2级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "通信设备",
+                "shortName": "",
+                "matchWord": "通信设备",
+                "secuCode": "BK0448",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              },
+              {
+                "entityId": "BK1207",
+                "entityType": "BLOCK",
+                "entityTypeCode": "2",
+                "entityTypeName": "财富通行业板块1级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "计算机",
+                "shortName": "",
+                "matchWord": "计算机",
+                "secuCode": "BK1207",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {
+              "2026-03-03至2026-06-01": false
+            },
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "",
+            "frontendEntityCode": "",
+            "frontendTitle": "",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "TDAY"
+          },
+          {
+            "code": "90.BK1036",
+            "entityName": "日均成交额",
+            "table": {
+              "半导体": [
+                "4830亿元",
+                "4745亿元",
+                "5520亿元",
+                "5147亿元",
+                "5285亿元"
+              ],
+              "人工智能": [
+                "5398亿元",
+                "4991亿元",
+                "5530亿元",
+                "5446亿元",
+                "5348亿元"
+              ],
+              "通信设备": [
+                "2609亿元",
+                "2137亿元",
+                "2033亿元",
+                "2034亿元",
+                "2032亿元"
+              ],
+              "计算机": [
+                "1604亿元",
+                "1462亿元",
+                "1561亿元",
+                "1758亿元",
+                "1794亿元"
+              ],
+              "headName": [
+                "2026-05-29",
+                "2026-05-28",
+                "2026-05-27",
+                "2026-05-26",
+                "2026-05-25"
+              ]
+            },
+            "rawTable": {
+              "半导体": [
+                "482977844457.84",
+                "474480211204.96",
+                "551971363331.62",
+                "514709648016.92",
+                "528451741518.42"
+              ],
+              "人工智能": [
+                "539767293739.84",
+                "499093967705.7",
+                "553025986851.65",
+                "544569418788.5",
+                "534846370465.73"
+              ],
+              "通信设备": [
+                "260873094549.91",
+                "213719514693.55",
+                "203254043478.85",
+                "203446626080.75",
+                "203246725489.22"
+              ],
+              "计算机": [
+                "160366586149.16",
+                "146227189941.77",
+                "156079353352.2",
+                "175803264927.85",
+                "179359160508.7"
+              ],
+              "headName": [
+                "2026-05-29",
+                "2026-05-28",
+                "2026-05-27",
+                "2026-05-26",
+                "2026-05-25"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "100000000046094": "日均成交额",
+              "headNameSub": "数据来源"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "100000000046094",
+              "returnName": "日均成交额",
+              "classCode": "007109",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-06-01 00:00:00",
+              "endDate": "2026-06-01 00:00:00",
+              "fuzzy": true,
+              "dateGranularity": "DAY",
+              "defineType": 0,
+              "isLoopN": false,
+              "fixedParamValue": "CurType=2,IsHistory=0",
+              "quantType": "9",
+              "isGroup": false,
+              "returnSourceCode": "QJRJCJE",
+              "returnSourceName": "区间日均成交额",
+              "graph": "0",
+              "unit": "1",
+              "tableType": "1",
+              "unitName": "元",
+              "unitDesc": "101:元:元"
+            },
+            "entityCodes": [
+              "90.BK1036",
+              "90.BK0800",
+              "90.BK0448",
+              "90.BK1207"
+            ],
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "100000000046094",
+                "returnName": "日均成交额",
+                "classCode": "007109",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "fixedParamValue": "CurType=2,IsHistory=0",
+                "quantType": "9",
+                "isGroup": false,
+                "returnSourceCode": "QJRJCJE",
+                "returnSourceName": "区间日均成交额",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "1",
+                "unitName": "元",
+                "unitDesc": "101:元:元"
+              }
+            ],
+            "dataTableType": "NORM_TABLE",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "半导体",
+              "人工智能",
+              "通信设备",
+              "计算机"
+            ],
+            "tipFlags": [],
+            "dataType": "数据浏览器",
+            "title": "半导体等的日均成交额",
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "EntityLeftTimeTop",
+            "orderCol": {},
+            "jumpUrlList": [
+              {
+                "choiceUrl": "EM://stockdatacenter?type=browser&modType=BLOCK&code=90.BK1036,007195,90.BK0448,90.BK1207&indId=100000000046094|102:2026-05-25|453:2|283:2026-05-25,100000000046094|102:2026-05-26|453:2|283:2026-05-26,100000000046094|102:2026-05-27|453:2|283:2026-05-27,100000000046094|102:2026-05-28|453:2|283:2026-05-28,100000000046094|102:2026-05-29|453:2|283:2026-05-29",
+                "typeName": "板块数据浏览器"
+              }
+            ],
+            "dataTypeEnum": "DATA_BROWSER",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "BK1036",
+              "entityType": "BLOCK",
+              "entityTypeCode": "3",
+              "entityTypeName": "财富通行业板块2级",
+              "classCode": "005002",
+              "className": "行业板块",
+              "publishCode": "",
+              "fullName": "半导体",
+              "shortName": "",
+              "matchWord": "半导体",
+              "secuCode": "BK1036",
+              "market": "90",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "BK1036",
+                "entityType": "BLOCK",
+                "entityTypeCode": "3",
+                "entityTypeName": "财富通行业板块2级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "半导体",
+                "shortName": "",
+                "matchWord": "半导体",
+                "secuCode": "BK1036",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              },
+              {
+                "entityId": "BK0800",
+                "entityType": "BLOCK",
+                "entityTypeCode": "BLOCK",
+                "entityTypeName": "概念板块",
+                "classCode": "005003",
+                "className": "概念板块",
+                "publishCode": "",
+                "fullName": "人工智能",
+                "shortName": "",
+                "matchWord": "人工智能",
+                "secuCode": "BK0800",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              },
+              {
+                "entityId": "BK0448",
+                "entityType": "BLOCK",
+                "entityTypeCode": "3",
+                "entityTypeName": "财富通行业板块2级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "通信设备",
+                "shortName": "",
+                "matchWord": "通信设备",
+                "secuCode": "BK0448",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              },
+              {
+                "entityId": "BK1207",
+                "entityType": "BLOCK",
+                "entityTypeCode": "2",
+                "entityTypeName": "财富通行业板块1级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "计算机",
+                "shortName": "",
+                "matchWord": "计算机",
+                "secuCode": "BK1207",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {
+              "2026-05-29": false
+            },
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "",
+            "frontendEntityCode": "",
+            "frontendTitle": "",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "NORMAL"
+          },
+          {
+            "code": "90.BK1036",
+            "entityName": "2026-06-01 13:38",
+            "table": {
+              "f3": [
+                "-2.3%",
+                "-1.19%",
+                "3.44%"
+              ],
+              "f109": [
+                "-9.86%",
+                "-6.36%",
+                "-5.3%"
+              ],
+              "f6": [
+                "2980亿元",
+                "1622亿元",
+                "1292亿元"
+              ],
+              "f5": [
+                "35.39亿",
+                "17.69亿",
+                "55.35亿"
+              ],
+              "f17": [
+                "2850.02",
+                "25415.62",
+                "8343.34"
+              ],
+              "f15": [
+                "2867",
+                "2.569万",
+                "8697"
+              ],
+              "f2": [
+                "2784.15",
+                "25214.5",
+                "8620.63"
+              ],
+              "f16": [
+                "2755",
+                "2.5万",
+                "8343"
+              ],
+              "f8": [
+                "4.5%",
+                "3.73%",
+                "2.75%"
+              ],
+              "f7": [
+                "3.94%",
+                "2.71%",
+                "4.24%"
+              ],
+              "f500": [
+                "0",
+                "0",
+                "0"
+              ],
+              "f501": [
+                "0",
+                "0",
+                "0"
+              ],
+              "f88": [
+                "-0.233",
+                "-0.107",
+                "0.192"
+              ],
+              "f89": [
+                "-0.461",
+                "-0.206",
+                "0.079"
+              ],
+              "f90": [
+                "-13.08",
+                "-6.83",
+                "8.46"
+              ],
+              "f106": [
+                "2",
+                "1",
+                "5"
+              ],
+              "f105": [
+                "138",
+                "48",
+                "40"
+              ],
+              "f104": [
+                "-",
+                "42",
+                "316"
+              ],
+              "headName": [
+                "半导体",
+                "通信设备",
+                "计算机"
+              ]
+            },
+            "rawTable": {
+              "f3": [
+                "-2.3",
+                "-1.19",
+                "3.44"
+              ],
+              "f109": [
+                "-9.86",
+                "-6.36",
+                "-5.3"
+              ],
+              "f6": [
+                "298015290099.0",
+                "162236947724.0",
+                "129231972832.0"
+              ],
+              "f5": [
+                "3538953857",
+                "1769310543",
+                "5534509715"
+              ],
+              "f17": [
+                "2850.02",
+                "25415.62",
+                "8343.34"
+              ],
+              "f15": [
+                "2867.36",
+                "25692.8",
+                "8696.83"
+              ],
+              "f2": [
+                "2784.15",
+                "25214.5",
+                "8620.63"
+              ],
+              "f16": [
+                "2755.0",
+                "25002.48",
+                "8343.34"
+              ],
+              "f8": [
+                "4.5",
+                "3.73",
+                "2.75"
+              ],
+              "f7": [
+                "3.94",
+                "2.71",
+                "4.24"
+              ],
+              "f500": [
+                "0",
+                "0",
+                "0"
+              ],
+              "f501": [
+                "0",
+                "0",
+                "0"
+              ],
+              "f88": [
+                "-0.233",
+                "-0.107",
+                "0.192"
+              ],
+              "f89": [
+                "-0.461",
+                "-0.206",
+                "0.079"
+              ],
+              "f90": [
+                "-13.08",
+                "-6.83",
+                "8.46"
+              ],
+              "f106": [
+                "2",
+                "1",
+                "5"
+              ],
+              "f105": [
+                "138",
+                "48",
+                "40"
+              ],
+              "f104": [
+                "-",
+                "42",
+                "316"
+              ],
+              "headName": [
+                "半导体",
+                "通信设备",
+                "计算机"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "f3": "涨跌幅",
+              "headNameSub": "数据来源",
+              "f109": "5日涨跌幅",
+              "f6": "成交额",
+              "f5": "成交量",
+              "f17": "开盘价",
+              "f15": "最高价",
+              "f2": "最新价",
+              "f16": "最低价",
+              "f8": "换手率",
+              "f7": "振幅",
+              "f500": "是否涨停",
+              "f501": "是否跌停",
+              "f88": "当日DDX",
+              "f89": "当日DDY",
+              "f90": "当日DDZ",
+              "f106": "平盘家数",
+              "f105": "下跌家数",
+              "securityName": "股票名称",
+              "f104": "上涨家数"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "ZDF_f3_3",
+              "returnName": "涨跌幅",
+              "classCode": "007001",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-06-01 00:00:00",
+              "endDate": "2026-06-01 00:00:00",
+              "fuzzy": true,
+              "dateGranularity": "DAY",
+              "defineType": 0,
+              "isLoopN": false,
+              "apiCode": "3",
+              "isGroup": false,
+              "returnSourceCode": "f3",
+              "returnSourceName": "涨跌幅",
+              "graph": "2",
+              "unit": "1",
+              "tableType": "2",
+              "unitName": "%",
+              "unitDesc": "901:%:%"
+            },
+            "entityCodes": [
+              "90.BK1036",
+              "90.BK0448",
+              "90.BK1207"
+            ],
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "CJE_f6_3",
+                "returnName": "成交额",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f6",
+                "returnSourceName": "成交额",
+                "graph": "1",
+                "unit": "1",
+                "tableType": "2",
+                "unitName": "元",
+                "unitDesc": "101:元:元"
+              },
+              {
+                "returnCode": "ZGJ_f15_3",
+                "returnName": "最高价",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f15",
+                "returnSourceName": "最高价",
+                "graph": "2",
+                "unit": "1",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "BKHZSDXDJS_f105_3",
+                "returnName": "下跌家数",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f105",
+                "returnSourceName": "板块或指数的下跌家数",
+                "graph": "1",
+                "unit": "1",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "HSL_f8_3",
+                "returnName": "换手率",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f8",
+                "returnSourceName": "换手率",
+                "graph": "2",
+                "unit": "1",
+                "tableType": "2",
+                "unitName": "%",
+                "unitDesc": "901:%:%"
+              },
+              {
+                "returnCode": "ZXJ_f2_3",
+                "returnName": "最新价",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f2",
+                "returnSourceName": "最新价",
+                "graph": "2",
+                "unit": "0",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "ZDJ_f16_3",
+                "returnName": "最低价",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f16",
+                "returnSourceName": "最低价",
+                "graph": "2",
+                "unit": "1",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "DRDDY_f89_3",
+                "returnName": "当日DDY",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f89",
+                "returnSourceName": "当日DDY",
+                "graph": "2",
+                "unit": "1",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "ZF_f7_3",
+                "returnName": "振幅",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f7",
+                "returnSourceName": "振幅",
+                "graph": "2",
+                "unit": "1",
+                "tableType": "2",
+                "unitName": "%",
+                "unitDesc": "108:%:%"
+              },
+              {
+                "returnCode": "SFDT_f501_3",
+                "returnName": "是否跌停",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f501",
+                "returnSourceName": "是否跌停",
+                "graph": "0",
+                "unit": "0",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "DRDDZ_f90_3",
+                "returnName": "当日DDZ",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f90",
+                "returnSourceName": "当日DDZ",
+                "graph": "2",
+                "unit": "1",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "CJL_f5_3",
+                "returnName": "成交量",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "fixedParamValue": "volt=1",
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f5",
+                "returnSourceName": "成交量",
+                "graph": "1",
+                "unit": "1",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "KPJ_f17_3",
+                "returnName": "开盘价",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f17",
+                "returnSourceName": "开盘价",
+                "graph": "0",
+                "unit": "0",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "SFZT_f500_3",
+                "returnName": "是否涨停",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f500",
+                "returnSourceName": "是否涨停",
+                "graph": "0",
+                "unit": "0",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "DRDDX_f88_3",
+                "returnName": "当日DDX",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f88",
+                "returnSourceName": "当日DDX",
+                "graph": "2",
+                "unit": "1",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "ZDF_f3_3",
+                "returnName": "涨跌幅",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f3",
+                "returnSourceName": "涨跌幅",
+                "graph": "2",
+                "unit": "1",
+                "tableType": "2",
+                "unitName": "%",
+                "unitDesc": "901:%:%"
+              },
+              {
+                "returnCode": "BKHZSDSZJS_f104_3",
+                "returnName": "上涨家数",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f104",
+                "returnSourceName": "板块或指数的上涨家数",
+                "graph": "1",
+                "unit": "1",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "5RZDF_f109_3",
+                "returnName": "5日涨跌幅",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f109",
+                "returnSourceName": "5日涨跌幅",
+                "graph": "2",
+                "unit": "1",
+                "tableType": "2",
+                "unitName": "%",
+                "unitDesc": "901:%:%"
+              },
+              {
+                "returnCode": "BKHZSDPPJS_f106_3",
+                "returnName": "平盘家数",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "3",
+                "isGroup": false,
+                "returnSourceCode": "f106",
+                "returnSourceName": "板块或指数的平盘家数",
+                "graph": "1",
+                "unit": "1",
+                "tableType": "2"
+              }
+            ],
+            "dataTableType": "NORM_TABLE",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "f3",
+              "f109",
+              "f6",
+              "f5",
+              "f17",
+              "f15",
+              "f2",
+              "f16",
+              "f8",
+              "f7",
+              "f500",
+              "f501",
+              "f88",
+              "f89",
+              "f90",
+              "f106",
+              "f105",
+              "f104"
+            ],
+            "tipFlags": [
+              "0"
+            ],
+            "dataType": "行情数据",
+            "title": "半导体等当前的涨跌幅、5日涨跌幅等",
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftEntityTop",
+            "orderCol": {},
+            "jumpUrlList": [],
+            "dataTypeEnum": "HQ",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "BK1036",
+              "entityType": "BLOCK",
+              "entityTypeCode": "3",
+              "entityTypeName": "财富通行业板块2级",
+              "classCode": "005002",
+              "className": "行业板块",
+              "publishCode": "",
+              "fullName": "半导体",
+              "shortName": "",
+              "matchWord": "半导体",
+              "secuCode": "BK1036",
+              "market": "90",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "BK1036",
+                "entityType": "BLOCK",
+                "entityTypeCode": "3",
+                "entityTypeName": "财富通行业板块2级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "半导体",
+                "shortName": "",
+                "matchWord": "半导体",
+                "secuCode": "BK1036",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              },
+              {
+                "entityId": "BK0448",
+                "entityType": "BLOCK",
+                "entityTypeCode": "3",
+                "entityTypeName": "财富通行业板块2级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "通信设备",
+                "shortName": "",
+                "matchWord": "通信设备",
+                "secuCode": "BK0448",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              },
+              {
+                "entityId": "BK1207",
+                "entityType": "BLOCK",
+                "entityTypeCode": "2",
+                "entityTypeName": "财富通行业板块1级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "计算机",
+                "shortName": "",
+                "matchWord": "计算机",
+                "secuCode": "BK1207",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {
+              "2026-06-01 13:38": false
+            },
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "",
+            "frontendEntityCode": "",
+            "frontendTitle": "",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "NORMAL"
+          },
+          {
+            "code": "90.BK1036",
+            "entityName": "半导体",
+            "table": {
+              "329915": [
+                "11",
+                "131",
+                "56",
+                "30",
+                "152"
+              ],
+              "330018": [
+                "164",
+                "46",
+                "121",
+                "147",
+                "25"
+              ],
+              "330101": [
+                "2",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "headName": [
+                "2026-05-29(日)",
+                "2026-05-28(日)",
+                "2026-05-27(日)",
+                "2026-05-26(日)",
+                "2026-05-25(日)"
+              ]
+            },
+            "rawTable": {
+              "329915": [
+                "11",
+                "131",
+                "56",
+                "30",
+                "152"
+              ],
+              "330018": [
+                "164",
+                "46",
+                "121",
+                "147",
+                "25"
+              ],
+              "330101": [
+                "2",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "headName": [
+                "2026-05-29",
+                "2026-05-28",
+                "2026-05-27",
+                "2026-05-26",
+                "2026-05-25"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "329915": "上涨家数",
+              "headNameSub": "数据来源",
+              "330018": "下跌家数",
+              "330101": "平盘家数"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "329915",
+              "returnName": "上涨家数",
+              "classCode": "007121",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-06-01 00:00:00",
+              "endDate": "2026-06-01 00:00:00",
+              "fuzzy": true,
+              "dateGranularity": "DAY",
+              "defineType": 0,
+              "isLoopN": false,
+              "fixedParamValue": "Period=1,IsHistory=0",
+              "isGroup": false,
+              "returnSourceCode": "HIGHS",
+              "returnSourceName": "上涨家数_板块",
+              "graph": "0",
+              "unit": "1",
+              "tableType": "20",
+              "unitDesc": "家"
+            },
+            "entityCodes": [
+              "90.BK1036"
+            ],
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "329915",
+                "returnName": "上涨家数",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "IsHistory=0,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "HIGHS",
+                "returnSourceName": "上涨家数_板块",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitDesc": "家"
+              },
+              {
+                "returnCode": "330018",
+                "returnName": "下跌家数",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "IsHistory=0,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "LOWS",
+                "returnSourceName": "下跌家数_板块",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitDesc": "家"
+              },
+              {
+                "returnCode": "330101",
+                "returnName": "平盘家数",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "Period=1,IsHistory=0",
+                "isGroup": false,
+                "returnSourceCode": "NOCHANGES",
+                "returnSourceName": "平盘家数_板块",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitDesc": "家"
+              }
+            ],
+            "dataTableType": "NORM_TABLE",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "329915",
+              "330018",
+              "330101"
+            ],
+            "tipFlags": [],
+            "dataType": "数据浏览器",
+            "title": "半导体的上涨家数、下跌家数等",
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftTimeTop",
+            "orderCol": {},
+            "jumpUrlList": [
+              {
+                "choiceUrl": "EM://stockdatacenter?type=browser&modType=BLOCK&code=90.BK1036&indId=100000000019878|121:2026-06-01|469:0,100000000019879|121:2026-06-01|469:0,100000000020763|121:2026-06-01|469:0",
+                "typeName": "板块数据浏览器"
+              }
+            ],
+            "dataTypeEnum": "DATA_BROWSER",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "BK1036",
+              "entityType": "BLOCK",
+              "entityTypeCode": "3",
+              "entityTypeName": "财富通行业板块2级",
+              "classCode": "005002",
+              "className": "行业板块",
+              "publishCode": "",
+              "fullName": "半导体",
+              "shortName": "",
+              "matchWord": "半导体",
+              "secuCode": "BK1036",
+              "market": "90",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "BK1036",
+                "entityType": "BLOCK",
+                "entityTypeCode": "3",
+                "entityTypeName": "财富通行业板块2级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "半导体",
+                "shortName": "",
+                "matchWord": "半导体",
+                "secuCode": "BK1036",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {
+              "2026-05-29": false
+            },
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "",
+            "frontendEntityCode": "",
+            "frontendTitle": "",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "TDAY"
+          },
+          {
+            "code": "90.BK0800",
+            "entityName": "人工智能",
+            "table": {
+              "329915": [
+                "113",
+                "396",
+                "89",
+                "128",
+                "293"
+              ],
+              "330018": [
+                "582",
+                "288",
+                "610",
+                "567",
+                "395"
+              ],
+              "330101": [
+                "7",
+                "18",
+                "2",
+                "7",
+                "14"
+              ],
+              "324785": [
+                "238.7亿股",
+                "218.2亿股",
+                "245.3亿股",
+                "249.6亿股",
+                "228.9亿股"
+              ],
+              "326269": [
+                "1278.4338点",
+                "1248.9844点",
+                "1280.2566点",
+                "1279.3846点",
+                "1266.7301点"
+              ],
+              "325898": [
+                "1223.4689点",
+                "1264.53点",
+                "1252.29点",
+                "1279.6879点",
+                "1287.5237点"
+              ],
+              "327483": [
+                "5398亿",
+                "4991亿",
+                "5530亿",
+                "5446亿",
+                "5348亿"
+              ],
+              "326699": [
+                "3.416%",
+                "3.124%",
+                "3.511%",
+                "3.574%",
+                "3.277%"
+              ],
+              "326865": [
+                "-3.247%",
+                "0.9774%",
+                "-2.141%",
+                "-0.6086%",
+                "2.308%"
+              ],
+              "headName": [
+                "2026-05-29(日)",
+                "2026-05-28(日)",
+                "2026-05-27(日)",
+                "2026-05-26(日)",
+                "2026-05-25(日)"
+              ]
+            },
+            "rawTable": {
+              "329915": [
+                "113",
+                "396",
+                "89",
+                "128",
+                "293"
+              ],
+              "330018": [
+                "582",
+                "288",
+                "610",
+                "567",
+                "395"
+              ],
+              "330101": [
+                "7",
+                "18",
+                "2",
+                "7",
+                "14"
+              ],
+              "324785": [
+                "23870018929",
+                "21820967549",
+                "24530320766",
+                "24961969697",
+                "22890367117"
+              ],
+              "326269": [
+                "1278.4338",
+                "1248.9844",
+                "1280.2566",
+                "1279.3846",
+                "1266.7301"
+              ],
+              "325898": [
+                "1223.4689",
+                "1264.53",
+                "1252.29",
+                "1279.6879",
+                "1287.5237"
+              ],
+              "327483": [
+                "539767293736.29",
+                "499093967709.12",
+                "553025986851.46",
+                "544569418794.71",
+                "534846370465.62"
+              ],
+              "326699": [
+                "3.41625326",
+                "3.12354097",
+                "3.51139113",
+                "3.57362555",
+                "3.27736811"
+              ],
+              "326865": [
+                "-0.03247143207357666",
+                "0.009774093860048398",
+                "-0.02140982969363072",
+                "-0.006085946223747232",
+                "0.023076932856716675"
+              ],
+              "headName": [
+                "2026-05-29",
+                "2026-05-28",
+                "2026-05-27",
+                "2026-05-26",
+                "2026-05-25"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "329915": "上涨家数",
+              "headNameSub": "数据来源",
+              "330018": "下跌家数",
+              "330101": "平盘家数",
+              "324785": "成交量",
+              "326269": "开盘价",
+              "325898": "收盘价",
+              "327483": "成交额",
+              "326699": "换手率",
+              "326865": "涨跌幅"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "329915",
+              "returnName": "上涨家数",
+              "classCode": "007121",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-06-01 00:00:00",
+              "endDate": "2026-06-01 00:00:00",
+              "fuzzy": true,
+              "dateGranularity": "DAY",
+              "defineType": 0,
+              "isLoopN": false,
+              "fixedParamValue": "Period=1,IsHistory=0",
+              "isGroup": false,
+              "returnSourceCode": "HIGHS",
+              "returnSourceName": "上涨家数_板块",
+              "graph": "0",
+              "unit": "1",
+              "tableType": "20",
+              "unitDesc": "家"
+            },
+            "entityCodes": [
+              "90.BK0800",
+              "861195.EI"
+            ],
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "329915",
+                "returnName": "上涨家数",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "IsHistory=0,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "HIGHS",
+                "returnSourceName": "上涨家数_板块",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitDesc": "家"
+              },
+              {
+                "returnCode": "327483",
+                "returnName": "成交额",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "CurType=1,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "AMOUNT",
+                "returnSourceName": "成交额",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20"
+              },
+              {
+                "returnCode": "326269",
+                "returnName": "开盘价",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "Period=1,AdjustFlag=1,CurType=1",
+                "isGroup": false,
+                "returnSourceCode": "OPEN",
+                "returnSourceName": "开盘价",
+                "graph": "0",
+                "unit": "2",
+                "tableType": "20"
+              },
+              {
+                "returnCode": "326865",
+                "returnName": "涨跌幅",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "Period=1,AdjustFlag=1,CurType=1",
+                "isGroup": false,
+                "returnSourceCode": "PCTCHANGE",
+                "returnSourceName": "涨跌幅",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitName": "100%",
+                "unitDesc": "100%"
+              },
+              {
+                "returnCode": "326699",
+                "returnName": "换手率",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "fixedParamValue": "Period=1",
+                "isGroup": false,
+                "returnSourceCode": "TURN",
+                "returnSourceName": "换手率",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitName": "%",
+                "unitDesc": "%"
+              },
+              {
+                "returnCode": "330018",
+                "returnName": "下跌家数",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "IsHistory=0,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "LOWS",
+                "returnSourceName": "下跌家数_板块",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitDesc": "家"
+              },
+              {
+                "returnCode": "325898",
+                "returnName": "收盘价",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "Period=1,AdjustFlag=1,CurType=1",
+                "isGroup": false,
+                "returnSourceCode": "CLOSE",
+                "returnSourceName": "收盘价",
+                "graph": "0",
+                "unit": "2",
+                "tableType": "20"
+              },
+              {
+                "returnCode": "330101",
+                "returnName": "平盘家数",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "Period=1,IsHistory=0",
+                "isGroup": false,
+                "returnSourceCode": "NOCHANGES",
+                "returnSourceName": "平盘家数_板块",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitDesc": "家"
+              },
+              {
+                "returnCode": "324785",
+                "returnName": "成交量",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "fixedParamValue": "Period=1",
+                "isGroup": false,
+                "returnSourceCode": "VOLUME",
+                "returnSourceName": "成交量",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitName": "股",
+                "unitDesc": "股"
+              }
+            ],
+            "dataTableType": "NORM_TABLE",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "329915",
+              "330018",
+              "330101",
+              "324785",
+              "326269",
+              "325898",
+              "327483",
+              "326699",
+              "326865"
+            ],
+            "tipFlags": [],
+            "dataType": "数据浏览器",
+            "title": "人工智能的上涨家数、下跌家数等",
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftTimeTop",
+            "orderCol": {},
+            "jumpUrlList": [
+              {
+                "choiceUrl": "EM://stockdatacenter?type=browser&modType=BLOCK&code=007195&indId=100000000019878|121:2026-06-01|469:0,100000000019879|121:2026-06-01|469:0,100000000020763|121:2026-06-01|469:0",
+                "typeName": "数据浏览器"
+              },
+              {
+                "choiceUrl": "EM://stockdatacenter?type=browser&modType=INDEX&code=861195.EI&indId=100000000006181|121:2026-06-01|261:10302:股:股,100000000006197|121:2026-06-01,100000000006220|121:2026-06-01,100000000006182|121:2026-06-01|261:101:元:元,100000000006205|121:2026-06-01|261:108:%:%,100000000006180|121:2026-06-01",
+                "typeName": "数据浏览器"
+              }
+            ],
+            "dataTypeEnum": "DATA_BROWSER",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "BK0800",
+              "entityType": "BLOCK",
+              "entityTypeCode": "BLOCK",
+              "entityTypeName": "概念板块",
+              "classCode": "005003",
+              "className": "概念板块",
+              "publishCode": "",
+              "fullName": "人工智能",
+              "shortName": "",
+              "matchWord": "人工智能",
+              "secuCode": "BK0800",
+              "market": "90",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "BK0800",
+                "entityType": "BLOCK",
+                "entityTypeCode": "BLOCK",
+                "entityTypeName": "概念板块",
+                "classCode": "005003",
+                "className": "概念板块",
+                "publishCode": "",
+                "fullName": "人工智能",
+                "shortName": "",
+                "matchWord": "人工智能",
+                "secuCode": "BK0800",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              },
+              {
+                "entityId": "1000669130",
+                "entityType": "INDEX",
+                "entityTypeCode": "DC_CONCEPT",
+                "entityTypeName": "东财概念指数",
+                "classCode": "006007",
+                "className": "DC_CONCEPT_INDEX",
+                "publishCode": "905017012",
+                "fullName": "人工智能",
+                "shortName": "",
+                "secuCode": "861195",
+                "market": "47",
+                "marketChar": ".EI",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": true
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {
+              "2026-05-29": false
+            },
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "",
+            "frontendEntityCode": "",
+            "frontendTitle": "",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "TDAY"
+          },
+          {
+            "code": "90.BK0448",
+            "entityName": "通信设备",
+            "table": {
+              "329915": [
+                "15",
+                "75",
+                "16",
+                "11",
+                "54"
+              ],
+              "330018": [
+                "76",
+                "15",
+                "74",
+                "78",
+                "35"
+              ],
+              "330101": [
+                "0",
+                "1",
+                "1",
+                "1",
+                "1"
+              ],
+              "headName": [
+                "2026-05-29(日)",
+                "2026-05-28(日)",
+                "2026-05-27(日)",
+                "2026-05-26(日)",
+                "2026-05-25(日)"
+              ]
+            },
+            "rawTable": {
+              "329915": [
+                "15",
+                "75",
+                "16",
+                "11",
+                "54"
+              ],
+              "330018": [
+                "76",
+                "15",
+                "74",
+                "78",
+                "35"
+              ],
+              "330101": [
+                "0",
+                "1",
+                "1",
+                "1",
+                "1"
+              ],
+              "headName": [
+                "2026-05-29",
+                "2026-05-28",
+                "2026-05-27",
+                "2026-05-26",
+                "2026-05-25"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "329915": "上涨家数",
+              "headNameSub": "数据来源",
+              "330018": "下跌家数",
+              "330101": "平盘家数"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "329915",
+              "returnName": "上涨家数",
+              "classCode": "007121",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-06-01 00:00:00",
+              "endDate": "2026-06-01 00:00:00",
+              "fuzzy": true,
+              "dateGranularity": "DAY",
+              "defineType": 0,
+              "isLoopN": false,
+              "fixedParamValue": "Period=1,IsHistory=0",
+              "isGroup": false,
+              "returnSourceCode": "HIGHS",
+              "returnSourceName": "上涨家数_板块",
+              "graph": "0",
+              "unit": "1",
+              "tableType": "20",
+              "unitDesc": "家"
+            },
+            "entityCodes": [
+              "90.BK0448"
+            ],
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "329915",
+                "returnName": "上涨家数",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "IsHistory=0,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "HIGHS",
+                "returnSourceName": "上涨家数_板块",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitDesc": "家"
+              },
+              {
+                "returnCode": "330018",
+                "returnName": "下跌家数",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "IsHistory=0,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "LOWS",
+                "returnSourceName": "下跌家数_板块",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitDesc": "家"
+              },
+              {
+                "returnCode": "330101",
+                "returnName": "平盘家数",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "Period=1,IsHistory=0",
+                "isGroup": false,
+                "returnSourceCode": "NOCHANGES",
+                "returnSourceName": "平盘家数_板块",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitDesc": "家"
+              }
+            ],
+            "dataTableType": "NORM_TABLE",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "329915",
+              "330018",
+              "330101"
+            ],
+            "tipFlags": [],
+            "dataType": "数据浏览器",
+            "title": "通信设备的上涨家数、下跌家数等",
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftTimeTop",
+            "orderCol": {},
+            "jumpUrlList": [
+              {
+                "choiceUrl": "EM://stockdatacenter?type=browser&modType=BLOCK&code=90.BK0448&indId=100000000019878|121:2026-06-01|469:0,100000000019879|121:2026-06-01|469:0,100000000020763|121:2026-06-01|469:0",
+                "typeName": "板块数据浏览器"
+              }
+            ],
+            "dataTypeEnum": "DATA_BROWSER",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "BK0448",
+              "entityType": "BLOCK",
+              "entityTypeCode": "3",
+              "entityTypeName": "财富通行业板块2级",
+              "classCode": "005002",
+              "className": "行业板块",
+              "publishCode": "",
+              "fullName": "通信设备",
+              "shortName": "",
+              "matchWord": "通信设备",
+              "secuCode": "BK0448",
+              "market": "90",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "BK0448",
+                "entityType": "BLOCK",
+                "entityTypeCode": "3",
+                "entityTypeName": "财富通行业板块2级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "通信设备",
+                "shortName": "",
+                "matchWord": "通信设备",
+                "secuCode": "BK0448",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {
+              "2026-05-29": false
+            },
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "",
+            "frontendEntityCode": "",
+            "frontendTitle": "",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "TDAY"
+          },
+          {
+            "code": "90.BK1207",
+            "entityName": "计算机",
+            "table": {
+              "329915": [
+                "26",
+                "207",
+                "27",
+                "48",
+                "148"
+              ],
+              "330018": [
+                "331",
+                "147",
+                "328",
+                "306",
+                "205"
+              ],
+              "330101": [
+                "1",
+                "4",
+                "2",
+                "4",
+                "6"
+              ],
+              "headName": [
+                "2026-05-29(日)",
+                "2026-05-28(日)",
+                "2026-05-27(日)",
+                "2026-05-26(日)",
+                "2026-05-25(日)"
+              ]
+            },
+            "rawTable": {
+              "329915": [
+                "26",
+                "207",
+                "27",
+                "48",
+                "148"
+              ],
+              "330018": [
+                "331",
+                "147",
+                "328",
+                "306",
+                "205"
+              ],
+              "330101": [
+                "1",
+                "4",
+                "2",
+                "4",
+                "6"
+              ],
+              "headName": [
+                "2026-05-29",
+                "2026-05-28",
+                "2026-05-27",
+                "2026-05-26",
+                "2026-05-25"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "329915": "上涨家数",
+              "headNameSub": "数据来源",
+              "330018": "下跌家数",
+              "330101": "平盘家数"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "329915",
+              "returnName": "上涨家数",
+              "classCode": "007121",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-06-01 00:00:00",
+              "endDate": "2026-06-01 00:00:00",
+              "fuzzy": true,
+              "dateGranularity": "DAY",
+              "defineType": 0,
+              "isLoopN": false,
+              "fixedParamValue": "Period=1,IsHistory=0",
+              "isGroup": false,
+              "returnSourceCode": "HIGHS",
+              "returnSourceName": "上涨家数_板块",
+              "graph": "0",
+              "unit": "1",
+              "tableType": "20",
+              "unitDesc": "家"
+            },
+            "entityCodes": [
+              "90.BK1207"
+            ],
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "329915",
+                "returnName": "上涨家数",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "IsHistory=0,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "HIGHS",
+                "returnSourceName": "上涨家数_板块",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitDesc": "家"
+              },
+              {
+                "returnCode": "330018",
+                "returnName": "下跌家数",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "IsHistory=0,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "LOWS",
+                "returnSourceName": "下跌家数_板块",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitDesc": "家"
+              },
+              {
+                "returnCode": "330101",
+                "returnName": "平盘家数",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "Period=1,IsHistory=0",
+                "isGroup": false,
+                "returnSourceCode": "NOCHANGES",
+                "returnSourceName": "平盘家数_板块",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitDesc": "家"
+              }
+            ],
+            "dataTableType": "NORM_TABLE",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "329915",
+              "330018",
+              "330101"
+            ],
+            "tipFlags": [],
+            "dataType": "数据浏览器",
+            "title": "计算机的上涨家数、下跌家数等",
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftTimeTop",
+            "orderCol": {},
+            "jumpUrlList": [
+              {
+                "choiceUrl": "EM://stockdatacenter?type=browser&modType=BLOCK&code=90.BK1207&indId=100000000019878|121:2026-06-01|469:0,100000000019879|121:2026-06-01|469:0,100000000020763|121:2026-06-01|469:0",
+                "typeName": "板块数据浏览器"
+              }
+            ],
+            "dataTypeEnum": "DATA_BROWSER",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "BK1207",
+              "entityType": "BLOCK",
+              "entityTypeCode": "2",
+              "entityTypeName": "财富通行业板块1级",
+              "classCode": "005002",
+              "className": "行业板块",
+              "publishCode": "",
+              "fullName": "计算机",
+              "shortName": "",
+              "matchWord": "计算机",
+              "secuCode": "BK1207",
+              "market": "90",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "BK1207",
+                "entityType": "BLOCK",
+                "entityTypeCode": "2",
+                "entityTypeName": "财富通行业板块1级",
+                "classCode": "005002",
+                "className": "行业板块",
+                "publishCode": "",
+                "fullName": "计算机",
+                "shortName": "",
+                "matchWord": "计算机",
+                "secuCode": "BK1207",
+                "market": "90",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {
+              "2026-05-29": false
+            },
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "",
+            "frontendEntityCode": "",
+            "frontendTitle": "",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "TDAY"
+          },
+          {
+            "code": "861195.EI",
+            "entityName": "人工智能",
+            "table": {
+              "8002": [
+                "1228"
+              ],
+              "8004": [
+                "0.33%"
+              ],
+              "8006": [
+                "174.6亿股"
+              ],
+              "8024": [
+                "3787亿元"
+              ],
+              "8100": [
+                "549"
+              ],
+              "8101": [
+                "140"
+              ],
+              "8123": [
+                "15"
+              ],
+              "8042": [
+                "1228.9119"
+              ],
+              "8040": [
+                "1214.0736"
+              ],
+              "8028": [
+                "1246.5173"
+              ],
+              "headName": [
+                "2026-06-01 13:38"
+              ]
+            },
+            "rawTable": {
+              "8002": [
+                "1227.5299"
+              ],
+              "8004": [
+                "0.3300"
+              ],
+              "8006": [
+                "17463691135"
+              ],
+              "8024": [
+                "378719389502.7398"
+              ],
+              "8100": [
+                "549"
+              ],
+              "8101": [
+                "140"
+              ],
+              "8123": [
+                "15"
+              ],
+              "8042": [
+                "1228.9119"
+              ],
+              "8040": [
+                "1214.0736"
+              ],
+              "8028": [
+                "1246.5173"
+              ],
+              "headName": [
+                "2026-06-01 13:38"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "8002": "最新价",
+              "headNameSub": "数据来源",
+              "8004": "涨跌幅",
+              "8006": "成交量",
+              "8024": "成交额",
+              "8100": "上涨家数",
+              "8101": "下跌家数",
+              "8123": "平盘家数",
+              "8042": "当日开盘价",
+              "8040": "当日最低价",
+              "8028": "当日最高价"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "ZXJ_8002_choice",
+              "returnName": "最新价",
+              "classCode": "007001",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-06-01 00:00:00",
+              "endDate": "2026-06-01 00:00:00",
+              "fuzzy": true,
+              "dateGranularity": "DAY",
+              "defineType": 0,
+              "isLoopN": false,
+              "apiCode": "0",
+              "isGroup": false,
+              "returnSourceCode": "8002",
+              "returnSourceName": "最新价",
+              "graph": "2",
+              "unit": "1",
+              "tableType": "2"
+            },
+            "entityCodes": [
+              "861195.EI"
+            ],
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "XDJS_8101_choice",
+                "returnName": "下跌家数",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "0",
+                "isGroup": false,
+                "returnSourceCode": "8101",
+                "returnSourceName": "下跌家数",
+                "graph": "1",
+                "unit": "0",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "PPJS_8123_choice",
+                "returnName": "平盘家数",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "0",
+                "isGroup": false,
+                "returnSourceCode": "8123",
+                "returnSourceName": "平盘家数",
+                "graph": "1",
+                "unit": "0",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "DRZDJ_8040_choice",
+                "returnName": "当日最低价",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "0",
+                "isGroup": false,
+                "returnSourceCode": "8040",
+                "returnSourceName": "当日最低价",
+                "graph": "2",
+                "unit": "0",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "ZDF_8004_choice",
+                "returnName": "涨跌幅",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "0",
+                "isGroup": false,
+                "returnSourceCode": "8004",
+                "returnSourceName": "涨跌幅",
+                "graph": "2",
+                "unit": "1",
+                "tableType": "2",
+                "unitName": "%",
+                "unitDesc": "10802:%:%"
+              },
+              {
+                "returnCode": "DRKPJ_8042_choice",
+                "returnName": "当日开盘价",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "0",
+                "isGroup": false,
+                "returnSourceCode": "8042",
+                "returnSourceName": "当日开盘价",
+                "graph": "2",
+                "unit": "0",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "DRZGJ_8028_choice",
+                "returnName": "当日最高价",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "0",
+                "isGroup": false,
+                "returnSourceCode": "8028",
+                "returnSourceName": "当日最高价",
+                "graph": "2",
+                "unit": "0",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "ZXJ_8002_choice",
+                "returnName": "最新价",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "0",
+                "isGroup": false,
+                "returnSourceCode": "8002",
+                "returnSourceName": "最新价",
+                "graph": "2",
+                "unit": "1",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "CJL_8006_choice",
+                "returnName": "成交量",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "0",
+                "isGroup": false,
+                "returnSourceCode": "8006",
+                "returnSourceName": "成交量",
+                "graph": "1",
+                "unit": "1",
+                "tableType": "2",
+                "unitName": "股",
+                "unitDesc": "102:股:股"
+              },
+              {
+                "returnCode": "SZJS_8100_choice",
+                "returnName": "上涨家数",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "0",
+                "isGroup": false,
+                "returnSourceCode": "8100",
+                "returnSourceName": "上涨家数",
+                "graph": "1",
+                "unit": "0",
+                "tableType": "2"
+              },
+              {
+                "returnCode": "CJE_8024_choice",
+                "returnName": "成交额",
+                "classCode": "007001",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-06-01 00:00:00",
+                "endDate": "2026-06-01 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": 0,
+                "isLoopN": false,
+                "apiCode": "0",
+                "isGroup": false,
+                "returnSourceCode": "8024",
+                "returnSourceName": "成交额",
+                "graph": "1",
+                "unit": "1",
+                "tableType": "2",
+                "unitName": "元",
+                "unitDesc": "101:元:元"
+              }
+            ],
+            "dataTableType": "NORM_TABLE",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "8002",
+              "8004",
+              "8006",
+              "8024",
+              "8100",
+              "8101",
+              "8123",
+              "8042",
+              "8040",
+              "8028"
+            ],
+            "tipFlags": [
+              "0"
+            ],
+            "dataType": "行情数据",
+            "title": "人工智能当前的最新价、涨跌幅等",
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftTimeTop",
+            "orderCol": {},
+            "jumpUrlList": [],
+            "dataTypeEnum": "HQ",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "1000669130",
+              "entityType": "INDEX",
+              "entityTypeCode": "DC_CONCEPT",
+              "entityTypeName": "东财概念指数",
+              "classCode": "006007",
+              "className": "DC_CONCEPT_INDEX",
+              "publishCode": "905017012",
+              "fullName": "人工智能",
+              "shortName": "",
+              "secuCode": "861195",
+              "market": "47",
+              "marketChar": ".EI",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": true
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "1000669130",
+                "entityType": "INDEX",
+                "entityTypeCode": "DC_CONCEPT",
+                "entityTypeName": "东财概念指数",
+                "classCode": "006007",
+                "className": "DC_CONCEPT_INDEX",
+                "publishCode": "905017012",
+                "fullName": "人工智能",
+                "shortName": "",
+                "secuCode": "861195",
+                "market": "47",
+                "marketChar": ".EI",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": true
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {
+              "2026-06-01 13:38": false
+            },
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "",
+            "frontendEntityCode": "",
+            "frontendTitle": "",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "NORMAL"
+          }
+        ],
+        "condition": {
+          "search_data_task_4": [
+            "半导体",
+            "支撑位压力位上周涨跌幅区间成交额日均成交额区间日均换手率(整体法)涨跌幅5日涨跌幅成交额成交量开盘价最高价最新价最低价换手率振幅是否涨停是否跌停当日DDX当日DDY当日DDZ上涨家数下跌家数平盘家数",
+            "2026-06-01至2026-06-01"
+          ],
+          "search_data_task_3": [
+            "人工智能",
+            "上周涨跌幅区间成交额日均成交额区间日均换手率(整体法)上涨家数下跌家数平盘家数",
+            "2026-06-01至2026-06-01"
+          ],
+          "search_data_task_2": [
+            "通信设备",
+            "支撑位压力位上周涨跌幅区间成交额日均成交额区间日均换手率(整体法)涨跌幅5日涨跌幅成交额成交量开盘价最高价最新价最低价换手率振幅是否涨停是否跌停当日DDX当日DDY当日DDZ上涨家数下跌家数平盘家数",
+            "2026-06-01至2026-06-01"
+          ],
+          "search_data_task_1": [
+            "计算机",
+            "支撑位压力位上周涨跌幅区间成交额日均成交额区间日均换手率(整体法)涨跌幅5日涨跌幅成交额成交量开盘价最高价最新价最低价换手率振幅是否涨停是否跌停当日DDX当日DDY当日DDZ上涨家数下跌家数平盘家数",
+            "2026-06-01至2026-06-01"
+          ],
+          "search_data_task_0": [
+            "人工智能",
+            "最新价涨跌幅成交量成交额上涨家数下跌家数平盘家数当日开盘价当日最低价当日最高价开盘价收盘价换手率",
+            "2026-06-01至2026-06-01"
+          ]
+        },
+        "entityTagDTOList": [
+          {
+            "entityId": "BK1036",
+            "entityType": "BLOCK",
+            "entityTypeCode": "3",
+            "entityTypeName": "财富通行业板块2级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "半导体",
+            "shortName": "",
+            "matchWord": "半导体",
+            "secuCode": "BK1036",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK0448",
+            "entityType": "BLOCK",
+            "entityTypeCode": "3",
+            "entityTypeName": "财富通行业板块2级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "通信设备",
+            "shortName": "",
+            "matchWord": "通信设备",
+            "secuCode": "BK0448",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK1207",
+            "entityType": "BLOCK",
+            "entityTypeCode": "2",
+            "entityTypeName": "财富通行业板块1级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "计算机",
+            "shortName": "",
+            "matchWord": "计算机",
+            "secuCode": "BK1207",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK1036",
+            "entityType": "BLOCK",
+            "entityTypeCode": "3",
+            "entityTypeName": "财富通行业板块2级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "半导体",
+            "shortName": "",
+            "matchWord": "半导体",
+            "secuCode": "BK1036",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK0800",
+            "entityType": "BLOCK",
+            "entityTypeCode": "BLOCK",
+            "entityTypeName": "概念板块",
+            "classCode": "005003",
+            "className": "概念板块",
+            "publishCode": "",
+            "fullName": "人工智能",
+            "shortName": "",
+            "matchWord": "人工智能",
+            "secuCode": "BK0800",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK0448",
+            "entityType": "BLOCK",
+            "entityTypeCode": "3",
+            "entityTypeName": "财富通行业板块2级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "通信设备",
+            "shortName": "",
+            "matchWord": "通信设备",
+            "secuCode": "BK0448",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK1207",
+            "entityType": "BLOCK",
+            "entityTypeCode": "2",
+            "entityTypeName": "财富通行业板块1级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "计算机",
+            "shortName": "",
+            "matchWord": "计算机",
+            "secuCode": "BK1207",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK1036",
+            "entityType": "BLOCK",
+            "entityTypeCode": "3",
+            "entityTypeName": "财富通行业板块2级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "半导体",
+            "shortName": "",
+            "matchWord": "半导体",
+            "secuCode": "BK1036",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK0800",
+            "entityType": "BLOCK",
+            "entityTypeCode": "BLOCK",
+            "entityTypeName": "概念板块",
+            "classCode": "005003",
+            "className": "概念板块",
+            "publishCode": "",
+            "fullName": "人工智能",
+            "shortName": "",
+            "matchWord": "人工智能",
+            "secuCode": "BK0800",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK0448",
+            "entityType": "BLOCK",
+            "entityTypeCode": "3",
+            "entityTypeName": "财富通行业板块2级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "通信设备",
+            "shortName": "",
+            "matchWord": "通信设备",
+            "secuCode": "BK0448",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK1207",
+            "entityType": "BLOCK",
+            "entityTypeCode": "2",
+            "entityTypeName": "财富通行业板块1级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "计算机",
+            "shortName": "",
+            "matchWord": "计算机",
+            "secuCode": "BK1207",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK1036",
+            "entityType": "BLOCK",
+            "entityTypeCode": "3",
+            "entityTypeName": "财富通行业板块2级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "半导体",
+            "shortName": "",
+            "matchWord": "半导体",
+            "secuCode": "BK1036",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK0800",
+            "entityType": "BLOCK",
+            "entityTypeCode": "BLOCK",
+            "entityTypeName": "概念板块",
+            "classCode": "005003",
+            "className": "概念板块",
+            "publishCode": "",
+            "fullName": "人工智能",
+            "shortName": "",
+            "matchWord": "人工智能",
+            "secuCode": "BK0800",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK0448",
+            "entityType": "BLOCK",
+            "entityTypeCode": "3",
+            "entityTypeName": "财富通行业板块2级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "通信设备",
+            "shortName": "",
+            "matchWord": "通信设备",
+            "secuCode": "BK0448",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK1207",
+            "entityType": "BLOCK",
+            "entityTypeCode": "2",
+            "entityTypeName": "财富通行业板块1级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "计算机",
+            "shortName": "",
+            "matchWord": "计算机",
+            "secuCode": "BK1207",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK1036",
+            "entityType": "BLOCK",
+            "entityTypeCode": "3",
+            "entityTypeName": "财富通行业板块2级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "半导体",
+            "shortName": "",
+            "matchWord": "半导体",
+            "secuCode": "BK1036",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK0448",
+            "entityType": "BLOCK",
+            "entityTypeCode": "3",
+            "entityTypeName": "财富通行业板块2级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "通信设备",
+            "shortName": "",
+            "matchWord": "通信设备",
+            "secuCode": "BK0448",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK1207",
+            "entityType": "BLOCK",
+            "entityTypeCode": "2",
+            "entityTypeName": "财富通行业板块1级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "计算机",
+            "shortName": "",
+            "matchWord": "计算机",
+            "secuCode": "BK1207",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK1036",
+            "entityType": "BLOCK",
+            "entityTypeCode": "3",
+            "entityTypeName": "财富通行业板块2级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "半导体",
+            "shortName": "",
+            "matchWord": "半导体",
+            "secuCode": "BK1036",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK0800",
+            "entityType": "BLOCK",
+            "entityTypeCode": "BLOCK",
+            "entityTypeName": "概念板块",
+            "classCode": "005003",
+            "className": "概念板块",
+            "publishCode": "",
+            "fullName": "人工智能",
+            "shortName": "",
+            "matchWord": "人工智能",
+            "secuCode": "BK0800",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "1000669130",
+            "entityType": "INDEX",
+            "entityTypeCode": "DC_CONCEPT",
+            "entityTypeName": "东财概念指数",
+            "classCode": "006007",
+            "className": "DC_CONCEPT_INDEX",
+            "publishCode": "905017012",
+            "fullName": "人工智能",
+            "shortName": "",
+            "secuCode": "861195",
+            "market": "47",
+            "marketChar": ".EI",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": true
+          },
+          {
+            "entityId": "BK0448",
+            "entityType": "BLOCK",
+            "entityTypeCode": "3",
+            "entityTypeName": "财富通行业板块2级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "通信设备",
+            "shortName": "",
+            "matchWord": "通信设备",
+            "secuCode": "BK0448",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "BK1207",
+            "entityType": "BLOCK",
+            "entityTypeCode": "2",
+            "entityTypeName": "财富通行业板块1级",
+            "classCode": "005002",
+            "className": "行业板块",
+            "publishCode": "",
+            "fullName": "计算机",
+            "shortName": "",
+            "matchWord": "计算机",
+            "secuCode": "BK1207",
+            "market": "90",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "1000669130",
+            "entityType": "INDEX",
+            "entityTypeCode": "DC_CONCEPT",
+            "entityTypeName": "东财概念指数",
+            "classCode": "006007",
+            "className": "DC_CONCEPT_INDEX",
+            "publishCode": "905017012",
+            "fullName": "人工智能",
+            "shortName": "",
+            "secuCode": "861195",
+            "market": "47",
+            "marketChar": ".EI",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": true
+          }
+        ]
+      },
+      "entityName": null,
+      "message": null,
+      "tableTruncated": false
+    },
+    "stack": null
+  },
+  "requestId": "332f281b515c4cf79c879af2e4512bfc"
+}

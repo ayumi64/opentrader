@@ -1,0 +1,8 @@
+金融数据查询结果说明
+========================================
+查询内容: 科技板块实时行情 包含半导体 人工智能 新能源汽车 计算机 通信 消费电子 最新价 涨跌幅 成交额
+数据文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/cache/miaoxiang/mx_data_科技板块实时行情_包含半导体_人工智能_新能源汽车_计算机_通信_消费电子_最新价_涨跌幅_成交额.xlsx
+描述文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/cache/miaoxiang/mx_data_科技板块实时行情_包含半导体_人工智能_新能源汽车_计算机_通信_消费电子_最新价_涨跌幅_成交额_description.txt
+数据行数: 12
+表数量: 4
+Sheet 列表: 半导体的涨跌幅(算数平均)、收盘价(流通股本加权平均)等, 半导体的成份区间涨跌幅(总市值加权平均)、成份区间成交量(合计)等, 半导体的上周涨跌幅、本周涨跌幅, 半导体的区间成交额、区间日均换手率(整体法)

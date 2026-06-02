@@ -1,0 +1,26 @@
+{
+  "snapshot_time": "2026-05-30T03:03:00+08:00",
+  "market_status": "closed",
+  "last_trading_day": "2026-05-29",
+  "indices": {
+    "上证指数": {"close": 4068.57, "change_pct": -0.73, "volume_shares": "731.6亿"},
+    "深证成指": {"close": 15575.13, "change_pct": -1.81, "volume_shares": "848.9亿"},
+    "创业板指": {"close": 4037.95, "change_pct": -2.11, "volume_shares": "242.1亿"},
+    "科创50": {"close": 1751.32, "change_pct": -5.04, "volume_shares": "23.43亿"},
+    "沪深300": {"close": 4892.12, "change_pct": -0.45, "volume_shares": "332.5亿"}
+  },
+  "all_a_share_turnover": "3.319万亿",
+  "north_bound_turnover": "4734.05亿 (2026-05-29)",
+  "sectors": {
+    "半导体": {"change_pct": -6.40, "主力净流入": "-379.3亿", "主力流入": "2360亿", "主力流出": "2739亿"},
+    "人工智能": {"change_pct": -3.05, "主力净流入": "-302.3亿", "主力流入": "2255亿", "主力流出": "2557亿"},
+    "电子": {"change_pct": -5.25, "主力净流入": "-651.5亿", "主力流入": "4754亿", "主力流出": "5405亿"}
+  },
+  "overnight_us_market": {
+    "标普500": {"close": 7563.63, "change_pct": 0.58},
+    "纳斯达克": {"close": 26917.47, "change_pct": 0.91},
+    "道指": {"close": 50668.97, "change_pct": 0.05}
+  },
+  "data_source": "东方财富妙想数据API (mx-data)",
+  "quotes_updated": "2026-05-30T03:03"
+}

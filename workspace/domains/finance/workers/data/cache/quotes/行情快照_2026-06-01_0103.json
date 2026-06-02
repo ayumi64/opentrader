@@ -1,0 +1,57 @@
+{
+  "snapshot_time": "2026-06-01T01:03:00+08:00",
+  "market_status": "closed",
+  "last_trade_date": "2026-05-29",
+  "next_trade_date": "2026-06-01",
+  "indices": {
+    "上证指数": {"code": "000001", "close": 4068.57, "change_pct": -0.73, "note": "5/29收盘"},
+    "沪深300": {"code": "399300", "close": 4892.12, "change_pct": -0.45, "note": "5/29收盘"},
+    "科创50": {"code": "000688", "open": 1850.27, "close": 1751.32, "change_pct": -5.04, "high": 1850.27, "low": 1751.32, "volume_shares": "50.47亿", "total_market_cap": "6.139万亿", "pe_ttm": 81.48, "pb_mrq": 7.764, "note": "5/29重挫"},
+    "深证成指": {"code": "399001", "close": 15575.13, "change_pct": -1.81, "note": "5/29收盘"}
+  },
+  "tech_sector": {
+    "半导体板块(BK1036)": {
+      "latest_trade_date": "2026-05-29",
+      "volume_shares": "60.43亿股",
+      "main_force_net_flow": "-379.3亿元",
+      "net_flow_shares": "-4.827亿股",
+      "main_force_inflow": "2360亿元",
+      "main_force_outflow": "2739亿元",
+      "big_order_inflow": "1417亿元",
+      "big_order_outflow": "1500亿元",
+      "mid_order_inflow": "1665亿元",
+      "mid_order_outflow": "1449亿元",
+      "small_order_inflow": "693.2亿元",
+      "small_order_outflow": "530.8亿元",
+      "note": "主力净流出379亿创历史新高，中小单承接明显(净流入378亿)"
+    }
+  },
+  "northbound": {
+    "latest_trade_date": "2026-05-29",
+    "total_turnover_million": 473405.49,
+    "沪股通_turnover_million": 221694.07,
+    "沪股通_trade_count": 7419284,
+    "沪股通_leader": "新亚电子(+10.01%)",
+    "深股通_turnover_million": 251711.42,
+    "深股通_trade_count": 8293629,
+    "深股通_leader": "泓淋电力(+19.99%)",
+    "sh_close": 4068.57,
+    "sz_close": 15575.13,
+    "note": "北向日成交额创2026年新高，外资活跃度显著提升"
+  },
+  "market_volume_summary": {
+    "note": "全市场: 5月外资活跃度回升，陆股通日均成交额从4月2992亿放量至3953亿创年内新高。A股6月配置观点: 景气强化，震荡上行"
+  },
+  "key_events_snapshot": [
+    "COMPUTEX 2026 台北电脑展6/1开幕 (史上规模最大, AI主题, 英伟达GTC台北同日举行)",
+    "宇树科技科创板IPO 6/1上会 (人形机器人第一股, 拟募42亿)",
+    "MiniMax A股科创板IPO启动 (与中信证券签辅导协议)",
+    "美伊谅解备忘录框架接近达成(华盛顿邮报), 或30天内恢复霍尔木兹航运",
+    "5月官方制造业PMI 50.0% (较上月-0.3pct), 临界点, 扩张动能放缓",
+    "戴尔科技盘后暴涨39%创历史新高 (AI服务器营收暴增757%)",
+    "英伟达GTC台北大会6/1举行, 黄仁勋主题演讲",
+    "美联储鹰声四起: PCE 3.8%/核心PCE 3.3%, 市场预计年内加息概率升至50%+",
+    "半导体板块5/29主力净流出-379亿创历史新高, 散户承接明显",
+    "A股6月策略: 景气强化震荡上行, 成长价值或阶段性均衡"
+  ]
+}

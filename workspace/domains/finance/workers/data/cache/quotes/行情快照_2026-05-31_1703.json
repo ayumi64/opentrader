@@ -1,0 +1,84 @@
+{
+  "snapshot_time": "2026-05-31T17:03:00+08:00",
+  "trade_day": "2026-05-29",
+  "is_trading_day": false,
+  "market_status": "closed_weekend",
+  "weekend_update": true,
+  "last_trade_session": "2026-05-29",
+  "note": "周日非交易日，数据沿用上周五(5/29)收盘",
+  "mx_data_refresh": "17:03轮次，含科技板块/指数/沪深量能/北向全量查询",
+  "indices": {
+    "shanghai_composite": {
+      "code": "000001.SH",
+      "name": "上证指数",
+      "close": 4068.57,
+      "change_pct": -0.73
+    },
+    "shenzhen_component": {
+      "code": "399001.SZ",
+      "name": "深证成指",
+      "close": 15575.13,
+      "change_pct": -1.81
+    },
+    "cyb_index": {
+      "code": "399006.SZ",
+      "name": "创业板指",
+      "close": 4037.95,
+      "change_pct": -2.11
+    },
+    "hs300": {
+      "code": "000300.SH",
+      "name": "沪深300",
+      "close": 4892.12,
+      "change_pct": -0.45
+    },
+    "star50": {
+      "code": "000688.SH",
+      "name": "科创50",
+      "close": 1751.32,
+      "change_pct": -5.04
+    },
+    "sz50": {
+      "code": "000016.SH",
+      "name": "上证50",
+      "close": 2921.08,
+      "change_pct": 0.24
+    }
+  },
+  "tech_sector_data": {
+    "semiconductor_weekly": {
+      "change_pct": -5.62,
+      "main_force_netflow_billion_cny": -379.3,
+      "weekly_range": {"prev_week": 6.48, "this_week": -0.68}
+    },
+    "ai_weekly": {
+      "change_pct": -2.99,
+      "main_force_netflow_billion_cny": -302.3
+    },
+    "semiconductor_volume": "16.07万亿",
+    "semiconductor_turnover_rate": "0.04%"
+  },
+  "market_flow": {
+    "total_volume_friday": {"value": 3.319, "unit": "万亿元"},
+    "sh_volume_friday": {"value": 1.532, "unit": "万亿元"},
+    "sz_volume_friday": {"value": 1.787, "unit": "万亿元"},
+    "cyb_volume_friday": {"value": 8557, "unit": "亿元"},
+    "star50_volume_friday": {"value": 1821, "unit": "亿元"},
+    "main_force_net_flow_weekly": {"value": -1233, "unit": "亿元"},
+    "north_flow_friday_single_day": {"value": 249, "unit": "亿元", "note": "五月最高单日"},
+    "north_flow_total": {"value": 4734, "unit": "亿元"},
+    "south_flow_friday": {"value": 18.84, "unit": "亿元"},
+    "margin_balance": {"value": 29424.36, "unit": "亿元"},
+    "margin_md_friday": {"value": 13994, "unit": "亿元"}
+  },
+  "market_status_summary": "周末休市，5/29（周五）A股延续调整：沪指跌0.73%报4068.57，科创50暴跌5.04%半导体遭大基金减持踩踏跌6.4%，北向+249亿尾盘突袭58亿，两融余额29424亿维持高位",
+  "last_mx_search_update": "2026-05-31T17:05:00+08:00",
+  "tomorrow_key_events": [
+    "COMPUTEX 2026 揭幕 (6/1-6/5)",
+    "宇树科技科创板IPO上会 (6/1)",
+    "A股开盘: 消化周末PMI 50%/美伊升级/科技股负面情绪",
+    "6月1日《商业秘密保护规定》施行",
+    "美国5月制造业PMI终值",
+    "美联储密集讲话"
+  ]
+}

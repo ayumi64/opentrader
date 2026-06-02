@@ -1,0 +1,641 @@
+{
+  "success": true,
+  "status": 0,
+  "code": 0,
+  "message": "ok",
+  "data": {
+    "requestId": null,
+    "message": "OK",
+    "status": 0,
+    "code": 0,
+    "data": {
+      "protocolType": "SEARCH_DATA",
+      "id": "cf429437-53c3-4883-b048-9bbbd48169a7",
+      "refSeq": null,
+      "keyEntityList": null,
+      "searchDataResultDTO": {
+        "questionId": "08ad45b9-787e-47a8-a4ff-970051ba460b",
+        "dataTableDTOList": [
+          {
+            "code": "001004",
+            "entityName": "沪深A股",
+            "table": {
+              "334856": [
+                "1.399万亿"
+              ],
+              "326256": [
+                "3.319万亿"
+              ],
+              "headName": [
+                "2026-05-29(日)"
+              ]
+            },
+            "rawTable": {
+              "334856": [
+                "1399361487043.16"
+              ],
+              "326256": [
+                "3318638030127.5"
+              ],
+              "headName": [
+                "2026-05-29"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "334856": "融资融券余额(合计)板块",
+              "headNameSub": "数据来源",
+              "326256": "成交额(合计)"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "334856",
+              "returnName": "融资融券余额(合计)板块",
+              "classCode": "007121",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-05-29 00:00:00",
+              "endDate": "2026-05-29 00:00:00",
+              "fuzzy": false,
+              "dateGranularity": "DAY",
+              "defineType": -1,
+              "isLoopN": false,
+              "fixedParamValue": "Period=1,CurType=1,IsHistory=0",
+              "isGroup": false,
+              "returnSourceCode": "SUMTRADINGANDB",
+              "returnSourceName": "融资融券余额(合计)板块",
+              "graph": "0",
+              "unit": "1",
+              "tableType": "20",
+              "unitDesc": "元"
+            },
+            "entityCodes": [
+              "001004"
+            ],
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "334856",
+                "returnName": "融资融券余额(合计)板块",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-05-29 00:00:00",
+                "endDate": "2026-05-29 00:00:00",
+                "fuzzy": false,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "Period=1,CurType=1,IsHistory=0",
+                "isGroup": false,
+                "returnSourceCode": "SUMTRADINGANDB",
+                "returnSourceName": "融资融券余额(合计)板块",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitDesc": "元"
+              },
+              {
+                "returnCode": "326256",
+                "returnName": "成交额(合计)",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-05-29 00:00:00",
+                "endDate": "2026-05-29 00:00:00",
+                "fuzzy": false,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "CurType=1,IsHistory=0,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "TVAL",
+                "returnSourceName": "成交额(合计)_板块",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20"
+              }
+            ],
+            "dataTableType": "NORM_TABLE",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "334856",
+              "326256"
+            ],
+            "tipFlags": [],
+            "dataType": "数据浏览器",
+            "title": "沪深A股的融资融券余额(合计)板块、成交额(合计)",
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftTimeTop",
+            "orderCol": {},
+            "jumpUrlList": [
+              {
+                "choiceUrl": "EM://stockdatacenter?type=browser&modType=BLOCK&code=001004&indId=100000000016947|121:2026-05-29|469:0|261:101:元:元,100000000015690|121:2026-05-29|469:0|261:101:元:元",
+                "typeName": "板块数据浏览器"
+              }
+            ],
+            "dataTypeEnum": "DATA_BROWSER",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "001004",
+              "entityType": "BLOCK",
+              "entityTypeCode": "BLOCK",
+              "entityTypeName": "BLOCK",
+              "classCode": "005202",
+              "className": "市场类(沪深京)",
+              "publishCode": "",
+              "fullName": "沪深A股",
+              "shortName": "",
+              "matchWord": "沪深两市",
+              "secuCode": "",
+              "market": "",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "001004",
+                "entityType": "BLOCK",
+                "entityTypeCode": "BLOCK",
+                "entityTypeName": "BLOCK",
+                "classCode": "005202",
+                "className": "市场类(沪深京)",
+                "publishCode": "",
+                "fullName": "沪深A股",
+                "shortName": "",
+                "matchWord": "沪深两市",
+                "secuCode": "",
+                "market": "",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {
+              "2026-05-29": false
+            },
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "",
+            "frontendEntityCode": "",
+            "frontendTitle": "",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "NORMAL"
+          },
+          {
+            "code": "001004",
+            "entityName": "交易日期",
+            "table": {
+              "headName": [
+                "北向资金成交总额(百万)",
+                "沪股通-成交总额(百万)",
+                "沪股通-当日余额",
+                "沪股通-成交笔数(笔)",
+                "上证指数收盘价",
+                "上证指数涨跌幅(%)",
+                "沪股通领涨股",
+                "沪股通领涨股涨跌幅(%)",
+                "深股通-成交总额(百万)",
+                "深股通-成交笔数(笔)",
+                "深股通-当日余额",
+                "深证成指收盘价",
+                "深证成指涨跌幅(%)",
+                "深股通领涨股",
+                "深股通涨跌幅(%)"
+              ],
+              "0": [
+                "473405.49",
+                "221694.07",
+                "额度充足",
+                "7419284",
+                "4068.57",
+                "-0.73",
+                "新亚电子",
+                "10.01",
+                "251711.42",
+                "8293629",
+                "额度充足",
+                "15575.13",
+                "-1.81",
+                "泓淋电力",
+                "19.99"
+              ]
+            },
+            "rawTable": {
+              "headName": [
+                "北向资金成交总额(百万)",
+                "沪股通-成交总额(百万)",
+                "沪股通-当日余额",
+                "沪股通-成交笔数(笔)",
+                "上证指数收盘价",
+                "上证指数涨跌幅(%)",
+                "沪股通领涨股",
+                "沪股通领涨股涨跌幅(%)",
+                "深股通-成交总额(百万)",
+                "深股通-成交笔数(笔)",
+                "深股通-当日余额",
+                "深证成指收盘价",
+                "深证成指涨跌幅(%)",
+                "深股通领涨股",
+                "深股通涨跌幅(%)"
+              ],
+              "0": [
+                "473405.49",
+                "221694.07",
+                "额度充足",
+                "7419284",
+                "4068.5691",
+                "-0.733578",
+                "新亚电子",
+                "10.0089",
+                "251711.42",
+                "8293629",
+                "额度充足",
+                "15575.1338",
+                "-1.807837",
+                "泓淋电力",
+                "19.9877"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "0": "2026-05-29"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "RPT_MUTUAL_DEALAMT",
+              "returnName": "北向资金",
+              "classCode": "007202",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-05-29 00:00:00",
+              "endDate": "2026-05-29 00:00:00",
+              "fuzzy": false,
+              "dateGranularity": "DAY",
+              "defineType": -1,
+              "isLoopN": false,
+              "isGroup": false,
+              "returnSourceCode": "TRADE_DATE,NF_DEAL_AMT,SSC_DEAL_AMT,SSC_QUOTA_BALANCE,SSC_DEAL_NUM,SCI_INDEX_PRICE,SCI_INDEX_RATE,SSC_LEAD_STOCKS,SSC_CHANGE_RATE,CSI300_INDEX_PRICE,CSI300_INDEX_RATE,ST_DEAL_AMT,ST_DEAL_NUM,ST_QUOTA_BALANCE,SZC_INDEX_PRICE,SZC_INDEX_RATE,ST_LEAD_STOCKS,ST_CHANGE_RATE,NF_QUOTA_BALANCE,SSC_LEAD_STOCKSCODE,ST_LEAD_STOCKSCODE,NF_LEAD_STOCKS,NF_CHANGE_RATE,NF_LEAD_STOCKSCODE",
+              "returnSourceName": "交易日期,北向资金成交总额(百万),沪股通-成交总额(百万),沪股通-当日余额,沪股通-成交笔数(笔),上证指数收盘价,上证指数涨跌幅(%),沪股通领涨股,沪股通领涨股涨跌幅(%),沪深300收盘价,沪深300涨跌幅,深股通-成交总额(百万),深股通-成交笔数(笔),深股通-当日余额,深证成指收盘价,深证成指涨跌幅(%),深股通领涨股,深股通涨跌幅(%),北向当日余额(文本),沪股通领涨股代码(带后缀),深股通领涨股代码(带后缀),北向领涨股,北向涨跌幅,北向领涨股代码(带后缀)",
+              "headName": "TRADE_DATE",
+              "tableType": "10"
+            },
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "RPT_MUTUAL_DEALAMT",
+                "returnName": "北向资金",
+                "classCode": "007202",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-05-29 00:00:00",
+                "endDate": "2026-05-29 00:00:00",
+                "fuzzy": false,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "isGroup": false,
+                "returnSourceCode": "TRADE_DATE,NF_DEAL_AMT,SSC_DEAL_AMT,SSC_QUOTA_BALANCE,SSC_DEAL_NUM,SCI_INDEX_PRICE,SCI_INDEX_RATE,SSC_LEAD_STOCKS,SSC_CHANGE_RATE,CSI300_INDEX_PRICE,CSI300_INDEX_RATE,ST_DEAL_AMT,ST_DEAL_NUM,ST_QUOTA_BALANCE,SZC_INDEX_PRICE,SZC_INDEX_RATE,ST_LEAD_STOCKS,ST_CHANGE_RATE,NF_QUOTA_BALANCE,SSC_LEAD_STOCKSCODE,ST_LEAD_STOCKSCODE,NF_LEAD_STOCKS,NF_CHANGE_RATE,NF_LEAD_STOCKSCODE",
+                "returnSourceName": "交易日期,北向资金成交总额(百万),沪股通-成交总额(百万),沪股通-当日余额,沪股通-成交笔数(笔),上证指数收盘价,上证指数涨跌幅(%),沪股通领涨股,沪股通领涨股涨跌幅(%),沪深300收盘价,沪深300涨跌幅,深股通-成交总额(百万),深股通-成交笔数(笔),深股通-当日余额,深证成指收盘价,深证成指涨跌幅(%),深股通领涨股,深股通涨跌幅(%),北向当日余额(文本),沪股通领涨股代码(带后缀),深股通领涨股代码(带后缀),北向领涨股,北向涨跌幅,北向领涨股代码(带后缀)",
+                "headName": "TRADE_DATE",
+                "tableType": "10"
+              }
+            ],
+            "dataTableType": "F10_TABLE",
+            "inputTitle": "沪深A股(001004)沪深港通_北向资金成交额",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "0"
+            ],
+            "tipFlags": [],
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftTimeTop",
+            "orderCol": {},
+            "jumpUrlList": [],
+            "dataTypeEnum": "F9",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "001004",
+              "entityType": "BLOCK",
+              "entityTypeCode": "BLOCK",
+              "entityTypeName": "BLOCK",
+              "classCode": "005202",
+              "className": "市场类(沪深京)",
+              "publishCode": "",
+              "fullName": "沪深A股",
+              "shortName": "",
+              "matchWord": "沪深两市",
+              "secuCode": "",
+              "market": "",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "001004",
+                "entityType": "BLOCK",
+                "entityTypeCode": "BLOCK",
+                "entityTypeName": "BLOCK",
+                "classCode": "005202",
+                "className": "市场类(沪深京)",
+                "publishCode": "",
+                "fullName": "沪深A股",
+                "shortName": "",
+                "matchWord": "沪深两市",
+                "secuCode": "",
+                "market": "",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {},
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {
+              "沪深A股|北向资金": []
+            },
+            "excelTimeTruncate": false,
+            "frontendEntityName": "沪深A股",
+            "frontendEntityCode": "001004",
+            "frontendTitle": "沪深港通_北向资金成交额",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "NORMAL"
+          },
+          {
+            "code": "001004",
+            "entityName": "交易日期",
+            "table": {
+              "headName": [
+                "当日成交净买额(百万)",
+                "买入成交额(百万)",
+                "卖出成交额(百万)",
+                "历史累计成交净额(百万)",
+                "当日余额",
+                "成交笔数",
+                "成交总额(百万)",
+                "领涨股名称",
+                "领涨股涨跌幅(%)",
+                "恒生指数收盘价",
+                "指数涨跌幅"
+              ],
+              "0": [
+                "1884.06",
+                "78939.46",
+                "77055.40",
+                "5376565.72",
+                "额度充足",
+                "2680089",
+                "155994.86",
+                "联想集团",
+                "21.95",
+                "25182.39",
+                "0.70"
+              ]
+            },
+            "rawTable": {
+              "headName": [
+                "当日成交净买额(百万)",
+                "买入成交额(百万)",
+                "卖出成交额(百万)",
+                "历史累计成交净额(百万)",
+                "当日余额",
+                "成交笔数",
+                "成交总额(百万)",
+                "领涨股名称",
+                "领涨股涨跌幅(%)",
+                "恒生指数收盘价",
+                "指数涨跌幅"
+              ],
+              "0": [
+                "1884.06",
+                "78939.46",
+                "77055.4",
+                "5376565.72",
+                "额度充足",
+                "2680089",
+                "155994.86",
+                "联想集团",
+                "21.95",
+                "25182.39",
+                "0.7"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "0": "2026-05-29"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "RPT_MUTUAL_DEAL_HISTORY",
+              "returnName": "南向资金",
+              "classCode": "007202",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-05-29 00:00:00",
+              "endDate": "2026-05-29 00:00:00",
+              "fuzzy": false,
+              "dateGranularity": "DAY",
+              "defineType": -1,
+              "isLoopN": false,
+              "isGroup": false,
+              "returnSourceCode": "TRADE_DATE,NET_DEAL_AMT,BUY_AMT,SELL_AMT,ACCUM_DEAL_AMT,QUOTA_BALANCE_TEXT,DEAL_NUM,DEAL_AMT,LEAD_STOCKS_NAME,LS_CHANGE_RATE,INDEX_CLOSE_PRICE,INDEX_CHANGE_RATE",
+              "returnSourceName": "交易日期,当日成交净买额(百万),买入成交额(百万),卖出成交额(百万),历史累计成交净额(百万),当日余额,成交笔数,成交总额(百万),领涨股名称,领涨股涨跌幅(%),恒生指数收盘价,指数涨跌幅",
+              "headName": "TRADE_DATE",
+              "tableType": "10"
+            },
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "RPT_MUTUAL_DEAL_HISTORY",
+                "returnName": "南向资金",
+                "classCode": "007202",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-05-29 00:00:00",
+                "endDate": "2026-05-29 00:00:00",
+                "fuzzy": false,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "isGroup": false,
+                "returnSourceCode": "TRADE_DATE,NET_DEAL_AMT,BUY_AMT,SELL_AMT,ACCUM_DEAL_AMT,QUOTA_BALANCE_TEXT,DEAL_NUM,DEAL_AMT,LEAD_STOCKS_NAME,LS_CHANGE_RATE,INDEX_CLOSE_PRICE,INDEX_CHANGE_RATE",
+                "returnSourceName": "交易日期,当日成交净买额(百万),买入成交额(百万),卖出成交额(百万),历史累计成交净额(百万),当日余额,成交笔数,成交总额(百万),领涨股名称,领涨股涨跌幅(%),恒生指数收盘价,指数涨跌幅",
+                "headName": "TRADE_DATE",
+                "tableType": "10"
+              }
+            ],
+            "dataTableType": "F10_TABLE",
+            "inputTitle": "沪深A股(001004)沪深港通_南向资金流向",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "0"
+            ],
+            "tipFlags": [],
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftTimeTop",
+            "orderCol": {},
+            "jumpUrlList": [],
+            "dataTypeEnum": "F9",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "001004",
+              "entityType": "BLOCK",
+              "entityTypeCode": "BLOCK",
+              "entityTypeName": "BLOCK",
+              "classCode": "005202",
+              "className": "市场类(沪深京)",
+              "publishCode": "",
+              "fullName": "沪深A股",
+              "shortName": "",
+              "matchWord": "沪深两市",
+              "secuCode": "",
+              "market": "",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "001004",
+                "entityType": "BLOCK",
+                "entityTypeCode": "BLOCK",
+                "entityTypeName": "BLOCK",
+                "classCode": "005202",
+                "className": "市场类(沪深京)",
+                "publishCode": "",
+                "fullName": "沪深A股",
+                "shortName": "",
+                "matchWord": "沪深两市",
+                "secuCode": "",
+                "market": "",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {},
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {
+              "沪深A股|南向资金": []
+            },
+            "excelTimeTruncate": false,
+            "frontendEntityName": "沪深A股",
+            "frontendEntityCode": "001004",
+            "frontendTitle": "沪深港通_南向资金流向",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "NORMAL"
+          }
+        ],
+        "condition": {
+          "search_data_task_0": [
+            "沪深A股",
+            "融资融券余额(合计)板块成交额(合计)北向资金南向资金",
+            "2026-05-29至2026-05-29"
+          ]
+        },
+        "entityTagDTOList": [
+          {
+            "entityId": "001004",
+            "entityType": "BLOCK",
+            "entityTypeCode": "BLOCK",
+            "entityTypeName": "BLOCK",
+            "classCode": "005202",
+            "className": "市场类(沪深京)",
+            "publishCode": "",
+            "fullName": "沪深A股",
+            "shortName": "",
+            "matchWord": "沪深两市",
+            "secuCode": "",
+            "market": "",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "001004",
+            "entityType": "BLOCK",
+            "entityTypeCode": "BLOCK",
+            "entityTypeName": "BLOCK",
+            "classCode": "005202",
+            "className": "市场类(沪深京)",
+            "publishCode": "",
+            "fullName": "沪深A股",
+            "shortName": "",
+            "matchWord": "沪深两市",
+            "secuCode": "",
+            "market": "",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "001004",
+            "entityType": "BLOCK",
+            "entityTypeCode": "BLOCK",
+            "entityTypeName": "BLOCK",
+            "classCode": "005202",
+            "className": "市场类(沪深京)",
+            "publishCode": "",
+            "fullName": "沪深A股",
+            "shortName": "",
+            "matchWord": "沪深两市",
+            "secuCode": "",
+            "market": "",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          }
+        ]
+      },
+      "entityName": null,
+      "message": null,
+      "tableTruncated": false
+    },
+    "stack": null
+  },
+  "requestId": "f35ccfda5070405ab35798f531cf2279"
+}

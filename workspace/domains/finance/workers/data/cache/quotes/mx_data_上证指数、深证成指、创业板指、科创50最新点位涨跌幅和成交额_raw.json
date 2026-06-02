@@ -1,0 +1,1086 @@
+{
+  "success": true,
+  "status": 0,
+  "code": 0,
+  "message": "ok",
+  "data": {
+    "requestId": null,
+    "message": "OK",
+    "status": 0,
+    "code": 0,
+    "data": {
+      "protocolType": "SEARCH_DATA",
+      "id": "a72efb67-1281-417f-b638-c642795b6f82",
+      "refSeq": null,
+      "keyEntityList": null,
+      "searchDataResultDTO": {
+        "questionId": "99173402-de06-4f1f-8d15-6134eee036ff",
+        "dataTableDTOList": [
+          {
+            "code": "000001.SH",
+            "entityName": "上证指数(000001.SH)",
+            "table": {
+              "327483": [
+                "1.532万亿",
+                "1.361万亿",
+                "1.473万亿",
+                "1.462万亿",
+                "1.446万亿"
+              ],
+              "325898": [
+                "4068.5691点",
+                "4098.6358点",
+                "4093.7266点",
+                "4145.373点",
+                "4152.5686点"
+              ],
+              "326865": [
+                "-0.7336%",
+                "0.1199%",
+                "-1.246%",
+                "-0.1733%",
+                "0.9645%"
+              ],
+              "headName": [
+                "2026-05-29(日)",
+                "2026-05-28(日)",
+                "2026-05-27(日)",
+                "2026-05-26(日)",
+                "2026-05-25(日)"
+              ]
+            },
+            "rawTable": {
+              "327483": [
+                "1532067352981.8",
+                "1361325732878.4",
+                "1473449050997.9",
+                "1461685377747.7",
+                "1445655378392.4"
+              ],
+              "325898": [
+                "4068.5691",
+                "4098.6358",
+                "4093.7266",
+                "4145.373",
+                "4152.5686"
+              ],
+              "326865": [
+                "-0.007335782310787373",
+                "0.0011992007477978758",
+                "-0.012458806481346705",
+                "-0.0017328070149160242",
+                "0.00964502026745313"
+              ],
+              "headName": [
+                "2026-05-29",
+                "2026-05-28",
+                "2026-05-27",
+                "2026-05-26",
+                "2026-05-25"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "327483": "成交额",
+              "headNameSub": "数据来源",
+              "325898": "收盘价",
+              "326865": "涨跌幅"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "327483",
+              "returnName": "成交额",
+              "classCode": "007121",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-05-31 00:00:00",
+              "endDate": "2026-05-31 00:00:00",
+              "fuzzy": true,
+              "dateGranularity": "DAY",
+              "defineType": 0,
+              "isLoopN": false,
+              "fixedParamValue": "Period=1,CurType=1",
+              "isGroup": false,
+              "returnSourceCode": "AMOUNT",
+              "returnSourceName": "成交额",
+              "graph": "0",
+              "unit": "1",
+              "tableType": "20"
+            },
+            "entityCodes": [
+              "000001.SH"
+            ],
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "325898",
+                "returnName": "收盘价",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-05-31 00:00:00",
+                "endDate": "2026-05-31 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "AdjustFlag=1,CurType=1,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "CLOSE",
+                "returnSourceName": "收盘价",
+                "graph": "0",
+                "unit": "2",
+                "tableType": "20"
+              },
+              {
+                "returnCode": "326865",
+                "returnName": "涨跌幅",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-05-31 00:00:00",
+                "endDate": "2026-05-31 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "Period=1,AdjustFlag=1,CurType=1",
+                "isGroup": false,
+                "returnSourceCode": "PCTCHANGE",
+                "returnSourceName": "涨跌幅",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitName": "100%",
+                "unitDesc": "100%"
+              },
+              {
+                "returnCode": "327483",
+                "returnName": "成交额",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-05-31 00:00:00",
+                "endDate": "2026-05-31 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "CurType=1,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "AMOUNT",
+                "returnSourceName": "成交额",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20"
+              }
+            ],
+            "dataTableType": "NORM_TABLE",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "327483",
+              "325898",
+              "326865"
+            ],
+            "tipFlags": [],
+            "dataType": "数据浏览器",
+            "title": "上证指数(000001.SH)的成交额、收盘价等",
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftTimeTop",
+            "orderCol": {},
+            "jumpUrlList": [
+              {
+                "choiceUrl": "EM://stockdatacenter?type=browser&modType=INDEX&code=000001.SH&indId=100000000006182|121:2026-05-31|261:101:元:元,100000000006220|121:2026-05-31,100000000006180|121:2026-05-31",
+                "typeName": "指数数据浏览器"
+              }
+            ],
+            "dataTypeEnum": "DATA_BROWSER",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "1000158679",
+              "entityType": "INDEX",
+              "entityTypeCode": "INDEX",
+              "entityTypeName": "INDEX",
+              "classCode": "006001",
+              "className": "沪深京指数",
+              "publishCode": "905001024",
+              "fullName": "上证综合指数",
+              "shortName": "上证指数",
+              "matchWord": "上证指数",
+              "secuCode": "000001",
+              "market": "1",
+              "marketChar": ".SH",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "1000158679",
+                "entityType": "INDEX",
+                "entityTypeCode": "INDEX",
+                "entityTypeName": "INDEX",
+                "classCode": "006001",
+                "className": "沪深京指数",
+                "publishCode": "905001024",
+                "fullName": "上证综合指数",
+                "shortName": "上证指数",
+                "matchWord": "上证指数",
+                "secuCode": "000001",
+                "market": "1",
+                "marketChar": ".SH",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {
+              "2026-05-29": false
+            },
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "",
+            "frontendEntityCode": "",
+            "frontendTitle": "",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "NORMAL"
+          },
+          {
+            "code": "399001.SZ",
+            "entityName": "深证成指(399001.SZ)",
+            "table": {
+              "327483": [
+                "1.787万亿",
+                "1.607万亿",
+                "1.765万亿",
+                "1.782万亿",
+                "1.76万亿"
+              ],
+              "325898": [
+                "15575.1338点",
+                "15861.891点",
+                "15736.4688点",
+                "15876.1628点",
+                "15856.6102点"
+              ],
+              "326865": [
+                "-1.808%",
+                "0.797%",
+                "-0.8799%",
+                "0.1233%",
+                "1.663%"
+              ],
+              "headName": [
+                "2026-05-29(日)",
+                "2026-05-28(日)",
+                "2026-05-27(日)",
+                "2026-05-26(日)",
+                "2026-05-25(日)"
+              ]
+            },
+            "rawTable": {
+              "327483": [
+                "1786964795181.3906",
+                "1606824859646.2263",
+                "1765113240574.7036",
+                "1782006716930.746",
+                "1760074861165.398"
+              ],
+              "325898": [
+                "15575.1338",
+                "15861.891",
+                "15736.4688",
+                "15876.1628",
+                "15856.6102"
+              ],
+              "326865": [
+                "-0.018078374135845468",
+                "0.00797016164134606",
+                "-0.008798977546387941",
+                "0.001233088267503788",
+                "0.016625528234959726"
+              ],
+              "headName": [
+                "2026-05-29",
+                "2026-05-28",
+                "2026-05-27",
+                "2026-05-26",
+                "2026-05-25"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "327483": "成交额",
+              "headNameSub": "数据来源",
+              "325898": "收盘价",
+              "326865": "涨跌幅"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "327483",
+              "returnName": "成交额",
+              "classCode": "007121",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-05-31 00:00:00",
+              "endDate": "2026-05-31 00:00:00",
+              "fuzzy": true,
+              "dateGranularity": "DAY",
+              "defineType": 0,
+              "isLoopN": false,
+              "fixedParamValue": "Period=1,CurType=1",
+              "isGroup": false,
+              "returnSourceCode": "AMOUNT",
+              "returnSourceName": "成交额",
+              "graph": "0",
+              "unit": "1",
+              "tableType": "20"
+            },
+            "entityCodes": [
+              "399001.SZ"
+            ],
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "325898",
+                "returnName": "收盘价",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-05-31 00:00:00",
+                "endDate": "2026-05-31 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "AdjustFlag=1,CurType=1,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "CLOSE",
+                "returnSourceName": "收盘价",
+                "graph": "0",
+                "unit": "2",
+                "tableType": "20"
+              },
+              {
+                "returnCode": "326865",
+                "returnName": "涨跌幅",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-05-31 00:00:00",
+                "endDate": "2026-05-31 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "Period=1,AdjustFlag=1,CurType=1",
+                "isGroup": false,
+                "returnSourceCode": "PCTCHANGE",
+                "returnSourceName": "涨跌幅",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitName": "100%",
+                "unitDesc": "100%"
+              },
+              {
+                "returnCode": "327483",
+                "returnName": "成交额",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-05-31 00:00:00",
+                "endDate": "2026-05-31 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "CurType=1,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "AMOUNT",
+                "returnSourceName": "成交额",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20"
+              }
+            ],
+            "dataTableType": "NORM_TABLE",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "327483",
+              "325898",
+              "326865"
+            ],
+            "tipFlags": [],
+            "dataType": "数据浏览器",
+            "title": "深证成指(399001.SZ)的成交额、收盘价等",
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftTimeTop",
+            "orderCol": {},
+            "jumpUrlList": [
+              {
+                "choiceUrl": "EM://stockdatacenter?type=browser&modType=INDEX&code=399001.SZ&indId=100000000006182|121:2026-05-31|261:101:元:元,100000000006220|121:2026-05-31,100000000006180|121:2026-05-31",
+                "typeName": "指数数据浏览器"
+              }
+            ],
+            "dataTypeEnum": "DATA_BROWSER",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "1000158617",
+              "entityType": "INDEX",
+              "entityTypeCode": "HSJ_INDEX",
+              "entityTypeName": "A股市场核心基准指数",
+              "classCode": "006001",
+              "className": "HSJ_INDEX",
+              "publishCode": "905001024",
+              "fullName": "深证成指",
+              "shortName": "",
+              "matchWord": "深证成指",
+              "secuCode": "399001",
+              "market": "0",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "1000158617",
+                "entityType": "INDEX",
+                "entityTypeCode": "HSJ_INDEX",
+                "entityTypeName": "A股市场核心基准指数",
+                "classCode": "006001",
+                "className": "HSJ_INDEX",
+                "publishCode": "905001024",
+                "fullName": "深证成指",
+                "shortName": "",
+                "matchWord": "深证成指",
+                "secuCode": "399001",
+                "market": "0",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {
+              "2026-05-29": false
+            },
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "",
+            "frontendEntityCode": "",
+            "frontendTitle": "",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "NORMAL"
+          },
+          {
+            "code": "399006.SZ",
+            "entityName": "创业板指(399006.SZ)",
+            "table": {
+              "327483": [
+                "8557亿",
+                "7733亿",
+                "8397亿",
+                "8424亿",
+                "8840亿"
+              ],
+              "325898": [
+                "4037.951点",
+                "4125.0749点",
+                "4045.7731点",
+                "4043.0658点",
+                "4021.1602点"
+              ],
+              "326865": [
+                "-2.112%",
+                "1.96%",
+                "0.06696%",
+                "0.5448%",
+                "2.099%"
+              ],
+              "headName": [
+                "2026-05-29(日)",
+                "2026-05-28(日)",
+                "2026-05-27(日)",
+                "2026-05-26(日)",
+                "2026-05-25(日)"
+              ]
+            },
+            "rawTable": {
+              "327483": [
+                "855661852309.05",
+                "773326778436.31",
+                "839664812553.11",
+                "842366690267.45",
+                "884036421908.69"
+              ],
+              "325898": [
+                "4037.951",
+                "4125.0749",
+                "4045.7731",
+                "4043.0658",
+                "4021.1602"
+              ],
+              "326865": [
+                "-0.021120561956341592",
+                "0.01960114866550468",
+                "0.0006696156169409937",
+                "0.005447582018741768",
+                "0.020987217982877716"
+              ],
+              "headName": [
+                "2026-05-29",
+                "2026-05-28",
+                "2026-05-27",
+                "2026-05-26",
+                "2026-05-25"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "327483": "成交额",
+              "headNameSub": "数据来源",
+              "325898": "收盘价",
+              "326865": "涨跌幅"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "327483",
+              "returnName": "成交额",
+              "classCode": "007121",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-05-31 00:00:00",
+              "endDate": "2026-05-31 00:00:00",
+              "fuzzy": true,
+              "dateGranularity": "DAY",
+              "defineType": 0,
+              "isLoopN": false,
+              "fixedParamValue": "Period=1,CurType=1",
+              "isGroup": false,
+              "returnSourceCode": "AMOUNT",
+              "returnSourceName": "成交额",
+              "graph": "0",
+              "unit": "1",
+              "tableType": "20"
+            },
+            "entityCodes": [
+              "399006.SZ"
+            ],
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "325898",
+                "returnName": "收盘价",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-05-31 00:00:00",
+                "endDate": "2026-05-31 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "AdjustFlag=1,CurType=1,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "CLOSE",
+                "returnSourceName": "收盘价",
+                "graph": "0",
+                "unit": "2",
+                "tableType": "20"
+              },
+              {
+                "returnCode": "326865",
+                "returnName": "涨跌幅",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-05-31 00:00:00",
+                "endDate": "2026-05-31 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "Period=1,AdjustFlag=1,CurType=1",
+                "isGroup": false,
+                "returnSourceCode": "PCTCHANGE",
+                "returnSourceName": "涨跌幅",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitName": "100%",
+                "unitDesc": "100%"
+              },
+              {
+                "returnCode": "327483",
+                "returnName": "成交额",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-05-31 00:00:00",
+                "endDate": "2026-05-31 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "CurType=1,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "AMOUNT",
+                "returnSourceName": "成交额",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20"
+              }
+            ],
+            "dataTableType": "NORM_TABLE",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "327483",
+              "325898",
+              "326865"
+            ],
+            "tipFlags": [],
+            "dataType": "数据浏览器",
+            "title": "创业板指(399006.SZ)的成交额、收盘价等",
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftTimeTop",
+            "orderCol": {},
+            "jumpUrlList": [
+              {
+                "choiceUrl": "EM://stockdatacenter?type=browser&modType=INDEX&code=399006.SZ&indId=100000000006182|121:2026-05-31|261:101:元:元,100000000006220|121:2026-05-31,100000000006180|121:2026-05-31",
+                "typeName": "指数数据浏览器"
+              }
+            ],
+            "dataTypeEnum": "DATA_BROWSER",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "1000159296",
+              "entityType": "INDEX",
+              "entityTypeCode": "HSJ_INDEX",
+              "entityTypeName": "A股市场核心基准指数",
+              "classCode": "006001",
+              "className": "HSJ_INDEX",
+              "publishCode": "905001024",
+              "fullName": "创业板指",
+              "shortName": "",
+              "matchWord": "创业板指",
+              "secuCode": "399006",
+              "market": "0",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "1000159296",
+                "entityType": "INDEX",
+                "entityTypeCode": "HSJ_INDEX",
+                "entityTypeName": "A股市场核心基准指数",
+                "classCode": "006001",
+                "className": "HSJ_INDEX",
+                "publishCode": "905001024",
+                "fullName": "创业板指",
+                "shortName": "",
+                "matchWord": "创业板指",
+                "secuCode": "399006",
+                "market": "0",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {
+              "2026-05-29": false
+            },
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "",
+            "frontendEntityCode": "",
+            "frontendTitle": "",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "NORMAL"
+          },
+          {
+            "code": "000688.SH",
+            "entityName": "科创50(000688.SH)",
+            "table": {
+              "327483": [
+                "1821亿",
+                "1771亿",
+                "1928亿",
+                "1932亿",
+                "2220亿"
+              ],
+              "325898": [
+                "1751.3234点",
+                "1844.2493点",
+                "1815.4513点",
+                "1867.7088点",
+                "1896.0369点"
+              ],
+              "326865": [
+                "-5.039%",
+                "1.586%",
+                "-2.798%",
+                "-1.494%",
+                "5.878%"
+              ],
+              "headName": [
+                "2026-05-29(日)",
+                "2026-05-28(日)",
+                "2026-05-27(日)",
+                "2026-05-26(日)",
+                "2026-05-25(日)"
+              ]
+            },
+            "rawTable": {
+              "327483": [
+                "182139564470",
+                "177051079006",
+                "192835609775",
+                "193152885293",
+                "221953931473"
+              ],
+              "325898": [
+                "1751.3234",
+                "1844.2493",
+                "1815.4513",
+                "1867.7088",
+                "1896.0369"
+              ],
+              "326865": [
+                "-0.05038684303689309",
+                "0.01586272239855732",
+                "-0.02797946874801905",
+                "-0.014940690236566571",
+                "0.05878244622009185"
+              ],
+              "headName": [
+                "2026-05-29",
+                "2026-05-28",
+                "2026-05-27",
+                "2026-05-26",
+                "2026-05-25"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "327483": "成交额",
+              "headNameSub": "数据来源",
+              "325898": "收盘价",
+              "326865": "涨跌幅"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "327483",
+              "returnName": "成交额",
+              "classCode": "007121",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-05-31 00:00:00",
+              "endDate": "2026-05-31 00:00:00",
+              "fuzzy": true,
+              "dateGranularity": "DAY",
+              "defineType": 0,
+              "isLoopN": false,
+              "fixedParamValue": "Period=1,CurType=1",
+              "isGroup": false,
+              "returnSourceCode": "AMOUNT",
+              "returnSourceName": "成交额",
+              "graph": "0",
+              "unit": "1",
+              "tableType": "20"
+            },
+            "entityCodes": [
+              "000688.SH"
+            ],
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "325898",
+                "returnName": "收盘价",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-05-31 00:00:00",
+                "endDate": "2026-05-31 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "AdjustFlag=1,CurType=1,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "CLOSE",
+                "returnSourceName": "收盘价",
+                "graph": "0",
+                "unit": "2",
+                "tableType": "20"
+              },
+              {
+                "returnCode": "326865",
+                "returnName": "涨跌幅",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-05-31 00:00:00",
+                "endDate": "2026-05-31 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "Period=1,AdjustFlag=1,CurType=1",
+                "isGroup": false,
+                "returnSourceCode": "PCTCHANGE",
+                "returnSourceName": "涨跌幅",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20",
+                "unitName": "100%",
+                "unitDesc": "100%"
+              },
+              {
+                "returnCode": "327483",
+                "returnName": "成交额",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-05-31 00:00:00",
+                "endDate": "2026-05-31 00:00:00",
+                "fuzzy": true,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "CurType=1,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "AMOUNT",
+                "returnSourceName": "成交额",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20"
+              }
+            ],
+            "dataTableType": "NORM_TABLE",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "327483",
+              "325898",
+              "326865"
+            ],
+            "tipFlags": [],
+            "dataType": "数据浏览器",
+            "title": "科创50(000688.SH)的成交额、收盘价等",
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftTimeTop",
+            "orderCol": {},
+            "jumpUrlList": [
+              {
+                "choiceUrl": "EM://stockdatacenter?type=browser&modType=INDEX&code=000688.SH&indId=100000000006182|121:2026-05-31|261:101:元:元,100000000006220|121:2026-05-31,100000000006180|121:2026-05-31",
+                "typeName": "指数数据浏览器"
+              }
+            ],
+            "dataTypeEnum": "DATA_BROWSER",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "1002280999",
+              "entityType": "INDEX",
+              "entityTypeCode": "INDEX",
+              "entityTypeName": "INDEX",
+              "classCode": "006001",
+              "className": "沪深京指数",
+              "publishCode": "905009001",
+              "fullName": "上证科创板50成份指数",
+              "shortName": "科创50",
+              "matchWord": "科创50",
+              "secuCode": "000688",
+              "market": "1",
+              "marketChar": ".SH",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "1002280999",
+                "entityType": "INDEX",
+                "entityTypeCode": "INDEX",
+                "entityTypeName": "INDEX",
+                "classCode": "006001",
+                "className": "沪深京指数",
+                "publishCode": "905009001",
+                "fullName": "上证科创板50成份指数",
+                "shortName": "科创50",
+                "matchWord": "科创50",
+                "secuCode": "000688",
+                "market": "1",
+                "marketChar": ".SH",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {
+              "2026-05-29": false
+            },
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "",
+            "frontendEntityCode": "",
+            "frontendTitle": "",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "NORMAL"
+          }
+        ],
+        "condition": {
+          "search_data_task_1": [
+            "上证综合指数",
+            "成交额收盘价涨跌幅",
+            "2026-06-01至2026-06-01"
+          ],
+          "search_data_task_3": [
+            "深证成指",
+            "成交额收盘价涨跌幅",
+            "2026-06-01至2026-06-01"
+          ],
+          "search_data_task_2": [
+            "创业板指",
+            "成交额收盘价涨跌幅",
+            "2026-06-01至2026-06-01"
+          ],
+          "search_data_task_0": [
+            "上证科创板50成份指数",
+            "成交额收盘价涨跌幅",
+            "2026-06-01至2026-06-01"
+          ]
+        },
+        "entityTagDTOList": [
+          {
+            "entityId": "1000158679",
+            "entityType": "INDEX",
+            "entityTypeCode": "INDEX",
+            "entityTypeName": "INDEX",
+            "classCode": "006001",
+            "className": "沪深京指数",
+            "publishCode": "905001024",
+            "fullName": "上证综合指数",
+            "shortName": "上证指数",
+            "matchWord": "上证指数",
+            "secuCode": "000001",
+            "market": "1",
+            "marketChar": ".SH",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "1000158617",
+            "entityType": "INDEX",
+            "entityTypeCode": "HSJ_INDEX",
+            "entityTypeName": "A股市场核心基准指数",
+            "classCode": "006001",
+            "className": "HSJ_INDEX",
+            "publishCode": "905001024",
+            "fullName": "深证成指",
+            "shortName": "",
+            "matchWord": "深证成指",
+            "secuCode": "399001",
+            "market": "0",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "1000159296",
+            "entityType": "INDEX",
+            "entityTypeCode": "HSJ_INDEX",
+            "entityTypeName": "A股市场核心基准指数",
+            "classCode": "006001",
+            "className": "HSJ_INDEX",
+            "publishCode": "905001024",
+            "fullName": "创业板指",
+            "shortName": "",
+            "matchWord": "创业板指",
+            "secuCode": "399006",
+            "market": "0",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          },
+          {
+            "entityId": "1002280999",
+            "entityType": "INDEX",
+            "entityTypeCode": "INDEX",
+            "entityTypeName": "INDEX",
+            "classCode": "006001",
+            "className": "沪深京指数",
+            "publishCode": "905009001",
+            "fullName": "上证科创板50成份指数",
+            "shortName": "科创50",
+            "matchWord": "科创50",
+            "secuCode": "000688",
+            "market": "1",
+            "marketChar": ".SH",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          }
+        ]
+      },
+      "entityName": null,
+      "message": null,
+      "tableTruncated": false
+    },
+    "stack": null
+  },
+  "requestId": "ff1cf1bbd68440338f520e7b138bd2d3"
+}

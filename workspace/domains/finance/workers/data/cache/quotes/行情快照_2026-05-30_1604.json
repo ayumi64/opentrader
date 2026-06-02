@@ -1,0 +1,62 @@
+{
+  "snapshot_time": "2026-05-30 16:04 (Asia/Shanghai)",
+  "market_status": "WEEKEND (Saturday, no trading)",
+  "last_trading_day": "2026-05-29 (Friday)",
+  "next_trading_day": "2026-06-01 (Monday)",
+  "note": "周六16:04休市，无新增行情变化。最后一个交易日5/29上证4068.57(-0.73%)科创50暴跌5.04%",
+  "indices": {
+    "上证指数": {"close": 4068.57, "change_pct": -0.73},
+    "深证成指": {"close": 15575.13, "change_pct": -1.81},
+    "创业板指": {"close": 4037.95, "change_pct": -2.11},
+    "沪深300": {"close": 4892.12, "change_pct": -0.45},
+    "科创50": {"close": 1751.32, "change_pct": -5.04}
+  },
+  "tech_sector_spotlight": {
+    "半导体_BK1036": {
+      "change_pct": -5.622,
+      "turnover": "4830亿元",
+      "net_flow_total": "-379.3亿元（单日历史新高）",
+      "major_actions": "散户接盘378亿",
+      "advance_decline": "11涨/164跌/2平"
+    },
+    "人工智能_BK0800": {
+      "change_pct": -2.993,
+      "turnover": "5398亿元",
+      "net_flow_total": "-302.3亿元",
+      "advance_decline": "113涨/582跌/7平"
+    },
+    "新能源车_BK0900": {
+      "change_pct": -1.777,
+      "turnover": "5974亿元",
+      "net_flow_total": "-306.6亿元",
+      "advance_decline": "95涨/579跌/5平"
+    }
+  },
+  "market_breadth": {
+    "全市场成交(5/29)": "约3.34万亿",
+    "近5日量能趋势": "3.39/3.31/3.30/3.27/3.34万亿",
+    "北向资金(5/29)": "净买入56.69亿元",
+    "融资余额": "~2.85万亿",
+    "成交集中度": "头部270只占46.5%"
+  },
+  "overseas_close_20260529": {
+    "道指": "51032.46(+0.72%)",
+    "标普500": "7580.06(+0.22%)",
+    "纳指": "26972.62(+0.20%)",
+    "WTI原油": "87.76(-1.28%)",
+    "布伦特原油": "91.66(-1.26%)",
+    "黄金": "4569.90(+0.83%)",
+    "10Y美债": "4.4355%"
+  },
+  "weekend_updates": {
+    "time_span": "2026-05-30 15:03 → 16:04",
+    "change_detected": false,
+    "reason": "周六休市，无新增行情变化或重大突发舆情"
+  },
+  "mx_search_latest": {
+    "cailianshe_news_top": "财联社5/29晚间精选：四部门印发全民AI数字素养要点；1-4月国企利润同比+1.9%；COMPUTEX 6/2黄仁勋将展示Rubin GPU；鸿海称今年云厂商AI投资超7000亿美元",
+    "tech_weekend_news": "AI硬件CPO/PCB/光模块持续活跃；科技主线韧性仍存；存储国产替代加速；华虹公司/中芯国际创历史新高",
+    "beixiang_update": "北向逆势净买入56.69亿元（5/29），外资机构称中国市场是全球资本'避风港'",
+    "middle_east_update": "美伊反复拉扯：白宫称框架即将达成，伊朗否认并发射导弹；美国威胁制裁阿曼"
+  }
+}

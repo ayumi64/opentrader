@@ -1,0 +1,8 @@
+金融数据查询结果说明
+========================================
+查询内容: 北向资金今日净流入流出金额
+数据文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/cache/mx_data_北向资金今日净流入流出金额.xlsx
+描述文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/cache/mx_data_北向资金今日净流入流出金额_description.txt
+数据行数: 15
+表数量: 1
+Sheet 列表: 全部A股(001071)沪深港通_北向资金成交额

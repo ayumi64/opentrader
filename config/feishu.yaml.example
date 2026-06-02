@@ -1,0 +1,21 @@
+# 飞书推送配置（复制为 feishu.yaml）
+# install.sh / render-config.py 会据此启用 channels.feishu 并写入 Cron delivery
+
+enabled: false
+
+account:
+  id: sonicteam          # openclaw.json accounts 键名
+  name: TraderBot
+  app_id_env: FEISHU_APP_ID
+  app_secret_env: FEISHU_APP_SECRET
+
+delivery:
+  channel: feishu
+  account_id: sonicteam
+  # Trader 盘前/盘中/盘后 Cron 推送目标群
+  group_id: ""           # 例: oc_62e803c91b95d36b712e678e10c05465
+  require_mention: false
+
+# 群 allowlist（可多个）
+group_allow_from:
+  - ""                   # 与 group_id 相同或留空由 install 填充

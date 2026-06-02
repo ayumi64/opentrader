@@ -1,0 +1,192 @@
+{
+  "list": [
+    {
+      "id": "trader",
+      "name": "Trader（金融编排）",
+      "workspace": "/Users/sonic/.openclaw/workspace/trader",
+      "agentDir": "/Users/sonic/.openclaw/agents/trader/agent",
+      "model": {
+        "primary": "deepseek/deepseek-chat",
+        "fallbacks": [
+          "doubao/ep-20260224160155-98hbb"
+        ]
+      },
+      "subagents": {
+        "allowAgents": [
+          "finance-data",
+          "finance-strategy",
+          "finance-risk",
+          "finance-execution",
+          "finance-content",
+          "finance-news",
+          "finance-research"
+        ],
+        "requireAgentId": true
+      },
+      "tools": {
+        "profile": "coding",
+        "deny": [
+          "web_search",
+          "web_fetch"
+        ],
+        "fs": {
+          "workspaceOnly": true
+        }
+      },
+      "skills": [
+        "mx-data",
+        "mx-moni",
+        "mx-search",
+        "mx-xuangu",
+        "mx-zixuan",
+        "nano-pdf",
+        "session-logs",
+        "summarize",
+        "github",
+        "healthcheck",
+        "skill-creator"
+      ]
+    },
+    {
+      "id": "finance-data",
+      "name": "Finance·数据(7×24)",
+      "workspace": "/Users/sonic/.openclaw/workspace/domains/finance/workers/data",
+      "agentDir": "/Users/sonic/.openclaw/agents/finance-data/agent",
+      "model": {
+        "primary": "deepseek/deepseek-chat",
+        "fallbacks": [
+          "doubao/ep-20260224160155-98hbb"
+        ]
+      },
+      "tools": {
+        "deny": [
+          "sessions_spawn",
+          "sessions_list",
+          "sessions_history",
+          "web_search",
+          "web_fetch"
+        ],
+        "fs": {
+          "workspaceOnly": true
+        }
+      },
+      "skills": [
+        "summarize",
+        "session-logs"
+      ]
+    },
+    {
+      "id": "finance-strategy",
+      "name": "Finance·策略",
+      "workspace": "/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy",
+      "agentDir": "/Users/sonic/.openclaw/agents/finance-strategy/agent",
+      "model": {
+        "primary": "deepseek/deepseek-chat",
+        "fallbacks": [
+          "doubao/ep-20260224160155-98hbb"
+        ]
+      },
+      "tools": {
+        "deny": [
+          "sessions_spawn",
+          "sessions_list",
+          "sessions_history",
+          "web_search",
+          "web_fetch"
+        ],
+        "fs": {
+          "workspaceOnly": true
+        }
+      },
+      "skills": [
+        "summarize",
+        "session-logs"
+      ]
+    },
+    {
+      "id": "finance-risk",
+      "name": "Finance·A股风控",
+      "workspace": "/Users/sonic/.openclaw/workspace/domains/finance/workers/risk",
+      "agentDir": "/Users/sonic/.openclaw/agents/finance-risk/agent",
+      "model": {
+        "primary": "deepseek/deepseek-chat",
+        "fallbacks": [
+          "doubao/ep-20260224160155-98hbb"
+        ]
+      },
+      "tools": {
+        "deny": [
+          "sessions_spawn",
+          "sessions_list",
+          "sessions_history",
+          "web_search",
+          "web_fetch"
+        ],
+        "fs": {
+          "workspaceOnly": true
+        }
+      },
+      "skills": [
+        "summarize",
+        "session-logs"
+      ]
+    },
+    {
+      "id": "finance-content",
+      "name": "Finance·微信内容",
+      "workspace": "/Users/sonic/.openclaw/workspace/domains/finance/workers/content",
+      "agentDir": "/Users/sonic/.openclaw/agents/finance-content/agent",
+      "model": {
+        "primary": "deepseek/deepseek-chat",
+        "fallbacks": [
+          "doubao/ep-20260224160155-98hbb"
+        ]
+      },
+      "tools": {
+        "deny": [
+          "sessions_spawn",
+          "sessions_list",
+          "sessions_history",
+          "web_search",
+          "web_fetch"
+        ],
+        "fs": {
+          "workspaceOnly": true
+        }
+      },
+      "skills": [
+        "summarize",
+        "nano-pdf",
+        "session-logs"
+      ]
+    },
+    {
+      "id": "finance-execution",
+      "name": "Finance·执行(模拟)",
+      "workspace": "/Users/sonic/.openclaw/workspace/domains/finance/workers/execution",
+      "agentDir": "/Users/sonic/.openclaw/agents/finance-execution/agent",
+      "model": {
+        "primary": "deepseek/deepseek-chat",
+        "fallbacks": [
+          "doubao/ep-20260224160155-98hbb"
+        ]
+      },
+      "tools": {
+        "deny": [
+          "sessions_spawn",
+          "sessions_list",
+          "sessions_history",
+          "web_search",
+          "web_fetch"
+        ],
+        "fs": {
+          "workspaceOnly": true
+        }
+      },
+      "skills": [
+        "summarize",
+        "session-logs"
+      ]
+    }
+  ]
+}

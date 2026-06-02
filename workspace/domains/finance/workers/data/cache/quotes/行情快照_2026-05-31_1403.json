@@ -1,0 +1,264 @@
+{
+  "snapshot_time": "2026-05-31T14:03:00+08:00",
+  "trade_day": "2026-05-29",
+  "is_trading_day": false,
+  "market_status": "closed",
+  "weekend_update": true,
+  "indices": {
+    "shanghai_composite": {
+      "code": "000001.SH",
+      "name": "上证指数",
+      "close": 4068.57,
+      "change_pct": -0.73
+    },
+    "shenzhen_component": {
+      "code": "399001.SZ",
+      "name": "深证成指",
+      "close": 15575.13,
+      "change_pct": -1.81
+    },
+    "cyb_index": {
+      "code": "399006.SZ",
+      "name": "创业板指",
+      "close": 4037.95,
+      "change_pct": -2.11
+    },
+    "hs300": {
+      "code": "000300.SH",
+      "name": "沪深300",
+      "close": 4892.12,
+      "change_pct": -0.45
+    },
+    "star50": {
+      "code": "000688.SH",
+      "name": "科创50",
+      "close": 1751.32,
+      "change_pct": -5.04
+    },
+    "sz50": {
+      "code": "000016.SH",
+      "name": "上证50",
+      "close": 2921.08,
+      "change_pct": 0.24
+    }
+  },
+  "tech_stocks": {
+    "smc_international": {
+      "code": "688981.SH",
+      "name": "中芯国际",
+      "close": 139.91,
+      "change_pct": -8.97
+    },
+    "haiguang_info": {
+      "code": "688041.SH",
+      "name": "海光信息",
+      "close": 293.9,
+      "change_pct": -6.51
+    },
+    "cambricon": {
+      "code": "688256.SH",
+      "name": "寒武纪",
+      "close": 1310.0,
+      "change_pct": -5.86
+    },
+    "montage_tech": {
+      "code": "688008.SH",
+      "name": "澜起科技",
+      "close": 253.0,
+      "change_pct": -3.06
+    },
+    "amec": {
+      "code": "688012.SH",
+      "name": "中微公司",
+      "close": 297.68,
+      "change_pct": -2.04
+    },
+    "kingsfot": {
+      "code": "688111.SH",
+      "name": "金山办公",
+      "close": 238.5,
+      "change_pct": 0.9
+    },
+    "boe_tech": {
+      "code": "000725.SZ",
+      "name": "京东方A",
+      "close": 5.11,
+      "change_pct": -10.04,
+      "note": "跌停"
+    },
+    "naura": {
+      "code": "002371.SZ",
+      "name": "北方华创",
+      "close": 629.87,
+      "change_pct": -4.42
+    },
+    "catl": {
+      "code": "300750.SZ",
+      "name": "宁德时代",
+      "close": 424.0,
+      "change_pct": 2.0,
+      "note": "逆势抗跌"
+    },
+    "zhongji_innolight": {
+      "code": "300308.SZ",
+      "name": "中际旭创",
+      "close": null,
+      "change_pct": null,
+      "note": "周末辟谣虚假董事长演讲稿(5/31)"
+    }
+  },
+  "sectors": {
+    "semiconductor": {
+      "name": "半导体",
+      "change_pct_weekly": -5.62,
+      "main_force_netflow_weekly": -379.3,
+      "main_force_netflow_unit": "亿元"
+    },
+    "ai": {
+      "name": "人工智能",
+      "change_pct_weekly": -2.99,
+      "main_force_netflow_weekly": -302.3,
+      "main_force_netflow_unit": "亿元"
+    },
+    "new_energy": {
+      "name": "新能源",
+      "change_pct_weekly": -0.33,
+      "main_force_netflow_weekly": -39.0,
+      "main_force_netflow_unit": "亿元"
+    }
+  },
+  "market_flow": {
+    "total_volume": 3.319,
+    "total_volume_unit": "万亿元",
+    "main_force_net_flow": -1233,
+    "main_force_net_flow_unit": "亿元",
+    "north_flow_weekly": {
+      "weekly_cumulative": "超1000亿",
+      "friday_single_day": 249,
+      "friday_unit": "亿元",
+      "note": "五月最高单日, 尾盘半小时突袭58亿"
+    }
+  },
+  "etf_performance": {
+    "star_chip_etf": {
+      "code": "588290",
+      "name": "科创芯片ETF",
+      "close": 3.586,
+      "change_pct": -5.58
+    },
+    "star50_etf": {
+      "code": "588000",
+      "name": "科创50ETF",
+      "close": 1.844,
+      "change_pct": -5.05
+    }
+  },
+  "weekend_news_catchup": [
+    {
+      "source": "国家统计局",
+      "time": "2026-05-31 09:30",
+      "title": "5月官方制造业PMI=50.0%, 较上月降0.3pp, 大型企业51.1%/中 small48.5-48.6%"
+    },
+    {
+      "source": "东方财富",
+      "time": "2026-05-31",
+      "title": "中际旭创紧急辟谣: 未参加相关论坛, 董事长演讲稿系杜撰, 6/12召开临时股东会"
+    },
+    {
+      "source": "东方财富",
+      "time": "2026-05-31",
+      "title": "MiniMax正式启动科创板上市辅导, '大模型双雄'将会师A股"
+    },
+    {
+      "source": "新华社/伊朗",
+      "time": "2026-05-31",
+      "title": "伊朗称对霍尔木兹海峡航运实施全面管理; 所有船舶须获革命卫队许可"
+    },
+    {
+      "source": "新华社/央视",
+      "time": "2026-05-31",
+      "title": "特朗普对伊朗提出更强硬条款, 施压3天内回应; 美防长保留动武选项"
+    },
+    {
+      "source": "东方财富",
+      "time": "2026-05-31",
+      "title": "A股多个指数样本调整, '含科量'进一步提升"
+    },
+    {
+      "source": "东方财富",
+      "time": "2026-05-31",
+      "title": "宇树科技科创板IPO 6/1上会; '人形机器人第一股'拟募资42亿"
+    },
+    {
+      "source": "东方财富",
+      "time": "2026-05-31",
+      "title": "COMPUTEX 2026 6/1揭幕, 主题'AI Together', 英伟达/AMD/英特尔齐聚"
+    },
+    {
+      "source": "央视财经",
+      "time": "2026-05-31",
+      "title": "戴尔AI服务器营收暴增757%, 盘后涨39%创历史新高; 美股三大指数续创新高"
+    },
+    {
+      "source": "东方财富",
+      "time": "2026-05-31",
+      "title": "华为何庭波提出韬(τ)定律, 以'时间缩微'挑战摩尔定律"
+    },
+    {
+      "source": "东方财富",
+      "time": "2026-05-31",
+      "title": "美股软件股走强, 突然大涨30%"
+    },
+    {
+      "source": "东方财富",
+      "time": "2026-05-31",
+      "title": "软银据报将在法国建设5900亿欧洲最大算力集群"
+    },
+    {
+      "source": "东方财富",
+      "time": "2026-05-31",
+      "title": "英特尔再投200亿加码玻璃基板, 行业有望进入商业化元年"
+    },
+    {
+      "source": "东方财富",
+      "time": "2026-05-31",
+      "title": "美国人形机器人被曝已投入俄乌战场, 美军计划打造5万人形机器人大军"
+    },
+    {
+      "source": "东方财富",
+      "time": "2026-05-31",
+      "title": "强一股份一季度净利润大增近700%, 迎超110家机构调研"
+    },
+    {
+      "source": "国家医保局",
+      "time": "2026-05-31",
+      "title": "国家医保局发布2026年国家医保目录调整工作方案"
+    },
+    {
+      "source": "东方财富",
+      "time": "2026-05-31",
+      "title": "加密货币市场大幅异动, 狂飙12%, 特朗普突然发声"
+    },
+    {
+      "source": "财联社",
+      "time": "2026-05-31",
+      "title": "环球下周看点: 英伟达芯片帝国扩张, 博通/慧与科技发布财报"
+    }
+  ],
+  "week_ahead_focus": [
+    "宇树科技IPO上会(6/1) — 人形机器人赛道情绪指标",
+    "COMPUTEX 2026(6/1-5) — AI芯片/CPO/液冷/机器人新品催化",
+    "美伊谈判3天窗口期 — 特朗普更强硬条款走向",
+    "6月大科技解禁高峰(3237亿, 环比+68%, 科创板占近半)",
+    "美联储FOMC(6/16-17) — 沃什上任后首会, 加息概率50%+",
+    "MSCI指数调样生效(6/15) — 被动资金调仓扰动",
+    "A股多个指数样本调整 '含科量'提升",
+    "中际旭创6/12临时股东会+H股推进",
+    "端午假期前资金偏谨慎"
+  ],
+  "data_sources": [
+    "东方财富每日要闻汇总",
+    "财联社/央视/新华社/证券时报/国家统计局",
+    "东方财富妙想API (静态周末数据)"
+  ]
+}

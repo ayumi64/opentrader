@@ -1,0 +1,12 @@
+{
+  "data": [],
+  "traceId": "dfb79876f907047b070fbd113653c925-e0564d63-3f8c-4a66-82b2-a55ff769dab0",
+  "code": 0,
+  "status": 0,
+  "message": "OK",
+  "extraInfos": {
+    "decomposedQueries": [
+      "北向资金最新流向 今日净买入 沪股通 深股通"
+    ]
+  }
+}

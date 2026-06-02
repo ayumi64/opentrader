@@ -1,0 +1,8 @@
+金融数据查询结果说明
+========================================
+查询内容: 寒武纪 迈为股份 卧龙电驱 英维克 微芯生物 最新价 涨跌幅
+数据文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/data/mx_data_寒武纪_迈为股份_卧龙电驱_英维克_微芯生物_最新价_涨跌幅.xlsx
+描述文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/data/mx_data_寒武纪_迈为股份_卧龙电驱_英维克_微芯生物_最新价_涨跌幅_description.txt
+数据行数: 30
+表数量: 6
+Sheet 列表: 寒武纪(688256.SH)等当前的最新价、涨跌幅, 寒武纪(688256.SH)的收盘价、涨跌幅, 迈为股份(300751.SZ)的收盘价、涨跌幅, 卧龙电驱(600580.SH)的收盘价、涨跌幅, 英维克(002837.SZ)的收盘价、涨跌幅, 微芯生物(688321.SH)的收盘价、涨跌幅

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "SIG-20260601-020",
+    "severity": "medium_high",
+    "category": "market_risk",
+    "title": "大面积个股大跌(200+只跌超5%)",
+    "description": "截至13:47，超过200只A股跌幅>5%，API筛选上限被撑满，实际数量更多。半导体/科技股领跌，恐慌情绪扩散。",
+    "evidence": {
+      "data_source": "mx_xuangu_今日跌幅大于5%的A股",
+      "total_count": "200+ (API上限)",
+      "sample_stocks": [
+        "北方华创 -5.16%",
+        "卓胜微 -5.10%",
+        "芯原股份 -5.29%",
+        "江波龙 -5.22%",
+        "汇成股份 -5.12%"
+      ],
+      "technicals": "科创50距压力位1901.97偏离-11.2%"
+    },
+    "action": "维持gate=CLOSED, 避免任何多头敞口, 继续减仓",
+    "timestamp": "2026-06-01T13:47:00+08:00"
+  },
+  {
+    "id": "SIG-20260601-021",
+    "severity": "medium",
+    "category": "liquidity_risk",
+    "title": "普跌格局下成交额萎缩",
+    "description": "全市场成交额约1.95万亿，较上日缩量约1639亿元。放量下跌后接缩量，说明接盘资金不足，下跌中继概率较高。",
+    "evidence": {
+      "data_source": "mx-search 午间定势报道确认缩量1639亿",
+      "previous_day_volume": "约21122亿 (推算)",
+      "today_volume": "约19483亿",
+      "implication": "买方意愿弱，短期底部未现"
+    },
+    "action": "继续观察量价关系, 放量恐慌杀跌可能加速但短期底部更近；缩量阴跌则调整周期拉长",
+    "timestamp": "2026-06-01T13:47:00+08:00"
+  }
+]

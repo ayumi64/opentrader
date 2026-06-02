@@ -1,0 +1,627 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "b3522901-bb25-4ab8-875b-392e42b80a19",
+      "agentId": "finance-data",
+      "name": "紧急新闻监控",
+      "enabled": false,
+      "createdAtMs": 1774689651825,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 1800000,
+        "anchorMs": 1773127033597
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "【硬规则】\n【用户铁律】飞书**禁止英文**过程（含 Now let me analyze / Key findings / dedup / tracker）；**只发中文**警报或 `NO_REPLY`。\n【飞书】全程只许**一条**可见回复（最后一轮）；此前每轮正文必须**零字**。\n1) 只要本回合还要调用 read/write/web_fetch/edit 等工具：助手**正文必须为空**（零字），**只发 tool_calls**，不得在正文里写任何字。\n2) **只有最后一轮**（不再发起新工具时）才允许写正文：只能是单独一行 NO_REPLY，或**一段**完整紧急新闻警报（**单条消息**允许多行；勿多条气泡）。Cron announce 只投递最后一轮。\n3) 全文禁止过程叙述（含：我需要/让我/Let me/I'll/看起来/似乎/截断/重新写入/修复/JSON/文件末尾 等）。\n4) 禁止 message/send。\n5) **更新本 worker `data/emergency_news_tracker.json`：禁止 `edit`**；必须 read 全文 → 合并 JSON → **write 整文件** 或 exec+python（路径见上）。\n6) **监控报告** 必须写入 `/Users/sonic/.openclaw/workspace/domains/finance/workers/data/reports/`，文件名 `紧急新闻监控报告_YYYY-MM-DD_HHmm.md`（与本次运行时间一致；目录不存在则先创建）。\n\n【妙想 Skill · 优先】检索财经/科技投资资讯时**优先用 mx-search**（东方财富妙想），勿对新闻门户整页 web_fetch。执行：`exec` → `python3 /Users/sonic/.openclaw/data/skills/miaoxiang/mx-search/mx_search.py \"今日A股 重大突发 政策\" /Users/sonic/.openclaw/workspace/domains/finance/workers/data/data/mx-output`（避免 `cd && ...` / 管道 / 重定向，防止 exec 预检拒绝；问句按任务自拟；MX_APIKEY 由网关环境提供）。妙想用法见本 worker `TOOLS.md` / `MIAOXIANG.md`（禁止 read ~/.openclaw/data/skills/）。web_search 仅作补充。\n\n任务：紧急新闻监控。查新紧急科技/投资新闻；地缘政治等查 tracker。已记录且未超24h 则静默写文件后 NO_REPLY。【风险闸门】等级四档：`留意`/`中等`/`较高`/`严重`。**仅「严重」**才发 Telegram 警报正文；其余档位只写报告+更新 tracker，最终 **NO_REPLY**。警报版式同「紧急新闻监控（修复版）」（🔴 须为严重）。无新紧急或非严重则 NO_REPLY。\n\n【网络·禁】本机**未配置** web_search（无 SearXNG）。**禁止** `web_search`。**禁止** `web_fetch` `push2.eastmoney.com`、`quote.eastmoney.com`、`*.eastmoney.com/api/` 等行情 JSON；指数/板块/个股**仅** `mx-data`/`mx-search` `exec`（见 `MIAOXIANG.md`）。\n【路径·硬规则】沙箱 `/Users/sonic/.openclaw/workspace/domains/finance/workers/data/`。必读 `WORKSPACE_BOUNDARY.md`、`MIAOXIANG.md`。\n- 妙想：**仅** exec + read `/Users/sonic/.openclaw/workspace/domains/finance/workers/data/data/mx-output/` 具体文件\n- **禁止** read `~/.openclaw/data/skills/`、`mx-search/SKILL.md`、`mx-data/SKILL.md`"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "32d25a46-3f7f-4b99-b1e9-6a4aa4bfc25b",
+      "agentId": "finance-strategy",
+      "name": "每日投资信息检查",
+      "enabled": true,
+      "createdAtMs": 1774689665937,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9,15 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "检查今日科技投资重要信息：1. A股/美股科技板块表现 2. 重要公司财报/新闻 3. 宏观经济数据 4. 投资机会提醒。\n\n【妙想 Skill · 优先】资讯与检索：**优先用 mx-search**（妙想资讯搜索），`exec`：`python3 /Users/sonic/.openclaw/data/skills/miaoxiang/mx-search/mx_search.py \"<你的中文问句>\" /Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/data/mx-output`（避免 `cd && ...` / 管道 / 重定向，防止 exec 预检拒绝；可多次不同问句覆盖板块/财报/宏观）。需要行情/财务结构化数据时用 **mx-data**：`…/mx-data/mx_data.py \"<问句>\"`。用法见本 worker `TOOLS.md` / `MIAOXIANG.md`（禁止 read ~/.openclaw/data/skills/）。\n\n【网络·禁】本机**未配置** web_search（无 SearXNG）。**禁止** `web_search`。**禁止** `web_fetch` `push2.eastmoney.com`、`quote.eastmoney.com`、`*.eastmoney.com/api/` 等行情 JSON；指数/板块/个股**仅** `mx-data`/`mx-search` `exec`（见 `MIAOXIANG.md`）。\n\n【网络工具硬规则】\n- **禁止 web_search**（未配置 SearXNG）。**禁止** web_fetch 东方财富 push/quote API；行情/资讯**仅** mx-data/mx-search exec。其它 URL 仅作最后手段且单次短页。\n- **禁止** 对以下域名使用 web_fetch：`yahoo.com`、`finance.yahoo.com`、`bloomberg.com`、`reuters.com`、`cnbc.com`、`wsj.com`、`ft.com`、`investing.com`（含 cn.）。\n- **cls.cn（铁律）**：**禁止** web_fetch `https://www.cls.cn/detail/`（无数字 ID）；只允许完整详情 URL。\n- 任一站点失败则换源，**不要**对同一失败 URL 重试。\n- **read 工具**：只能读**文件**；**禁止**对目录 read（EISDIR），含 `wechat_publish_system/articles`、`feishu_publish_system/articles`、`ChatGPT每日三问`、`系统检查报告`、`紧急新闻监控报告`；须 list/glob 后再读具体 `.md`/`.json`。\n\n输出：写入 `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/reports/投资信息检查报告_YYYY-MM-DD_HHmm.md`（目录不存在则创建；静默）；仅当确有新信息或重大变化时，最终回复一两句并概括要点，否则 NO_REPLY。\n【路径·硬规则】沙箱根 `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/`。信号目录**仅** `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/signals/`（禁止 `~/coding/strategy`、禁止 `~` 路径）。gate：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/inbox/trading_gate.json` 或 sync 后 read。规则：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/STRATEGY-RULES.md`。禁止 read `~/.openclaw/data/skills/` 与任何 `SKILL.md`；妙想见 `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/MIAOXIANG.md` 仅 exec。"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "993aa9aa-cfee-4ad7-b947-1cad141fe503",
+      "agentId": "finance-content",
+      "name": "微信公众号文章生成",
+      "enabled": true,
+      "createdAtMs": 1774689784700,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "【硬规则】【输出纪律·飞书 Cron announce】本任务**全程只允许一条**对用户可见的助手回复（**最后一轮**）。**此前每一轮**（含带 tool_calls 的回合）助手「可见正文」必须**完全为零字**，**只发 tool_calls**，不得在正文写任何字。若出现 **Let me / I'll / Now let / Now I / I need / I will / First, / Next, / The … API / HTML page / JS-rendered** 等英文过程或调试口吻，或中文「让我/我将/现在/首先/然后」等，即视为严重违规（会刷屏飞书群）。\n1) 只要本回合还要调用 **read / write / list / web_fetch / web_search / edit / exec** 等任一工具：正文必须为空。\n2) **只有最后一轮**（不再发起新工具）才允许写可见正文；Cron announce **只投递该轮**。最后一轮**必须且仅能**是下面「固定版式」**一整段**（勿拆多条气泡）。若整次运行**完全未能成稿**，最后一轮可**仅一行** `NO_REPLY`（禁止用过程句解释原因）。\n3) **禁止** `message`/`send` 刷进度；**禁止**在频道里解释 MX 报错、换源、站点不可访问、工具选择理由——一律后台静默处理。\n4) 「简要通知」只写入 `/Users/sonic/.openclaw/workspace/domains/finance/workers/content/reports/微信公众号发布通知_YYYY-MM-DD.md`（与 `TOOLS.md` 约定一致；勿写入 `wechat_publish_system/articles/`），勿在对话里再发「正在生成…」。\n5) **read/list**：**禁止** `read` 目录 `wechat_publish_system/articles` 或 `feishu_publish_system/articles`（EISDIR）；须 **list** 或 glob 后再 `read` 某个 `.md`。\n6) 查财经资讯**优先 mx-search**（`exec` 调用妙想脚本，见 `TOOLS.md`/Skill），**不要**在中间轮用英文叙述「改用 web_search」「MX 返回 HTML」等；失败则静默换源继续工具轮。\n\n固定版式（最后一轮照抄结构，替换实际标题与日期）：\n📰 微信公众号文章已就绪\n标题：《实际完整标题》\n正文：wechat_publish_system/articles/YYYY-MM-DD_投资主题.md\n说明：reports/微信公众号发布通知_YYYY-MM-DD.md\n（可选一行核心观点）\n\n任务：生成一篇适合投资理财微信公众号的深度投资分析文章。\n要求：1. 专注投资分析，减少技术架构讨论 2. 保护隐私，作者仅标注「AI行业观察者」 3. 包含投资图表建议 4. 约1800字 5. 保存到 /Users/sonic/.openclaw/workspace/domains/finance/workers/content/wechat_publish_system/articles/，文件名 YYYY-MM-DD_投资主题.md 6. 内容方向：市场分析、个股研究、行业趋势、投资策略等纯投资内容\n\n【网络·禁】本机**未配置** web_search（无 SearXNG）。**禁止** `web_search`。**禁止** `web_fetch` `push2.eastmoney.com`、`quote.eastmoney.com`、`*.eastmoney.com/api/` 等行情 JSON；指数/板块/个股**仅** `mx-data`/`mx-search` `exec`（见 `MIAOXIANG.md`）。"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "accountId": "sonicteam",
+        "to": "group:${FEISHU_DELIVERY_GROUP_ID}",
+        "bestEffort": true
+      },
+      "state": {}
+    },
+    {
+      "id": "8b366651-2ca4-4a89-b7f4-3a01e0bdabf0",
+      "agentId": "finance-content",
+      "name": "微信公众号发布提醒",
+      "enabled": true,
+      "createdAtMs": 1774689806463,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请检查今天是否已生成微信公众号文章。如果已生成，生成简要提醒说明今日投资文章工作流和混合方案优势。提醒全文静默保存到 `/Users/sonic/.openclaw/workspace/domains/finance/workers/content/reports/微信公众号发布提醒_YYYY-MM-DD.md`（目录不存在则创建）。**检查稿件**：用 **list** 或 glob `wechat_publish_system/articles/`，**禁止** `read` 该目录本身（EISDIR）。"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "91807345-6295-4106-8658-1820bd43a6ac",
+      "agentId": "finance-content",
+      "name": "每周投资内容创作提醒",
+      "enabled": true,
+      "createdAtMs": 1774689834586,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 1",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "每周投资内容创作提醒：请检查本周科技投资热点话题，建议创作方向（A股/美股分析、行业趋势、投资策略等），并规划本周内容发布计划。\n\n输出：静默写入 `/Users/sonic/.openclaw/workspace/domains/finance/workers/content/reports/每周投资创作规划_YYYY-MM-DD.md`（目录不存在则创建）。最终回复 NO_REPLY。"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "9a1b2c3d-4e5f-6789-a012-3456789abc01",
+      "agentId": "finance-strategy",
+      "name": "交易话题生成（ChatGPT三问）",
+      "enabled": true,
+      "createdAtMs": 1778400000001,
+      "schedule": {
+        "kind": "cron",
+        "expr": "5 16 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "【finance-strategy · ChatGPT 三问 · 交易】\n\n【投递】**静默**：不向飞书/Telegram 发内容。工具轮正文**零字**；全部完成后最后一轮**恰好一行**：NO_REPLY。\n\n【任务】\n- 生成 3 个深度**交易/执行/风险**话题：仓位与纪律、宏观与板块、衍生品与对冲、复盘机制、行为金融等；偏**底层逻辑与可执行框架**，少热点复述。\n- **read** `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/ChatGPT每日三问/templates/topic_template.md` 对齐结构。\n- **Markdown**：YAML（`title`/`date`/`tags`/`lang: zh-CN`/`kind: daily-chatgpt`/`agent: finance-strategy`）→ `# YYYY-MM-DD 交易话题` → 三个 `## 话题一/二/三` + 每题「对话启动提示」`text` 代码块。\n- glob `ChatGPT每日三问/*_交易话题.md` 参考近期；禁止对目录 read。\n- **write** 到 `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/ChatGPT每日三问/YYYY-MM-DD_交易话题.md`（上海日历日）。\n\n完成后 NO_REPLY。\n【路径·硬规则】沙箱根 `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/`。信号目录**仅** `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/signals/`（禁止 `~/coding/strategy`、禁止 `~` 路径）。gate：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/inbox/trading_gate.json` 或 sync 后 read。规则：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/STRATEGY-RULES.md`。禁止 read `~/.openclaw/data/skills/` 与任何 `SKILL.md`；妙想见 `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/MIAOXIANG.md` 仅 exec。"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "6fb7f43f-fbeb-4db1-b739-5179296d9d11",
+      "agentId": "finance-data",
+      "name": "紧急新闻监控（修复版）",
+      "enabled": true,
+      "createdAtMs": 1775715943346,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 */4 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "message": "【硬规则】\n【输出纪律·飞书 Cron announce】\n【用户铁律】飞书**禁止英文**（含分析/dedup/tracker 过程）；**只发中文**定版或 `NO_REPLY`。\n本任务**全程只允许一条**可见回复（最后一轮）。此前每轮正文**必须零字**（只 tool_calls）；Let me / Now let me / Key findings / dedup / assess / tracker / I'll update 等**一律违规**。\n1) 只要本回合还要调用 read/write/web_fetch/edit 等工具：助手**正文必须为空**（零字），**只发 tool_calls**，不得在正文里写任何字。\n2) **只有最后一轮**（不再发起新工具时）才允许写正文：只能是单独一行 NO_REPLY，或**一段**完整紧急新闻警报（**单条飞书消息**，允许多行排版；勿拆成多条气泡）。**Cron announce 只投递该最后一轮**，与微信公众号任务相同纪律。\n3) 全文禁止过程叙述（含：我需要/让我/Let me/I'll/Now I/看起来/似乎/截断/重新写入/修复/JSON/文件末尾 等）。\n4) 禁止 message/send。\n5) 控制上下文：少用 web_fetch、每次只拉短页面；避免在同一 run 里堆积大量工具结果。\n6) **禁止 web_fetch** 以下域名（从中国大陆常见失败）：`yahoo.com`、`finance.yahoo.com`、`bloomberg.com`、`reuters.com`、`cnbc.com`、`wsj.com`、`ft.com`、`investing.com`（含 cn.）。**财联社（铁律）**：**禁止** web_fetch `https://www.cls.cn/detail/`（无数字 ID，必 404）；仅允许 `…/detail/<数字>…`。勿拼占位链接。\n\n【妙想 Skill · 优先】**查新财经/投资/公司资讯时优先用 mx-search**（东方财富妙想资讯搜索 API），用 `exec` 调用，避免门户整页抓取：\n`python3 /Users/sonic/.openclaw/data/skills/miaoxiang/mx-search/mx_search.py \"<自然语言问句，如：今日A股重大政策 突发>\" /Users/sonic/.openclaw/workspace/domains/finance/workers/data/data/mx-output`\n（避免 `cd && ...` / 管道 / 重定向，防止 exec 预检拒绝；问句按本轮监控目标自拟，可多次不同问句；结果在同目录 output 的 txt/json）。妙想用法见本 worker `TOOLS.md` / `MIAOXIANG.md`（禁止 read ~/.openclaw/data/skills/）。需要行情/财务**结构化数据**时可再用 **mx-data**：同父目录 `mx-data/mx_data.py`。**web_search** 仅作补充，不作为主信源。\n7) **read 仅限具体文件**：禁止对目录 read（EISDIR），含 `feishu_publish_system/articles`、`wechat_publish_system/articles`、`ChatGPT每日三问`、`系统检查报告`、`紧急新闻监控报告`；先 list/glob 再读具体 `.md`/`.json`。\n8) **更新本 worker `data/emergency_news_tracker.json`：禁止使用 `edit`**（old_string 与磁盘不一致必失败）。正确做法：`read` 读**完整**文件 → 在内存中解析/合并 JSON → 用 **`write` 一次性写回整个文件**（合法 JSON）；或 `exec` 调用 `python3` 合并后写回。\n9) **监控报告** 必须写入 `/Users/sonic/.openclaw/workspace/domains/finance/workers/data/reports/`，文件名 `紧急新闻监控报告_YYYY-MM-DD_HHmm.md`（与本次运行时间一致；目录不存在则先创建）。\n\n【网络·禁】本机**未配置** web_search（无 SearXNG）。**禁止** `web_search`。**禁止** `web_fetch` `push2.eastmoney.com`、`quote.eastmoney.com`、`*.eastmoney.com/api/` 等行情 JSON；指数/板块/个股**仅** `mx-data`/`mx-search` `exec`（见 `MIAOXIANG.md`）。\n\n【去重检查·必须遵守】每次执行前必须检查 tracker 中的活跃事件：\n- 同一事件在 **12小时内**不得重复推送警报\n- 相同严重程度的事件在 **6小时内**不得重复推送\n- 使用脚本检查：`python3 /Users/sonic/.openclaw/workspace/scripts/emergency_news_dedup.py`\n- 如果检测到重复事件，直接 `NO_REPLY`，无需进一步检查\n\n【风险闸门·必须遵守】先对**本轮发现的最重要事件**评定等级（四档，从低到高）：`留意` → `中等` → `较高` → `严重`。**仅当**最终等级为 **「严重」**（市场/政策/地缘层面可能引发系统性冲击、或已出现广泛恐慌/熔断级联动）时，才允许最后一轮输出下面【警报正文版式】的完整 Telegram 警报。若为 `留意`/`中等`/`较高`：仍须按需写监控报告 md、更新 tracker、遵守去重与 24h 逻辑，但**最终回复必须恰好一行** `NO_REPLY`，**禁止**向 Telegram 推送任何可见正文。无新事或仅有非严重事项 → `NO_REPLY`。\n\n任务：紧急新闻监控。检查新紧急科技/投资新闻。读取 /Users/sonic/.openclaw/workspace/domains/finance/workers/data/data/emergency_news_tracker.json：已记录且未超24h 则静默更新文件后 NO_REPLY。未记录或过期：若非严重则写报告+tracker 后 NO_REPLY；**仅严重**才用警报版式推送。\n\n【最后一轮·仅二选一·铁律】\nA) 无新「严重」或已去重/非严重：**恰好一行** `NO_REPLY`。**禁止**用中英文解释 dedup、tracker、severity 判定过程。\nB) 新「严重」且允许推送：**全文简体中文**，仅用下方版式；**禁止**任何英文句（含 Key findings / Let me analyze / dedup / tracker id）。\n\n【严禁可见正文（含已发生违规）】\n- `Now let me analyze` / `Key findings` / `Let me check dedup` / `The dedup check shows` / `Let me assess` / `I'll update the tracker`\n- `Since the most severe` / `continuation not a new event` / `does not warrant` / `already tracked` / `id: iran_`\n- 中文过程：让我分析 / 去重检查 / 评估严重 / 更新 tracker 等。\n- **dedup、tracker 合并、写报告** 只在 tool 轮静默完成；飞书不得复述。\n\n【警报正文版式·中文】**仅严重档**：\n\n🚨 紧急新闻\n\n▎ 监管\n<一句话中文>\n\n▎ 地缘/市场\n<一句话中文>\n\n📊 建议\n• <建议1>\n• <建议2>\n\n🔴 风险等级：严重\n📋 详细报告已保存\n\n#标签1 #标签2\n🕐 YYYY-MM-DD HH:mm\n【路径·硬规则】沙箱 `/Users/sonic/.openclaw/workspace/domains/finance/workers/data/`。必读 `WORKSPACE_BOUNDARY.md`、`MIAOXIANG.md`。\n- 妙想：**仅** exec + read `/Users/sonic/.openclaw/workspace/domains/finance/workers/data/data/mx-output/` 具体文件\n- **禁止** read `~/.openclaw/data/skills/`、`mx-search/SKILL.md`、`mx-data/SKILL.md`"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "accountId": "sonicteam",
+        "to": "group:${FEISHU_DELIVERY_GROUP_ID}",
+        "bestEffort": true
+      },
+      "state": {}
+    },
+    {
+      "id": "f1n4nc3-d1g3st-0001-0000-000000000001",
+      "agentId": "trader",
+      "name": "金融域周报摘要",
+      "enabled": true,
+      "createdAtMs": 1779000000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 7 * * 1",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "message": "【静默·Orchestrator】汇总金融域 Worker 近 7 日产出，不写 Worker 目录。\n1) glob 列出：\n   - /Users/sonic/.openclaw/workspace/domains/finance/workers/data/reports/*.md\n   - /Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/reports/*.md\n   - /Users/sonic/.openclaw/workspace/domains/finance/workers/content/reports/*.md\n   - /Users/sonic/.openclaw/workspace/domains/finance/workers/content/wechat_publish_system/articles/*.md\n2) 读最近各 1～2 个文件，归纳：新闻严重档次数、投资检查要点、本周微信稿标题。\n3) write 到 /Users/sonic/.openclaw/workspace/trader/reports/金融域周报_YYYY-MM-DD.md\n4) 最后一轮仅一行 NO_REPLY。\n\n【网络·禁】本机**未配置** web_search（无 SearXNG）。**禁止** `web_search`。**禁止** `web_fetch` `push2.eastmoney.com`、`quote.eastmoney.com`、`*.eastmoney.com/api/` 等行情 JSON；指数/板块/个股**仅** `mx-data`/`mx-search` `exec`（见 `MIAOXIANG.md`）。"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "f1n4nc3-risk-pre-0001-000000000001",
+      "agentId": "finance-risk",
+      "name": "A股·盘前风控检查",
+      "enabled": true,
+      "createdAtMs": 1779400000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "50 8 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "timeoutSeconds": 900,
+        "message": "【盘前·finance-risk · A股】\n工具轮正文零字；完成后最后一轮 **NO_REPLY**（除非 payload 注明飞书 announce）。\n\n【交易日·硬规则】**exec** `bash /Users/sonic/.openclaw/workspace/domains/finance/workers/risk/scripts/is_trading_day.sh /Users/sonic/.openclaw/workspace/domains/finance/workers/risk/data/trading_calendar.txt`。`HOLIDAY`/`WEEKEND` → NO_REPLY；`TRADING` → 继续。列表内才是休市，不在列表=交易日。\n\n【必读】`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/A-SHARE-PLAYBOOK.md` §3；`read` data/portfolio_snapshot.json、data/orders_pending.json、data/RISK-LIMITS.json（禁止 edit 碎片；合并后 write 整文件）。\n\n【同步】**exec** 单条：`bash /Users/sonic/.openclaw/workspace/domains/finance/workers/risk/scripts/sync_context.sh`（拉取投研调仓方案与今日新闻报告到 inbox/）。\n\n【禁止】sessions_spawn；对目录 read（EISDIR）。\n【任务】write `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/reports/盘前风控检查_YYYY-MM-DD_HHmm.md`：\n现金缓冲、委托笔数与限价合理性、涨跌停距离、T+1 提示、新开仓数量；若 inbox/news 有严重档摘要 3 行。\n【gate】盘前/盘后/定时任务结束前 update `trading_gate.json`（见 `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/HARD-RULES.md`），禁止 edit 碎片。\n【路径·硬规则】沙箱 `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/`。必读 `data/DATA-FILES.md`。\n- 上限：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/data/RISK-LIMITS.json`（**禁止** `RISK-LIMITS.md`）\n- 舆情：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/data/sentiment_summary.txt` 或 `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/data/trading_gate.json`（**禁止** `sentiment_summary.json`）\n- 规则：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/HARD-RULES.md`（**禁止** `../../shared/`）\n- 禁止 read 任何 `SKILL.md`；妙想见 `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/MIAOXIANG.md` 仅 exec。"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "f1n4nc3-risk-plan-0001-000000000001",
+      "agentId": "finance-risk",
+      "name": "A股·调仓合规审查",
+      "enabled": true,
+      "createdAtMs": 1779400000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "25 9 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "timeoutSeconds": 900,
+        "message": "【调仓合规·finance-risk · A股】\n工具轮正文零字；完成后最后一轮 **NO_REPLY**（除非 payload 注明飞书 announce）。\n\n【交易日·硬规则】**exec** `bash /Users/sonic/.openclaw/workspace/domains/finance/workers/risk/scripts/is_trading_day.sh /Users/sonic/.openclaw/workspace/domains/finance/workers/risk/data/trading_calendar.txt`。`HOLIDAY`/`WEEKEND` → NO_REPLY；`TRADING` → 继续。列表内才是休市，不在列表=交易日。\n\n【必读】`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/A-SHARE-PLAYBOOK.md` §3；`read` data/portfolio_snapshot.json、data/orders_pending.json、data/RISK-LIMITS.json（禁止 edit 碎片；合并后 write 整文件）。\n\n【同步】**exec** 单条：`bash /Users/sonic/.openclaw/workspace/domains/finance/workers/risk/scripts/sync_context.sh`（拉取投研调仓方案与今日新闻报告到 inbox/）。\n\n【禁止】sessions_spawn；对目录 read（EISDIR）。\n【任务】若 inbox/plans/ 有调仓方案：read 后 write `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/reports/调仓合规审查_YYYY-MM-DD.md`（逐笔：集中度、资金、涨跌停、弱势集中）；无方案则 NO_REPLY。\n【gate】盘前/盘后/定时任务结束前 update `trading_gate.json`（见 `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/HARD-RULES.md`），禁止 edit 碎片。\n【路径·硬规则】沙箱 `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/`。必读 `data/DATA-FILES.md`。\n- 上限：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/data/RISK-LIMITS.json`（**禁止** `RISK-LIMITS.md`）\n- 舆情：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/data/sentiment_summary.txt` 或 `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/data/trading_gate.json`（**禁止** `sentiment_summary.json`）\n- 规则：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/HARD-RULES.md`（**禁止** `../../shared/`）\n- 禁止 read 任何 `SKILL.md`；妙想见 `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/MIAOXIANG.md` 仅 exec。"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "f1n4nc3-risk-post-0001-000000000001",
+      "agentId": "finance-risk",
+      "name": "A股·盘后持仓复盘",
+      "enabled": true,
+      "createdAtMs": 1779400000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "35 15 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "timeoutSeconds": 900,
+        "message": "【盘后·finance-risk · A股】\n工具轮正文零字；完成后最后一轮 **NO_REPLY**（除非 payload 注明飞书 announce）。\n\n【交易日·硬规则】**exec** `bash /Users/sonic/.openclaw/workspace/domains/finance/workers/risk/scripts/is_trading_day.sh /Users/sonic/.openclaw/workspace/domains/finance/workers/risk/data/trading_calendar.txt`。`HOLIDAY`/`WEEKEND` → NO_REPLY；`TRADING` → 继续。列表内才是休市，不在列表=交易日。\n\n【必读】`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/A-SHARE-PLAYBOOK.md` §3；`read` data/portfolio_snapshot.json、data/orders_pending.json、data/RISK-LIMITS.json（禁止 edit 碎片；合并后 write 整文件）。\n\n【同步】**exec** 单条：`bash /Users/sonic/.openclaw/workspace/domains/finance/workers/risk/scripts/sync_context.sh`（拉取投研调仓方案与今日新闻报告到 inbox/）。\n\n【禁止】sessions_spawn；对目录 read（EISDIR）。\n【任务】write `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/reports/盘后持仓复盘_YYYY-MM-DD_HHmm.md`：对照 orders_pending 与投研 15:00 检查要点；次日关注 ≤3 条。\n【gate】盘前/盘后/定时任务结束前 update `trading_gate.json`（见 `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/HARD-RULES.md`），禁止 edit 碎片。\n【路径·硬规则】沙箱 `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/`。必读 `data/DATA-FILES.md`。\n- 上限：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/data/RISK-LIMITS.json`（**禁止** `RISK-LIMITS.md`）\n- 舆情：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/data/sentiment_summary.txt` 或 `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/data/trading_gate.json`（**禁止** `sentiment_summary.json`）\n- 规则：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/HARD-RULES.md`（**禁止** `../../shared/`）\n- 禁止 read 任何 `SKILL.md`；妙想见 `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/MIAOXIANG.md` 仅 exec。"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "f1n4nc3-data-hourly-0001-000000000001",
+      "agentId": "finance-data",
+      "name": "A股·数据小时刷新",
+      "enabled": true,
+      "createdAtMs": 1779500000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 * * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "timeoutSeconds": 900,
+        "message": "【7×24·finance-data】工具轮零字；最后 NO_REPLY。\n【任务】增量刷新：妙想 mx-search/mx-data 拉科技板块行情、北向/量能摘要、财联社类舆情；write `/Users/sonic/.openclaw/workspace/domains/finance/workers/data/cache/quotes/行情快照_YYYY-MM-DD_HHmm.json` 与 `/Users/sonic/.openclaw/workspace/domains/finance/workers/data/reports/数据服务摘要_YYYY-MM-DD_HHmm.md`（简短）。\ntracker：`/Users/sonic/.openclaw/workspace/domains/finance/workers/data/data/emergency_news_tracker.json` 仅在有严重舆情时合并更新。\n\n【网络·禁】本机**未配置** web_search（无 SearXNG）。**禁止** `web_search`。**禁止** `web_fetch` `push2.eastmoney.com`、`quote.eastmoney.com`、`*.eastmoney.com/api/` 等行情 JSON；指数/板块/个股**仅** `mx-data`/`mx-search` `exec`（见 `MIAOXIANG.md`）。\n【路径·硬规则】沙箱 `/Users/sonic/.openclaw/workspace/domains/finance/workers/data/`。必读 `WORKSPACE_BOUNDARY.md`、`MIAOXIANG.md`。\n- 妙想：**仅** exec + read `/Users/sonic/.openclaw/workspace/domains/finance/workers/data/data/mx-output/` 具体文件\n- **禁止** read `~/.openclaw/data/skills/`、`mx-search/SKILL.md`、`mx-data/SKILL.md`"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "f1n4nc3-risk-gate-0001-000000000001",
+      "agentId": "finance-risk",
+      "name": "A股·风控闸门刷新",
+      "enabled": true,
+      "createdAtMs": 1779500000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 */2 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "timeoutSeconds": 900,
+        "message": "【7×24·finance-risk】读 RISK-LIMITS、portfolio、orders_pending、data 最新舆情摘要；按 HARD-RULES 更新 `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/data/trading_gate.json`（整文件 write）。工具轮零字；NO_REPLY。\n【路径·硬规则】沙箱 `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/`。必读 `data/DATA-FILES.md`。\n- 上限：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/data/RISK-LIMITS.json`（**禁止** `RISK-LIMITS.md`）\n- 舆情：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/data/sentiment_summary.txt` 或 `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/data/trading_gate.json`（**禁止** `sentiment_summary.json`）\n- 规则：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/HARD-RULES.md`（**禁止** `../../shared/`）\n- 禁止 read 任何 `SKILL.md`；妙想见 `/Users/sonic/.openclaw/workspace/domains/finance/workers/risk/MIAOXIANG.md` 仅 exec。"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "f1n4nc3-strat-pool-0001-000000000001",
+      "agentId": "finance-strategy",
+      "name": "A股·盘后候选池",
+      "enabled": true,
+      "createdAtMs": 1779500000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 16 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "timeoutSeconds": 900,
+        "message": "【休市·硬规则】**exec** `bash /Users/sonic/.openclaw/workspace/domains/finance/workers/risk/scripts/is_trading_day.sh /Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/data/trading_calendar.txt`。`HOLIDAY`/`WEEKEND` → NO_REPLY；`TRADING` → 继续。\n【strategy·盘后】exec `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/scripts/sync_risk_gate.sh`。\nread `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/STRATEGY-RULES.md`；write `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/pool/YYYY-MM-DD_候选池.md`（强势/回调/二波分类）。NO_REPLY。\n【路径·硬规则】沙箱根 `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/`。信号目录**仅** `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/signals/`（禁止 `~/coding/strategy`、禁止 `~` 路径）。gate：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/inbox/trading_gate.json` 或 sync 后 read。规则：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/STRATEGY-RULES.md`。禁止 read `~/.openclaw/data/skills/` 与任何 `SKILL.md`；妙想见 `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/MIAOXIANG.md` 仅 exec。"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "f1n4nc3-strat-intra-0001-000000000001",
+      "agentId": "finance-strategy",
+      "name": "A股·盘中预警",
+      "enabled": true,
+      "createdAtMs": 1779500000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0,30 9-15 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "timeoutSeconds": 900,
+        "message": "【strategy·盘中】仅交易日。write `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/signals/盘中预警_YYYY-MM-DD_HHmm.md`；若有新信号 write `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/signals/信号_YYYY-MM-DD_HHmm.json`（数组）。read `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/inbox/trading_gate.json`。NO_REPLY。\n【路径·硬规则】沙箱根 `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/`。信号目录**仅** `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/signals/`（禁止 `~/coding/strategy`、禁止 `~` 路径）。gate：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/inbox/trading_gate.json` 或 sync 后 read。规则：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/STRATEGY-RULES.md`。禁止 read `~/.openclaw/data/skills/` 与任何 `SKILL.md`；妙想见 `/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/MIAOXIANG.md` 仅 exec。"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "f1n4nc3-exec-open-0001-000000000001",
+      "agentId": "finance-execution",
+      "name": "A股·开盘模拟执行",
+      "enabled": true,
+      "createdAtMs": 1779500000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "26 9 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "timeoutSeconds": 900,
+        "message": "【execution·开盘】exec `/Users/sonic/.openclaw/workspace/domains/finance/workers/execution/scripts/sync_signals.sh`。read `/Users/sonic/.openclaw/workspace/domains/finance/workers/execution/inbox/trading_gate.json`；allow_open_new 为 false 则只写拒绝日志。\n模拟撮合 inbox 信号，滑点±0.3%，write `/Users/sonic/.openclaw/workspace/domains/finance/workers/execution/orders/simulated_YYYY-MM-DD.json` 与 log。NO_REPLY。\n【路径·硬规则】沙箱 `/Users/sonic/.openclaw/workspace/domains/finance/workers/execution/`。**exec** `scripts/sync_signals.sh` 后 read `inbox/trading_gate.json`、glob `inbox/信号_*.json`。\n上限：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/execution/data/RISK-LIMITS.json`（**禁止** read `/Users/sonic/.openclaw/workspace/domains/finance/workers/execution/../../shared/RISK-LIMITS.json` 或 `../risk/`、`../strategy/`）。"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "f1n4nc3-exec-close-0001-000000000001",
+      "agentId": "finance-execution",
+      "name": "A股·收盘执行小结",
+      "enabled": true,
+      "createdAtMs": 1779500000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "5 15 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "timeoutSeconds": 900,
+        "message": "【execution·收盘】汇总当日 simulated 订单与拒单原因，write `/Users/sonic/.openclaw/workspace/domains/finance/workers/execution/reports/收盘执行小结_YYYY-MM-DD.md`。NO_REPLY。\n【路径·硬规则】沙箱 `/Users/sonic/.openclaw/workspace/domains/finance/workers/execution/`。**exec** `scripts/sync_signals.sh` 后 read `inbox/trading_gate.json`、glob `inbox/信号_*.json`。\n上限：`read` `/Users/sonic/.openclaw/workspace/domains/finance/workers/execution/data/RISK-LIMITS.json`（**禁止** read `/Users/sonic/.openclaw/workspace/domains/finance/workers/execution/../../shared/RISK-LIMITS.json` 或 `../risk/`、`../strategy/`）。"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "f1n4nc3-orch-health-0001-000000000001",
+      "agentId": "trader",
+      "name": "金融域·总控健康检查",
+      "enabled": true,
+      "createdAtMs": 1779500000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 * * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "timeoutSeconds": 900,
+        "message": "【7×24·trader 总控】静默。glob 各 Worker reports/ cache 最近 mtime；append `/Users/sonic/.openclaw/workspace/trader/logs/域调度_YYYY-MM-DD.md` 一行状态（data/strategy/risk/execution）。异常仅记日志不对用户发言。NO_REPLY。\n\n【网络·禁】本机**未配置** web_search（无 SearXNG）。**禁止** `web_search`。**禁止** `web_fetch` `push2.eastmoney.com`、`quote.eastmoney.com`、`*.eastmoney.com/api/` 等行情 JSON；指数/板块/个股**仅** `mx-data`/`mx-search` `exec`（见 `MIAOXIANG.md`）。"
+      },
+      "delivery": {
+        "mode": "none"
+      },
+      "state": {}
+    },
+    {
+      "id": "tr4d3r-sch-0830-0001-000000000001",
+      "agentId": "trader",
+      "name": "Trader·08:30盘前消息汇总",
+      "enabled": true,
+      "createdAtMs": 1779600000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 8 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "timeoutSeconds": 1200,
+        "message": "【输出纪律·飞书 Cron announce · 强制】\n【用户铁律】飞书**禁止**英文过程播报（Let me / Now I'll / pre-market routine / parallel / skills documentation 等）；只许最后一轮**一段中文定版**。\n本任务**全程只允许一条**对用户可见的助手回复（**最后一轮**）。此前每一轮：助手可见正文**必须完全为零字**，**只发 tool_calls**；**禁止** message/send 向飞书发任何中间气泡。\n\n【零字·铁律】除最后一轮外，**任何**可见 assistant 文字（含一句英文）= 向飞书刷屏，严重违规。只允许 tool_calls，正文必须为空。\n\n【严禁可见正文（含已发生的违规句式·一字不许出现）】\n- `Let me start the pre-market routine` / `Now I'll run the search queries` / `in parallel` / `macro/economy` / `external markets` / `watchlist news`\n- `Let me check the available skills` / `documentation` / `SKILL.md` / `Now let me look at the mx-search script path`\n- `Now let me search for` / `remaining key watchlist` / `Now I have enough data to compose` / `Let me write`\n- 一切英文进度句：Let me / Now let me / Now I'll / I'll / I will / I need / First / Next / Good, got / compose / parallel / fetch / available skills 等。\n- 中文过程：让我 / 我将 / 现在 / 首先 / 然后 / 接下来 / 检查一下 / 获取数据 / 先搜 / 盘前流程 等。\n- **禁止**在飞书展示：读 SKILL、mx-search 路径、并行搜宏观/外盘/自选、写报告过程、工具超时；全部只在 tool 轮静默完成。\n- **禁止** read `~/.openclaw/data/skills/**/SKILL.md`；妙想用法**仅** read `MIAOXIANG.md` 后 **exec** python3。\n- 中间轮若误写英文过程句：不得作为最终回复；继续 tool_calls，最后一轮**仅**定版中文或 `NO_REPLY`。\n\n【数据·静默】\n\n【网络·禁】本机**未配置** web_search（无 SearXNG）。**禁止** `web_search`。**禁止** `web_fetch` `push2.eastmoney.com`、`quote.eastmoney.com`、`*.eastmoney.com/api/` 等行情 JSON；指数/板块/个股**仅** `mx-data`/`mx-search` `exec`（见 `MIAOXIANG.md`）。\n- **exec 单条**：`bash /Users/sonic/.openclaw/workspace/trader/scripts/sync_worker_context.sh`\n- read `data/watchlist.json`；行情/要闻用 mx-search / mx-data（**exec 单条** python3 脚本，禁止 cd/管道/重定向；问句自拟，**勿在正文复述问句**）\n- 长文**先 write** 到本任务指定的 `reports/…` 路径（完整版）；**禁止**在飞书消息里贴本地路径\n\n【休市·硬规则】**exec** `bash /Users/sonic/.openclaw/workspace/domains/finance/workers/risk/scripts/is_trading_day.sh /Users/sonic/.openclaw/workspace/trader/data/trading_calendar.txt`。输出 `HOLIDAY` 或 `WEEKEND` → 最后一轮**仅** `NO_REPLY`（禁止向飞书解释）。输出 `TRADING` → 正常执行。**禁止**把「今日不在列表」当休市——文件列的是**休市日**，不在其中且周一至周五=**交易日**。\n\n【最后一轮】**仅**输出下文「定版·最后一轮」整块（**全中文**）；Cron announce 只投递该轮。失败且无法生成定版 → 仅一行 NO_REPLY。\n\n【write】`reports/daily/盘前消息汇总_YYYY-MM-DD.md`（完整版）\n\n【定版·最后一轮】\n📋 盘前消息 YYYY-MM-DD\n\n宏观：…\n外盘：…\n\n▎自选要闻\n• 代码 名称：一句话\n（列 5～8 只重点）\n\n▎今日板块\n…\n\n▎竞价前关注（9:15前）\n1. …\n2. …"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "accountId": "sonicteam",
+        "to": "group:${FEISHU_DELIVERY_GROUP_ID}",
+        "bestEffort": true
+      },
+      "state": {}
+    },
+    {
+      "id": "tr4d3r-sch-1100-0001-000000000001",
+      "agentId": "trader",
+      "name": "Trader·11:00盘中汇总",
+      "enabled": true,
+      "createdAtMs": 1779600000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 11 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "timeoutSeconds": 1200,
+        "message": "【输出纪律·飞书 Cron announce · 强制】\n【用户铁律】飞书**禁止**英文过程播报（Let me / Now I'll / pre-market routine / parallel / skills documentation 等）；只许最后一轮**一段中文定版**。\n本任务**全程只允许一条**对用户可见的助手回复（**最后一轮**）。此前每一轮：助手可见正文**必须完全为零字**，**只发 tool_calls**；**禁止** message/send 向飞书发任何中间气泡。\n\n【零字·铁律】除最后一轮外，**任何**可见 assistant 文字（含一句英文）= 向飞书刷屏，严重违规。只允许 tool_calls，正文必须为空。\n\n【严禁可见正文（含已发生的违规句式·一字不许出现）】\n- `Let me start the pre-market routine` / `Now I'll run the search queries` / `in parallel` / `macro/economy` / `external markets` / `watchlist news`\n- `Let me check the available skills` / `documentation` / `SKILL.md` / `Now let me look at the mx-search script path`\n- `Now let me search for` / `remaining key watchlist` / `Now I have enough data to compose` / `Let me write`\n- 一切英文进度句：Let me / Now let me / Now I'll / I'll / I will / I need / First / Next / Good, got / compose / parallel / fetch / available skills 等。\n- 中文过程：让我 / 我将 / 现在 / 首先 / 然后 / 接下来 / 检查一下 / 获取数据 / 先搜 / 盘前流程 等。\n- **禁止**在飞书展示：读 SKILL、mx-search 路径、并行搜宏观/外盘/自选、写报告过程、工具超时；全部只在 tool 轮静默完成。\n- **禁止** read `~/.openclaw/data/skills/**/SKILL.md`；妙想用法**仅** read `MIAOXIANG.md` 后 **exec** python3。\n- 中间轮若误写英文过程句：不得作为最终回复；继续 tool_calls，最后一轮**仅**定版中文或 `NO_REPLY`。\n\n【数据·静默】\n\n【网络·禁】本机**未配置** web_search（无 SearXNG）。**禁止** `web_search`。**禁止** `web_fetch` `push2.eastmoney.com`、`quote.eastmoney.com`、`*.eastmoney.com/api/` 等行情 JSON；指数/板块/个股**仅** `mx-data`/`mx-search` `exec`（见 `MIAOXIANG.md`）。\n- **exec 单条**：`bash /Users/sonic/.openclaw/workspace/trader/scripts/sync_worker_context.sh`\n- read `data/watchlist.json`；行情/要闻用 mx-search / mx-data（**exec 单条** python3 脚本，禁止 cd/管道/重定向；问句自拟，**勿在正文复述问句**）\n- 长文**先 write** 到本任务指定的 `reports/…` 路径（完整版）；**禁止**在飞书消息里贴本地路径\n\n【休市·硬规则】**exec** `bash /Users/sonic/.openclaw/workspace/domains/finance/workers/risk/scripts/is_trading_day.sh /Users/sonic/.openclaw/workspace/trader/data/trading_calendar.txt`。输出 `HOLIDAY` 或 `WEEKEND` → 最后一轮**仅** `NO_REPLY`（禁止向飞书解释）。输出 `TRADING` → 正常执行。**禁止**把「今日不在列表」当休市——文件列的是**休市日**，不在其中且周一至周五=**交易日**。\n\n【最后一轮】**仅**输出下文「定版·最后一轮」整块（**全中文**）；Cron announce 只投递该轮。失败且无法生成定版 → 仅一行 NO_REPLY。\n\n【write】`reports/daily/盘中汇总_YYYY-MM-DD.md`\n\n【定版·最后一轮】\n📊 盘中汇总 11:00 · YYYY-MM-DD\n\n指数：…  量能：…\n\n▎板块\n强：…  弱：…\n\n▎自选\n• …（涨跌与计划区间/止损触达）\n\n▎上午纪律\n…"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "accountId": "sonicteam",
+        "to": "group:${FEISHU_DELIVERY_GROUP_ID}",
+        "bestEffort": true
+      },
+      "state": {}
+    },
+    {
+      "id": "tr4d3r-sch-1600-0001-000000000001",
+      "agentId": "trader",
+      "name": "Trader·16:00盘后汇总",
+      "enabled": true,
+      "createdAtMs": 1779600000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 16 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "timeoutSeconds": 1200,
+        "message": "【输出纪律·飞书 Cron announce · 强制】\n【用户铁律】飞书**禁止**英文过程播报（Let me / Now I'll / pre-market routine / parallel / skills documentation 等）；只许最后一轮**一段中文定版**。\n本任务**全程只允许一条**对用户可见的助手回复（**最后一轮**）。此前每一轮：助手可见正文**必须完全为零字**，**只发 tool_calls**；**禁止** message/send 向飞书发任何中间气泡。\n\n【零字·铁律】除最后一轮外，**任何**可见 assistant 文字（含一句英文）= 向飞书刷屏，严重违规。只允许 tool_calls，正文必须为空。\n\n【严禁可见正文（含已发生的违规句式·一字不许出现）】\n- `Let me start the pre-market routine` / `Now I'll run the search queries` / `in parallel` / `macro/economy` / `external markets` / `watchlist news`\n- `Let me check the available skills` / `documentation` / `SKILL.md` / `Now let me look at the mx-search script path`\n- `Now let me search for` / `remaining key watchlist` / `Now I have enough data to compose` / `Let me write`\n- 一切英文进度句：Let me / Now let me / Now I'll / I'll / I will / I need / First / Next / Good, got / compose / parallel / fetch / available skills 等。\n- 中文过程：让我 / 我将 / 现在 / 首先 / 然后 / 接下来 / 检查一下 / 获取数据 / 先搜 / 盘前流程 等。\n- **禁止**在飞书展示：读 SKILL、mx-search 路径、并行搜宏观/外盘/自选、写报告过程、工具超时；全部只在 tool 轮静默完成。\n- **禁止** read `~/.openclaw/data/skills/**/SKILL.md`；妙想用法**仅** read `MIAOXIANG.md` 后 **exec** python3。\n- 中间轮若误写英文过程句：不得作为最终回复；继续 tool_calls，最后一轮**仅**定版中文或 `NO_REPLY`。\n\n【数据·静默】\n\n【网络·禁】本机**未配置** web_search（无 SearXNG）。**禁止** `web_search`。**禁止** `web_fetch` `push2.eastmoney.com`、`quote.eastmoney.com`、`*.eastmoney.com/api/` 等行情 JSON；指数/板块/个股**仅** `mx-data`/`mx-search` `exec`（见 `MIAOXIANG.md`）。\n- **exec 单条**：`bash /Users/sonic/.openclaw/workspace/trader/scripts/sync_worker_context.sh`\n- read `data/watchlist.json`；行情/要闻用 mx-search / mx-data（**exec 单条** python3 脚本，禁止 cd/管道/重定向；问句自拟，**勿在正文复述问句**）\n- 长文**先 write** 到本任务指定的 `reports/…` 路径（完整版）；**禁止**在飞书消息里贴本地路径\n\n【休市·硬规则】**exec** `bash /Users/sonic/.openclaw/workspace/domains/finance/workers/risk/scripts/is_trading_day.sh /Users/sonic/.openclaw/workspace/trader/data/trading_calendar.txt`。输出 `HOLIDAY` 或 `WEEKEND` → 最后一轮**仅** `NO_REPLY`（禁止向飞书解释）。输出 `TRADING` → 正常执行。**禁止**把「今日不在列表」当休市——文件列的是**休市日**，不在其中且周一至周五=**交易日**。\n\n【最后一轮】**仅**输出下文「定版·最后一轮」整块（**全中文**）；Cron announce 只投递该轮。失败且无法生成定版 → 仅一行 NO_REPLY。\n\n【write】`reports/daily/盘后汇总_YYYY-MM-DD.md`\n\n【定版·最后一轮】\n📈 盘后汇总 16:00 · YYYY-MM-DD\n\n全天：…  成交：…\n\n▎板块与资金\n…\n\n▎自选收盘\n• …\n\n▎持仓/委托\n…\n\n▎隔夜提示（纪律）\n…"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "accountId": "sonicteam",
+        "to": "group:${FEISHU_DELIVERY_GROUP_ID}",
+        "bestEffort": true
+      },
+      "state": {}
+    },
+    {
+      "id": "tr4d3r-sch-1800-0001-000000000001",
+      "agentId": "trader",
+      "name": "Trader·18:00复盘与风控告警",
+      "enabled": true,
+      "createdAtMs": 1779600000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 18 * * 1-5",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "timeoutSeconds": 1200,
+        "message": "【输出纪律·飞书 Cron announce · 强制】\n【用户铁律】飞书**禁止**英文过程播报（Let me / Now I'll / pre-market routine / parallel / skills documentation 等）；只许最后一轮**一段中文定版**。\n本任务**全程只允许一条**对用户可见的助手回复（**最后一轮**）。此前每一轮：助手可见正文**必须完全为零字**，**只发 tool_calls**；**禁止** message/send 向飞书发任何中间气泡。\n\n【零字·铁律】除最后一轮外，**任何**可见 assistant 文字（含一句英文）= 向飞书刷屏，严重违规。只允许 tool_calls，正文必须为空。\n\n【严禁可见正文（含已发生的违规句式·一字不许出现）】\n- `Let me start the pre-market routine` / `Now I'll run the search queries` / `in parallel` / `macro/economy` / `external markets` / `watchlist news`\n- `Let me check the available skills` / `documentation` / `SKILL.md` / `Now let me look at the mx-search script path`\n- `Now let me search for` / `remaining key watchlist` / `Now I have enough data to compose` / `Let me write`\n- 一切英文进度句：Let me / Now let me / Now I'll / I'll / I will / I need / First / Next / Good, got / compose / parallel / fetch / available skills 等。\n- 中文过程：让我 / 我将 / 现在 / 首先 / 然后 / 接下来 / 检查一下 / 获取数据 / 先搜 / 盘前流程 等。\n- **禁止**在飞书展示：读 SKILL、mx-search 路径、并行搜宏观/外盘/自选、写报告过程、工具超时；全部只在 tool 轮静默完成。\n- **禁止** read `~/.openclaw/data/skills/**/SKILL.md`；妙想用法**仅** read `MIAOXIANG.md` 后 **exec** python3。\n- 中间轮若误写英文过程句：不得作为最终回复；继续 tool_calls，最后一轮**仅**定版中文或 `NO_REPLY`。\n\n【数据·静默】\n\n【网络·禁】本机**未配置** web_search（无 SearXNG）。**禁止** `web_search`。**禁止** `web_fetch` `push2.eastmoney.com`、`quote.eastmoney.com`、`*.eastmoney.com/api/` 等行情 JSON；指数/板块/个股**仅** `mx-data`/`mx-search` `exec`（见 `MIAOXIANG.md`）。\n- **exec 单条**：`bash /Users/sonic/.openclaw/workspace/trader/scripts/sync_worker_context.sh`\n- read `data/watchlist.json`；行情/要闻用 mx-search / mx-data（**exec 单条** python3 脚本，禁止 cd/管道/重定向；问句自拟，**勿在正文复述问句**）\n- 长文**先 write** 到本任务指定的 `reports/…` 路径（完整版）；**禁止**在飞书消息里贴本地路径\n\n【休市·硬规则】**exec** `bash /Users/sonic/.openclaw/workspace/domains/finance/workers/risk/scripts/is_trading_day.sh /Users/sonic/.openclaw/workspace/trader/data/trading_calendar.txt`。输出 `HOLIDAY` 或 `WEEKEND` → 最后一轮**仅** `NO_REPLY`（禁止向飞书解释）。输出 `TRADING` → 正常执行。**禁止**把「今日不在列表」当休市——文件列的是**休市日**，不在其中且周一至周五=**交易日**。\n\n【最后一轮】**仅**输出下文「定版·最后一轮」整块（**全中文**）；Cron announce 只投递该轮。失败且无法生成定版 → 仅一行 NO_REPLY。\n\n【read】inbox/trading_gate.json、portfolio_snapshot、orders_pending\n【write】`reports/daily/每日复盘_YYYY-MM-DD.md`（第一节风控告警）\n\n【定版·最后一轮】\n📝 每日复盘 · YYYY-MM-DD\n\n🛡️ 风控\ngate：允许开仓 是/否  强制减仓 是/否\n告警：…（violations 或「无」）\n\n▎今日反思\n…\n\n▎明日自选观察\n• …\n\n▎明日纪律（3条）\n1. … 2. … 3. …"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "accountId": "sonicteam",
+        "to": "group:${FEISHU_DELIVERY_GROUP_ID}",
+        "bestEffort": true
+      },
+      "state": {}
+    },
+    {
+      "id": "tr4d3r-sch-week-earn-0001-000000000001",
+      "agentId": "trader",
+      "name": "Trader·周一三财报解读",
+      "enabled": true,
+      "createdAtMs": 1779600000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 19 * * 1,3",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "timeoutSeconds": 1200,
+        "message": "【输出纪律·飞书 Cron announce · 强制】\n【用户铁律】飞书**禁止**英文过程播报（Let me / Now I'll / pre-market routine / parallel / skills documentation 等）；只许最后一轮**一段中文定版**。\n本任务**全程只允许一条**对用户可见的助手回复（**最后一轮**）。此前每一轮：助手可见正文**必须完全为零字**，**只发 tool_calls**；**禁止** message/send 向飞书发任何中间气泡。\n\n【零字·铁律】除最后一轮外，**任何**可见 assistant 文字（含一句英文）= 向飞书刷屏，严重违规。只允许 tool_calls，正文必须为空。\n\n【严禁可见正文（含已发生的违规句式·一字不许出现）】\n- `Let me start the pre-market routine` / `Now I'll run the search queries` / `in parallel` / `macro/economy` / `external markets` / `watchlist news`\n- `Let me check the available skills` / `documentation` / `SKILL.md` / `Now let me look at the mx-search script path`\n- `Now let me search for` / `remaining key watchlist` / `Now I have enough data to compose` / `Let me write`\n- 一切英文进度句：Let me / Now let me / Now I'll / I'll / I will / I need / First / Next / Good, got / compose / parallel / fetch / available skills 等。\n- 中文过程：让我 / 我将 / 现在 / 首先 / 然后 / 接下来 / 检查一下 / 获取数据 / 先搜 / 盘前流程 等。\n- **禁止**在飞书展示：读 SKILL、mx-search 路径、并行搜宏观/外盘/自选、写报告过程、工具超时；全部只在 tool 轮静默完成。\n- **禁止** read `~/.openclaw/data/skills/**/SKILL.md`；妙想用法**仅** read `MIAOXIANG.md` 后 **exec** python3。\n- 中间轮若误写英文过程句：不得作为最终回复；继续 tool_calls，最后一轮**仅**定版中文或 `NO_REPLY`。\n\n【数据·静默】\n\n【网络·禁】本机**未配置** web_search（无 SearXNG）。**禁止** `web_search`。**禁止** `web_fetch` `push2.eastmoney.com`、`quote.eastmoney.com`、`*.eastmoney.com/api/` 等行情 JSON；指数/板块/个股**仅** `mx-data`/`mx-search` `exec`（见 `MIAOXIANG.md`）。\n- **exec 单条**：`bash /Users/sonic/.openclaw/workspace/trader/scripts/sync_worker_context.sh`\n- read `data/watchlist.json`；行情/要闻用 mx-search / mx-data（**exec 单条** python3 脚本，禁止 cd/管道/重定向；问句自拟，**勿在正文复述问句**）\n- 长文**先 write** 到本任务指定的 `reports/…` 路径（完整版）；**禁止**在飞书消息里贴本地路径\n\n【休市·硬规则】**exec** `bash /Users/sonic/.openclaw/workspace/domains/finance/workers/risk/scripts/is_trading_day.sh /Users/sonic/.openclaw/workspace/trader/data/trading_calendar.txt`。输出 `HOLIDAY` 或 `WEEKEND` → 最后一轮**仅** `NO_REPLY`（禁止向飞书解释）。输出 `TRADING` → 正常执行。**禁止**把「今日不在列表」当休市——文件列的是**休市日**，不在其中且周一至周五=**交易日**。\n\n【最后一轮】**仅**输出下文「定版·最后一轮」整块（**全中文**）；Cron announce 只投递该轮。失败且无法生成定版 → 仅一行 NO_REPLY。\n\n【write】`reports/weekly/财报解读_YYYY-MM-DD.md`\n\n【定版·最后一轮】\n📑 财报解读 · YYYY-MM-DD\n\n▎披露标的\n• 代码 名称：营收/利润要点 vs 预期（一句）\n（无新财报则写「自选本周无新披露」+ 行业一则）\n\n▎对持仓含义\n…"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "accountId": "sonicteam",
+        "to": "group:${FEISHU_DELIVERY_GROUP_ID}",
+        "bestEffort": true
+      },
+      "state": {}
+    },
+    {
+      "id": "tr4d3r-sch-month-trend-0001-000000000001",
+      "agentId": "trader",
+      "name": "Trader·月初趋势判断",
+      "enabled": true,
+      "createdAtMs": 1779600000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 1 * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "timeoutSeconds": 1200,
+        "message": "【输出纪律·飞书 Cron announce · 强制】\n【用户铁律】飞书**禁止**英文过程播报（Let me / Now I'll / pre-market routine / parallel / skills documentation 等）；只许最后一轮**一段中文定版**。\n本任务**全程只允许一条**对用户可见的助手回复（**最后一轮**）。此前每一轮：助手可见正文**必须完全为零字**，**只发 tool_calls**；**禁止** message/send 向飞书发任何中间气泡。\n\n【零字·铁律】除最后一轮外，**任何**可见 assistant 文字（含一句英文）= 向飞书刷屏，严重违规。只允许 tool_calls，正文必须为空。\n\n【严禁可见正文（含已发生的违规句式·一字不许出现）】\n- `Let me start the pre-market routine` / `Now I'll run the search queries` / `in parallel` / `macro/economy` / `external markets` / `watchlist news`\n- `Let me check the available skills` / `documentation` / `SKILL.md` / `Now let me look at the mx-search script path`\n- `Now let me search for` / `remaining key watchlist` / `Now I have enough data to compose` / `Let me write`\n- 一切英文进度句：Let me / Now let me / Now I'll / I'll / I will / I need / First / Next / Good, got / compose / parallel / fetch / available skills 等。\n- 中文过程：让我 / 我将 / 现在 / 首先 / 然后 / 接下来 / 检查一下 / 获取数据 / 先搜 / 盘前流程 等。\n- **禁止**在飞书展示：读 SKILL、mx-search 路径、并行搜宏观/外盘/自选、写报告过程、工具超时；全部只在 tool 轮静默完成。\n- **禁止** read `~/.openclaw/data/skills/**/SKILL.md`；妙想用法**仅** read `MIAOXIANG.md` 后 **exec** python3。\n- 中间轮若误写英文过程句：不得作为最终回复；继续 tool_calls，最后一轮**仅**定版中文或 `NO_REPLY`。\n\n【数据·静默】\n\n【网络·禁】本机**未配置** web_search（无 SearXNG）。**禁止** `web_search`。**禁止** `web_fetch` `push2.eastmoney.com`、`quote.eastmoney.com`、`*.eastmoney.com/api/` 等行情 JSON；指数/板块/个股**仅** `mx-data`/`mx-search` `exec`（见 `MIAOXIANG.md`）。\n- **exec 单条**：`bash /Users/sonic/.openclaw/workspace/trader/scripts/sync_worker_context.sh`\n- read `data/watchlist.json`；行情/要闻用 mx-search / mx-data（**exec 单条** python3 脚本，禁止 cd/管道/重定向；问句自拟，**勿在正文复述问句**）\n- 长文**先 write** 到本任务指定的 `reports/…` 路径（完整版）；**禁止**在飞书消息里贴本地路径\n\n【休市·硬规则】**exec** `bash /Users/sonic/.openclaw/workspace/domains/finance/workers/risk/scripts/is_trading_day.sh /Users/sonic/.openclaw/workspace/trader/data/trading_calendar.txt`。输出 `HOLIDAY` 或 `WEEKEND` → 最后一轮**仅** `NO_REPLY`（禁止向飞书解释）。输出 `TRADING` → 正常执行。**禁止**把「今日不在列表」当休市——文件列的是**休市日**，不在其中且周一至周五=**交易日**。\n\n【最后一轮】**仅**输出下文「定版·最后一轮」整块（**全中文**）；Cron announce 只投递该轮。失败且无法生成定版 → 仅一行 NO_REPLY。\n\n【write】`reports/monthly/月度趋势判断_YYYY-MM.md`\n\n【定版·最后一轮】\n📅 月度趋势 · YYYY-MM\n\n上月：…\n主线：强/弱/震荡 — …\n下月仓位纪律：…\n自选池调整：…"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "accountId": "sonicteam",
+        "to": "group:${FEISHU_DELIVERY_GROUP_ID}",
+        "bestEffort": true
+      },
+      "state": {}
+    },
+    {
+      "id": "tr4d3r-sch-sun2000-0001-000000000001",
+      "agentId": "trader",
+      "name": "Trader·周日20:00周末消息面汇总",
+      "enabled": true,
+      "createdAtMs": 1779700000000,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 20 * * 0",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "lightContext": true,
+        "timeoutSeconds": 1200,
+        "message": "【输出纪律·飞书 Cron announce · 强制】\n【用户铁律】飞书**禁止**英文过程播报（Let me / Now I'll / pre-market routine / parallel / skills documentation 等）；只许最后一轮**一段中文定版**。\n本任务**全程只允许一条**对用户可见的助手回复（**最后一轮**）。此前每一轮：助手可见正文**必须完全为零字**，**只发 tool_calls**；**禁止** message/send 向飞书发任何中间气泡。\n\n【零字·铁律】除最后一轮外，**任何**可见 assistant 文字（含一句英文）= 向飞书刷屏，严重违规。只允许 tool_calls，正文必须为空。\n\n【严禁可见正文（含已发生的违规句式·一字不许出现）】\n- `Let me start the pre-market routine` / `Now I'll run the search queries` / `in parallel` / `macro/economy` / `external markets` / `watchlist news`\n- `Let me check the available skills` / `documentation` / `SKILL.md` / `Now let me look at the mx-search script path`\n- `Now let me search for` / `remaining key watchlist` / `Now I have enough data to compose` / `Let me write`\n- 一切英文进度句：Let me / Now let me / Now I'll / I'll / I will / I need / First / Next / Good, got / compose / parallel / fetch / available skills 等。\n- 中文过程：让我 / 我将 / 现在 / 首先 / 然后 / 接下来 / 检查一下 / 获取数据 / 先搜 / 盘前流程 等。\n- **禁止**在飞书展示：读 SKILL、mx-search 路径、并行搜宏观/外盘/自选、写报告过程、工具超时；全部只在 tool 轮静默完成。\n- **禁止** read `~/.openclaw/data/skills/**/SKILL.md`；妙想用法**仅** read `MIAOXIANG.md` 后 **exec** python3。\n- 中间轮若误写英文过程句：不得作为最终回复；继续 tool_calls，最后一轮**仅**定版中文或 `NO_REPLY`。\n\n【数据·静默】\n\n【网络·禁】本机**未配置** web_search（无 SearXNG）。**禁止** `web_search`。**禁止** `web_fetch` `push2.eastmoney.com`、`quote.eastmoney.com`、`*.eastmoney.com/api/` 等行情 JSON；指数/板块/个股**仅** `mx-data`/`mx-search` `exec`（见 `MIAOXIANG.md`）。\n- **exec 单条**：`bash /Users/sonic/.openclaw/workspace/trader/scripts/sync_worker_context.sh`\n- read `data/watchlist.json`；行情/要闻用 mx-search / mx-data（**exec 单条** python3 脚本，禁止 cd/管道/重定向；问句自拟，**勿在正文复述问句**）\n- 长文**先 write** 到本任务指定的 `reports/…` 路径（完整版）；**禁止**在飞书消息里贴本地路径\n\n【休市·硬规则】**exec** `bash /Users/sonic/.openclaw/workspace/domains/finance/workers/risk/scripts/is_trading_day.sh /Users/sonic/.openclaw/workspace/trader/data/trading_calendar.txt`。输出 `HOLIDAY` 或 `WEEKEND` → 最后一轮**仅** `NO_REPLY`（禁止向飞书解释）。输出 `TRADING` → 正常执行。**禁止**把「今日不在列表」当休市——文件列的是**休市日**，不在其中且周一至周五=**交易日**。\n\n【最后一轮】**仅**输出下文「定版·最后一轮」整块（**全中文**）；Cron announce 只投递该轮。失败且无法生成定版 → 仅一行 NO_REPLY。\n\n【妙想·优先】mx-search 多轮不同问句（exec 单条 python3，禁止 cd/管道）。\n【write】`reports/weekly/周末消息面汇总_YYYY-MM-DD.md`（完整版；日期为本次周日）\n\n【定版·最后一轮】\n📰 周末消息面 · YYYY-MM-DD（周日）\n\n▎本周回顾\n…\n\n▎宏观与地缘\n…\n\n▎公告·减持·政策\n• …\n\n▎自选周末要闻\n• 代码 名称：一句话\n（列 5～8 只重点）\n\n▎周一开盘前关注\n1. …\n2. …\n3. …"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "accountId": "sonicteam",
+        "to": "group:${FEISHU_DELIVERY_GROUP_ID}",
+        "bestEffort": true
+      },
+      "state": {}
+    }
+  ]
+}

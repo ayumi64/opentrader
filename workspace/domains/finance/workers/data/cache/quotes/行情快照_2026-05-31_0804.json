@@ -1,0 +1,74 @@
+{
+  "snapshot_time": "2026-05-31 08:04",
+  "source": "东方财富妙想mx-data",
+  "market_status": "closed (Sunday non-trading hours)",
+  "last_trading_day": "2026-05-29 (Friday)",
+  "indices": {
+    "shanghai_composite": {
+      "code": "000001.SH",
+      "close": 4068.57,
+      "change_pct": -0.73,
+      "volume": "731.6亿手",
+      "amount": "1.532万亿"
+    },
+    "szse_component": {
+      "code": "399001.SZ",
+      "close": 15575.13,
+      "change_pct": -1.81,
+      "volume": "848.9亿手",
+      "amount": "1.787万亿"
+    },
+    "cyb_index": {
+      "code": "399006.SZ",
+      "close": 4037.95,
+      "change_pct": -2.11,
+      "volume": "242.1亿手",
+      "amount": "8557亿"
+    },
+    "hs300": {
+      "code": "399300.SZ",
+      "close": 4892.12,
+      "change_pct": -0.45,
+      "volume": "332.5亿手",
+      "amount": "9422亿"
+    },
+    "star50": {
+      "code": "000688.SH",
+      "close": null,
+      "change_pct": -5.04,
+      "volume": "23.43亿手",
+      "amount": "1821亿"
+    }
+  },
+  "volume_summary": {
+    "total_amount": "3.319万亿",
+    "margin_balance": "1.399万亿",
+    "margin_note": "注意：5/29融资融券余额突降至1.399万亿(较前日2.8万亿腰斩)，疑似数据口径问题或统计异常，前几日余额稳定在2.78-2.80万亿",
+    "total_amount_previous_days": {
+      "2026-05-28": "2.968万亿",
+      "2026-05-27": "3.238万亿",
+      "2026-05-26": "3.243万亿"
+    }
+  },
+  "northbound_flow": {
+    "total_turnover_may29": "473.4亿",
+    "shanghai_turnover": "221.7亿",
+    "shenzhen_turnover": "251.7亿",
+    "note": "北向资金5/29成交总额473亿，维持活跃"
+  },
+  "southbound_flow": {
+    "net_buy_may29": "+18.84亿",
+    "note": "南向资金5/29净买入约18.84亿元"
+  },
+  "sectors": {
+    "semiconductor_BK1036": {
+      "last_trade_close": "2026-05-29",
+      "change_pct": -6.40,
+      "total_amount": "4830亿",
+      "up_stocks": 11,
+      "down_stocks": 164,
+      "avg_price": 104.5,
+      "note": "半导体板块单日跌幅6.4%，主力净流出创历史新高"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+金融数据查询结果说明
+========================================
+查询内容: 大族激光 芯源微 天孚通信 德明利 海光信息 寒武纪 最新价 涨跌幅
+数据文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/data/mx_data_大族激光_芯源微_天孚通信_德明利_海光信息_寒武纪_最新价_涨跌幅.xlsx
+描述文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/data/mx_data_大族激光_芯源微_天孚通信_德明利_海光信息_寒武纪_最新价_涨跌幅_description.txt
+数据行数: 30
+表数量: 6
+Sheet 列表: 大族激光(002008.SZ)等当前的最新价、涨跌幅, 大族激光(002008.SZ)的收盘价、涨跌幅, 芯源微(688037.SH)的收盘价、涨跌幅, 天孚通信(300394.SZ)的收盘价、涨跌幅, 德明利(001309.SZ)的收盘价、涨跌幅, 海光信息(688041.SH)的收盘价、涨跌幅

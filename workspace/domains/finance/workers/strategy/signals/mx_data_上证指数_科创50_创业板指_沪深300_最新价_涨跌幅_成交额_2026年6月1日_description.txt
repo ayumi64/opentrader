@@ -1,0 +1,8 @@
+金融数据查询结果说明
+========================================
+查询内容: 上证指数 科创50 创业板指 沪深300 最新价 涨跌幅 成交额 2026年6月1日
+数据文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/signals/mx_data_上证指数_科创50_创业板指_沪深300_最新价_涨跌幅_成交额_2026年6月1日.xlsx
+描述文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/signals/mx_data_上证指数_科创50_创业板指_沪深300_最新价_涨跌幅_成交额_2026年6月1日_description.txt
+数据行数: 4
+表数量: 1
+Sheet 列表: 上证指数(000001.SH)等当前的最新价、涨跌幅等

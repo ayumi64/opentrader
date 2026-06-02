@@ -1,0 +1,47 @@
+=== 开盘执行日志 ===
+时间: 2026-06-02 09:26 (Asia/Shanghai)
+cron: f1n4nc3-exec-open-0001-000000000001
+沙箱: /Users/sonic/.openclaw/workspace/domains/finance/workers/execution/
+
+--- 步骤1: exec scripts/sync_signals.sh ---
+结果: signal=/Users/sonic/.openclaw/workspace/domains/finance/workers/strategy/signals/信号_2026-06-02_0908.json
+同步成功，信号已落地至 inbox/信号_*.json
+
+--- 步骤2: read inbox/trading_gate.json ---
+状态: allow_open_new = false
+gate关闭原因摘要:
+  - R3_cash_buffer fail: 1.57% < 5% (缺口¥46,388)
+  - 11笔待成交跨16自然日(自5/20)
+  - 5笔强制撤单(偏离>15%)
+  - 地缘冲突severe + 制裁 + 加息风险 + 半导体持续承压
+结论: 拒绝全部撮合
+
+--- 步骤3: glob inbox/信号_*.json ---
+文件1: inbox/信号_2026-06-01_0909.json (7条信号, 来自昨日)
+文件2: inbox/信号_2026-06-02_0908.json (13条信号, 含11笔pending+2笔观察)
+
+--- 步骤4: read RISK-LIMITS.json ---
+限制参考: max_single_stock 15% / max_sector 40% / max_pending 15 / min_cash 5%
+(未触发新的limit违反, 但R3现金不足已是根本障碍)
+
+--- 步骤5: 模拟撮合评估 ---
+allow_open_new=false → 不执行任何新开/撮合
+滑点±0.3%: 未应用 (gate closed)
+
+--- 写入输出 ---
+orders/simulated_2026-06-02.json ✓ (全部拒绝)
+拒绝记录:
+  11笔pending全部标记REJECTED或HOLD(3笔偏差<5%保留观察)
+  7条信号全部标记拒绝/评估
+  0笔模拟成交, 0元撮合金额
+
+--- 操作摘要 ---
+[REJECT] 强制撤单方向: 大族激光/芯源微/天孚通信/德明利/海光信息 (需人工撤单)
+[REJECT] 调整方向: 英维克/微芯生物/迈为股份 (建议下调委托价或撤单)
+[HOLD] 保留观察: 寒武纪(+0.2%) / 中微半导(-1.8%) / 卧龙电驱(+2.9%)
+[REJECT] 全部信号信号SIG-20260601-001~007: 均不触发新开
+[NOT_APPLIED] 滑点模拟: ±0.3% 未应用 (gate关闭)
+
+--- 安全摘要 ---
+路径硬规则: 未越界读取 ../shared/ 或 ../risk/ 或 ../strategy/
+文件域严格锁定在沙箱 /Users/sonic/.openclaw/workspace/domains/finance/workers/execution/

@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-05-31 20:11:51",
+  "timezone": "Asia/Shanghai",
+  "indices": {
+    "上证指数": {
+      "close": 4068.57,
+      "change": -0.73,
+      "volume": "1.532万亿"
+    },
+    "深证成指": {
+      "close": 15575.13,
+      "change": -1.81,
+      "volume": "1.787万亿"
+    },
+    "创业板指": {
+      "close": 4037.95,
+      "change": -2.11,
+      "volume": "8557亿"
+    },
+    "科创50": {
+      "close": 1751.32,
+      "change": -5.04,
+      "volume": "1821亿"
+    }
+  },
+  "tech_sectors_20260529": {
+    "半导体": {
+      "change": -6.4,
+      "volume": "4830亿",
+      "price": 104.5,
+      "up": 11,
+      "down": 164
+    },
+    "人工智能": {
+      "change": null,
+      "volume": null
+    },
+    "通信设备": {
+      "change": null,
+      "volume": null
+    },
+    "计算机": {
+      "change": null,
+      "volume": null
+    }
+  },
+  "market_overview": {
+    "weekly_avg_daily_volume": "3.2159万亿",
+    "weekly_north_flow_est": "净流出约15亿(灵活型净流入8亿)",
+    "two_rong_balance": "29424亿(截至5/28)",
+    "weekly_new_funds": "53只/498.68亿份"
+  },
+  "data_source": "mx-data API via 东方财富"
+}

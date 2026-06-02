@@ -1,0 +1,84 @@
+{
+  "snapshot_time": "2026-06-02T10:05:00+08:00",
+  "indices": {
+    "shanghai_composite": {
+      "name": "上证综指",
+      "code": "000001.SH",
+      "latest": 4039.07,
+      "change_pct": -0.46,
+      "turnover_billion": 468.6
+    },
+    "shenzhen_component": {
+      "name": "深证成指",
+      "code": "399001.SZ",
+      "latest": 15252.61,
+      "change_pct": -0.57,
+      "turnover_billion": 572.6
+    },
+    "chi_next": {
+      "name": "创业板指",
+      "code": "399006.SZ",
+      "latest": 3961.59,
+      "change_pct": 0.27,
+      "turnover_billion": 268.9
+    },
+    "star_50": {
+      "name": "科创50",
+      "code": "000688.SH",
+      "latest": null,
+      "change_pct": -0.81,
+      "turnover_billion": 46.05
+    },
+    "yesterday_close": {
+      "shanghai_composite": 4057.74,
+      "shenzhen_component": 15340.36,
+      "chi_next": 3950.94
+    }
+  },
+  "market_aggregate": {
+    "a_share_turnover_yesterday": "2.90万亿",
+    "turnover_change": "-4441亿",
+    "margin_balance": "2.90万亿",
+    "margin_trade_balance": "2.88万亿",
+    "margin_short_balance": "209.04亿",
+    "yesterday_margin_change": "-75.74亿",
+    "shibor_short_balance_change": "-5.41亿",
+    "yesterday_main_force_net_outflow": "超380亿"
+  },
+  "north_bound": {
+    "date": "2026-06-01",
+    "total_turnover_million": 407410.27,
+    "sh_turnover_million": 188235.25,
+    "sz_turnover_million": 219175.02,
+    "note": "昨日北向成交额约4074亿，额度充足"
+  },
+  "sector_highlights": {
+    "leading": ["煤炭(+5.53%)", "传媒(+3.32%)", "美容护理(+2.66%)", "AIGC", "操作系统", "AI PC(春秋电子3连板)"],
+    "lagging": ["电子(-4.17%)", "通信(-3.28%)", "建筑材料(-2.82%)", "GPU", "光模块", "玻璃纤维"],
+    "opening_today_june2": "四大指数集体高开；AI PC/宇树机器人/AI应用/云计算活跃；油气板块领涨"
+  },
+  "key_stock_moves": {
+    "yesterday_june1_down": ["寒武纪-5%", "海光信息-6%", "澜起科技-8%", "中微公司-8%", "中际旭创-2%", "东山精密-10%"],
+    "yesterday_june1_up": ["大有能源涨停", "郑州煤电涨停", "新集能源涨停", "用友网络涨停", "春秋电子涨停", "华勤技术涨停"],
+    "a_share_stats_june1": "3776涨/1682跌，166涨停/23跌停"
+  },
+  "major_events": {
+    "nvidia_rtx_spark_pc": "英伟达COMPUTEX 2026发布RTX Spark PC芯片，进军PC处理器市场；戴尔/联想/华硕/惠普秋季出货",
+    "yushu_ipo_approved": "宇树科技科创板IPO过会(73天纪录)，拟募资42亿，人形机器人第一股",
+    "hesen_ellie_deal": "海思科与礼来签研发合作协议，首付款+里程碑最高30.54亿美元",
+    "zhipu_a_share_ipo": "智谱港股公告拟回A科创板上市",
+    "openai_robotics": "OpenAI官宣进军机器人赛道",
+    "trump_iran_optimism": "特朗普预计未来一周与伊朗达成协议延长停火重开霍尔木兹海峡",
+    "new_policy_tool_8000b": "2026年新型政策性金融工具总规模8000亿，重点支持低空经济/数字经济/AI",
+    "state_council_foreign_invest": "《国务院关于对外投资的规定》7月1日起施行"
+  },
+  "overnight_us": {
+    "date": "2026-06-01",
+    "dow": "+0.09%",
+    "snp500": "+0.26%",
+    "nasdaq": "+0.42%首次收于27000点上方",
+    "nvidia": "+6%",
+    "micron": "首次突破1000美元",
+    "china_golden_dragon": "+1.47%"
+  }
+}

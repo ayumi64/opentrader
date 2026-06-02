@@ -1,0 +1,80 @@
+[
+  {
+    "id": "SIG-20260601-001",
+    "type": "强制撤单",
+    "severity": "critical",
+    "timestamp": "2026-06-01T09:09:00+08:00",
+    "source": "盘中预警",
+    "description": "11笔待成交委托已挂单13天(跨14自然日), 5笔严重偏离行情(>15%)需强制撤单",
+    "codes": ["002008.SZ", "688380.SH", "300394.SZ", "001309.SZ", "688041.SH"],
+    "names": ["大族激光", "芯源微", "天孚通信", "德明利", "海光信息"],
+    "deviation_pct": [52.13, 33.15, 28.02, 23.84, 16.17],
+    "recommendation": "立即撤单回笼现金; 如重新定价再择机挂单",
+    "related_rules": ["R3", "R4"],
+    "gate_check_fail": "R3_cash_buffer(1.57%<5%)"
+  },
+  {
+    "id": "SIG-20260601-002",
+    "type": "被动成交预警",
+    "severity": "warning",
+    "timestamp": "2026-06-01T09:09:00+08:00",
+    "source": "盘中预警",
+    "description": "2笔挂单偏高(委托价高于现价), 若今日科技板块续跌有被动成交风险",
+    "codes": ["002837.SZ", "688321.SH"],
+    "names": ["英维克", "微芯生物"],
+    "deviation_pct": [-14.30, -14.16],
+    "recommendation": "建议下调委托价至市价附近防被动高价买入",
+    "related_rules": ["R1"]
+  },
+  {
+    "id": "SIG-20260601-003",
+    "type": "政策风险事件",
+    "severity": "high",
+    "timestamp": "2026-06-01T09:09:00+08:00",
+    "source": "盘中预警",
+    "description": "美国商务部周日(5/31)发布新指南封堵芯片出口漏洞, 限制先进芯片(英伟达Rubin/Blackwell/AMD MI350x)流向中国境外AI企业子公司; 过去一年约数十万枚已流出",
+    "affected_sectors": ["半导体", "AI算力", "存储芯片"],
+    "recommendation": "开盘评估对国内AI/AI算力企业的影响范围; 半导体板块5/29已大跌-5.04%, 新制裁可能加剧短期压力",
+    "related_rules": ["R6"]
+  },
+  {
+    "id": "SIG-20260601-004",
+    "type": "合规风险事件",
+    "severity": "high",
+    "timestamp": "2026-06-01T09:09:00+08:00",
+    "source": "盘中预警",
+    "description": "OFAC/SDN 5/30制裁9家中国实体涉伊朗石油贸易, 今日开盘需评估关联持仓扩散影响",
+    "affected_sectors": ["石油贸易", "能源"],
+    "recommendation": "检查持仓是否涉及制裁实体关联方",
+    "related_rules": ["R6"]
+  },
+  {
+    "id": "SIG-20260601-005",
+    "type": "宏观风险事件",
+    "severity": "medium",
+    "timestamp": "2026-06-01T09:09:00+08:00",
+    "source": "盘中预警",
+    "description": "美联储鹰派: PCE 3.8%/核心PCE 3.3%超预期, 市场预计年内加息概率50%+; 美伊冲突severe+以黎high地缘冲突持续",
+    "recommendation": "成长板块(科技/AI)估值承压; 防御性配置(红利/高股息)相对占优",
+    "related_rules": ["R6"]
+  },
+  {
+    "id": "SIG-20260601-006",
+    "type": "事件催化关注",
+    "severity": "medium",
+    "timestamp": "2026-06-01T09:09:00+08:00",
+    "source": "盘中预警",
+    "description": "COMPUTEX 2026(6/2-5)+英伟达GTC Taipei(6/1-4), 黄仁勋6/1 11:00主题演讲; 宇树科技科创板IPO今日上会(人形机器人第一股); 华为nova16发布会",
+    "affected_sectors": ["AI算力", "机器人", "消费电子"],
+    "recommendation": "正反两面影响: 短期催化但半导体板块承压中; 观察黄仁勋演讲内容对AI产业链的实质性影响"
+  },
+  {
+    "id": "SIG-20260601-007",
+    "type": "资金面信号",
+    "severity": "positive",
+    "timestamp": "2026-06-01T09:09:00+08:00",
+    "source": "盘中预警",
+    "description": "北向资金5/29逆势净买入56.69亿元; QFII持有A股近2000亿; 中东主权基金持续加仓; 日韩股市创新高提振亚太情绪",
+    "recommendation": "资金面积极信号, 但需结合R3现金不足限制, 无法新开仓追入"
+  }
+]

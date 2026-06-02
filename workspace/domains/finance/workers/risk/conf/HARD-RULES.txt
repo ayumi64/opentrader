@@ -1,0 +1,42 @@
+# HARD RULES — A股风控硬规则（不可绕过）
+# 更新时间: 2026-06-01
+
+## R1 — 单只个股占比上限
+RULE: 单只个股持仓市值 ≤ max_single_stock_pct%(15%) × 总资产
+ACTION: 超限 → 禁止加仓; 连续超限24h → 强制减仓至14%
+PASS: true
+
+## R2 — 板块集中度上限
+RULE: 同一板块持仓市值 ≤ max_sector_pct%(40%) × 总资产
+ACTION: 超限 → 禁止加仓该板块; 连续超限24h → 减持至38%
+PASS: true
+
+## R3 — 现金最低缓冲
+RULE: 可用现金 ≥ min_cash_buffer_pct%(5%) × 总资产
+ACTION: 低于 → allow_open_new=false(禁止新开); 低于3% → force_reduce=true(强制减仓)
+PASS: false — 现金占比1.57% < 5%, 缺口¥46,388
+
+## R4 — 待成交委托数量上限
+RULE: pending_orders ≤ max_pending_orders(15)
+ACTION: 超限 → 禁止新增委托
+PASS: true (11/15 — 但全部跨13天严重陈旧)
+
+## R5 — 涨停板买入禁止
+RULE: 严禁在以涨停价(≥9.9%)或极其接近涨停价(≥9.5%)挂买单
+ACTION: 发现 → 拦截该委托
+PASS: true
+
+## R6 — 舆情/事件/地缘政治触发
+RULE: 任何 severe 事件或密集 medium 事件 → 禁止新开; 事件高度影响 → 建议减仓
+ACTION: 评估事件等级、影响范围、可能持续时间; 触发则设置 allow_open_new=false
+PASS: warn — severe地缘冲突未缓和; 美国制裁9中国实体(5/30); 美联储鹰派; 半导体连续大跌
+
+## R7 — 止损线
+RULE: 个股收盘价较成本价下跌≥8% → 标记止损观察; 下跌≥15% → 强制平仓
+ACTION: 触发止损 → 下一个交易日集合竞价前挂卖单
+PASS: true (无持仓 — default pass)
+
+## R8 — 交易日/休市日保护
+RULE: 非交易日(周末/节假日)不允许挂单/撤单操作(仅评估)
+ACTION: 非交易日跳过委托操作只评估; 交易日开盘前完成行动预案
+PASS: active — 2026-06-01周一交易日; 距集合竞价约5h15min

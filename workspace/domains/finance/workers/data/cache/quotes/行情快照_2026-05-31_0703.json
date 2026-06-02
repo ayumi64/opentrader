@@ -1,0 +1,57 @@
+{
+  "snapshot_time": "2026-05-31 07:03",
+  "source": "东方财富妙想mx-data",
+  "market_status": "closed (Sunday non-trading hours)",
+  "last_trading_day": "2026-05-29 (Friday)",
+  "indices": {
+    "shanghai_composite": {
+      "code": "000001.SH",
+      "close": 4068.57,
+      "change_pct": -0.73,
+      "volume": "1.532万亿"
+    },
+    "szse_component": {
+      "code": "399001.SZ",
+      "close": null,
+      "change_pct": -1.81,
+      "volume": null
+    },
+    "cyb_index": {
+      "code": "399006.SZ",
+      "close": 4037.95,
+      "change_pct": -2.11,
+      "volume": null
+    },
+    "hs300": {
+      "code": "399300.SZ",
+      "close": 4892.12,
+      "change_pct": -0.45,
+      "volume": "9422亿"
+    },
+    "star50": {
+      "code": "000688.SH",
+      "close": null,
+      "change_pct": -5.04,
+      "volume": null
+    }
+  },
+  "sectors": {
+    "semiconductor_BK1036": {
+      "last_trade_close": "2026-05-29",
+      "capital_flow": {
+        "main_net_inflow": "-379.3亿",
+        "main_inflow": "2360亿",
+        "main_outflow": "2739亿",
+        "large_order_net": "-83亿",
+        "medium_order_net": "+216亿",
+        "small_order_net": "+162.4亿"
+      }
+    }
+  },
+  "market_summary": {
+    "total_volume_20260529": "3.3万亿+",
+    "stocks_down": "~3900",
+    "sector_rotation": "半导体/通信/军工回调，消费/医药/煤炭走强",
+    "margin_balance": "两融余额持续高位"
+  }
+}

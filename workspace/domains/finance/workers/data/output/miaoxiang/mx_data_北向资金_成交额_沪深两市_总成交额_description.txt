@@ -1,0 +1,8 @@
+金融数据查询结果说明
+========================================
+查询内容: 北向资金 成交额 沪深两市 总成交额
+数据文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/output/miaoxiang/mx_data_北向资金_成交额_沪深两市_总成交额.xlsx
+描述文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/output/miaoxiang/mx_data_北向资金_成交额_沪深两市_总成交额_description.txt
+数据行数: 21
+表数量: 2
+Sheet 列表: 沪深A股的成交额(合计), 沪深A股(001004)沪深港通_北向资金成交额

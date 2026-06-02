@@ -1,0 +1,65 @@
+{
+  "snapshot_time": "2026-05-31T19:03:00+08:00",
+  "market_date": "2026-05-29",
+  "indices": {
+    "上证指数": {"code": "000001.SH", "close": 4068.57, "change_pct": -0.73},
+    "深证成指": {"code": "399001.SZ", "close": null, "change_pct": null},
+    "创业板指": {"code": "399006.SZ", "close": null, "change_pct": null}
+  },
+  "tech_sectors": {
+    "半导体": {
+      "latest_date": "2026-05-29",
+      "avg_change_pct": -6.40,
+      "market_cap_weighted_change_pct": -5.62,
+      "close_weighted_avg": 104.5,
+      "volume": "60.43亿",
+      "turnover": "4830亿",
+      "up_count": 11,
+      "down_count": 164,
+      "flat_count": 2
+    },
+    "人工智能": {
+      "latest_data_note": "近5日行情已获取，详见Excel"
+    },
+    "消费电子": {
+      "latest_data_note": "近5日行情已获取，详见Excel"
+    }
+  },
+  "northbound_flow": {
+    "latest_date": "2026-05-29",
+    "daily_turnover": "4734.05亿",
+    "pct_of_total": "14.26%",
+    "etf_turnover": "54.28亿",
+    "weekly_net_flow_est": "净流入（本周累计超千亿）",
+    "weekly_est_detail": "2026/5/26-29 灵活型外资估算净流入8亿",
+    "top_stocks_deepconnect": [
+      {"stock": "宁德时代", "turnover": "97.55亿", "exchange": "深"},
+      {"stock": "中际旭创", "turnover": "76.17亿", "exchange": "深"},
+      {"stock": "天孚通信", "turnover": "62.43亿", "exchange": "深"},
+      {"stock": "工业富联", "turnover": "45.25亿", "exchange": "沪"},
+      {"stock": "澜起科技", "turnover": "42.03亿", "exchange": "沪"},
+      {"stock": "兆易创新", "turnover": "33.86亿", "exchange": "沪"}
+    ]
+  },
+  "market_volume": {
+    "latest_date": "2026-05-29",
+    "daily_turnover": "约3.34万亿",
+    "margin_balance": {"date": "2026-05-28", "total": "29424.36亿", "financing": "29206.31亿", "securities_lending": "218.04亿"},
+    "weekly_avg_daily_turnover": "32159亿"
+  },
+  "key_events_today": [
+    {"title": "5月官方制造业PMI 50.0%", "detail": "比上月降0.3pct，位于临界点；非制造业商务活动指数50.1%，升0.7pct"},
+    {"title": "丁向群任国家金融监管总局党委书记", "detail": "原中国人保董事长接替李云泽，首位女性金融监管一把手"},
+    {"title": "A股系列指数样本调整", "detail": "含科量提升，6月12日生效；沪深300换19只，上证50调入特变电工/生益科技等5只"},
+    {"title": "MSCI季度调整生效", "detail": "新纳入光库科技/长飞光纤等19只A股，剔除16只"},
+    {"title": "宇树科技科创板IPO明日上会", "detail": "人形机器人第一股，拟募资42亿"},
+    {"title": "MiniMax启动A股上市辅导", "detail": "与中信证券签辅导协议，科创板加速"},
+    {"title": "COMPUTEX 2026明日揭幕", "detail": "史上规模最大，英伟达/AMD/英特尔齐聚"},
+    {"title": "美伊局势持续紧张", "detail": "伊朗宣布霍尔木兹海峡全面管理；美财政部新制裁伊朗实体；布伦特原油维持100美元附近"},
+    {"title": "袭击科威特美军基地", "detail": "伊朗弹道导弹袭击致5人轻伤，1架MQ-9被毁"},
+    {"title": "扎波罗热核电站遭无人机袭击", "detail": "6号机组受损，距反应堆仅数米，未造成泄漏"},
+    {"title": "美股AI再创新高", "detail": "费城半导体指数涨5.53%，美光市值破万亿；戴尔盘后暴涨39%"},
+    {"title": "美联储加息预期升温", "detail": "PCE 3.8%/核心3.3%，多位官员放鹰，年内加息概率升至50%+"}
+  ],
+  "data_sources": ["mx-data", "mx-search", "财联社"]
+}

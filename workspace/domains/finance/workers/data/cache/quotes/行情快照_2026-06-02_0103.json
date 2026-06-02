@@ -1,0 +1,84 @@
+{
+  "snapshot_time": "2026-06-02T01:03:00+08:00",
+  "market_date": "2026-06-01",
+  "indices": {
+    "shanghai_composite": {
+      "close": 4057.74,
+      "change_pct": -0.27,
+      "volume": "1.32万亿"
+    },
+    "shenzhen_component": {},
+    "chi_next": {},
+    "star_50": {}
+  },
+  "tech_sectors": {
+    "semiconductor": {
+      "date": "2026-06-01",
+      "main_force_net_flow": -276.6,
+      "main_force_net_flow_unit": "亿元",
+      "large_order_inflow": 1138,
+      "large_order_outflow": 1240,
+      "medium_order_inflow": 1402,
+      "medium_order_outflow": 1252,
+      "small_order_inflow": 592.3,
+      "small_order_outflow": 466.7
+    },
+    "computer": {}
+  },
+  "northbound": {
+    "date": "2026-06-01",
+    "total_turnover": 4074.10,
+    "turnover_unit": "亿元",
+    "pct_of_total": 14.16,
+    "etf_turnover": 55.39,
+    "etf_turnover_unit": "亿元",
+    "top_sh_3": ["工业富联 35.42亿", "生益科技 31.75亿", "澜起科技 31.38亿"],
+    "top_sz_3": ["中际旭创 66.25亿", "宁德时代 62.59亿", "天孚通信 41.66亿"]
+  },
+  "market_volume": {
+    "date": "2026-06-01",
+    "sh_turnover": "1.32万亿",
+    "northbound_turnover": "4074.10亿",
+    "two_finance_balance": "29424.36亿 (截至5/28)"
+  },
+  "macro_data": {
+    "china_may_pmi": 50.0,
+    "pmi_change": -0.3,
+    "us_pce": 3.8,
+    "us_core_pce": 3.3
+  },
+  "geopolitical_risk": {
+    "status": "escalated",
+    "key_events": [
+      "伊朗暂停与美谈判，计划彻底封锁霍尔木兹海峡并启动曼德海峡战线",
+      "WTI暴涨7.94%至94.30美元，布伦特涨6.94%至97.45美元",
+      "黄金跌破4500美元至4450附近，日内跌2.1%",
+      "超14万人爆仓",
+      "121艘商船改道，5艘停运",
+      "特朗普称未收到伊朗暂停谈判消息",
+      "伊朗最高领袖顾问：武装力量'耐心有限'",
+      "以色列越线攻入黎南部，黎以冲突持续升级"
+    ]
+  },
+  "tech_events": {
+    "event": "COMPUTEX 2026 6/2-5台北举行，主题'AI Together'",
+    "nvidia_gtc_taipei": "黄仁勋发布Vera CPU(88核/176线程)、RTX Spark(N1X)AI PC超级芯片、世界物理AI模型、与宇树合作人形机器人",
+    "intel_ceo": "陈立武6/2发表COMPUTEX主题演讲",
+    "computex_highlights": [
+      "英伟达杀入PC芯片市场，RTX Spark采用台积电3nm/700亿晶体管/128GB统一内存",
+      "戴尔/联想/华硕/微星等秋季推出搭载N1X的Windows PC",
+      "AMD Helios服务器机柜对标英伟达NVL72",
+      "内存芯片营收预计翻倍至5950亿美元"
+    ]
+  },
+  "ipo_events": [
+    "宇树科技科创板IPO过会(6/1)，'人形机器人第一股'拟募资42亿",
+    "MiniMax启动科创板IPO辅导",
+    "SpaceX路演6/4启动，最早6/12纳斯达克上市，估值1.75-2万亿美元",
+    "Anthropic秘密提交S-1筹备IPO"
+  ],
+  "overseas_markets": {
+    "us_stocks": "纳指/标普500创新高，英伟达涨4%+，ARM涨16%+，戴尔盘后涨39%",
+    "crypto": "比特币跌2%至4月低点，Strategy卖出32枚BTC套现250万"
+  }
+}

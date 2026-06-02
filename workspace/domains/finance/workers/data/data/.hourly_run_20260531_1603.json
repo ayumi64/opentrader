@@ -1,0 +1,10 @@
+{
+  "run_time": "2026-05-31T16:03:00+08:00",
+  "type": "hourly_refresh",
+  "is_trading_day": false,
+  "market_status": "closed_weekend",
+  "snapshot_written": "行情快照_2026-05-31_1603.json",
+  "report_written": "数据服务摘要_2026-05-31_1603.md",
+  "emergency_tracker_updated": false,
+  "note": "周日非交易日，无新增严重舆情，tracker未更新"
+}

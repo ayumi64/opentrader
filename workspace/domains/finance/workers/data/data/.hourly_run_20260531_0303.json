@@ -1,0 +1,11 @@
+{
+  "run_time": "2026-05-31T03:03:00+08:00",
+  "market_status": "WEEKEND",
+  "last_trading_day": "2026-05-29",
+  "next_trading_day": "2026-06-01",
+  "mx_data_queries": ["指数行情(上证/深证/创业板/沪深300/科创50)", "科技板块(半导体/人工智能)"],
+  "mx_search_queries": ["北向资金最新动向", "财联社市场要闻", "周末重大新闻", "三花智控减持舆情", "PMI数据"],
+  "new_urgent_events": 0,
+  "snapshot_file": "行情快照_2026-05-31_0303.json",
+  "report_file": "数据服务摘要_2026-05-31_0303.md"
+}

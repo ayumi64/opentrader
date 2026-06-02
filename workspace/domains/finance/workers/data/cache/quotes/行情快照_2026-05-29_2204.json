@@ -1,0 +1,124 @@
+{
+  "snapshot_time": "2026-05-29T22:04:00+08:00",
+  "market_status": "closed",
+  "trade_date": "2026-05-29",
+  "major_indices": [
+    {"name":"上证指数","code":"000001.SH","close":4068.57,"change_pct":-0.73,"change":-30.07},
+    {"name":"深证成指","code":"399001.SZ","close":15575.13,"change_pct":-1.81,"change":-286.76},
+    {"name":"创业板指","code":"399006.SZ","close":4037.95,"change_pct":-2.11,"change":-87.12},
+    {"name":"科创50","code":"000688.SH","close":1751.32,"change_pct":-5.04,"change":-92.93},
+    {"name":"北证50","code":"899050.BJ","close":1244.10,"change_pct":-3.24},
+    {"name":"上证50","code":"000016.SH","close":2921.08,"change_pct":0.24,"change":6.89},
+    {"name":"沪深300","code":"000300.SH","close":4892.12,"change_pct":-0.45,"change":-22.09}
+  ],
+  "market_breadth": {
+    "advance": 1542,
+    "decline": 3884,
+    "total_stocks": 5426,
+    "advance_pct": 27.91,
+    "decline_pct": 70.30,
+    "limit_up": 67,
+    "limit_down": 59
+  },
+  "volume": {
+    "total_amount_billions_cny": 3319.03,
+    "shanghai_billions": 1532.07,
+    "shenzhen_billions": 1786.97,
+    "prev_day_amount_billions": 2999,
+    "change_billions": 320,
+    "change_pct": 10.7
+  },
+  "tech_sectors_performance": {
+    "半导体": {"change_pct": -6.40, "up":11, "down":164, "main_force_net_outflow_billions": -34.5},
+    "人工智能": {"change_pct": -3.05, "up":113, "down":582},
+    "新能源": {"change_pct": -1.75, "up":72, "down":138},
+    "电子化学品Ⅱ": {"change_pct": -7.29, "note":"涨幅榜最差"},
+    "光学光电子": {"change_pct": -7.00},
+    "CPO概念": {"main_force_net_outflow_billions": -8.6}
+  },
+  "defensive_sectors_gainers": [
+    {"name":"白酒Ⅱ","change_pct":3.74},
+    {"name":"非白酒","change_pct":2.79},
+    {"name":"白色家电","change_pct":2.76},
+    {"name":"电力","change_pct":2.69,"main_force_net_inflow_billions":4.48},
+    {"name":"煤炭开采","change_pct":2.50},
+    {"name":"商业零售","main_force_net_inflow_billions":2.08},
+    {"name":"食品饮料","main_force_net_inflow":"全行业净流入居首"}
+  ],
+  "main_force_flow": {
+    "total_net_outflow_billions_cny": -140.0,
+    "note": "创年内单日净流出新高",
+    "top_inflow": [
+      {"sector":"电力","billions":4.48},
+      {"sector":"零售","billions":2.08},
+      {"sector":"白酒","billions":1.80}
+    ],
+    "top_outflow": [
+      {"sector":"半导体","billions":-17.16},
+      {"sector":"光学光电子","billions":-5.75},
+      {"sector":"光伏设备","billions":-3.42}
+    ],
+    "electronic_sector_wide_outflow_billions": -47.02
+  },
+  "north_bound_flow": {
+    "total_trade_amount_billions": 473.41,
+    "north_bound_ratio_pct": 14.26,
+    "top_stocks_by_trade": [
+      {"stock":"宁德时代","amount_billions":9.76},
+      {"stock":"中际旭创","amount_billions":7.62},
+      {"stock":"天孚通信","amount_billions":6.24},
+      {"stock":"工业富联","amount_billions":4.53},
+      {"stock":"澜起科技","amount_billions":4.20},
+      {"stock":"兆易创新","amount_billions":3.39}
+    ],
+    "north_bound_5d_tech_reduce_billions": -20.0,
+    "north_bound_5d_consume_add_billions": 15.0,
+    "overall_sentiment": "北向随大盘波动，近5日持续减持科技、增配消费金融"
+  },
+  "margin_balance": {
+    "margin_loans_billions_as_of_may28": 2911.57,
+    "short_selling_billions": 21.80,
+    "note": "融资余额维持近年高位"
+  },
+  "stellar_stocks_on_month": {
+    "featured": [
+      {"stock":"宝鼎科技","change_pct_month":"+160%","theme":"PCB"},
+      {"stock":"长盈通","change_pct_month":"+170%","theme":"CPO/光纤"},
+      {"stock":"大普微","change_pct_month":"+130%","theme":"芯片"},
+      {"stock":"华电辽能","change_pct_month":"+100%","theme":"电力"},
+      {"stock":"大唐发电","change_pct_month":"+100%","theme":"电力"}
+    ]
+  },
+  "monthly_summary_may": {
+    "上证指数月线": "收阴，先扬后抑",
+    "科创50月涨幅_pct": 11.0,
+    "创业板指月涨幅_pct": "近10",
+    "notes": "科创50突破2020年7月高点，芯片PCB CPO电力为主要热点"
+  },
+  "global_markets_reference": {
+    "WTI_crude": 88.53,
+    "WTI_change_pct": -0.98,
+    "Brent_crude": 92.38,
+    "Brent_change_pct": -0.51,
+    "gold_usd_oz": 4495.5,
+    "gold_change_pct": 0.89,
+    "copper_lme_usd_t": 13742.0,
+    "copper_change_pct": 1.68,
+    "us_stocks_prev": "道指+0.36% 纳指+0.07% 标普+0.02%，美光/台积电创新高",
+    "china_golden_dragon_index": "+1.05%",
+    "note": "周五晚间美股未开盘，参考隔夜收盘数据"
+  },
+  "active_risk_events": [
+    {"id":"us_iran_military_clash_mq9_shootdown_may27","severity":"high","title":"伊朗击落美军MQ-9，美伊谈判接近达成延长停火协议"},
+    {"id":"israel_lebanon_ground_offensive_may26_updated","severity":"high","title":"以色列全面越线突袭黎巴嫩"},
+    {"id":"israel_gaza_expand70_cut_un_may29","severity":"high","title":"以色列控制加沙70%，中断与联合国秘书长联系"},
+    {"id":"us_fed_pce_hawkish_may29","severity":"medium","title":"美国4月PCE 3.8%核心PCE 3.3%，多位官员放风加息"},
+    {"id":"a_share_may27_semiconductor_dump_24_limitdown","severity":"medium","title":"A股5月29日科技股暴跌，科创50跌5.04%，半导体跌6.4%"},
+    {"id":"us_iran_mou_preliminary_disclosure_may27","severity":"high","title":"美伊备忘录草案：延长停火60天+开放霍尔木兹，待特朗普批准"}
+  ],
+  "special_topics": {
+    "高盛重仓科技股踩踏": "高盛28只科技重仓股跌停，单日浮亏超百亿，显示机构集体调仓",
+    "四部门重磅发文": "国家四部门印发文件部署6大方面15项重点任务",
+    "戴尔科技盘后暴涨39%": "AI服务器营收暴增757%，上调全年AI营收预期至600亿美元"
+  }
+}

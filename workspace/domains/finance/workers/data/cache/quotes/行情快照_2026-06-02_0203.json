@@ -1,0 +1,24 @@
+{
+  "snapshot_time": "2026-06-02T02:03:00+08:00",
+  "trade_date": "2026-06-01",
+  "indices": {
+    "上证指数": {"close": 4057.74, "change_pct": -0.27, "volume": "1.32万亿"},
+    "深证成指": {"close": 15340.36, "change_pct": -1.51, "volume": "1.56万亿"},
+    "创业板指": {"close": 3950.94, "change_pct": -2.16, "volume": "7346亿"},
+    "沪深300": {"close": 4844.26, "change_pct": -0.98, "volume": "8240亿"},
+    "科创50": {"close": 1663.69, "change_pct": -5.00, "volume": "1499亿"}
+  },
+  "total_volume": {"上证": "1.32万亿", "深证": "1.56万亿", "total_est": "2.88万亿"},
+  "tech_sector": {
+    "semiconductor_index": {"close": 6778.14, "change_pct": -5.37},
+    "科创板50": {"close": 1663.69, "change_pct": -5.00, "volume": "1499亿"},
+    "半导体ETF": {"code": "512480"}
+  },
+  "key_stocks": {
+    "寒武纪": {"close": 1238.00, "change_pct": -5.50},
+    "迈为股份": {"close": 242.48, "change_pct": -2.88},
+    "贵州茅台": {"close": 1309.60, "change_pct": -1.24},
+    "宁德时代": {"close": 420.10, "change_pct": -0.92}
+  },
+  "data_source": "mx-data/miaoxiang"
+}

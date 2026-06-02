@@ -1,0 +1,8 @@
+金融数据查询结果说明
+========================================
+查询内容: 沪深两市成交额 北向资金 南向资金 两融余额 最新
+数据文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/cache/miaoxiang/mx_data_沪深两市成交额_北向资金_南向资金_两融余额_最新.xlsx
+描述文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/cache/miaoxiang/mx_data_沪深两市成交额_北向资金_南向资金_两融余额_最新_description.txt
+数据行数: 31
+表数量: 3
+Sheet 列表: 沪深A股的融资融券余额(合计)板块、成交额(合计), 沪深A股(001004)沪深港通_北向资金成交额, 沪深A股(001004)沪深港通_南向资金流向

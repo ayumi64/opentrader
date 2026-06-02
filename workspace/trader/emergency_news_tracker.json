@@ -1,0 +1,148 @@
+{
+  "last_checked": "2026-05-27T20:31:25+08:00",
+  "events": [
+    {
+      "id": "us_iran_military_crisis_may23",
+      "title": "美伊军事冲突急剧升级: 特朗普筹备假期对伊打击+取消婚礼返回白宫; 军方取消休假/更新召回名册; 伊朗关闭西部空域/威胁封锁曼德海峡+断网; 以色列最高警戒; 巴基斯坦卡塔尔斡旋",
+      "source": "新华社/央视新闻/阿拉比亚电视台/财联社/ILNA",
+      "url": "多个新闻源",
+      "risk_type": "geopolitical_military_conflict",
+      "severity": "severe",
+      "detected_at": "2026-05-23T00:30:00+08:00",
+      "updated_at": "2026-05-27T12:30:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "us_iran_military_clash_mq9_shootdown_may27",
+      "title": "美伊军事冲突再升级：伊朗击落美军MQ-9死神无人机，向F-35及RQ-4开火；伊朗外交部谴责美国'公然违反停火协议'；伊朗最高领袖放狠话；美称自卫打击；布伦特重回100美元",
+      "source": "央视新闻/新华社/财联社/伊朗塔斯尼姆通讯社",
+      "url": "多个新闻源",
+      "risk_type": "geopolitical_military_conflict",
+      "severity": "high",
+      "detected_at": "2026-05-27T12:30:00+08:00",
+      "updated_at": "2026-05-27T12:30:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "israel_lebanon_ground_incursion_may27",
+      "title": "以色列越线突袭黎巴嫩：以军越过4月17日停火线攻入黎南部，空袭致71人伤亡；内塔尼亚胡称占领'战略要地'；美伊谈判关键时刻地区紧张升温",
+      "source": "央视新闻/新华社/财联社/证券时报",
+      "url": "多个新闻源",
+      "risk_type": "geopolitical_military_conflict",
+      "severity": "high",
+      "detected_at": "2026-05-27T12:30:00+08:00",
+      "updated_at": "2026-05-27T12:30:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "a_share_may27_semiconductor_dump_24_limitdown",
+      "title": "A股5月27日大幅跳水：沪指跌超1%，24股集体跌停，半导体遭200亿主力资金抛售；中微公司（大基金拟减持60亿）、兆易创新（实控人减持33亿）、澜起科技等集中减持引发踩踏",
+      "source": "东方财富/证券时报/财联社/各公司公告",
+      "url": "多个新闻源",
+      "risk_type": "market_systemic",
+      "severity": "medium",
+      "detected_at": "2026-05-27T12:30:00+08:00",
+      "updated_at": "2026-05-27T12:30:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "micron_market_cap_1trillion_may27",
+      "title": "美光科技市值突破1万亿美元：单日暴涨19%创2011年以来最大涨幅；瑞银上调目标价至1625美元；费城半导体指数涨5.53%创新高；纳指/标普500创历史新高",
+      "source": "财联社/东方财富/证券时报/瑞银",
+      "url": "多个新闻源",
+      "risk_type": "technology_corporate_earnings",
+      "severity": "low",
+      "detected_at": "2026-05-27T12:30:00+08:00",
+      "updated_at": "2026-05-27T12:30:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "changxin_tech_ipo_shanghai_may27",
+      "title": "长鑫科技科创板IPO今日上会：拟募资295亿，科创板第二大IPO；存储芯片产业链关注度高",
+      "source": "上交所/财联社/证券时报",
+      "url": "多个新闻源",
+      "risk_type": "technology_semiconductor_breakthrough",
+      "severity": "low",
+      "detected_at": "2026-05-27T12:30:00+08:00",
+      "updated_at": "2026-05-27T12:30:00+08:00",
+      "status": "active"
+    },
+    {
+      "id": "us_iran_mou_preliminary_disclosure_may27",
+      "title": "伊媒披露美伊谅解备忘录初步文件：美方将撤军/解除海上封锁/60天全面停火；特朗普今晚召开内阁会议讨论协议；伊朗革命卫队称敌对国家船只仍禁过霍尔木兹海峡；WTI跌约4%",
+      "source": "新华社/央视新闻/财联社/中国证券报/中国新闻社",
+      "url": "多个新闻源",
+      "risk_type": "geopolitical_diplomacy",
+      "severity": "high",
+      "detected_at": "2026-05-27T20:31:25+08:00",
+      "updated_at": "2026-05-27T20:31:25+08:00",
+      "status": "active"
+    },
+    {
+      "id": "israel_lebanon_ground_offensive_may26_updated",
+      "title": "以色列全面越线突袭黎巴嫩：越过4月17日停火线攻入黎南部纵深，空袭致71人伤亡，袭击黎重要水坝附近；内塔尼亚胡称占领战略要地；特朗普与内塔尼亚胡通话讨论局势",
+      "source": "央视新闻/新华社/环球时报/中国新闻社/财联社",
+      "url": "多个新闻源",
+      "risk_type": "geopolitical_military_conflict",
+      "severity": "high",
+      "detected_at": "2026-05-27T20:31:25+08:00",
+      "updated_at": "2026-05-27T20:31:25+08:00",
+      "status": "active"
+    },
+    {
+      "id": "a_share_may27_tech_dump_4500_down",
+      "title": "A股5月27日科技股大幅回调：沪指跌1.25%失守4100点，科创50跌2.8%，科创综指跌2.53%，近4500只个股下跌，半导体遭200亿主力资金抛售；大消费防御板块走强",
+      "source": "中国证券报/财联社/东方财富",
+      "url": "多个新闻源",
+      "risk_type": "market_systemic",
+      "severity": "medium",
+      "detected_at": "2026-05-27T20:31:25+08:00",
+      "updated_at": "2026-05-27T20:31:25+08:00",
+      "status": "active"
+    },
+    {
+      "id": "national_bureau_stats_profit_18pct_may27",
+      "title": "国家统计局：1-4月全国规模以上工业企业利润同比增长18.2%，较1-3月加快2.7个百分点",
+      "source": "财联社/国家统计局",
+      "url": "多个新闻源",
+      "risk_type": "market_policy_macro",
+      "severity": "low",
+      "detected_at": "2026-05-27T20:31:25+08:00",
+      "updated_at": "2026-05-27T20:31:25+08:00",
+      "status": "active"
+    },
+    {
+      "id": "changxin_tech_ipo_approved_may27",
+      "title": "长鑫科技科创板IPO获上市委会议通过：拟募资295亿，科创板第二大IPO",
+      "source": "财联社/上交所/南方财经",
+      "url": "多个新闻源",
+      "risk_type": "technology_semiconductor_breakthrough",
+      "severity": "low",
+      "detected_at": "2026-05-27T20:31:25+08:00",
+      "updated_at": "2026-05-27T20:31:25+08:00",
+      "status": "active"
+    },
+    {
+      "id": "luxshare_wentai_antitrust_fine_may27",
+      "title": "市场监管总局：立讯精密收购闻泰科技部分业务违法实施经营者集中，罚款90万元",
+      "source": "南方财经/财联社",
+      "url": "多个新闻源",
+      "risk_type": "market_policy_macro",
+      "severity": "low",
+      "detected_at": "2026-05-27T20:31:25+08:00",
+      "updated_at": "2026-05-27T20:31:25+08:00",
+      "status": "active"
+    },
+    {
+      "id": "us_japan_chemical_explosion_may26",
+      "title": "美国华盛顿州日资工厂发生重大化学爆炸：1死10伤9失踪，为日本制纸集团旗下Dynawave包装公司",
+      "source": "中国新闻社/央视新闻",
+      "url": "多个新闻源",
+      "risk_type": "accident",
+      "severity": "low",
+      "detected_at": "2026-05-27T20:31:25+08:00",
+      "updated_at": "2026-05-27T20:31:25+08:00",
+      "status": "active"
+    }
+  ]
+}

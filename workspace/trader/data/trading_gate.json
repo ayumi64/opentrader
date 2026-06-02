@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "updated_at": "2026-06-02T08:08:00+08:00",
+  "market": "A-share",
+  "market_day": true,
+  "allow_open_new": false,
+  "force_reduce": false,
+  "reasons": [
+    "R3: cash_available(21291)/total_assets(1353589)=1.57% < min_cash_buffer_pct(5%) — 禁止新开",
+    "R5: pending_orders 11笔全部基于5/20陈旧行情(跨13天); COMPUTEX 2026(6/2-5)开幕日半导体行情波动加剧价差偏离风险; 第12次建议人工撤单(尤其5笔强制撤单: 大族/芯源微/天孚/德明利/海光)",
+    "R6: 舆情第17轮混合偏空维持; OFAC制裁9家中国实体涉伊朗石油(6/1开盘已消化); 无持仓直接暴露, 不触发force_reduce"
+  ],
+  "checks": {
+    "R1_max_single_stock": "pass — 无持仓",
+    "R2_max_sector": "pass — 无持仓",
+    "R3_min_cash_buffer": "fail — 1.57% < 5%",
+    "R4_near_limit_up": "skip — 无持仓, pending均为5/20陈旧价, COMPUTEX开幕日行情变动剧",
+    "R5_max_pending_orders": "pass — 11/15未超限, 但全部陈旧(跨13天), COMPUTEX开幕行情加剧偏离",
+    "R6_severe_sentiment": "pass — 混合偏空但无持仓暴露; OFAC制裁6/1周一开盘已消化, COMPUTEX短期催化不足逆转半导体下行",
+    "R7_stop_loss_add": "pass — 无止损清单标的",
+    "R8_trading_day": "pass — 周二交易日(6/2); COMPUTEX 2026(6/2-5)开幕日"
+  },
+  "sentiment_summary": "混合偏空(第17轮·凌晨静默·维持)。地缘: 美伊军事持续/OFAC制裁9家中国实体涉伊朗石油贸易(6/1开盘已消化)/以黎突袭延续。宏观: 美联储鹰派核心PCE 3.3%超预期/加息概率50%+。A股: 5/29科技再崩科创50-5.04%/24芯片股跌停/半导体主力净流出379亿创新高/北向逆势净买入56.69亿。产业: 戴尔AI营收暴增757%/长鑫科创板IPO过会(拟募295亿)。COMPUTEX 2026(6/2-5)开幕日短期催化但不足以逆转半导体下行。pending 11笔全部偏离最新行情(跨13天), 第12次建议撤单(推荐5笔强制撤单)。",
+  "pending_advice": "现金仅1.57%且所有pending委托基于5/20陈旧行情(跨13天); COMPUTEX 2026开幕日半导体波动加剧价差风险; 强烈建议人工执行撤单清理旧委托, 尤其5笔强制撤单标的(大族/芯源微/天孚/德明利/海光)",
+  "disclaimer": "自动风控闸门，仅供参考。"
+}

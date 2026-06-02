@@ -1,0 +1,63 @@
+{
+  "meta": { "product": "openclaw-trader", "version": "1.0.0" },
+  "env": {
+    "NO_PROXY": "localhost,127.0.0.1,open.feishu.cn,.feishu.cn,.larksuite.com,.feishu.net"
+  },
+  "tools": {
+    "web": { "fetch": { "timeoutMs": 45000 } }
+  },
+  "models": {
+    "providers": {
+      "deepseek": {
+        "apiKey": "${DEEPSEEK_API_KEY}"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "deepseek/deepseek-chat",
+        "fallbacks": []
+      },
+      "workspace": "${OPENCLAW_HOME}/workspace/trader",
+      "compaction": { "mode": "safeguard" },
+      "thinkingDefault": "off",
+      "verboseDefault": "off",
+      "maxConcurrent": 4,
+      "subagents": { "maxConcurrent": 8 }
+    },
+    "list": []
+  },
+  "channels": {
+    "feishu": {
+      "enabled": false,
+      "accounts": {
+        "sonicteam": {
+          "enabled": false,
+          "appId": "${FEISHU_SONICTEAM_APP_ID}",
+          "appSecret": "${FEISHU_SONICTEAM_APP_SECRET}"
+        }
+      }
+    },
+    "telegram": { "enabled": false }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "0.0.0.0",
+    "auth": { "mode": "token", "token": "${OPENCLAW_GATEWAY_TOKEN}" }
+  },
+  "skills": {
+    "load": {
+      "extraDirs": ["${OPENCLAW_HOME}/data/skills/miaoxiang"]
+    }
+  },
+  "plugins": {
+    "entries": {
+      "feishu": { "enabled": false },
+      "telegram": { "enabled": false },
+      "deepseek": { "enabled": true }
+    }
+  },
+  "bindings": []
+}

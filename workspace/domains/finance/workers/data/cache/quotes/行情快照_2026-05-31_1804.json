@@ -1,0 +1,89 @@
+{
+  "snapshot_time": "2026-05-31T18:04:00+08:00",
+  "trade_day": "2026-05-29",
+  "is_trading_day": false,
+  "market_status": "closed_weekend",
+  "weekend_update": true,
+  "last_trade_session": "2026-05-29",
+  "note": "周日非交易日，数据沿用上周五(5/29)收盘；18:04增量轮次含mx-data/mx-search最新数据",
+  "mx_data_refresh": "18:04轮次，含科技板块/指数/北向/量能全量查询",
+  "indices": {
+    "shanghai_composite": {
+      "code": "000001.SH",
+      "name": "上证指数",
+      "close": 4068.57,
+      "change_pct": -0.73,
+      "volume": "1.532万亿"
+    },
+    "shenzhen_component": {
+      "code": "399001.SZ",
+      "name": "深证成指",
+      "close": 15575.13,
+      "change_pct": -1.81,
+      "volume": "1.787万亿"
+    },
+    "cyb_index": {
+      "code": "399006.SZ",
+      "name": "创业板指",
+      "close": 4037.95,
+      "change_pct": -2.11,
+      "volume": "8557亿"
+    },
+    "hs300": {
+      "code": "000300.SH",
+      "name": "沪深300",
+      "close": 4892.12,
+      "change_pct": -0.45,
+      "volume": "9422亿"
+    },
+    "star50": {
+      "code": "000688.SH",
+      "name": "科创50",
+      "close": 1751.32,
+      "change_pct": -5.04,
+      "volume": "1821亿"
+    }
+  },
+  "tech_sector": {
+    "semiconductor": {
+      "daily_change_pct_5_29": -6.40,
+      "weekly_change_pct": -5.62,
+      "weekly_main_force_outflow_billion": -379.3,
+      "sector_total_volume_5weeks": "16.07万亿",
+      "turnover_rate": "0.04%"
+    },
+    "ai": {
+      "daily_change_pct_5_29": -3.05,
+      "weekly_change_pct": -2.99,
+      "weekly_main_force_outflow_billion": -302.3
+    }
+  },
+  "market_flow": {
+    "total_volume_friday": "3.319万亿",
+    "north_flow_friday_single_day_billion": 473.4,
+    "north_flow_detail": {
+      "total_billion": 4734.05,
+      "sh_billion": 2216.94,
+      "sz_billion": 2517.11
+    },
+    "south_flow_friday": "18.84亿",
+    "margin_balance": "29424亿"
+  },
+  "week_review": "5/29周五A股延续调整：沪指-0.73%报4068.57；科创50-5.04%半导体-6.4%；北向+473亿(五月最高单日)；周主力净流出-1233亿",
+  "tomorrow_outlook": [
+    "COMPUTEX 2026 揭幕 (6/1-6/5, 英伟达/AMD/英特尔)",
+    "宇树科技科创板IPO上会 (6/1)",
+    "美伊谈判: 特朗普提出更强硬条款施压伊朗",
+    "美国5月制造业PMI终值",
+    "美联储密集讲话",
+    "PMI 50%扩张放缓信号待消化"
+  ],
+  "data_source_files": [
+    "mx_data_指数_20260531_1804_raw.json",
+    "mx_data_北向资金_20260531_1804_raw.json",
+    "mx_data_半导体_20260531_1804_raw.json",
+    "mx_data_人工智能_20260531_1804_raw.json",
+    "mx_search_财联社_20260531_1804.json",
+    "mx_search_周末要闻_20260531_1804.json"
+  ]
+}

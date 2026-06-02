@@ -1,0 +1,203 @@
+{
+  "success": true,
+  "status": 0,
+  "code": 0,
+  "message": "ok",
+  "data": {
+    "requestId": null,
+    "message": "OK",
+    "status": 0,
+    "code": 0,
+    "data": {
+      "protocolType": "SEARCH_DATA",
+      "id": "69d23e8e-6f3d-42f2-8fa8-ebf229bba468",
+      "refSeq": null,
+      "keyEntityList": null,
+      "searchDataResultDTO": {
+        "questionId": "d7bba459-e6c5-4633-954f-2d878818ad38",
+        "dataTableDTOList": [
+          {
+            "code": "001004",
+            "entityName": "沪深A股",
+            "table": {
+              "326256": [
+                "3.319万亿"
+              ],
+              "headName": [
+                "2026-05-29(日)"
+              ]
+            },
+            "rawTable": {
+              "326256": [
+                "3318638030127.5"
+              ],
+              "headName": [
+                "2026-05-29"
+              ]
+            },
+            "truncateRawTable": {},
+            "nameMap": {
+              "326256": "成交额(合计)",
+              "headNameSub": "数据来源"
+            },
+            "headNameMap": {},
+            "field": {
+              "returnCode": "326256",
+              "returnName": "成交额(合计)",
+              "classCode": "007121",
+              "checkedRelatedIndicators": true,
+              "startDate": "2026-05-29 00:00:00",
+              "endDate": "2026-05-29 00:00:00",
+              "fuzzy": false,
+              "dateGranularity": "DAY",
+              "defineType": -1,
+              "isLoopN": false,
+              "fixedParamValue": "Period=1,CurType=1,IsHistory=0",
+              "isGroup": false,
+              "returnSourceCode": "TVAL",
+              "returnSourceName": "成交额(合计)_板块",
+              "graph": "0",
+              "unit": "1",
+              "tableType": "20"
+            },
+            "macroAttributeExcelMap": {},
+            "fieldSet": [
+              {
+                "returnCode": "326256",
+                "returnName": "成交额(合计)",
+                "classCode": "007121",
+                "checkedRelatedIndicators": true,
+                "startDate": "2026-05-29 00:00:00",
+                "endDate": "2026-05-29 00:00:00",
+                "fuzzy": false,
+                "dateGranularity": "DAY",
+                "defineType": -1,
+                "isLoopN": false,
+                "fixedParamValue": "CurType=1,IsHistory=0,Period=1",
+                "isGroup": false,
+                "returnSourceCode": "TVAL",
+                "returnSourceName": "成交额(合计)_板块",
+                "graph": "0",
+                "unit": "1",
+                "tableType": "20"
+              }
+            ],
+            "dataTableType": "NORM_TABLE",
+            "rowInfo": {},
+            "colInfo": {},
+            "indicatorOrder": [
+              "326256"
+            ],
+            "tipFlags": [],
+            "dataType": "数据浏览器",
+            "title": "沪深A股的成交额(合计)",
+            "hasThumbnail": true,
+            "indicatorLimited": false,
+            "dataPositionEnum": "MetricLeftTimeTop",
+            "orderCol": {},
+            "jumpUrlList": [
+              {
+                "choiceUrl": "EM://stockdatacenter?type=browser&modType=BLOCK&code=001004&indId=100000000015690|121:2026-05-29|469:0|261:101:元:元",
+                "typeName": "板块数据浏览器"
+              }
+            ],
+            "dataTypeEnum": "DATA_BROWSER",
+            "dateRuleSet": [],
+            "freqConvert": false,
+            "deleteInfo": [],
+            "macroCodeMap": {},
+            "entityTagDTO": {
+              "entityId": "001004",
+              "entityType": "BLOCK",
+              "entityTypeCode": "BLOCK",
+              "entityTypeName": "BLOCK",
+              "classCode": "005202",
+              "className": "市场类(沪深京)",
+              "publishCode": "",
+              "fullName": "沪深A股",
+              "shortName": "",
+              "matchWord": "沪深两市",
+              "secuCode": "",
+              "market": "",
+              "correct": false,
+              "hasKLine": false,
+              "valuation": false,
+              "relatedEntity": false
+            },
+            "entityTagDTOList": [
+              {
+                "entityId": "001004",
+                "entityType": "BLOCK",
+                "entityTypeCode": "BLOCK",
+                "entityTypeName": "BLOCK",
+                "classCode": "005202",
+                "className": "市场类(沪深京)",
+                "publishCode": "",
+                "fullName": "沪深A股",
+                "shortName": "",
+                "matchWord": "沪深两市",
+                "secuCode": "",
+                "market": "",
+                "correct": false,
+                "hasKLine": false,
+                "valuation": false,
+                "relatedEntity": false
+              }
+            ],
+            "indexTable": false,
+            "edbThirdData": false,
+            "dataUpdate": {
+              "2026-05-29": false
+            },
+            "supportsTimeSeries": false,
+            "estimatedTokens": 0,
+            "summaryTips": {
+              "periodicalReport": null
+            },
+            "nestEntityListMap": {},
+            "excelTimeTruncate": false,
+            "frontendEntityName": "",
+            "frontendEntityCode": "",
+            "frontendTitle": "",
+            "frontendDesc": "",
+            "indicatorCount": 0,
+            "fieldParameterStr": "",
+            "tdayEnum": "NORMAL"
+          }
+        ],
+        "condition": {
+          "search_data_task_0": [
+            "沪深A股",
+            "成交额(合计)",
+            "2026-05-30至2026-05-30"
+          ]
+        },
+        "entityTagDTOList": [
+          {
+            "entityId": "001004",
+            "entityType": "BLOCK",
+            "entityTypeCode": "BLOCK",
+            "entityTypeName": "BLOCK",
+            "classCode": "005202",
+            "className": "市场类(沪深京)",
+            "publishCode": "",
+            "fullName": "沪深A股",
+            "shortName": "",
+            "matchWord": "沪深两市",
+            "secuCode": "",
+            "market": "",
+            "correct": false,
+            "hasKLine": false,
+            "valuation": false,
+            "relatedEntity": false
+          }
+        ]
+      },
+      "entityName": null,
+      "message": null,
+      "tableTruncated": false
+    },
+    "stack": null
+  },
+  "requestId": "c85223ed3f2e45a69c1ada06ddfaee1c"
+}

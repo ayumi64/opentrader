@@ -1,0 +1,101 @@
+{
+  "snapshot_time": "2026-06-02T06:03:00+08:00",
+  "market_date": "2026-06-01",
+  "market_status": "pre-market",
+  "indices": {
+    "上证指数": {
+      "close": 4057.74,
+      "change_pct": -0.27,
+      "change": -10.83
+    },
+    "科创50": {
+      "close": 1663.69,
+      "change_pct": -5.00,
+      "change": -87.63
+    },
+    "创业板指": {
+      "close": 3950.94,
+      "change_pct": -2.15,
+      "change": -87.01
+    }
+  },
+  "sectors": {
+    "半导体": {
+      "change_pct": -5.47,
+      "daily_turnover_billion": 396.8
+    },
+    "人工智能": {
+      "change_pct": -0.40,
+      "daily_turnover_billion": 479.0
+    },
+    "新能源": {
+      "change_pct": 0.25,
+      "daily_turnover_billion": 175.4
+    }
+  },
+  "market_breadth": {
+    "a_share_total_turnover_trillion": 2.90,
+    "market_change_pct": -0.38,
+    "a_rise_count_approx": 3776,
+    "a_stock_limit_up_approx": 166,
+    "a_fall_count_approx": 1682,
+    "a_stock_limit_down_approx": 23
+  },
+  "northbound": {
+    "total_turnover_billion": 407.41,
+    "sh_turnover_billion": 188.24,
+    "sz_turnover_billion": 219.18,
+    "pct_of_a_share": 14.16,
+    "top_deal_stocks": {
+      "沪股通": ["工业富联(35.42亿)", "生益科技(31.75亿)", "澜起科技(31.38亿)"],
+      "深股通": ["中际旭创(66.25亿)", "宁德时代(62.59亿)", "天孚通信(41.66亿)"]
+    },
+    "ETF_turnover_billion": 55.39,
+    "sh_lead_stock": "春秋电子(10.00%)",
+    "sz_lead_stock": "胜利精密(9.91%)"
+  },
+  "overseas_overnight": {
+    "us_market": {
+      "道指": "0.09%",
+      "标普500": "0.26%",
+      "纳斯达克": "0.42%",
+      "nvidia_change": "6.12%",
+      "台积电": "4%+新高",
+      "美光科技": "突破1000美元",
+      "慧与科技HPE": "盘后+35%"
+    },
+    "commodities": {
+      "wti_crude": 92.16,
+      "wti_change_pct": 5.49,
+      "brent_crude": 94.98,
+      "brent_change_pct": 4.24
+    },
+    "europe": {
+      "英国富时100": -0.68,
+      "法国CAC40": -0.45,
+      "德国DAX": -0.40
+    }
+  },
+  "key_events": [
+    "宇树科技科创板IPO过会，73天创A股纪录，拟募资42亿，人形机器人第一股",
+    "MSCI新纳入19只A股，聚焦AI光通信、高端制造",
+    "英伟达GTC Taipei发布Vera CPU及世界物理AI模型，COMPUTEX 2026今日开幕(6/2-5)",
+    "谷歌Alphabet拟800亿美元融资扩建AI基建，巴菲特或投100亿",
+    "Anthropic保密提交IPO注册文件，最快秋季登陆美股",
+    "5月官方制造业PMI 50.0%，较上月-0.3pct，经济扩张边际放缓",
+    "国务院对外投资首部行政法规发布，7月1日施行",
+    "丁向群任国家金融监管总局党委书记",
+    "5月A股融资余额增加1953.93亿元，融资客持续加杠杆",
+    "基金风格漂移监管落地，近4000亿资金被迫调仓",
+    "6月1日A股成交缩量至2.9万亿，较前日减4441亿",
+    "A股主力资金净流出超380亿元",
+    "伊朗暂停与美国谈判，威胁全面封锁霍尔木兹海峡，WTI原油涨5.49%",
+    "SpaceX最早6月12日纳斯达克上市，估值1.75-2万亿美元",
+    "美联储PCE 3.8%加息预期升温，6月降息概率跌破20%",
+    "长征十二号乙运载火箭首飞成功"
+  ],
+  "meta": {
+    "data_source": "mx-search + mx-data via miaoxiang",
+    "generated_at": "2026-06-02T06:03:00+08:00"
+  }
+}

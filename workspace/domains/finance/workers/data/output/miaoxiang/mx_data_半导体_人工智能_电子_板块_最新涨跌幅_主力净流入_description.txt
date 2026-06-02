@@ -1,0 +1,8 @@
+金融数据查询结果说明
+========================================
+查询内容: 半导体 人工智能 电子 板块 最新涨跌幅 主力净流入
+数据文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/output/miaoxiang/mx_data_半导体_人工智能_电子_板块_最新涨跌幅_主力净流入.xlsx
+描述文件路径: /Users/sonic/.openclaw/workspace/domains/finance/workers/data/output/miaoxiang/mx_data_半导体_人工智能_电子_板块_最新涨跌幅_主力净流入_description.txt
+数据行数: 24
+表数量: 4
+Sheet 列表: 半导体等的涨跌幅(算数平均), 半导体的(区间)净流入量(合计)、(区间)主力流入资金(合计)等, 人工智能的(区间)净流入量(合计)、(区间)主力流入资金(合计)等, 电子的(区间)净流入量(合计)、(区间)主力流入资金(合计)等
