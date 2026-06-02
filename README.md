@@ -1,4 +1,19 @@
-# OpenBigA
+# OpenTrader
+
+
+OpenTrader 是一套 **A 股金融域自动化系统**，安装在你自己的服务器或本机上，包含：
+
+| 组件 | 作用 |
+|------|------|
+| **Trader（总控）** | 盘前 / 盘中 / 盘后汇总，飞书定版推送 |
+| **finance-data** | 行情快照、舆情、紧急新闻 tracker |
+| **finance-strategy** | 信号、候选池、盘中预警 |
+| **finance-risk** | 风控检查、trading_gate 闸门 |
+| **finance-execution** | **仅模拟盘**撮合记录 |
+| **finance-content** | 内容/微信稿（可选） |
+
+数据与报告默认保存在本机目录，不经过第三方 SaaS。
+
 
 **OpenClaw Trader** — A 股金融域 Orchestrator 私有化部署产品。
 
