@@ -46,6 +46,6 @@ delivery:
 
 ```bash
 cd ~/.openclaw-trader
-python3 /path/to/openbigA/scripts/render-config.py . config/
+python3 /path/to/opentrader/scripts/render-config.py . config/
 docker compose restart
 ```

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 在 openbigA 仓库根目录打 bundle（独立仓库，不依赖上级 monorepo）
+# 在 opentrader 仓库根目录打 bundle（独立仓库，不依赖上级 monorepo）
 set -euo pipefail
 
 PRODUCT="$(cd "$(dirname "$0")/.." && pwd)"

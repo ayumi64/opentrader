@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 从 OpenClaw 开发仓库同步源码到 openbigA 独立仓库（维护者执行，推送前运行）
+# 从 OpenClaw 开发仓库同步源码到 opentrader 独立仓库（维护者执行，推送前运行）
 set -euo pipefail
 
 MONO="${OPENCLAW_MONO:-$(cd "$(dirname "$0")/../../.." && pwd)}"
@@ -9,8 +9,9 @@ echo "[sync-source] mono=${MONO} → product=${PRODUCT}"
 
 RSYNC_EX=(
   --exclude 'mx-output/'
-  --exclude 'reports/*.md'
-  --exclude 'reports/daily/'
+  --exclude 'reports/'
+  --exclude '紧急新闻监控报告/'
+  --exclude '系统检查报告/'
   --exclude 'logs/'
   --exclude 'inbox/'
   --exclude 'repos/'

@@ -4,9 +4,11 @@ install/
 
 # 运行时（不同步到 Git）
 **/mx-output/**
-**/reports/*.md
-**/logs/*.md
-**/inbox/**
+workspace/**/reports/
+workspace/trader/紧急新闻监控报告/
+workspace/trader/系统检查报告/
+workspace/**/logs/
+workspace/**/inbox/
 **/.pytest_cache/
 **/allure-report/
 **/repos/

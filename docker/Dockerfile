@@ -4,8 +4,7 @@ FROM node:22-bookworm-slim
 ARG OPENCLAW_VERSION=latest
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    ca-certificates curl bash python3 python3-pip gettext-base \
-    && pip3 install --no-cache-dir pyyaml \
+    ca-certificates curl bash python3 python3-yaml gettext-base \
     && rm -rf /var/lib/apt/lists/*
 
 RUN npm install -g openclaw@${OPENCLAW_VERSION}

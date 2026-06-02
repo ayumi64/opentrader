@@ -27,13 +27,14 @@ fi
 export MX_APIKEY="${MX_APIKEY:-}"
 
 CONFIG_DIR="${OPENCLAW_CONFIG_DIR:-/config}"
-INSTALL_ROOT="$(dirname "${DATA}")"
 if [ -d "${CONFIG_DIR}" ] && [ -f /app/scripts/render-config.py ]; then
-  python3 /app/scripts/render-config.py "${INSTALL_ROOT}" "${CONFIG_DIR}" || true
+  python3 /app/scripts/render-config.py "${DATA}" "${CONFIG_DIR}" || true
+  openclaw doctor --fix >/dev/null 2>&1 || true
 fi
 
-if [ ! -f "${DATA}/openclaw.json" ]; then
-  cp -f /app/openclaw.json "${DATA}/openclaw.json"
+if [ ! -f "${DATA}/.openclaw/openclaw.json" ] && [ -f /app/openclaw.json ]; then
+  mkdir -p "${DATA}/.openclaw"
+  cp -f /app/openclaw.json "${DATA}/.openclaw/openclaw.json"
 fi
 
-exec openclaw gateway --port "${OPENCLAW_GATEWAY_PORT:-18789}" --bind 0.0.0.0
+exec openclaw gateway --port "${OPENCLAW_GATEWAY_PORT:-18789}" --bind lan

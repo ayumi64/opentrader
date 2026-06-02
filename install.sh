@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# OpenBigA / OpenClaw Trader 一键安装
+# OpenTrader / OpenClaw Trader 一键安装
 set -euo pipefail
 
 PRODUCT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -16,10 +16,12 @@ FEISHU_APP_ID=""
 FEISHU_APP_SECRET=""
 FEISHU_GROUP=""
 NON_INTERACTIVE=false
+_SKIP_DOCKER_BUILD="${SKIP_DOCKER_BUILD:-}"
+_CLI_INSTALL_DIR=""
 
 usage() {
   cat <<EOF
-OpenBigA (OpenClaw Trader) v${VERSION}
+OpenTrader (OpenClaw Trader) v${VERSION}
 
 用法:
   ./install.sh --api-key <KEY> --sim-token <TOKEN>
@@ -43,7 +45,7 @@ while [ $# -gt 0 ]; do
     --sim-token) SIM_TOKEN="$2"; shift 2 ;;
     --mx-key) MX_KEY="$2"; shift 2 ;;
     --config) CONFIG_FILE="$2"; shift 2 ;;
-    --install-dir) INSTALL_DIR="$2"; shift 2 ;;
+    --install-dir) INSTALL_DIR="$2"; _CLI_INSTALL_DIR="$2"; shift 2 ;;
     --feishu) FEISHU_ENABLE=true; shift ;;
     --feishu-app-id) FEISHU_APP_ID="$2"; shift 2 ;;
     --feishu-app-secret) FEISHU_APP_SECRET="$2"; shift 2 ;;
@@ -66,6 +68,13 @@ if [ -n "${CONFIG_FILE}" ] && [ -f "${CONFIG_FILE}" ]; then
   FEISHU_APP_ID="${FEISHU_APP_ID:-${FEISHU_APP_ID:-}}"
   FEISHU_APP_SECRET="${FEISHU_APP_SECRET:-${FEISHU_APP_SECRET:-}}"
   FEISHU_GROUP="${FEISHU_GROUP:-${FEISHU_DELIVERY_GROUP_ID:-}}"
+fi
+
+if [ -n "${_SKIP_DOCKER_BUILD}" ]; then
+  SKIP_DOCKER_BUILD="${_SKIP_DOCKER_BUILD}"
+fi
+if [ -n "${_CLI_INSTALL_DIR}" ]; then
+  INSTALL_DIR="${_CLI_INSTALL_DIR}"
 fi
 
 if ! command -v docker >/dev/null 2>&1; then
@@ -146,7 +155,23 @@ pathlib.Path('${EXEC_DATA}/sim-trading.json').write_text(json.dumps({
 }, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
 "
 
-cp "${PRODUCT_DIR}/docker-compose.yml" "${INSTALL_DIR}/docker-compose.yml"
+cat > "${INSTALL_DIR}/docker-compose.yml" <<EOF
+services:
+  trader-gateway:
+    image: ${IMAGE}
+    container_name: openclaw-trader
+    restart: unless-stopped
+    env_file:
+      - ${INSTALL_DIR}/.env
+    environment:
+      OPENCLAW_HOME: /data
+      TZ: Asia/Shanghai
+    ports:
+      - "\${GATEWAY_PORT:-18789}:18789"
+    volumes:
+      - ${INSTALL_DIR}/data:/data
+      - ${INSTALL_DIR}/config:/config:ro
+EOF
 
 if [ "${SKIP_DOCKER_BUILD:-0}" != "1" ]; then
   export OPENCLAW_INSTALL_ROOT="${INSTALL_DIR}/data"
@@ -159,7 +184,7 @@ python3 "${PRODUCT_DIR}/scripts/render-config.py" "${INSTALL_DIR}" "${INSTALL_DI
 
 echo ""
 echo "=============================================="
-echo " OpenBigA 已安装: ${INSTALL_DIR}"
+echo " OpenTrader 已安装: ${INSTALL_DIR}"
 echo " 配置: ${INSTALL_DIR}/config/"
 echo " 启动: cd ${INSTALL_DIR} && docker compose up -d"
 echo " 飞书: ${FEISHU_ENABLED}  群: ${FEISHU_GROUP:-（未配置）}"

@@ -50,11 +50,21 @@ def main() -> int:
 
     install_dir = Path(expand_home(sys.argv[1]))
     cfg_dir = Path(sys.argv[2])
-    data_dir = install_dir / "data"
+    if (install_dir / "data").is_dir() and (
+        (install_dir / ".env").is_file() or (install_dir / "config").is_dir()
+    ):
+        data_dir = install_dir / "data"
+    else:
+        data_dir = install_dir
     openclaw_home = os.environ.get("OPENCLAW_HOME", str(data_dir))
 
-    env = load_env_file(install_dir / ".env")
-    env.update(load_env_file(cfg_dir / "install.env"))
+    env = load_env_file(cfg_dir / "install.env")
+    env.update(load_env_file(install_dir / ".env"))
+    if data_dir != install_dir:
+        env.update(load_env_file(data_dir.parent / ".env"))
+    for key, val in os.environ.items():
+        if key.startswith(("DEEPSEEK_", "MX_", "SIM_", "OPENCLAW_", "GATEWAY_", "FEISHU_", "HTTP_", "HTTPS_")):
+            env[key] = val
     feishu = load_yaml(cfg_dir / "feishu.yaml")
     trader = load_yaml(cfg_dir / "trader.yaml")
     advanced = load_yaml(cfg_dir / "advanced.yaml")
@@ -64,25 +74,28 @@ def main() -> int:
         feishu.get("delivery") or {}
     ).get("group_id", "")
 
-    template = json.loads(
-        (cfg_dir.parent / "config" / "openclaw.product.json.template").read_text(encoding="utf-8")
-    )
-    # 若从 install 目录调用，template 在 product 根
     tpl_path = Path(__file__).resolve().parent.parent / "config" / "openclaw.product.json.template"
-    if tpl_path.is_file():
-        template = json.loads(tpl_path.read_text(encoding="utf-8"))
+    install_tpl = cfg_dir.parent / "config" / "openclaw.product.json.template"
+    template_path = tpl_path if tpl_path.is_file() else install_tpl
+    if not template_path.is_file():
+        print(f"[render-config] template not found: {template_path}", file=sys.stderr)
+        return 1
+    template = json.loads(template_path.read_text(encoding="utf-8"))
 
     oc = json.loads(json.dumps(template))
     oc["gateway"]["port"] = int(env.get("GATEWAY_PORT", trader.get("gateway", {}).get("port", 18789)))
-    oc["gateway"]["bind"] = trader.get("gateway", {}).get("bind", "0.0.0.0")
+    oc["gateway"]["bind"] = trader.get("gateway", {}).get("bind", "lan")
     oc["gateway"]["auth"]["token"] = env.get("OPENCLAW_GATEWAY_TOKEN", "${OPENCLAW_GATEWAY_TOKEN}")
 
     # agents.list 从 bundle 或已有文件合并
     bundle_agents = data_dir / "openclaw.agents.json"
+    app_agents = Path("/app/openclaw.agents.json")
     if bundle_agents.is_file():
         oc["agents"]["list"] = json.loads(bundle_agents.read_text())["list"]
-    elif (data_dir / "openclaw.json").is_file():
-        oc = json.loads((data_dir / "openclaw.json").read_text(encoding="utf-8"))
+    elif app_agents.is_file():
+        oc["agents"]["list"] = json.loads(app_agents.read_text())["list"]
+    elif (data_dir / ".openclaw" / "openclaw.json").is_file():
+        oc = json.loads((data_dir / ".openclaw" / "openclaw.json").read_text(encoding="utf-8"))
 
     for key in ("skills", "agents"):
         oc_str = json.dumps(oc)
@@ -133,9 +146,12 @@ def main() -> int:
         }
 
     data_dir.mkdir(parents=True, exist_ok=True)
-    (data_dir / "openclaw.json").write_text(
-        json.dumps(oc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-    )
+    oc_dir = data_dir / ".openclaw"
+    oc_dir.mkdir(parents=True, exist_ok=True)
+    oc_path = oc_dir / "openclaw.json"
+    oc_path.write_text(json.dumps(oc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    # 兼容旧路径
+    (data_dir / "openclaw.json").write_text(json.dumps(oc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     cron_src = data_dir / "cron" / "jobs.json"
     if cron_src.is_file() and group_id and feishu_enabled:
@@ -149,7 +165,7 @@ def main() -> int:
                 job["delivery"] = d
         cron_src.write_text(json.dumps(jobs, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    print(f"[render-config] openclaw.json → {data_dir / 'openclaw.json'}")
+    print(f"[render-config] openclaw.json → {oc_path}")
     print(f"[render-config] feishu={'on' if feishu_enabled else 'off'} group={group_id or '-'}")
     return 0
 
